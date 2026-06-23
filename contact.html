@@ -6,44 +6,90 @@
 <title>Contact Us - Learning Skills</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f4f8fb;
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fc;
+    color:#333;
 }
 
 header{
-    background:#003366;
+    background:linear-gradient(135deg,#0066cc,#004080);
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:2rem;
 }
 
 .container{
     max-width:800px;
-    margin:auto;
+    margin:30px auto;
     padding:20px;
 }
 
 .card{
     background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#0066cc;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    background:#f8f9ff;
+    border-left:5px solid #0066cc;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+}
+
+.contact-item strong{
+    display:block;
+    margin-bottom:5px;
 }
 
 a{
-    text-decoration:none;
     color:#0066cc;
+    text-decoration:none;
     font-weight:bold;
 }
 
+a:hover{
+    text-decoration:underline;
+}
+
+.home-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#0066cc;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.home-btn:hover{
+    background:#004080;
+}
+
 footer{
-    background:#02284f;
+    background:#002244;
     color:white;
     text-align:center;
-    padding:15px;
-    margin-top:20px;
+    padding:20px;
+    margin-top:40px;
 }
 </style>
 </head>
@@ -52,45 +98,50 @@ footer{
 
 <header>
     <h1>📞 Contact Us</h1>
+    <p>Get in touch with Learning Skills</p>
 </header>
 
 <div class="container">
 
 <div class="card">
 
-<h2>Learning Skills</h2>
+<h2>Contact Information</h2>
 
-<p>📧 Email:</p>
-<p>
-<a href="mailto:Learningskills2624@gmail.com">
-Learningskills2624@gmail.com
+<div class="contact-item">
+<strong>📧 Email</strong>
+<a href="mailto:learningskills2624@gmail.com">
+learningskills2624@gmail.com
 </a>
-</p>
+</div>
 
-<p>🎥 YouTube Channel:</p>
-<p>
-<a href="https://youtube.com/@learningskills12?si=-wSY_Hv50UNeVKhb" target="_blank">
+<div class="contact-item">
+<strong>▶️ YouTube Channel</strong>
+<a href="https://youtube.com/@learningskills12" target="_blank">
 Learning Skills YouTube Channel
 </a>
-</p>
+</div>
 
-<p>📘 Facebook Page:</p>
-<p>
-<a href="https://www.facebook.com/share/1CvSM5rWza/" target="_blank">
+<div class="contact-item">
+<strong>📘 Facebook Page</strong>
+<a href="https://facebook.com" target="_blank">
 Learning Skills Facebook Page
 </a>
+</div>
+
+<p style="margin-top:20px;">
+আপনার যেকোনো প্রশ্ন, পরামর্শ বা মতামতের জন্য আমাদের সাথে যোগাযোগ করতে পারেন।
 </p>
 
-<p>
-<a href="index.html">🏠 Back to Home</a>
-</p>
+<a href="index.html" class="home-btn">
+🏠 Back to Home
+</a>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 Learning Skills. All Rights Reserved.
+© 2026 Learning Skills | All Rights Reserved
 </footer>
 
 </body>
