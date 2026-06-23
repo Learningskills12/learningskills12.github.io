@@ -1,132 +1,242 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="shortcut icon" href="logo.png" type="image/png">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Learning Skills</title>
+<link rel="icon" type="image/png" href="logo.png">
+
 <style>
-body{margin:0;font-family:Arial;background:#eef8ff;color:#222}
-header{background:linear-gradient(90deg,#003366,#00aaff);color:white;padding:50px 20px;text-align:center}
-header h1{font-size:3em;margin:0}
-nav{background:#02284f;padding:12px;text-align:center;position:sticky;top:0}
-nav a{color:white;text-decoration:none;padding:10px;font-weight:bold}
-.hero{padding:30px;text-align:center}
-.btn{background:#0088cc;color:white;padding:12px 20px;border-radius:8px;text-decoration:none}
-.wrap{max-width:1200px;margin:auto;padding:20px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:white;padding:20px;border-radius:15px;box-shadow:0 3px 8px rgba(0,0,0,.15)}
-.quiz{background:#dff6ff}
-footer{background:#02284f;color:white;text-align:center;padding:20px}
-marquee{background:gold;padding:8px;font-weight:bold}
-  .card a{
-    color:#0066cc;
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#eef7ff;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(90deg,#003366,#00aaff);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header img{
+    width:120px;
+    border-radius:50%;
+}
+
+header h1{
+    margin:10px 0;
+    font-size:40px;
+}
+
+.tagline{
+    font-size:16px;
+}
+
+nav{
+    background:#02284f;
+    text-align:center;
+    padding:12px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
     text-decoration:none;
+    margin:0 15px;
     font-weight:bold;
 }
 
-.card a:hover{
-    text-decoration:underline;
+nav a:hover{
+    color:#ffd700;
 }
-  .title-box{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:30px;
+}
+
+.btn{
+    background:#0088cc;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.section-title{
+    margin-top:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:15px;
 }
 
-.side-logo{
-    width:50px;
-    height:50px;
-    border-radius:50%;
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    text-align:center;
 }
+
+.video-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.about{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.contact{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.contact a{
+    text-decoration:none;
+}
+
+footer{
+    background:#02284f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
 </style>
 </head>
-<body>
-<header>
-<img src="logo.png" alt="Learning Skills Logo" width="150">
 
-<div class="title-box">
-    <img src="logo.png" alt="Logo" class="side-logo">
-    <h1>📚 Learning Skills</h1>
-    <img src="logo.png" alt="Logo" class="side-logo">
-</div>
-<p>সহজে শিখি • আনন্দে শিখি • সাফল্যের পথে এগিয়ে যাই</p>
+<body>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills Logo">
+
+<h1>📚 Learning Skills</h1>
+
+<p class="tagline">
+সহজে শিখি • আনন্দে শিখি • সাফল্যের পথে এগিয়ে যাই
+</p>
+
 </header>
 
-<marquee>স্বাগতম! প্রতিদিন নতুন পাঠ, কুইজ, ধাঁধা এবং শিক্ষামূলক ভিডিও।</marquee>
-
 <nav>
-<a href="#">Home</a>
-<a href="about.html">About Us</a>
-<a href="contact.html">Contact Us</a>
-<a href="privacy.html">Privacy Policy</a>
-<a href="#">পাঠ</a>
-<a href="#">ভিডিও</a>
-<a href="#">কুইজ</a>
-<a href="#">ধাঁধা</a>
-<a href="#">যোগাযোগ</a>
+<a href="#">হোম</a>
+<a href="#subjects">পাঠ</a>
+<a href="#video">ভিডিও</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </nav>
+
+<div class="container">
 
 <section class="hero">
 <h2>আজকের শিক্ষা</h2>
-<p>গণিত, বাংলা, ইংরেজি, সাধারণ জ্ঞান এবং মজার ধাঁধা।</p>
-<a class="btn" href="#">শেখা শুরু করুন</a>
+<p>গণিত, বাংলা, ইংরেজি, সাধারণ জ্ঞান ও আরও অনেক কিছু।</p>
+<a class="btn" href="#subjects">শেখা শুরু করুন</a>
 </section>
 
-<div class="wrap">
+<h2 id="subjects" class="section-title">📖 বিষয়সমূহ</h2>
 
-<h2>📖 বিষয়সমূহ</h2>
 <div class="cards">
+
 <div class="card">➕ গণিত</div>
 <div class="card">📘 বাংলা</div>
 <div class="card">📗 ইংরেজি</div>
 <div class="card">🌍 সাধারণ জ্ঞান</div>
 <div class="card">🔬 বিজ্ঞান</div>
 <div class="card">🧩 ধাঁধা</div>
+
 </div>
 
-<h2>🎥 শিক্ষামূলক ভিডিও</h2>
-<div class="card">
-আপনার YouTube ভিডিও লিংক এখানে যোগ করতে পারবেন।
-</div>
+<h2 id="video" class="section-title">🎥 শিক্ষামূলক ভিডিও</h2>
 
-<h2>📝 দৈনিক কুইজ</h2>
-<div class="card quiz">
-<p>২ + ৩ = ?</p>
-<button onclick="alert('সঠিক উত্তর: ৫')">উত্তর দেখুন</button>
-</div>
+<div class="video-box">
 
-<h2>⭐ আমাদের লক্ষ্য</h2>
-<div class="card">
-শিশু থেকে বড় সবাইকে সহজ ভাষায় মানসম্মত শিক্ষা পৌঁছে দেওয়া।
-</div>
-
-<h2>📞 যোগাযোগ</h2>
-<div class="card">
 <p>
-🎥 <a href="https://youtube.com/@learningskills12?si=-wSY_Hv50UNeVKhb" target="_blank">
-Learning Skills YouTube Channel
+YouTube Channel:
+<a href="https://youtube.com/@learningskills12?si=-wSY_Hv50UNeVKhb" target="_blank">
+Learning Skills
+</a>
+</p>
+
+</div>
+
+<h2 id="about" class="section-title">ℹ️ About Us</h2>
+
+<div class="about">
+
+<p>
+Learning Skills একটি বাংলা শিক্ষামূলক প্ল্যাটফর্ম।
+এখানে গণিত, বাংলা, ইংরেজি, বিজ্ঞান, সাধারণ জ্ঞান,
+কুইজ এবং শিক্ষামূলক ভিডিও প্রকাশ করা হয়।
+</p>
+
+<p>
+আমাদের লক্ষ্য হলো সহজ ও আনন্দদায়ক উপায়ে শিক্ষার্থীদের
+মানসম্মত শিক্ষা প্রদান করা।
+</p>
+
+</div>
+
+<h2 id="contact" class="section-title">📞 Contact Us</h2>
+
+<div class="contact">
+
+<p>
+📧 Email:
+<a href="mailto:Learningskills2624@gmail.com">
+Learningskills2624@gmail.com
 </a>
 </p>
 
 <p>
-📧 Email: Learningskills2624@gmail.com
+▶️ YouTube:
+<a href="https://youtube.com/@learningskills12?si=-wSY_Hv50UNeVKhb" target="_blank">
+Learning Skills Channel
+</a>
 </p>
 
 <p>
-📘 <a href="https://www.facebook.com/share/1CvSM5rWza/" target="_blank">
+📘 Facebook:
+<a href="https://www.facebook.com/share/1CvSM5rWza/" target="_blank">
 Learning Skills Facebook Page
 </a>
 </p>
+
 </div>
 
 </div>
 
 <footer>
-<h3>Created by Learning Skills</h3>
+
+<h3>Learning Skills</h3>
+
 <p>© 2026 Learning Skills. All Rights Reserved.</p>
+
 </footer>
 
 </body>
