@@ -41,6 +41,37 @@ marquee{background:gold;padding:8px;font-weight:bold}
     height:100px;
     border-radius:50%;
 }
+  .cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+}
+
+.subject-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.12);
+text-align:center;
+text-decoration:none;
+color:#222;
+font-weight:bold;
+font-size:18px;
+transition:0.3s;
+border:2px solid transparent;
+}
+
+.subject-card:hover{
+transform:translateY(-6px);
+background:#f0f9ff;
+border-color:#00aaff;
+}
+
+.subject-icon{
+font-size:35px;
+display:block;
+margin-bottom:10px;
+}
 </style>
 </head>
 <body>
@@ -60,12 +91,7 @@ marquee{background:gold;padding:8px;font-weight:bold}
 <a href="about.html">About Us</a>
 <a href="contact.html">Contact Us</a>
 <a href="privacy.html">Privacy Policy</a>
-<a href="blog.html">Blog</a>
-<a href="path.html">পাঠ</a>
-<a href="video.html">🎥 ভিডিও</a>
-<a href="quiz.html">কুইজ</a>
-<a href="#">ধাঁধা</a>
-<a href="#">যোগাযোগ</a>
+  
   <div style="text-align:center; margin:20px;">
     <input type="text" id="searchBox"
     placeholder="🔍 বিষয় খুঁজুন..."
@@ -99,14 +125,60 @@ function searchContent() {
 
 <div class="wrap">
 
-<h2>📖 বিষয়সমূহ</h2>
+  <h2>📖 বিষয়সমূহ</h2>
+
 <div class="cards">
-<div class="card">➕ গণিত</div>
-<div class="card">📘 বাংলা</div>
-<div class="card">📗 ইংরেজি</div>
-<div class="card">🌍 সাধারণ জ্ঞান</div>
-<div class="card">🔬 বিজ্ঞান</div>
-<div class="card">🧩 ধাঁধা</div>
+
+<a href="math.html" class="subject-card">
+<span class="subject-icon">➕</span>
+গণিত
+</a>
+
+<a href="bangla.html" class="subject-card">
+<span class="subject-icon">📘</span>
+বাংলা
+</a>
+
+<a href="english.html" class="subject-card">
+<span class="subject-icon">📗</span>
+ইংরেজি
+</a>
+
+<a href="gk.html" class="subject-card">
+<span class="subject-icon">🌍</span>
+সাধারণ জ্ঞান
+</a>
+
+<a href="science.html" class="subject-card">
+<span class="subject-icon">🔬</span>
+বিজ্ঞান
+</a>
+
+<a href="dhadha.html" class="subject-card">
+<span class="subject-icon">🧩</span>
+ধাঁধা
+</a>
+
+<a href="blog.html" class="subject-card">
+<span class="subject-icon">📝</span>
+ব্লগ
+</a>
+
+<a href="path.html" class="subject-card">
+<span class="subject-icon">📚</span>
+পাঠ
+</a>
+
+<a href="video.html" class="subject-card">
+<span class="subject-icon">🎥</span>
+ভিডিও
+</a>
+
+<a href="quiz.html" class="subject-card">
+<span class="subject-icon">❓</span>
+কুইজ
+</a>
+
 </div>
 
 <h2>🎥 শিক্ষামূলক ভিডিও</h2>
