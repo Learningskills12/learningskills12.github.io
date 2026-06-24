@@ -41,6 +41,45 @@ marquee{background:gold;padding:8px;font-weight:bold}
     height:100px;
     border-radius:50%;
 }
+  .quiz-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    text-align:center;
+    margin:20px auto;
+    max-width:500px;
+}
+
+.quiz-card h2{
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+.quiz-card button{
+    background:#0066cc;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.quiz-card button:hover{
+    background:#004080;
+}
+
+#result{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+#score{
+    color:#0066cc;
+    font-weight:bold;
+    margin-top:10px;
+}
 </style>
 </head>
 <body>
@@ -114,7 +153,33 @@ function searchContent() {
 আপনার YouTube ভিডিও লিংক এখানে যোগ করতে পারবেন।
 </div>
 
-<h2>📝 দৈনিক কুইজ</h2>
+<div class="quiz-card">
+    <h2>📝 দৈনিক কুইজ</h2>
+
+    <p id="question">১ + ১ = ?</p>
+
+    <button onclick="checkAnswer('2')">২</button>
+    <button onclick="checkAnswer('3')">৩</button>
+    <button onclick="checkAnswer('4')">৪</button>
+
+    <p id="result"></p>
+    <p id="score">স্কোর: 0</p>
+</div>
+
+<script>
+let score = 0;
+
+function checkAnswer(answer){
+    if(answer=="2"){
+        document.getElementById("result").innerHTML="✅ সঠিক উত্তর";
+        score++;
+    }else{
+        document.getElementById("result").innerHTML="❌ ভুল উত্তর";
+    }
+
+    document.getElementById("score").innerHTML="স্কোর: " + score;
+}
+</script>
 <div class="card quiz">
 <p>২ + ৩ = ?</p>
 <button onclick="alert('সঠিক উত্তর: ৫')">উত্তর দেখুন</button>
