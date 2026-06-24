@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Section</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fc;
+    margin:0;
+    padding:20px;
+}
+
+.quiz-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#1e88e5;
+}
+
+.option{
+    display:block;
+    background:#eef3ff;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.option:hover{
+    background:#dbe7ff;
+}
+
+button{
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1565c0;
+}
+
+#result{
+    margin-top:15px;
+    font-weight:bold;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="quiz-card">
+    <h2>📚 গণিত কুইজ</h2>
+
+    <p id="question"></p>
+
+    <div id="options"></div>
+
+    <button onclick="checkAnswer()">উত্তর জমা দিন</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+
+const quiz = {
+question: "2 + 3 = ?",
+options: ["4","5","6","7"],
+answer: "5"
+};
+
+let selectedAnswer = "";
+
+document.getElementById("question").innerText =
+quiz.question;
+
+const optionsDiv =
+document.getElementById("options");
+
+quiz.options.forEach(option => {
+const div = document.createElement("div");
+div.className = "option";
+div.innerText = option;
+
+div.onclick = () =>{
+selectedAnswer = option;
+};
+
+optionsDiv.appendChild(div);
+});
+
+function checkAnswer(){
+
+if(selectedAnswer === quiz.answer){
+document.getElementById("result").innerHTML =
+"✅ সঠিক উত্তর!";
+}
+else{
+document.getElementById("result").innerHTML =
+"❌ ভুল উত্তর!";
+}
+
+}
+
+</script>
+
+</body>
+</html>
