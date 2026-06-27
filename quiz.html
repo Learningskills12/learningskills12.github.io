@@ -91,45 +91,62 @@ button:hover{
 </div>
 
 <script>
+<div class="quiz-card">
+<h3>প্রশ্ন ১ (গণিত)</h3>
+<p>√144 এর মান কত?</p>
+<p>A) 10</p>
+<p>B) 11</p>
+<p>C) 12</p>
+<p>D) 14</p>
 
-const quiz = {
-question: "2 + 3 = ?",
-options: ["4","5","6","7"],
-answer: "5"
-};
+<details>
+<summary>উত্তর দেখুন</summary>
+<p>✅ সঠিক উত্তর: C) 12</p>
+</details>
+</div>
 
-let selectedAnswer = "";
+<div class="quiz-card">
+<h3>প্রশ্ন ২ (বাংলা)</h3>
+<p>'অরণ্য' শব্দের সমার্থক শব্দ কোনটি?</p>
+<p>A) উপবন</p>
+<p>B) বন</p>
+<p>C) মরুভূমি</p>
+<p>D) পাহাড়</p>
 
-document.getElementById("question").innerText =
-quiz.question;
+<details>
+<summary>উত্তর দেখুন</summary>
+<p>✅ সঠিক উত্তর: B) বন</p>
+</details>
+</div>
 
-const optionsDiv =
-document.getElementById("options");
+<div class="quiz-card">
+<h3>প্রশ্ন ৩ (ইতিহাস)</h3>
+<p>পলাশীর যুদ্ধ কত সালে হয়?</p>
+<p>A) 1756</p>
+<p>B) 1757</p>
+<p>C) 1761</p>
+<p>D) 1764</p>
 
-quiz.options.forEach(option => {
-const div = document.createElement("div");
-div.className = "option";
-div.innerText = option;
+<details>
+<summary>উত্তর দেখুন</summary>
+<p>✅ সঠিক উত্তর: B) 1757</p>
+</details>
+</div>
 
-div.onclick = () =>{
-selectedAnswer = option;
-};
+<div class="quiz-card">
+<h3>প্রশ্ন ৪ (GK)</h3>
+<p>ভারতের জাতীয় সঙ্গীত কে রচনা করেন?</p>
+<p>A) বঙ্কিমচন্দ্র চট্টোপাধ্যায়</p>
+<p>B) রবীন্দ্রনাথ ঠাকুর</p>
+<p>C) কাজী নজরুল ইসলাম</p>
+<p>D) শরৎচন্দ্র চট্টোপাধ্যায়</p>
 
-optionsDiv.appendChild(div);
-});
-
-function checkAnswer(){
-
-if(selectedAnswer === quiz.answer){
-document.getElementById("result").innerHTML =
-"✅ সঠিক উত্তর!";
-}
-else{
-document.getElementById("result").innerHTML =
-"❌ ভুল উত্তর!";
-}
-
-}
+<details>
+<summary>উত্তর দেখুন</summary>
+<p>✅ সঠিক উত্তর: B) রবীন্দ্রনাথ ঠাকুর</p>
+</details>
+</div>
+    
 
 </script>
 
