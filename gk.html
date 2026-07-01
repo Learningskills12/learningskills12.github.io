@@ -1,604 +1,173 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>India General Knowledge | Learning Skills</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#eef8ff;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#eef8ff;
 }
 
 header{
-background:linear-gradient(90deg,#003366,#00aaff);
-color:white;
-text-align:center;
-padding:35px 15px;
-}
-
-header h1{
-font-size:38px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
+    background:linear-gradient(90deg,#003366,#00aaff);
+    color:#fff;
+    text-align:center;
+    padding:30px;
 }
 
 .container{
-width:95%;
-max-width:900px;
-margin:auto;
-padding:20px;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 
-.search-box input{
-
-width:100%;
-padding:14px;
-font-size:18px;
-border-radius:10px;
-border:2px solid #00aaff;
-margin-bottom:15px;
-
+#search{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    border:2px solid #00aaff;
+    border-radius:8px;
+    margin-bottom:20px;
 }
 
-select{
-
-width:100%;
-padding:14px;
-font-size:18px;
-border-radius:10px;
-border:2px solid #00aaff;
-margin-bottom:20px;
-
+.gk-card{
+    background:#fff;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
 }
 
-.card{
-
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
-
+.question{
+    font-size:20px;
+    font-weight:bold;
+    color:#0055aa;
 }
 
-.card h2{
-
-color:#0077cc;
-margin-bottom:20px;
-
-}
-
-#question{
-
-font-size:24px;
-margin-bottom:20px;
-line-height:1.6;
-
-}
-
-#answer{
-
-display:none;
-background:#d4edda;
-padding:15px;
-border-left:5px solid green;
-border-radius:8px;
-font-size:18px;
-
-}
-
-.buttons{
-
-text-align:center;
-margin-top:25px;
-
-}
-
-button{
-
-padding:12px 20px;
-font-size:16px;
-background:#0088cc;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-margin:5px;
-
-}
-
-button:hover{
-
-background:#0066aa;
-
-}
-
-.counter{
-
-text-align:center;
-margin:20px;
-font-size:20px;
-font-weight:bold;
-
+.answer{
+    margin-top:10px;
+    color:green;
+    font-size:18px;
 }
 
 footer{
-
-background:#02284f;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
-
+    background:#02284f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
 
 .home{
-
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#00aaff;
-color:white;
-text-decoration:none;
-border-radius:8px;
-
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#00aaff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <h1>🇮🇳 India General Knowledge</h1>
-
 <p>Learning Skills</p>
-
 </header>
 
 <div class="container">
 
-<div class="search-box">
+<input type="text" id="search" placeholder="🔍 প্রশ্ন খুঁজুন..." onkeyup="searchGK()">
 
-<input
-type="text"
-id="search"
-placeholder="🔍 প্রশ্ন খুঁজুন">
+<div id="gkList">
+
+<div class="gk-card">
+<div class="question">১. ভারতের রাজধানী কী?</div>
+<div class="answer">উত্তর: নয়াদিল্লি</div>
+</div>
+
+<div class="gk-card">
+<div class="question">২. ভারতের প্রথম প্রধানমন্ত্রী কে ছিলেন?</div>
+<div class="answer">উত্তর: জওহরলাল নেহরু</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৩. ভারত কবে স্বাধীনতা লাভ করে?</div>
+<div class="answer">উত্তর: ১৫ আগস্ট ১৯৪৭</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৪. ভারতের জাতীয় পশু কী?</div>
+<div class="answer">উত্তর: রয়েল বেঙ্গল টাইগার</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৫. ভারতের জাতীয় পাখি কী?</div>
+<div class="answer">উত্তর: ময়ূর</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৬. ভারতের জাতীয় ফুল কী?</div>
+<div class="answer">উত্তর: পদ্ম</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৭. ভারতের দীর্ঘতম নদী কোনটি?</div>
+<div class="answer">উত্তর: গঙ্গা</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৮. ভারতের বৃহত্তম রাজ্য (আয়তনে) কোনটি?</div>
+<div class="answer">উত্তর: রাজস্থান</div>
+</div>
+
+<div class="gk-card">
+<div class="question">৯. RBI-এর পূর্ণরূপ কী?</div>
+<div class="answer">উত্তর: Reserve Bank of India</div>
+</div>
+
+<div class="gk-card">
+<div class="question">১০. ভারতের মুদ্রার নাম কী?</div>
+<div class="answer">উত্তর: ভারতীয় রুপি (INR)</div>
+</div>
 
 </div>
 
-<select id="category">
-
-<option value="All">সব বিভাগ</option>
-<option value="History">History</option>
-<option value="Geography">Geography</option>
-<option value="Science">Science</option>
-<option value="Polity">Polity</option>
-<option value="Economy">Economy</option>
-
-</select>
-
-<div class="card">
-
-<h2 id="cat">History</h2>
-
-<h3 id="question">
-Loading...
-</h3>
-
-<p id="answer"></p>
-
-<div class="buttons">
-
-<button onclick="showAnswer()">
-👁 উত্তর দেখুন
-</button>
-
-<button onclick="previousQuestion()">
-⬅ Previous
-</button>
-
-<button onclick="randomQuestion()">
-🎲 Random
-</button>
-
-<button onclick="nextQuestion()">
-Next ➡
-</button>
-
 </div>
-
-</div>
-
-<div class="counter">
-
-Question
-<span id="current">1</span>
-/
-<span id="total">0</span>
-
-</div>
-
- <script>
-
-const questions = [
-
-{
-category:"History",
-question:"ভারতের প্রথম প্রধানমন্ত্রী কে ছিলেন?",
-answer:"জওহরলাল নেহরু"
-},
-
-{
-category:"History",
-question:"ভারত কবে স্বাধীনতা লাভ করে?",
-answer:"১৫ আগস্ট ১৯৪৭"
-},
-
-{
-category:"History",
-question:"ভারতের সংবিধান কবে কার্যকর হয়?",
-answer:"২৬ জানুয়ারি ১৯৫০"
-},
-
-{
-category:"Geography",
-question:"ভারতের রাজধানী কী?",
-answer:"নয়াদিল্লি"
-},
-
-{
-category:"Geography",
-question:"ভারতের বৃহত্তম রাজ্য (আয়তনে) কোনটি?",
-answer:"রাজস্থান"
-},
-
-{
-category:"Geography",
-question:"ভারতের দীর্ঘতম নদী কোনটি?",
-answer:"গঙ্গা"
-},
-
-{
-category:"Science",
-question:"জলের রাসায়নিক সংকেত কী?",
-answer:"H₂O"
-},
-
-{
-category:"Science",
-question:"মানবদেহের সবচেয়ে বড় অঙ্গ কোনটি?",
-answer:"ত্বক"
-},
-
-{
-category:"Polity",
-question:"ভারতের রাষ্ট্রপতির সরকারি বাসভবনের নাম কী?",
-answer:"রাষ্ট্রপতি ভবন"
-},
-
-{
-category:"Economy",
-question:"ভারতের কেন্দ্রীয় ব্যাংকের নাম কী?",
-answer:"Reserve Bank of India (RBI)"
-}
-
-// ===== History =====
-,
-{
-category:"History",
-question:"ভারতের জাতির জনক কে?",
-answer:"মহাত্মা গান্ধী"
-},
-{
-category:"History",
-question:"ভারতের প্রথম রাষ্ট্রপতি কে ছিলেন?",
-answer:"ড. রাজেন্দ্র প্রসাদ"
-},
-{
-category:"History",
-question:"লাল কেল্লা কোন শহরে অবস্থিত?",
-answer:"দিল্লি"
-},
-
-// ===== Geography =====
-{
-category:"Geography",
-question:"ভারতের সবচেয়ে বড় রাজ্য (জনসংখ্যায়) কোনটি?",
-answer:"উত্তর প্রদেশ"
-},
-{
-category:"Geography",
-question:"ভারতের সবচেয়ে ছোট রাজ্য কোনটি?",
-answer:"গোয়া"
-},
-{
-category:"Geography",
-question:"তাজমহল কোথায় অবস্থিত?",
-answer:"আগ্রা"
-},
-{
-category:"Geography",
-question:"গেটওয়ে অব ইন্ডিয়া কোথায় অবস্থিত?",
-answer:"মুম্বাই"
-},
-
-// ===== Science =====
-{
-category:"Science",
-question:"মানবদেহে মোট কতটি হাড় থাকে?",
-answer:"২০৬টি"
-},
-{
-category:"Science",
-question:"মানবদেহের সবচেয়ে বড় গ্রন্থি কোনটি?",
-answer:"যকৃত (Liver)"
-},
-{
-category:"Science",
-question:"সূর্য একটি কী?",
-answer:"নক্ষত্র"
-},
-
-// ===== Polity =====
-{
-category:"Polity",
-question:"ভারতের সংসদের উচ্চকক্ষের নাম কী?",
-answer:"রাজ্যসভা"
-},
-{
-category:"Polity",
-question:"ভারতের সংসদের নিম্নকক্ষের নাম কী?",
-answer:"লোকসভা"
-},
-
-// ===== Economy =====
-{
-category:"Economy",
-question:"ভারতের জাতীয় মুদ্রার নাম কী?",
-answer:"ভারতীয় রুপি"
-},
-{
-category:"Economy",
-question:"₹ প্রতীকটি কিসের প্রতীক?",
-answer:"ভারতীয় রুপি"
-}
-,
-// ===== States & Capitals =====
-{
-category:"Geography",
-question:"পশ্চিমবঙ্গের রাজধানী কী?",
-answer:"কলকাতা"
-},
-{
-category:"Geography",
-question:"মহারাষ্ট্রের রাজধানী কী?",
-answer:"মুম্বাই"
-},
-{
-category:"Geography",
-question:"গুজরাটের রাজধানী কী?",
-answer:"গান্ধীনগর"
-},
-{
-category:"Geography",
-question:"বিহারের রাজধানী কী?",
-answer:"পাটনা"
-},
-{
-category:"Geography",
-question:"আসামের রাজধানী কী?",
-answer:"দিসপুর"
-},
-
-// ===== National Symbols =====
-{
-category:"History",
-question:"ভারতের জাতীয় পশু কী?",
-answer:"রয়েল বেঙ্গল টাইগার"
-},
-{
-category:"History",
-question:"ভারতের জাতীয় পাখি কী?",
-answer:"ময়ূর"
-},
-{
-category:"History",
-question:"ভারতের জাতীয় ফুল কী?",
-answer:"পদ্ম"
-},
-{
-category:"History",
-question:"ভারতের জাতীয় ফল কী?",
-answer:"আম"
-},
-{
-category:"History",
-question:"ভারতের জাতীয় সঙ্গীত কী?",
-answer:"জন গণ মন"
-},
-
-// ===== Science =====
-{
-category:"Science",
-question:"অক্সিজেনের রাসায়নিক সংকেত কী?",
-answer:"O₂"
-},
-{
-category:"Science",
-question:"কার্বন ডাই অক্সাইডের রাসায়নিক সংকেত কী?",
-answer:"CO₂"
-},
-{
-category:"Science",
-question:"সূর্যমণ্ডলের সবচেয়ে বড় গ্রহ কোনটি?",
-answer:"বৃহস্পতি (Jupiter)"
-},
-{
-category:"Science",
-question:"পৃথিবীর একমাত্র উপগ্রহের নাম কী?",
-answer:"চাঁদ"
-},
-
-// ===== Economy =====
-{
-category:"Economy",
-question:"ভারতে GST চালু হয় কত সালে?",
-answer:"২০১৭ সালে"
-},
-{
-category:"Economy",
-question:"ভারতের মুদ্রার আন্তর্জাতিক কোড কী?",
-answer:"INR"
-}
-
-];
-
-let filtered=[...questions];
-let current=0;
-
-function loadQuestion(){
-
-document.getElementById("question").innerHTML=filtered[current].question;
-
-document.getElementById("answer").innerHTML="✅ "+filtered[current].answer;
-
-document.getElementById("answer").style.display="none";
-
-document.getElementById("cat").innerHTML=filtered[current].category;
-
-document.getElementById("current").innerHTML=current+1;
-
-document.getElementById("total").innerHTML=filtered.length;
-
-}
-
-function showAnswer(){
-
-let ans=document.getElementById("answer");
-
-ans.style.display=(ans.style.display=="block")?"none":"block";
-
-}
-
-function nextQuestion(){
-
-if(current<filtered.length-1){
-
-current++;
-
-loadQuestion();
-
-}
-
-}
-
-function previousQuestion(){
-
-if(current>0){
-
-current--;
-
-loadQuestion();
-
-}
-
-}
-
-function randomQuestion(){
-
-current=Math.floor(Math.random()*filtered.length);
-
-loadQuestion();
-
-}
-
-document.getElementById("category").onchange=function(){
-
-let value=this.value;
-
-if(value=="All"){
-
-filtered=[...questions];
-
-}else{
-
-filtered=questions.filter(q=>q.category===value);
-
-}
-
-current=0;
-
-loadQuestion();
-
-};
-
-document.getElementById("search").onkeyup=function(){
-
-let text=this.value.toLowerCase();
-
-filtered=questions.filter(q=>
-
-q.question.toLowerCase().includes(text)
-
-);
-
-if(filtered.length==0){
-
-document.getElementById("question").innerHTML="❌ কোনো প্রশ্ন পাওয়া যায়নি";
-
-document.getElementById("answer").style.display="none";
-
-document.getElementById("current").innerHTML="0";
-
-document.getElementById("total").innerHTML="0";
-
-return;
-
-}
-
-current=0;
-
-loadQuestion();
-
-};
-
-window.onload=loadQuestion;
-
- </script>
 
 <footer>
 
-<h2>📚 Learning Skills</h2>
+<h3>Learning Skills</h3>
 
-<p>India General Knowledge Portal</p>
+<a href="index.html" class="home">🏠 Home</a>
 
-<br>
-
-<a href="index.html" class="home">
-🏠 Home Page
-</a>
-
-<p style="margin-top:20px;">
-© 2026 Learning Skills. All Rights Reserved.
-</p>
+<p>© 2026 Learning Skills</p>
 
 </footer>
+
+<script>
+function searchGK(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let cards=document.getElementsByClassName("gk-card");
+
+for(let i=0;i<cards.length;i++){
+
+let text=cards[i].innerText.toLowerCase();
+
+cards[i].style.display=text.includes(input)?"block":"none";
+
+}
+
+}
+</script>
 
 </body>
 </html>
