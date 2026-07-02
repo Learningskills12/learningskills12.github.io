@@ -71,6 +71,45 @@ footer{
     text-decoration:none;
     border-radius:8px;
 }
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:18px;
+margin:25px 0;
+}
+
+.category-card{
+background:white;
+text-decoration:none;
+color:#222;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+transition:.3s;
+border:2px solid transparent;
+}
+
+.category-card:hover{
+transform:translateY(-5px);
+border-color:#00aaff;
+}
+
+.category-card{
+font-size:40px;
+}
+
+.category-card h3{
+margin:10px 0;
+color:#0055aa;
+}
+
+.category-card p{
+font-size:14px;
+color:#666;
+}
+    
 </style>
 </head>
 
@@ -80,30 +119,46 @@ footer{
 <h1>🇮🇳 India General Knowledge</h1>
 <p>Learning Skills</p>
 </header>
-<div class="cards">
+<h2 style="text-align:center;margin:20px 0;color:#0055aa;">
+📚 GK Categories
+</h2>
 
-<a href="history.html" class="subject-card">
-📜<br>History GK
+<div class="category-grid">
+
+<a href="history.html" class="category-card">
+📜
+<h3>History GK</h3>
+<p>Indian History Questions</p>
 </a>
 
-<a href="geography.html" class="subject-card">
-🌍<br>Geography GK
+<a href="geography.html" class="category-card">
+🌍
+<h3>Geography GK</h3>
+<p>Indian Geography Questions</p>
 </a>
 
-<a href="science.html" class="subject-card">
-🧪<br>Science GK
+<a href="science.html" class="category-card">
+🧪
+<h3>Science GK</h3>
+<p>Science Questions</p>
 </a>
 
-<a href="polity.html" class="subject-card">
-🏛️<br>Polity GK
+<a href="polity.html" class="category-card">
+🏛️
+<h3>Polity GK</h3>
+<p>Indian Constitution</p>
 </a>
 
-<a href="economy.html" class="subject-card">
-💰<br>Economy GK
+<a href="economy.html" class="category-card">
+💰
+<h3>Economy GK</h3>
+<p>Economy Questions</p>
 </a>
 
-<a href="static-gk.html" class="subject-card">
-⭐<br>Static GK
+<a href="static-gk.html" class="category-card">
+⭐
+<h3>Static GK</h3>
+<p>Important GK</p>
 </a>
 
 </div>
