@@ -1576,7 +1576,19 @@ onkeyup="searchHistory()">
 <p>© 2026 Learning Skills.All Rights Reserved</p>
 
 </footer>
+<script>
+function searchHistory() {
+  let input = document.getElementById("search").value.toLowerCase();
+  let cards = document.querySelectorAll(".history-card");
 
+  cards.forEach(card => {
+    let text = card.innerText.toLowerCase();
+    card.style.display = text.includes(input) ? "block" : "none";
+  });
+}
+</script>
 
+</body>
+</html>
 
 
