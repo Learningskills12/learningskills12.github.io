@@ -156,7 +156,7 @@ background:#111;
 color:#fff;
 }
 
-.dark .science-card{
+.dark .geography-card{
 background:#222;
 color:#fff;
 }
@@ -1502,11 +1502,11 @@ document.getElementById("progressBar").style.width = scrolled + "%";
 };
 
 // Live Search
-function searchQuestion(){
+function searchQuestion(){you 
 
 let input=document.getElementById("searchBox").value.toUpperCase();
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("geography-card");
 
 for(let i=0;i<card.length;i++){
 
@@ -1536,7 +1536,7 @@ document.body.classList.toggle("dark");
 // Random Question
 function randomQuestion(){
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("geography-card");
 
 let random=Math.floor(Math.random()*card.length);
 
