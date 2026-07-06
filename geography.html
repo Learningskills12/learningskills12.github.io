@@ -106,12 +106,72 @@ footer{
     padding:20px;
     margin-top:30px;
 }
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:6px;
+background:#ff9800;
+z-index:9999;
+}
+
+#searchBox{
+width:100%;
+padding:14px;
+font-size:17px;
+border-radius:10px;
+border:2px solid #673ab7;
+margin:20px 0;
+outline:none;
+}
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:25px;
+right:20px;
+padding:15px;
+border:none;
+border-radius:50%;
+font-size:20px;
+background:#673ab7;
+color:#fff;
+cursor:pointer;
+z-index:999;
+}
+
+button{
+padding:10px 18px;
+border:none;
+background:#ff9800;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+}
+
+.dark{
+background:#111;
+color:#fff;
+}
+
+.dark .science-card{
+background:#222;
+color:#fff;
+}
+
+.dark .answer{
+background:#333;
+color:#fff;
+}
+
 </style>
 
 </head>
 
 <body>
-
+<div id="progressBar"></div>
 <header>
 
 <h1>🌍 Indian Geography GK</h1>
@@ -119,7 +179,11 @@ footer{
 <p>Learning Skills</p>
 
 </header>
+<input type="text" id="searchBox" placeholder="🔍 Search Question..." onkeyup="searchQuestion()">
 
+<button onclick="darkMode()">🌙 Dark Mode</button>
+
+<button onclick="randomQuestion()">🎲 Random Question</button>
 <div class="container">
 
 <div class="search-box">
@@ -1422,17 +1486,98 @@ onkeyup="searchGeography()">
 
 </footer>
 
+<button id="topBtn" onclick="topFunction()">⬆</button>
 
+<script>
 
+// Progress Bar
+window.onscroll = function () {
 
-  
+let winScroll = document.documentElement.scrollTop;
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let scrolled = (winScroll / height) * 100;
 
+document.getElementById("progressBar").style.width = scrolled + "%";
 
+};
 
-  
+// Live Search
+function searchQuestion(){
 
+let input=document.getElementById("searchBox").value.toUpperCase();
 
+let card=document.getElementsByClassName("science-card");
 
-  
+for(let i=0;i<card.length;i++){
 
-  
+let txt=card[i].innerText;
+
+if(txt.toUpperCase().indexOf(input)>-1){
+
+card[i].style.display="block";
+
+}else{
+
+card[i].style.display="none";
+
+}
+
+}
+
+}
+
+// Dark Mode
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+// Random Question
+function randomQuestion(){
+
+let card=document.getElementsByClassName("science-card");
+
+let random=Math.floor(Math.random()*card.length);
+
+card[random].scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+// Back To Top
+window.addEventListener("scroll",function(){
+
+let btn=document.getElementById("topBtn");
+
+if(document.documentElement.scrollTop>300){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+});
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
