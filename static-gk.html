@@ -101,18 +101,103 @@ transition:.3s;
 background:#4527a0;
 }
 
+#searchBox{
+width:100%;
+padding:14px;
+font-size:17px;
+border-radius:10px;
+border:2px solid #673ab7;
+margin:20px 0;
+outline:none;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:6px;
+background:#ff9800;
+z-index:9999;
+}
+
+button{
+padding:10px 18px;
+border:none;
+background:#ff9800;
+color:white;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .science-card{
+background:#222;
+color:white;
+}
+
+.dark .answer{
+background:#333;
+color:#fff;
+}
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:25px;
+
+right:20px;
+
+padding:15px;
+
+border:none;
+
+border-radius:50%;
+
+font-size:20px;
+
+background:#673ab7;
+
+color:white;
+
+cursor:pointer;
+
+}
+  
 </style>
 
 </head>
 
 <body>
+<div id="progressBar"></div>
 
 <header>
 
+<button onclick="randomQuestion()">
+
+🎲 Random Question
+
+</button>
+  
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search Question..."
+onkeyup="searchQuestion()">
 <h1>📚 Static GK</h1>
 
 <p>Static General Knowledge Questions & Answers</p>
-
+<button onclick="darkMode()">
+🌙 Dark Mode
+</button>
 </header>
 
 <div class="container">
@@ -1319,6 +1404,10 @@ background:#4527a0;
 
 </div>
 
+<p style="text-align:center;padding:15px;">
+Made with ❤️ by Learning Skills
+</p>
+  
 <footer>
 
 <h2>📚 Learning Skills</h2>
@@ -1347,6 +1436,131 @@ background:#4527a0;
 
 </footer>
 
+<button id="topBtn" onclick="topFunction()">
+⬆
+</button>
+  
+<script>
+
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+};
+
+</script>
+<script>
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+</script>
+<script>
+
+function searchQuestion(){
+
+let input=document.getElementById("searchBox").value.toUpperCase();
+
+let card=document.getElementsByClassName("science-card");
+
+for(let i=0;i<card.length;i++){
+
+let txt=card[i].innerText;
+
+if(txt.toUpperCase().indexOf(input)>-1){
+
+card[i].style.display="block";
+
+}else{
+
+card[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+<script>
+
+window.addEventListener("scroll",function(){
+
+let btn=document.getElementById("topBtn");
+
+if(document.documentElement.scrollTop>300){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+});
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+<script>
+
+function randomQuestion(){
+
+let card=document.getElementsByClassName("science-card");
+
+let random=Math.floor(Math.random()*card.length);
+
+card[random].scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+<script>
+
+let visit=localStorage.getItem("visit");
+
+if(visit==null){
+
+visit=1;
+
+}else{
+
+visit++;
+
+}
+
+localStorage.setItem("visit",visit);
+
+console.log("Visitors:",visit);
+
+</script>
+  
 </body>
 </html>
 
