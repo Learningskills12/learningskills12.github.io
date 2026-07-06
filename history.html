@@ -152,7 +152,7 @@ background:#111;
 color:#fff;
 }
 
-.dark .science-card{
+.dark .history-card{
 background:#222;
 color:#fff;
 }
@@ -1663,7 +1663,7 @@ function searchQuestion(){
 
 let input=document.getElementById("searchBox").value.toUpperCase();
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("history-card");
 
 for(let i=0;i<card.length;i++){
 
@@ -1693,7 +1693,7 @@ document.body.classList.toggle("dark");
 // Random Question
 function randomQuestion(){
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("history-card");
 
 let random=Math.floor(Math.random()*card.length);
 
