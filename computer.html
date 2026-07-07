@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Computer Learning | Learning Skills</title>
+<title>Computer Blog | Learning Skills</title>
+
+<meta name="description" content="Computer Learning Notes, Tutorials, Tips & Tricks in Bengali">
+
+<meta name="keywords" content="Computer, CPU, RAM, Motherboard, Keyboard, Mouse, Learning Skills">
+
+<link rel="icon" href="logo.png">
 
 <style>
 
@@ -14,34 +21,101 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#eef5fb;
+color:#222;
 }
+
+/* Progress Bar */
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+/* Header */
 
 header{
 background:linear-gradient(90deg,#0066cc,#00b7ff);
 color:white;
-padding:25px;
 text-align:center;
-font-size:30px;
-font-weight:bold;
+padding:25px;
 box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+/* Search */
+
 .search-box{
-width:90%;
-max-width:600px;
+width:92%;
+max-width:650px;
 display:block;
 margin:20px auto;
-padding:12px;
-border-radius:10px;
+padding:14px;
 border:none;
-outline:none;
+border-radius:12px;
 font-size:16px;
-box-shadow:0 2px 8px rgba(0,0,0,.2);
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
 }
+
+/* Buttons */
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#007bff;
+color:white;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+/* Topic Counter */
+
+.counter{
+text-align:center;
+margin-bottom:20px;
+font-size:20px;
+font-weight:bold;
+color:#0066cc;
+}
+
+/* Container */
 
 .container{
 width:95%;
@@ -49,650 +123,574 @@ max-width:900px;
 margin:auto;
 }
 
+/* Card */
+
 .card{
-
-background:white;
-
-margin:18px 0;
-
+background:#fff;
 padding:20px;
-
+margin:18px 0;
 border-radius:15px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-
+box-shadow:0 5px 15px rgba(0,0,0,.12);
 transition:.3s;
-
 border-left:8px solid #2196f3;
-
 }
 
 .card:hover{
-
 transform:translateY(-5px);
-
 }
 
 .card h2{
-
 color:#0066cc;
-
-margin-bottom:12px;
-
-font-size:25px;
-
+margin-bottom:10px;
+font-size:28px;
 }
 
 .card p{
-
 font-size:16px;
-
 line-height:1.8;
-
 color:#555;
-
 }
 
-.btn{
-
+.read-btn{
 display:inline-block;
-
 margin-top:15px;
-
 padding:10px 18px;
-
 background:#007bff;
-
-color:white;
-
+color:#fff;
 text-decoration:none;
-
 border-radius:8px;
-
 font-weight:bold;
-
 }
 
-.btn:hover{
-
-background:#004ea8;
-
+.read-btn:hover{
+background:#0056b3;
 }
 
-footer{
+.new{
+background:#ff1744;
+color:#fff;
+padding:3px 8px;
+font-size:11px;
+border-radius:20px;
+margin-left:8px;
+}
 
-margin-top:30px;
-
-background:#003366;
-
-color:white;
-
-padding:18px;
-
-text-align:center;
-
+.popular{
+background:#28a745;
+color:#fff;
+padding:3px 8px;
+font-size:11px;
+border-radius:20px;
+margin-left:8px;
 }
 
 </style>
 
 </head>
-<body>
-
-<!-- Progress Bar -->
-<div id="progressBar"></div>
-
-<!-- Header -->
-<header>
-💻 Computer Learning Hub
-<p style="font-size:16px;margin-top:8px;font-weight:normal;">
-Learning Skills | Learn Computer Step by Step
-</p>
-</header>
-
-<!-- Search Box -->
-<input
-type="text"
-id="searchBox"
-class="search-box"
-placeholder="🔍 Search Computer Topic..."
-onkeyup="searchCard()">
-
-<!-- Buttons -->
-<div style="text-align:center;margin-bottom:20px;">
-
-<button onclick="darkMode()" class="btn">
-🌙 Dark Mode
-</button>
-
-<button onclick="randomCard()" class="btn">
-🎲 Random Topic
-</button>
-
-</div>
-
-<!-- Statistics -->
-
-<div style="text-align:center;margin-bottom:20px;">
-
-<h3>
-
-📚 Total Topics :
-
-<span id="topicCount"></span>
-
-</h3>
-
-</div>
-
-<!-- Container -->
-
-<div class="container">
-
-<!-- Card 1 -->
-
-<div class="card">
-
-<h2>🖥️ Computer কী?</h2>
-
-<p>
-
-কম্পিউটার একটি Electronic Device যা Data গ্রহণ করে, Process করে এবং Output প্রদান করে।
-
-</p>
-
-<a href="computer-what-is.html" class="btn">
-
-বিস্তারিত পড়ুন →
-
-</a>
-
-</div>
-
-<!-- Card 2 -->
-
-<div class="card">
-
-<h2>🧠 CPU কী?</h2>
-
-<p>
-
-CPU হলো কম্পিউটারের Brain।
-
-এটি সকল নির্দেশনা Processing করে।
-
-</p>
-
-<a href="cpu.html" class="btn">
-
-বিস্তারিত পড়ুন →
-
-</a>
-
-</div>
-
-<!-- Card 3 -->
-
-<div class="card">
-
-<h2>💾 RAM কী?</h2>
-
-<p>
-
-RAM হলো Temporary Memory যেখানে চলমান ডেটা সংরক্ষিত থাকে।
-
-</p>
-
-<a href="ram.html" class="btn">
-
-বিস্তারিত পড়ুন →
-
-</a>
-
-</div>
-
-<!-- Card 4 -->
-
-<div class="card">
-
-<h2>💿 ROM কী?</h2>
-
-<p>
-
-ROM হলো Permanent Memory যেখানে Firmware সংরক্ষিত থাকে।
-
-</p>
-
-<a href="rom.html" class="btn">
-
-বিস্তারিত পড়ুন →
-
-</a>
-
-</div>
-
-<!-- Card 5 -->
-
-<div class="card">
-
-<h2>🟩 Motherboard কী?</h2>
-
-<p>
-
-Motherboard হলো কম্পিউটারের প্রধান সার্কিট বোর্ড।
-
-</p>
-
-<a href="motherboard.html" class="btn">
-
-বিস্তারিত পড়ুন →
-
-</a>
-
-</div>
-
-<!-- এখান থেকে একইভাবে নতুন Card যোগ করবেন -->
-
-</div>
-    
-<body>
-
-<header>
-
-💻 Computer Blog
-
-</header>
-
-<div class="container">
+<!-- RAM -->
 
 <div class="blog-card">
-
 <h2>💾 RAM কী?</h2>
-
 <p>
 RAM হলো কম্পিউটারের অস্থায়ী মেমোরি। এটি কম্পিউটারকে দ্রুত কাজ করতে সাহায্য করে।
 </p>
-
 <a href="ram.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- CPU -->
+
 <div class="blog-card">
-
-<h2>🖥 CPU কী?</h2>
-
+<h2>🖥️ CPU কী?</h2>
 <p>
 CPU হলো কম্পিউটারের মস্তিষ্ক। এটি সকল নির্দেশনা সম্পাদন করে।
 </p>
-
 <a href="cpu.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- Motherboard -->
+
 <div class="blog-card">
-
-<h2> Motherboard কী?</h2>
-
+<h2>🟩 Motherboard কী?</h2>
 <p>
-মাদারবোর্ড হলো কম্পিউটারের প্রধান সার্কিট বোর্ড, যা CPU, RAM, গ্রাফিক্স কার্ড, স্টোরেজ এবং অন্যান্য সব হার্ডওয়্যার উপাদানকে সংযুক্ত করে এবং তাদের মধ্যে যোগাযোগ স্থাপন করে।
+মাদারবোর্ড হলো কম্পিউটারের প্রধান সার্কিট বোর্ড, যা CPU, RAM, গ্রাফিক্স কার্ড, স্টোরেজ এবং অন্যান্য হার্ডওয়্যারকে সংযুক্ত করে।
 </p>
-
 <a href="motherboard.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- ROM -->
+
 <div class="blog-card">
-
-<h2> 💿ROM কী?</h2>
-
+<h2>💿 ROM কী?</h2>
 <p>
-ROM-এর পূর্ণরূপ হলো Read Only Memory। এটি কম্পিউটারের একটি স্থায়ী (Non-Volatile) মেমোরি, যেখানে গুরুত্বপূর্ণ নির্দেশনা (Firmware) সংরক্ষিত থাকে।
+ROM (Read Only Memory) হলো কম্পিউটারের স্থায়ী মেমোরি যেখানে Firmware সংরক্ষিত থাকে।
 </p>
-
 <a href="rom.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- Hard Disk -->
+
 <div class="blog-card">
-
-<h2> Harddisk কী?</h2>
-
+<h2>💽 Hard Disk কী?</h2>
 <p>
-Harddisk হলো কম্পিউটারের প্রধান স্থায়ী স্টোরেজ ডিভাইস, যেখানে অপারেটিং সিস্টেম, প্রোগ্রাম ও ফাইলগুলো দীর্ঘদিন ধরে সংরক্ষণ করা হয়।
+Hard Disk হলো কম্পিউটারের প্রধান স্থায়ী স্টোরেজ যেখানে Operating System ও ফাইল সংরক্ষণ করা হয়।
 </p>
-
 <a href="harddisk.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- SSD -->
+
 <div class="blog-card">
-
-<h2> ⚡ SSD কী?</h2>
-
+<h2>⚡ SSD কী?</h2>
 <p>
-SSD (Solid State Drive) হলো দ্রুতগতির স্টোরেজ ডিভাইস, যা Hard Disk-এর তুলনায় অনেক দ্রুত কাজ করে।
+SSD (Solid State Drive) একটি দ্রুতগতির স্টোরেজ ডিভাইস, যা Hard Disk-এর তুলনায় অনেক দ্রুত।
 </p>
 <a href="ssd.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
-<div class="blog-card">
+<!-- Keyboard -->
 
+<div class="blog-card">
 <h2>⌨️ Keyboard কী?</h2>
-    <p>Keyboard একটি Input Device যার মাধ্যমে লেখা, সংখ্যা ও বিভিন্ন নির্দেশনা কম্পিউটারে দেওয়া হয়।</p>
+<p>
+Keyboard একটি Input Device যার মাধ্যমে লেখা, সংখ্যা ও বিভিন্ন নির্দেশনা কম্পিউটারে দেওয়া হয়।
+</p>
 <a href="keyboard.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
-<div class="blog-card">
+<!-- Mouse -->
 
-  <h2>🖱️ Mouse কী?</h2>
-    <p>Mouse একটি Pointing Device যার মাধ্যমে কম্পিউটারের বিভিন্ন কাজ সহজে নিয়ন্ত্রণ করা যায়।</p>
+<div class="blog-card">
+<h2>🖱️ Mouse কী?</h2>
+<p>
+Mouse একটি Pointing Device যার মাধ্যমে কম্পিউটারের বিভিন্ন কাজ সহজে নিয়ন্ত্রণ করা যায়।
+</p>
 <a href="mouse.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
-<div class="blog-card">
 
- <h2>🖥️ Monitor কী?</h2>
-    <p>Monitor একটি Output Device যা কম্পিউটারের সকল তথ্য ও ছবি স্ক্রিনে প্রদর্শন করে।</p>
+<!-- Monitor -->
+
+<div class="blog-card">
+<h2>🖥️ Monitor কী?</h2>
+<p>
+Monitor একটি Output Device যা কম্পিউটারের তথ্য ও ছবি স্ক্রিনে প্রদর্শন করে।
+</p>
 <a href="monitor.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
-<div class="blog-card">
+<!-- Printer -->
 
-    <h2>🖨️ Printer কী?</h2>
-    <p>Printer একটি Output Device যা কম্পিউটারের তথ্য কাগজে প্রিন্ট করে।</p>
+<div class="blog-card">
+<h2>🖨️ Printer কী?</h2>
+<p>
+Printer একটি Output Device যা কম্পিউটারের তথ্য কাগজে প্রিন্ট করে।
+</p>
 <a href="printer.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
-<div class="blog-card">
 
-    <h2>📠 Scanner কী?</h2>
-    <p>Scanner একটি Input Device যা কাগজে থাকা লেখা ও ছবিকে ডিজিটাল ফাইলে রূপান্তর করে।</p>
+<!-- Scanner -->
+
+<div class="blog-card">
+<h2>📠 Scanner কী?</h2>
+<p>
+Scanner একটি Input Device যা কাগজের লেখা ও ছবিকে ডিজিটাল ফাইলে রূপান্তর করে।
+</p>
 <a href="scanner.html" class="read-btn">
 বিস্তারিত পড়ুন →
 </a>
-
 </div>
-    
-<div style="text-align:center">
 
-<a href="index.html" class="home-btn">
-🏠 হোম পেজে ফিরে যান
+<!-- GPU -->
+
+<div class="blog-card">
+<h2>🎮 GPU কী?</h2>
+<p>
+GPU (Graphics Processing Unit) কম্পিউটারের Graphics, Video Editing ও Gaming-এর জন্য ব্যবহৃত হয়।
+</p>
+<a href="gpu.html" class="read-btn">
+বিস্তারিত পড়ুন →
 </a>
-
 </div>
 
+<!-- Power Supply -->
+
+<div class="blog-card">
+<h2>⚡ Power Supply (SMPS) কী?</h2>
+<p>
+SMPS কম্পিউটারের প্রতিটি Hardware-এ সঠিক পরিমাণ বিদ্যুৎ সরবরাহ করে।
+</p>
+<a href="smps.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
 </div>
 
-<div class="footer">
+<!-- BIOS -->
 
-© 2026 Learning Skills
-
+<div class="blog-card">
+<h2>🛠️ BIOS কী?</h2>
+<p>
+BIOS কম্পিউটার চালু হওয়ার সময় Hardware পরীক্ষা করে Operating System চালু করতে সাহায্য করে।
+</p>
+<a href="bios.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
 </div>
 
-    <!-- Back To Top Button -->
-<button onclick="topFunction()" id="topBtn">⬆</button>
+<!-- Cache Memory -->
+
+<div class="blog-card">
+<h2>🚀 Cache Memory কী?</h2>
+<p>
+Cache Memory CPU-এর খুব দ্রুতগতির Memory যা Processing Speed বাড়াতে সাহায্য করে।
+</p>
+<a href="cache-memory.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- USB -->
+
+<div class="blog-card">
+<h2>🔌 USB কী?</h2>
+<p>
+USB (Universal Serial Bus) বিভিন্ন Device কম্পিউটারের সাথে সংযুক্ত করার একটি জনপ্রিয় প্রযুক্তি।
+</p>
+<a href="usb.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- HDMI -->
+
+<div class="blog-card">
+<h2>📺 HDMI কী?</h2>
+<p>
+HDMI-এর মাধ্যমে একই Cable দিয়ে Video ও Audio একসাথে পাঠানো যায়।
+</p>
+<a href="hdmi.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Pendrive -->
+
+<div class="blog-card">
+<h2>💾 Pen Drive কী?</h2>
+<p>
+Pen Drive একটি Portable Storage Device যেখানে সহজে File সংরক্ষণ ও আদান-প্রদান করা যায়।
+</p>
+<a href="pendrive.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Memory Card -->
+
+<div class="blog-card">
+<h2>📀 Memory Card কী?</h2>
+<p>
+Memory Card মোবাইল, ক্যামেরা ও অন্যান্য Device-এ তথ্য সংরক্ষণের জন্য ব্যবহৃত হয়।
+</p>
+<a href="memory-card.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Webcam -->
+
+<div class="blog-card">
+<h2>📷 Webcam কী?</h2>
+<p>
+Webcam একটি Input Device যা Video Call ও Online Meeting-এর জন্য ব্যবহৃত হয়।
+</p>
+<a href="webcam.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Speaker -->
+
+<div class="blog-card">
+<h2>🔊 Speaker কী?</h2>
+<p>
+Speaker একটি Output Device যা কম্পিউটারের শব্দ শোনার জন্য ব্যবহৃত হয়।
+</p>
+<a href="speaker.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Windows -->
+
+<div class="blog-card">
+<h2>🪟 Windows কী?</h2>
+<p>
+Windows হলো Microsoft-এর তৈরি বিশ্বের সবচেয়ে জনপ্রিয় Operating System।
+</p>
+<a href="windows.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Linux -->
+
+<div class="blog-card">
+<h2>🐧 Linux কী?</h2>
+<p>
+Linux একটি Free ও Open Source Operating System, যা Server ও Programming-এর জন্য খুব জনপ্রিয়।
+</p>
+<a href="linux.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Internet -->
+
+<div class="blog-card">
+<h2>🌐 Internet কী?</h2>
+<p>
+Internet হলো বিশ্বের সবচেয়ে বড় Network, যার মাধ্যমে তথ্য আদান-প্রদান করা হয়।
+</p>
+<a href="internet.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Wi-Fi -->
+
+<div class="blog-card">
+<h2>📶 Wi-Fi কী?</h2>
+<p>
+Wi-Fi একটি Wireless Technology যার মাধ্যমে তার ছাড়াই Internet ব্যবহার করা যায়।
+</p>
+<a href="wifi.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Bluetooth -->
+
+<div class="blog-card">
+<h2>🔵 Bluetooth কী?</h2>
+<p>
+Bluetooth একটি Short-range Wireless Technology যার মাধ্যমে Device-এর মধ্যে Data আদান-প্রদান করা যায়।
+</p>
+<a href="bluetooth.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Antivirus -->
+
+<div class="blog-card">
+<h2>🛡️ Antivirus কী?</h2>
+<p>
+Antivirus Software কম্পিউটারকে Virus ও Malware থেকে সুরক্ষা দেয়।
+</p>
+<a href="antivirus.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- MS Word -->
+
+<div class="blog-card">
+<h2>📄 MS Word কী?</h2>
+<p>
+MS Word একটি জনপ্রিয় Word Processing Software যার মাধ্যমে Document তৈরি করা হয়।
+</p>
+<a href="ms-word.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- MS Excel -->
+
+<div class="blog-card">
+<h2>📊 MS Excel কী?</h2>
+<p>
+MS Excel একটি Spreadsheet Software যা হিসাব, Chart ও Data Analysis-এর জন্য ব্যবহৃত হয়।
+</p>
+<a href="ms-excel.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- PowerPoint -->
+
+<div class="blog-card">
+<h2>📽️ MS PowerPoint কী?</h2>
+<p>
+MS PowerPoint Presentation তৈরির জন্য ব্যবহৃত একটি জনপ্রিয় Software।
+</p>
+<a href="powerpoint.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- PDF -->
+
+<div class="blog-card">
+<h2>📕 PDF কী?</h2>
+<p>
+PDF (Portable Document Format) এমন একটি File Format যা সব Device-এ একইভাবে দেখা যায়।
+</p>
+<a href="pdf.html" class="read-btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card -->
+<div class="card">
+<h2>🌐 Internet কী?</h2>
+
+<p>
+Internet হলো বিশ্বের বিভিন্ন কম্পিউটারকে সংযুক্ত করা একটি বিশাল নেটওয়ার্ক, যার মাধ্যমে তথ্য আদান-প্রদান করা যায়।
+</p>
+
+<a href="internet.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>📧 Email কী?</h2>
+
+<p>
+Email (Electronic Mail) হলো ইন্টারনেটের মাধ্যমে বার্তা পাঠানো ও গ্রহণ করার একটি সহজ মাধ্যম।
+</p>
+
+<a href="email.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card -->
+<div class="card">
+<h2>🌍 Web Browser কী?</h2>
+
+<p>
+Web Browser এমন একটি সফটওয়্যার যার মাধ্যমে Internet-এর Website দেখা যায়। যেমন Chrome, Edge, Firefox।
+</p>
+
+<a href="browser.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card -->
+<div class="card">
+<h2>🔎 Search Engine কী?</h2>
+
+<p>
+Search Engine এমন একটি সিস্টেম যা ইন্টারনেটে তথ্য খুঁজে বের করতে সাহায্য করে। যেমন Google, Bing।
+</p>
+
+<a href="search-engine.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>☁️ Cloud Storage কী?</h2>
+
+<p>
+Cloud Storage হলো অনলাইনে ফাইল সংরক্ষণের ব্যবস্থা। যেমন Google Drive, OneDrive, Dropbox।
+</p>
+
+<a href="cloud-storage.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card -->
+<div class="card">
+<h2>🛡️ Cyber Security কী?</h2>
+
+<p>
+Cyber Security কম্পিউটার, মোবাইল ও অনলাইন তথ্যকে হ্যাকার এবং ভাইরাস থেকে নিরাপদ রাখার ব্যবস্থা।
+</p>
+
+<a href="cyber-security.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>🔑 Password Security</h2>
+
+<p>
+শক্তিশালী Password ব্যবহার করলে আপনার Account নিরাপদ থাকে এবং হ্যাক হওয়ার সম্ভাবনা কমে যায়।
+</p>
+
+<a href="password-security.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>💻 Windows কী?</h2>
+
+<p>
+Windows হলো Microsoft-এর তৈরি সবচেয়ে জনপ্রিয় Operating System, যা কম্পিউটার পরিচালনা করে।
+</p>
+
+<a href="windows.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>🐧 Linux কী?</h2>
+
+<p>
+Linux একটি ওপেন সোর্স Operating System যা Server ও Programming-এর জন্য খুবই জনপ্রিয়।
+</p>
+
+<a href="linux.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+<!-- Card  -->
+<div class="card">
+<h2>🍎 macOS কী?</h2>
+
+<p>
+macOS হলো Apple কোম্পানির তৈরি Operating System যা Mac Computer-এ ব্যবহার করা হয়।
+</p>
+
+<a href="macos.html" class="btn">
+বিস্তারিত পড়ুন →
+</a>
+</div>
+
+
+
+
+    
 
-<script>
-
-//==============================
-// Topic Counter
-//==============================
-document.getElementById("topicCount").innerHTML =
-document.querySelectorAll(".card").length;
-
-
-//==============================
-// Search Function
-//==============================
-function searchCard(){
-
-let input=document.getElementById("searchBox").value.toUpperCase();
-
-let cards=document.querySelectorAll(".card");
-
-cards.forEach(function(card){
-
-let text=card.innerText.toUpperCase();
-
-if(text.indexOf(input)>-1){
-
-card.style.display="block";
-
-}else{
-
-card.style.display="none";
-
-}
-
-});
-
-}
-
-
-//==============================
-// Dark Mode (Save)
-//==============================
-
-if(localStorage.getItem("darkmode")=="on"){
-
-document.body.classList.add("dark");
-
-}
-
-function darkMode(){
-
-document.body.classList.toggle("dark");
-
-if(document.body.classList.contains("dark")){
-
-localStorage.setItem("darkmode","on");
-
-}else{
-
-localStorage.setItem("darkmode","off");
-
-}
-
-}
-
-
-//==============================
-// Random Card
-//==============================
-
-function randomCard(){
-
-let cards=document.querySelectorAll(".card");
-
-let random=Math.floor(Math.random()*cards.length);
-
-cards[random].scrollIntoView({
-
-behavior:"smooth"
-
-});
-
-}
-
-
-//==============================
-// Progress Bar
-//==============================
-
-window.onscroll=function(){
-
-let winScroll=document.documentElement.scrollTop;
-
-let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-
-let scrolled=(winScroll/height)*100;
-
-document.getElementById("progressBar").style.width=scrolled+"%";
-
-};
-
-
-//==============================
-// Back To Top
-//==============================
-
-window.addEventListener("scroll",function(){
-
-if(document.documentElement.scrollTop>300){
-
-document.getElementById("topBtn").style.display="block";
-
-}else{
-
-document.getElementById("topBtn").style.display="none";
-
-}
-
-});
-
-function topFunction(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-}
-
-</script>
-
-<style>
-
-/* Progress Bar */
-
-#progressBar{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-height:5px;
-
-width:0;
-
-background:#ff9800;
-
-z-index:9999;
-
-}
-
-/* Back To Top */
-
-#topBtn{
-
-display:none;
-
-position:fixed;
-
-bottom:20px;
-
-right:20px;
-
-border:none;
-
-background:#007bff;
-
-color:white;
-
-padding:15px;
-
-font-size:20px;
-
-border-radius:50%;
-
-cursor:pointer;
-
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-
-}
-
-#topBtn:hover{
-
-background:#0056b3;
-
-}
-
-
-/* Dark Mode */
-
-.dark{
-
-background:#111;
-
-color:white;
-
-}
-
-.dark .card{
-
-background:#222;
-
-color:white;
-
-}
-
-.dark .card h2{
-
-color:#4fc3f7;
-
-}
-
-.dark .card p{
-
-color:#ddd;
-
-}
-
-.dark header{
-
-background:#000;
-
-}
-
-.dark .search-box{
-
-background:#333;
-
-color:white;
-
-border:1px solid #666;
-
-}
-
-</style>
-
-
-</body>
-</html>
