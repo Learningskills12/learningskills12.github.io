@@ -211,7 +211,27 @@ font-weight:bold;
         font-size:2.5rem;
     }
 }
-    
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card,
+.dark .subject-card,
+.dark .hero{
+background:#222;
+color:white;
+}
+
+.dark nav{
+background:black;
+}
+
+.dark footer{
+background:black;
+}
+  
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9P079JQS0"></script>
@@ -270,6 +290,12 @@ function searchContent() {
 </script>
 </nav>
 
+ <div style="text-align:center;margin:15px;">
+<button onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
+</div>
+  
 <section class="hero">
     <h2>🎓 Learning Skills এ স্বাগতম</h2>
 
@@ -312,6 +338,18 @@ function searchContent() {
 
 <div class="wrap">
 
+<section class="card">
+<h2>🔥 Latest Updates</h2>
+
+<ul>
+<li>🆕 Indian History GK (100+ Questions)</li>
+<li>🆕 Computer MCQ Added</li>
+<li>🆕 English Grammar Updated</li>
+<li>🆕 New Quiz Available</li>
+</ul>
+
+</section>
+  
   <h2>📖 বিষয়সমূহ</h2>
 
 <div class="cards">
@@ -372,7 +410,18 @@ Tips & Tricks
 </a>
 
 </div>
+<section class="card">
 
+<h2>⭐ Popular Topics</h2>
+
+<p>
+🔥 Computer<br>
+🔥 GK Quiz<br>
+🔥 English Grammar<br>
+🔥 Science
+</p>
+
+</section>
 
 <h2>⭐ আমাদের লক্ষ্য</h2>
 
@@ -420,12 +469,49 @@ Learning Skills Facebook Page
 </div>
 
 </div>
+<div style="text-align:center;margin:30px;">
 
+Visitor Counter
+
+<!-- Counter Code -->
+
+</div>
+  
 <footer>
 <h3>۝ Created By Learning Skills ⁠۝</h3>
 <p>Free Educational Website for Students</p>
 <p>© 2026 Learning Skills. All Rights Reserved.</p>
 </footer>
 
+<script>
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+}
+
+window.onload=function(){
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+}
+
+</script>
+  
 </body>
 </html>
