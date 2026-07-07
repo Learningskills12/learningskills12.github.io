@@ -271,23 +271,23 @@ background:black;
     onkeyup="searchContent()"
     style="padding:10px; width:250px; border-radius:5px;">
 </div>
-
 <script>
 function searchContent() {
   let input = document.getElementById("searchBox").value.toLowerCase();
-  let cards = document.getElementsByClassName("card");
+  let items = document.querySelectorAll(".search-item");
 
-  for (let i = 0; i < cards.length; i++) {
-    let text = cards[i].innerText.toLowerCase();
+  items.forEach(function(item) {
+    let text = item.innerText.toLowerCase();
 
     if (text.includes(input)) {
-      cards[i].style.display = "";
+      item.style.display = "";
     } else {
-      cards[i].style.display = "none";
+      item.style.display = "none";
     }
-  }
+  });
 }
 </script>
+  
 </nav>
 
  <div style="text-align:center;margin:15px;">
@@ -359,52 +359,52 @@ function searchContent() {
 Computer
 </a>
 
-<a href="math.html" class="subject-card">
+<a href="math.html" class="subject-card search-item">
 <span class="subject-icon">➗</span>
 Mathematics
 </a>
 
-<a href="bangla.html" class="subject-card">
+<a href="bangla.html" class="subject-card search-item">
 <span class="subject-icon">📖</span>
 বাংলা
 </a>
 
-<a href="english.html" class="subject-card">
+<a href="english.html" class="subject-card search-item">
 <span class="subject-icon">🇬🇧</span>
 English
 </a>
 
-<a href="science.html" class="subject-card">
+<a href="science.html" class="subject-card search-item">
 <span class="subject-icon">🔬</span>
 Science
 </a>
 
-<a href="gk.html" class="subject-card">
+<a href="gk.html" class="subject-card search-item">
 <span class="subject-icon">🌍</span>
 General Knowledge
 </a>
 
-<a href="quiz.html" class="subject-card">
+<a href="quiz.html" class="subject-card search-item">
 <span class="subject-icon">❓</span>
 কুইজ
 </a>
 
-<a href="dhadha.html" class="subject-card">
+<a href="dhadha.html" class="subject-card search-item">
 <span class="subject-icon">🧩</span>
 Puzzle (ধাঁধা)
 </a>
 
-<a href="blog.html" class="subject-card">
+<a href="blog.html" class="subject-card search-item">
 <span class="subject-icon">📝</span>
 Blog
 </a>
 
-<a href="video.html" class="subject-card">
+<a href="video.html" class="subject-card search-item">
 <span class="subject-icon">🎥</span>
 Video
 </a>
 
-<a href="tips.html" class="subject-card">
+<a href="tips.html" class="subject-card search-item">
 <span class="subject-icon">💡</span>
 Tips & Tricks
 </a>
