@@ -168,7 +168,56 @@ color:#fff;
 background:#333;
 color:#fff;
 }
-    
+
+/* GK Category Card Colors */
+
+.category-card:nth-child(1){
+background:#ffe0b2;
+}
+
+.category-card:nth-child(2){
+background:#b3e5fc;
+}
+
+.category-card:nth-child(3){
+background:#c8e6c9;
+}
+
+.category-card:nth-child(4){
+background:#e1bee7;
+}
+
+.category-card:nth-child(5){
+background:#fff9c4;
+}
+
+.category-card:nth-child(6){
+background:#ffcdd2;
+}
+
+.gk-card:nth-child(6n+1){
+background:#ffe0b2;
+}
+
+.gk-card:nth-child(6n+2){
+background:#d6ecff;
+}
+
+.gk-card:nth-child(6n+3){
+background:#c8e6c9;
+}
+
+.gk-card:nth-child(6n+4){
+background:#fff9c4;
+}
+
+.gk-card:nth-child(6n+5){
+background:#e1bee7;
+}
+
+.gk-card:nth-child(6n){
+background:#ffcdd2;
+}
 </style>
 </head>
 
@@ -783,7 +832,29 @@ color:#fff;
 <button id="topBtn" onclick="topFunction()">⬆</button>
 
 <script>
+function searchGK(){
 
+let input=document.getElementById("search").value.toUpperCase();
+
+let card=document.getElementsByClassName("gk-card");
+
+for(let i=0;i<card.length;i++){
+
+let txt=card[i].innerText;
+
+if(txt.toUpperCase().indexOf(input)>-1){
+
+card[i].style.display="block";
+
+}else{
+
+card[i].style.display="none";
+
+}
+
+}
+
+}
 // Progress Bar
 window.onscroll = function () {
 
@@ -800,7 +871,7 @@ function searchQuestion(){
 
 let input=document.getElementById("searchBox").value.toUpperCase();
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("gk-card");
 
 for(let i=0;i<card.length;i++){
 
@@ -830,7 +901,7 @@ document.body.classList.toggle("dark");
 // Random Question
 function randomQuestion(){
 
-let card=document.getElementsByClassName("science-card");
+let card=document.getElementsByClassName("gk-card");
 
 let random=Math.floor(Math.random()*card.length);
 
