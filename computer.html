@@ -136,7 +136,164 @@ text-align:center;
 </style>
 
 </head>
+<body>
 
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Header -->
+<header>
+💻 Computer Learning Hub
+<p style="font-size:16px;margin-top:8px;font-weight:normal;">
+Learning Skills | Learn Computer Step by Step
+</p>
+</header>
+
+<!-- Search Box -->
+<input
+type="text"
+id="searchBox"
+class="search-box"
+placeholder="🔍 Search Computer Topic..."
+onkeyup="searchCard()">
+
+<!-- Buttons -->
+<div style="text-align:center;margin-bottom:20px;">
+
+<button onclick="darkMode()" class="btn">
+🌙 Dark Mode
+</button>
+
+<button onclick="randomCard()" class="btn">
+🎲 Random Topic
+</button>
+
+</div>
+
+<!-- Statistics -->
+
+<div style="text-align:center;margin-bottom:20px;">
+
+<h3>
+
+📚 Total Topics :
+
+<span id="topicCount"></span>
+
+</h3>
+
+</div>
+
+<!-- Container -->
+
+<div class="container">
+
+<!-- Card 1 -->
+
+<div class="card">
+
+<h2>🖥️ Computer কী?</h2>
+
+<p>
+
+কম্পিউটার একটি Electronic Device যা Data গ্রহণ করে, Process করে এবং Output প্রদান করে।
+
+</p>
+
+<a href="computer-what-is.html" class="btn">
+
+বিস্তারিত পড়ুন →
+
+</a>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="card">
+
+<h2>🧠 CPU কী?</h2>
+
+<p>
+
+CPU হলো কম্পিউটারের Brain।
+
+এটি সকল নির্দেশনা Processing করে।
+
+</p>
+
+<a href="cpu.html" class="btn">
+
+বিস্তারিত পড়ুন →
+
+</a>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="card">
+
+<h2>💾 RAM কী?</h2>
+
+<p>
+
+RAM হলো Temporary Memory যেখানে চলমান ডেটা সংরক্ষিত থাকে।
+
+</p>
+
+<a href="ram.html" class="btn">
+
+বিস্তারিত পড়ুন →
+
+</a>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="card">
+
+<h2>💿 ROM কী?</h2>
+
+<p>
+
+ROM হলো Permanent Memory যেখানে Firmware সংরক্ষিত থাকে।
+
+</p>
+
+<a href="rom.html" class="btn">
+
+বিস্তারিত পড়ুন →
+
+</a>
+
+</div>
+
+<!-- Card 5 -->
+
+<div class="card">
+
+<h2>🟩 Motherboard কী?</h2>
+
+<p>
+
+Motherboard হলো কম্পিউটারের প্রধান সার্কিট বোর্ড।
+
+</p>
+
+<a href="motherboard.html" class="btn">
+
+বিস্তারিত পড়ুন →
+
+</a>
+
+</div>
+
+<!-- এখান থেকে একইভাবে নতুন Card যোগ করবেন -->
+
+</div>
+    
 <body>
 
 <header>
@@ -294,5 +451,405 @@ SSD (Solid State Drive) হলো দ্রুতগতির স্টোরে
 
 </div>
 
+    <!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn">⬆</button>
+
+<script>
+
+//==============================
+// Topic Counter
+//==============================
+document.getElementById("topicCount").innerHTML =
+document.querySelectorAll(".card").length;
+
+
+//==============================
+// Search Function
+//==============================
+function searchCard(){
+
+let input=document.getElementById("searchBox").value.toUpperCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let text=card.innerText.toUpperCase();
+
+if(text.indexOf(input)>-1){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+
+//==============================
+// Dark Mode (Save)
+//==============================
+
+if(localStorage.getItem("darkmode")=="on"){
+
+document.body.classList.add("dark");
+
+}
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("darkmode","on");
+
+}else{
+
+localStorage.setItem("darkmode","off");
+
+}
+
+}
+
+
+//==============================
+// Random Card
+//==============================
+
+function randomCard(){
+
+let cards=document.querySelectorAll(".card");
+
+let random=Math.floor(Math.random()*cards.length);
+
+cards[random].scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+
+//==============================
+// Progress Bar
+//==============================
+
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+};
+
+
+//==============================
+// Back To Top
+//==============================
+
+window.addEventListener("scroll",function(){
+
+if(document.documentElement.scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+});
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+<style>
+
+/* Progress Bar */
+
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:5px;
+
+width:0;
+
+background:#ff9800;
+
+z-index:9999;
+
+}
+
+/* Back To Top */
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+border:none;
+
+background:#007bff;
+
+color:white;
+
+padding:15px;
+
+font-size:20px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+#topBtn:hover{
+
+background:#0056b3;
+
+}
+
+
+/* Dark Mode */
+
+.dark{
+
+background:#111;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#222;
+
+color:white;
+
+}
+
+.dark .card h2{
+
+color:#4fc3f7;
+
+}
+
+.dark .card p{
+
+color:#ddd;
+
+}
+
+.dark header{
+
+background:#000;
+
+}
+
+.dark .search-box{
+
+background:#333;
+
+color:white;
+
+border:1px solid #666;
+
+}
+
+</style>
+<hr style="margin:40px 0;">
+
+<div style="text-align:center;margin:25px 0;">
+
+<button onclick="toggleDarkMode()"
+style="padding:12px 25px;
+background:#222;
+color:#fff;
+border:none;
+border-radius:8px;
+cursor:pointer;">
+🌙 Dark Mode
+</button>
+
+</div>
+
+<button onclick="topFunction()" id="topBtn">
+⬆
+</button>
+
+<footer>
+
+<h3>📚 Learning Skills</h3>
+
+<p>Computer Learning Hub</p>
+
+<p>
+Free Computer Notes • Tutorials • Tips & Tricks
+</p>
+
+<p>
+© 2026 Learning Skills | All Rights Reserved
+</p>
+
+</footer>
+
+<style>
+
+footer{
+
+margin-top:50px;
+
+background:#003366;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+padding:15px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50%;
+
+background:#0066cc;
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+.dark{
+
+background:#111;
+
+color:white;
+
+}
+
+.dark .article-card{
+
+background:#222;
+
+color:white;
+
+}
+
+.dark input{
+
+background:#222;
+
+color:white;
+
+}
+
+.dark footer{
+
+background:#000;
+
+}
+
+</style>
+
+<script>
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem("theme",
+
+document.body.classList.contains("dark")
+
+?"dark":"light");
+
+}
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+}
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
 </body>
 </html>
