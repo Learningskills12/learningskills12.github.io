@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SMPS কী? | Learning Skills</title>
+
+<meta name="description" content="SMPS (Switch Mode Power Supply) কী, এর কাজ, প্রকারভেদ, ব্যবহার, সুবিধা, অসুবিধা ও MCQ সহ সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="SMPS, Power Supply, Computer SMPS, Computer Hardware, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0066cc,#00b7ff);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#007bff;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #2196f3;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0066cc;
+margin-bottom:12px;
+}
+
+.card p,.card li{
+line-height:1.8;
+font-size:16px;
+}
+
+.read-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#007bff;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+}
+
+.read-btn:hover{
+background:#0056b3;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>⚡ SMPS (Power Supply) কী?</h1>
+
+<p>Switch Mode Power Supply সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>⚡ SMPS কী?</h2>
+
+<p>
+
+SMPS-এর পূর্ণরূপ <b>Switch Mode Power Supply</b>। এটি কম্পিউটারের এমন একটি গুরুত্বপূর্ণ Hardware, যা Main AC বিদ্যুৎকে বিভিন্ন DC Voltage-এ রূপান্তর করে Motherboard, CPU, Hard Disk, SSD, GPU এবং অন্যান্য Hardware-এ নিরাপদভাবে বিদ্যুৎ সরবরাহ করে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 SMPS-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>⚡ AC বিদ্যুৎকে DC বিদ্যুতে রূপান্তর করা।</li>
+
+<li>💻 কম্পিউটারের প্রতিটি Hardware-এ সঠিক Voltage পৌঁছে দেওয়া।</li>
+
+<li>🔒 অতিরিক্ত Voltage থেকে যন্ত্রাংশকে সুরক্ষা দেওয়া।</li>
+
+<li>🔋 স্থিতিশীল Power Supply বজায় রাখা।</li>
+
+<li>⚙️ কম্পিউটারের নিরাপদ ও নিরবচ্ছিন্ন কার্যক্রম নিশ্চিত করা।</li>
+
+</ul>
+
+</div>
+
+<!-- ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 SMPS-এর ইতিহাস</h2>
+
+<p>
+
+আগের কম্পিউটার ও ইলেকট্রনিক যন্ত্রে Linear Power Supply ব্যবহার করা হতো। কিন্তু এটি আকারে বড়, ভারী এবং বিদ্যুতের অপচয় বেশি করত। পরে Switch Mode Power Supply (SMPS) প্রযুক্তি তৈরি হয়, যা কম বিদ্যুৎ অপচয় করে, কম তাপ উৎপন্ন করে এবং আকারেও ছোট। বর্তমানে প্রায় সব Desktop Computer, Server এবং অনেক Electronic Device-এ SMPS ব্যবহার করা হয়।
+
+</p>
+
+</div>
+
+<!-- কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ SMPS কীভাবে কাজ করে?</h2>
+
+<p>
+
+SMPS প্রথমে বাড়ির <b>220V AC</b> বিদ্যুৎ গ্রহণ করে। এরপর এটি সেই AC বিদ্যুৎকে Rectifier ও অন্যান্য সার্কিটের মাধ্যমে DC-তে রূপান্তর করে। পরে উচ্চ ফ্রিকোয়েন্সিতে Switching করে প্রয়োজন অনুযায়ী বিভিন্ন Voltage (+12V, +5V, +3.3V) তৈরি করে এবং কম্পিউটারের বিভিন্ন Hardware-এ সরবরাহ করে।
+
+</p>
+
+</div>
+
+<!-- প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 SMPS-এর প্রধান অংশগুলো</h2>
+
+<ul>
+
+<li>🔌 AC Input Section</li>
+
+<li>⚡ Rectifier Circuit</li>
+
+<li>🔄 Switching Circuit</li>
+
+<li>🧲 Transformer</li>
+
+<li>🔋 Filter Circuit</li>
+
+<li>📤 DC Output Section</li>
+
+<li>🛡️ Protection Circuit</li>
+
+<li>🌀 Cooling Fan</li>
+
+</ul>
+
+</div>
+
+<!-- পাওয়ার কানেক্টর -->
+
+<div class="card">
+
+<h2>🔌 SMPS-এর গুরুত্বপূর্ণ Power Connector</h2>
+
+<ul>
+
+<li><b>24-Pin ATX Connector</b> — Motherboard-এ Power দেয়।</li>
+
+<li><b>4/8-Pin CPU Connector</b> — CPU-তে বিদ্যুৎ সরবরাহ করে।</li>
+
+<li><b>SATA Power Connector</b> — SSD, HDD ও DVD Drive-এর জন্য ব্যবহৃত হয়।</li>
+
+<li><b>PCIe Connector</b> — Dedicated Graphics Card (GPU)-এ Power দেয়।</li>
+
+<li><b>Molex Connector</b> — পুরনো Hard Disk, Fan ও অন্যান্য Device-এর জন্য ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- Output Voltage -->
+
+<div class="card">
+
+<h2>⚡ SMPS-এর সাধারণ Output Voltage</h2>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#007bff;color:white;">
+<th style="padding:10px;">Voltage</th>
+<th style="padding:10px;">ব্যবহার</th>
+</tr>
+
+<tr>
+<td style="padding:10px;border:1px solid #ddd;">+12V</td>
+<td style="padding:10px;border:1px solid #ddd;">CPU, GPU, Cooling Fan</td>
+</tr>
+
+<tr>
+<td style="padding:10px;border:1px solid #ddd;">+5V</td>
+<td style="padding:10px;border:1px solid #ddd;">USB ও কিছু Electronic Circuit</td>
+</tr>
+
+<tr>
+<td style="padding:10px;border:1px solid #ddd;">+3.3V</td>
+<td style="padding:10px;border:1px solid #ddd;">RAM ও Motherboard Circuit</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- SMPS-এর প্রকারভেদ -->
+
+<div class="card">
+
+<h2>📂 SMPS-এর প্রকারভেদ</h2>
+
+<ul>
+
+<li><b>AT SMPS</b> — পুরনো কম্পিউটারে ব্যবহৃত হতো।</li>
+
+<li><b>ATX SMPS</b> — বর্তমানে Desktop Computer-এ সবচেয়ে বেশি ব্যবহৃত হয়।</li>
+
+<li><b>Modular SMPS</b> — প্রয়োজন অনুযায়ী Cable লাগানো বা খুলে রাখা যায়।</li>
+
+<li><b>Semi-Modular SMPS</b> — কিছু Cable স্থায়ী থাকে, বাকিগুলো আলাদা লাগানো যায়।</li>
+
+<li><b>Non-Modular SMPS</b> — সব Cable স্থায়ীভাবে সংযুক্ত থাকে।</li>
+
+</ul>
+
+</div>
+
+<!-- বৈশিষ্ট্য -->
+
+<div class="card">
+
+<h2>⭐ SMPS-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>⚡ উচ্চ দক্ষতায় (High Efficiency) বিদ্যুৎ সরবরাহ করে।</li>
+
+<li>🔥 কম তাপ উৎপন্ন করে।</li>
+
+<li>📏 আকারে ছোট ও ওজনে হালকা।</li>
+
+<li>🔒 Over Voltage ও Short Circuit Protection থাকে।</li>
+
+<li>🌀 Cooling Fan-এর মাধ্যমে ঠান্ডা থাকে।</li>
+
+<li>🔋 একসাথে একাধিক Voltage Output দিতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- সুবিধা -->
+
+<div class="card">
+
+<h2>✅ SMPS-এর সুবিধা</h2>
+
+<ul>
+
+<li>বিদ্যুতের অপচয় কম হয়।</li>
+
+<li>কম তাপ উৎপন্ন করে।</li>
+
+<li>কম্পিউটারের যন্ত্রাংশকে নিরাপদ রাখে।</li>
+
+<li>দীর্ঘ সময় স্থিতিশীলভাবে কাজ করতে পারে।</li>
+
+<li>আধুনিক Desktop Computer-এর জন্য আদর্শ।</li>
+
+</ul>
+
+</div>
+
+<!-- অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ SMPS-এর অসুবিধা</h2>
+
+<ul>
+
+<li>নষ্ট হলে মেরামত করা তুলনামূলক কঠিন।</li>
+
+<li>নিম্নমানের SMPS ব্যবহার করলে Hardware ক্ষতিগ্রস্ত হতে পারে।</li>
+
+<li>উচ্চ ক্ষমতার SMPS-এর দাম বেশি।</li>
+
+<li>ভিতরের সার্কিট জটিল হওয়ায় সাধারণ ব্যবহারকারী সহজে ঠিক করতে পারেন না।</li>
+
+</ul>
+
+</div>
+
+<!-- ব্যবহার -->
+
+<div class="card">
+
+<h2>💻 SMPS কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🖥️ Desktop Computer</li>
+
+<li>🖧 Server</li>
+
+<li>🎮 Gaming PC</li>
+
+<li>📺 LED TV</li>
+
+<li>🖨️ Printer</li>
+
+<li>📹 CCTV System</li>
+
+<li>📡 Networking Device</li>
+
+<li>⚙️ বিভিন্ন Industrial Electronic Equipment</li>
+
+</ul>
+
+</div>
+
+<!-- SMPS Rating -->
+
+<div class="card">
+
+<h2>🏆 SMPS-এর 80 PLUS Rating</h2>
+
+<p>
+
+SMPS-এর দক্ষতা (Efficiency) বোঝানোর জন্য <b>80 PLUS Certification</b> ব্যবহার করা হয়। যত ভালো Rating হবে, তত কম বিদ্যুৎ অপচয় হবে এবং কম তাপ উৎপন্ন হবে।
+
+</p>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#007bff;color:white;">
+<th style="padding:10px;">Rating</th>
+<th style="padding:10px;">Efficiency</th>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">80 PLUS</td>
+<td style="border:1px solid #ddd;padding:10px;">≈80%</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">Bronze</td>
+<td style="border:1px solid #ddd;padding:10px;">≈85%</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">Silver</td>
+<td style="border:1px solid #ddd;padding:10px;">≈88%</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">Gold</td>
+<td style="border:1px solid #ddd;padding:10px;">≈90%</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">Platinum</td>
+<td style="border:1px solid #ddd;padding:10px;">≈92%</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ddd;padding:10px;">Titanium</td>
+<td style="border:1px solid #ddd;padding:10px;">≈94%</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- নষ্ট হওয়ার লক্ষণ -->
+
+<div class="card">
+
+<h2>⚠️ SMPS নষ্ট হওয়ার লক্ষণ</h2>
+
+<ul>
+
+<li>কম্পিউটার চালু না হওয়া।</li>
+
+<li>হঠাৎ হঠাৎ Restart হওয়া।</li>
+
+<li>Burning Smell বা পোড়া গন্ধ আসা।</li>
+
+<li>Cooling Fan না ঘোরা।</li>
+
+<li>Power Button চাপলেও কোনো Response না পাওয়া।</li>
+
+<li>অস্বাভাবিক Noise বা শব্দ হওয়া।</li>
+
+</ul>
+
+</div>
+
+<!-- ভালো SMPS নির্বাচন -->
+
+<div class="card">
+
+<h2>💡 ভালো SMPS নির্বাচন করার নিয়ম</h2>
+
+<ul>
+
+<li>বিশ্বস্ত Brand-এর SMPS কিনো।</li>
+
+<li>কম্পিউটারের চাহিদা অনুযায়ী Watt নির্বাচন করো।</li>
+
+<li>80 PLUS Certified SMPS নেওয়া ভালো।</li>
+
+<li>Over Voltage, Short Circuit ও Over Power Protection আছে কিনা দেখো।</li>
+
+<li>Gaming PC হলে Modular বা Semi-Modular SMPS ভালো।</li>
+
+<li>সবসময় Original Product ব্যবহার করো।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>⚡ SMPS ছাড়া Desktop Computer চালু হয় না।</li>
+
+<li>🔋 একটি SMPS একই সঙ্গে +12V, +5V এবং +3.3V Voltage সরবরাহ করতে পারে।</li>
+
+<li>🌀 SMPS-এর Cooling Fan ভেতরের তাপমাত্রা নিয়ন্ত্রণ করে।</li>
+
+<li>🏆 80 PLUS Gold বা Platinum SMPS বিদ্যুৎ সাশ্রয়ে বেশি কার্যকর।</li>
+
+<li>🎮 High-End Gaming PC-তে সাধারণত 650W থেকে 1000W বা তার বেশি ক্ষমতার SMPS ব্যবহার করা হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- সতর্কতা -->
+
+<div class="card">
+
+<h2>⚡ নিরাপত্তা সতর্কতা</h2>
+
+<p>
+
+SMPS-এর ভিতরে উচ্চ ভোল্টেজ থাকে। তাই এটি খোলা বা মেরামত করার আগে অবশ্যই বিদ্যুৎ সংযোগ বিচ্ছিন্ন করতে হবে। অভিজ্ঞতা না থাকলে নিজে মেরামতের চেষ্টা না করে দক্ষ টেকনিশিয়ানের সাহায্য নেওয়া উচিত।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+<p><b>১. SMPS-এর পূর্ণরূপ কী?</b><br>
+উত্তর: Switch Mode Power Supply।</p>
+
+<p><b>২. SMPS-এর প্রধান কাজ কী?</b><br>
+উত্তর: AC বিদ্যুৎকে DC-তে রূপান্তর করে কম্পিউটারের বিভিন্ন যন্ত্রাংশে বিদ্যুৎ সরবরাহ করা।</p>
+
+<p><b>৩. SMPS কি একটি Hardware?</b><br>
+উত্তর: হ্যাঁ, এটি একটি গুরুত্বপূর্ণ Computer Hardware।</p>
+
+<p><b>৪. SMPS কোথায় থাকে?</b><br>
+উত্তর: Desktop Computer-এর CPU Case-এর ভিতরে।</p>
+
+<p><b>৫. SMPS নষ্ট হলে কী হয়?</b><br>
+উত্তর: কম্পিউটার চালু নাও হতে পারে অথবা বারবার Restart হতে পারে।</p>
+
+<p><b>৬. Gaming PC-এর জন্য কি বেশি Watt-এর SMPS দরকার?</b><br>
+উত্তর: হ্যাঁ, শক্তিশালী GPU ও CPU-এর জন্য বেশি Watt-এর SMPS প্রয়োজন।</p>
+
+<p><b>৭. 80 PLUS Rating কী বোঝায়?</b><br>
+উত্তর: SMPS-এর Efficiency বা বিদ্যুৎ ব্যবহারের দক্ষতা বোঝায়।</p>
+
+<p><b>৮. SMPS কি Laptop-এ থাকে?</b><br>
+উত্তর: Laptop-এ Internal SMPS-এর পরিবর্তে Adapter বা Charger ব্যবহৃত হয়।</p>
+
+<p><b>৯. Modular SMPS-এর সুবিধা কী?</b><br>
+উত্তর: প্রয়োজনীয় Cable-ই ব্যবহার করা যায়, ফলে Cable Management সহজ হয়।</p>
+
+<p><b>১০. ভালো SMPS কেন ব্যবহার করা উচিত?</b><br>
+উত্তর: এটি কম্পিউটারের Hardware-কে নিরাপদ রাখে এবং দীর্ঘদিন ভালো Performance দেয়।</p>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>📚 Quick Revision</h2>
+
+<ul>
+
+<li>✅ SMPS = Switch Mode Power Supply</li>
+
+<li>✅ AC কে DC-তে রূপান্তর করে।</li>
+
+<li>✅ Motherboard, CPU, GPU, HDD, SSD-তে Power দেয়।</li>
+
+<li>✅ বিভিন্ন Output Voltage (+12V, +5V, +3.3V) সরবরাহ করে।</li>
+
+<li>✅ 80 PLUS Rating যত ভালো, Efficiency তত বেশি।</li>
+
+<li>✅ Over Voltage ও Short Circuit Protection থাকে।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>🧠 নিজেকে যাচাই করুন (MCQ)</h2>
+
+<p><b>১. SMPS-এর পূর্ণরূপ কী?</b></p>
+
+<p>
+A) Smart Mode Power Supply<br>
+B) Switch Mode Power Supply ✅<br>
+C) System Main Power Supply<br>
+D) Simple Mode Power System
+</p>
+
+<hr>
+
+<p><b>২. SMPS কোন ধরনের বিদ্যুৎকে DC-তে পরিবর্তন করে?</b></p>
+
+<p>
+A) AC ✅<br>
+B) DC<br>
+C) Battery Power<br>
+D) Solar Power
+</p>
+
+<hr>
+
+<p><b>৩. SMPS কোথায় ব্যবহৃত হয়?</b></p>
+
+<p>
+A) Desktop Computer ✅<br>
+B) Server ✅<br>
+C) Gaming PC ✅<br>
+D) উপরের সবগুলো ✅
+</p>
+
+<hr>
+
+<p><b>৪. 80 PLUS কী নির্দেশ করে?</b></p>
+
+<p>
+A) রঙ<br>
+B) Efficiency ✅<br>
+C) ওজন<br>
+D) আকার
+</p>
+
+<hr>
+
+<p><b>৫. SMPS-এর প্রধান কাজ কী?</b></p>
+
+<p>
+A) গান বাজানো<br>
+B) বিদ্যুৎ সরবরাহ করা ✅<br>
+C) ছবি দেখানো<br>
+D) ইন্টারনেট চালানো
+</p>
+
+</div>
+
+<!-- Fill in the Blanks -->
+
+<div class="card">
+
+<h2>✍️ Fill in the Blanks</h2>
+
+<ol>
+
+<li>SMPS-এর পূর্ণরূপ ____________।</li>
+
+<li>SMPS AC বিদ্যুৎকে ____________ বিদ্যুতে রূপান্তর করে।</li>
+
+<li>SMPS কম্পিউটারের ____________-এ বিদ্যুৎ সরবরাহ করে।</li>
+
+<li>80 PLUS হলো ____________ Rating।</li>
+
+<li>SMPS একটি গুরুত্বপূর্ণ Computer ____________।</li>
+
+</ol>
+
+</div>
+
+<!-- True / False -->
+
+<div class="card">
+
+<h2>✔️ True / False</h2>
+
+<ul>
+
+<li>SMPS AC কে DC-তে রূপান্তর করে। (✔️ True)</li>
+
+<li>SMPS শুধুমাত্র Monitor-এ ব্যবহৃত হয়। (❌ False)</li>
+
+<li>80 PLUS Gold একটি Efficiency Rating। (✔️ True)</li>
+
+<li>SMPS নষ্ট হলেও কম্পিউটার সবসময় স্বাভাবিকভাবে চলবে। (❌ False)</li>
+
+<li>SMPS কম্পিউটারের Hardware-কে Power সরবরাহ করে। (✔️ True)</li>
+
+</ul>
+
+</div>
+  
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="cpu.html">🖥️ CPU কী?</a></li>
+
+<li><a href="motherboard.html">🟩 Motherboard কী?</a></li>
+
+<li><a href="ram.html">💾 RAM কী?</a></li>
+
+<li><a href="gpu.html">🎮 GPU কী?</a></li>
+
+<li><a href="harddisk.html">💽 Hard Disk কী?</a></li>
+
+<li><a href="ssd.html">⚡ SSD কী?</a></li>
+
+<li><a href="bios.html">🛠️ BIOS কী?</a></li>
+
+<li><a href="cache-memory.html">🚀 Cache Memory কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>📝 উপসংহার</h2>
+
+<p>
+
+SMPS (Switch Mode Power Supply) কম্পিউটারের অন্যতম গুরুত্বপূর্ণ Hardware। এটি বিদ্যুৎকে নিরাপদভাবে বিভিন্ন যন্ত্রাংশে সরবরাহ করে এবং পুরো কম্পিউটারকে স্থিতিশীলভাবে চালাতে সাহায্য করে। ভালো মানের SMPS ব্যবহার করলে কম্পিউটারের কর্মক্ষমতা বাড়ে এবং Hardware দীর্ঘদিন নিরাপদ থাকে।
+
+</p>
+
+</div>
+
+<!-- আরও পড়ুন -->
+
+<div class="card">
+
+<h2>📚 আরও পড়ুন</h2>
+
+<p>
+
+কম্পিউটার সম্পর্কে আরও জানতে নিচের বিষয়গুলো পড়তে পারো।
+
+</p>
+
+<a href="computer.html" class="read-btn">📘 Computer Notes</a>
+
+<a href="hardware.html" class="read-btn">🖥️ Hardware</a>
+
+<a href="software.html" class="read-btn">💿 Software</a>
+
+</div>
+
+</div>
+
+<!-- Back To Top -->
+
+<button onclick="topFunction()" id="topBtn"
+style="display:none;position:fixed;bottom:20px;right:20px;padding:12px 16px;border:none;border-radius:50%;background:#007bff;color:#fff;font-size:20px;cursor:pointer;">
+↑
+</button>
+
+<!-- Footer -->
+
+<footer style="background:#0066cc;color:white;text-align:center;padding:20px;margin-top:40px;">
+
+<p><strong>Learning Skills</strong></p>
+
+<p>© 2026 Learning Skills. All Rights Reserved.</p>
+
+<p>Made with ❤️ for Students</p>
+
+</footer>
+
+<script>
+
+/* Progress Bar */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+/* Back To Top */
+
+if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+};
+
+/* Back To Top Function */
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+/* Search */
+
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().indexOf(input)>-1){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
