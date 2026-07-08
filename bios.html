@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BIOS কী? | Learning Skills</title>
+
+<meta name="description" content="BIOS (Basic Input Output System) কী, এর কাজ, বৈশিষ্ট্য, ব্যবহার, FAQ, MCQ সহ সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="BIOS, UEFI, Motherboard, Computer Hardware, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0066cc,#00b7ff);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#007bff;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+cursor:pointer;
+border:none;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #2196f3;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0066cc;
+margin-bottom:12px;
+}
+
+.card p,.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+.read-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#007bff;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+}
+
+.read-btn:hover{
+background:#0056b3;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+color:#eee;
+}
+
+.dark .card h2{
+color:#4fc3f7;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🛠️ BIOS কী?</h1>
+
+<p>Basic Input Output System সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🛠️ BIOS কী?</h2>
+
+<p>
+
+BIOS-এর পূর্ণরূপ <b>Basic Input Output System</b>। এটি Motherboard-এর একটি Firmware, যা কম্পিউটার চালু হওয়ার সঙ্গে সঙ্গে প্রথম কাজ শুরু করে। BIOS কম্পিউটারের Hardware পরীক্ষা করে এবং তারপর Operating System (যেমন Windows বা Linux) চালু করতে সাহায্য করে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 BIOS-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>💻 কম্পিউটার চালু হওয়ার সাথে সাথে Hardware পরীক্ষা করা (POST)।</li>
+
+<li>🧠 CPU, RAM, Keyboard, Storage ইত্যাদি শনাক্ত করা।</li>
+
+<li>💿 Boot Device নির্বাচন করা।</li>
+
+<li>⚙️ Operating System চালু করার জন্য নিয়ন্ত্রণ হস্তান্তর করা।</li>
+
+<li>🔧 Hardware-এর মৌলিক সেটিংস সংরক্ষণ করা।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS-এর ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 BIOS-এর ইতিহাস</h2>
+
+<p>
+
+BIOS-এর ধারণা ১৯৭০-এর দশকের শেষ দিকে তৈরি হয় এবং IBM ১৯৮১ সালে তাদের Personal Computer (PC)-এ BIOS ব্যবহার করে। এরপর BIOS কম্পিউটারের একটি অপরিহার্য অংশ হয়ে ওঠে। বর্তমানে অনেক নতুন কম্পিউটারে BIOS-এর পরিবর্তে আরও আধুনিক <b>UEFI (Unified Extensible Firmware Interface)</b> ব্যবহৃত হলেও সাধারণভাবে একে এখনও BIOS বলা হয়।
+
+</p>
+
+</div>
+
+<!-- BIOS কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ BIOS কীভাবে কাজ করে?</h2>
+
+<p>
+
+কম্পিউটারের Power Button চাপার সঙ্গে সঙ্গে BIOS চালু হয়। প্রথমে এটি <b>POST (Power-On Self Test)</b> সম্পন্ন করে, অর্থাৎ CPU, RAM, Keyboard, Storage Drive ও অন্যান্য Hardware ঠিকভাবে কাজ করছে কি না তা পরীক্ষা করে। এরপর BIOS Boot Device (SSD, HDD বা USB) খুঁজে Operating System চালু করে।
+
+</p>
+
+</div>
+
+<!-- BIOS-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 BIOS-এর প্রধান অংশগুলো</h2>
+
+<ul>
+
+<li>⚡ POST (Power-On Self Test)</li>
+
+<li>💾 CMOS Setup Utility</li>
+
+<li>🔋 CMOS Battery</li>
+
+<li>📀 Boot Loader</li>
+
+<li>⚙️ BIOS Firmware Chip</li>
+
+<li>🔄 Boot Sequence Manager</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS Settings -->
+
+<div class="card">
+
+<h2>⚙️ BIOS-এ কী কী Settings থাকে?</h2>
+
+<ul>
+
+<li>🕒 Date & Time সেট করা</li>
+
+<li>💽 Boot Priority পরিবর্তন</li>
+
+<li>🔒 BIOS Password সেট করা</li>
+
+<li>🖥️ CPU ও RAM সম্পর্কিত Settings</li>
+
+<li>🧊 Fan Control</li>
+
+<li>💾 SATA / NVMe Configuration</li>
+
+<li>🔌 USB Enable বা Disable করা</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS ও UEFI -->
+
+<div class="card">
+
+<h2>🔄 BIOS ও UEFI</h2>
+
+<p>
+
+UEFI হলো BIOS-এর আধুনিক সংস্করণ। এটি দ্রুত Boot হয়, বড় Storage Drive সমর্থন করে, সুন্দর Graphical Interface প্রদান করে এবং Secure Boot-এর মতো উন্নত Security Feature সমর্থন করে। বর্তমানে অধিকাংশ নতুন Desktop ও Laptop-এ UEFI ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- BIOS-এর প্রকারভেদ -->
+
+<div class="card">
+
+<h2>📂 BIOS-এর প্রকারভেদ</h2>
+
+<ul>
+
+<li><b>Legacy BIOS</b> — পুরোনো ধরনের BIOS, যা MBR Partition System ব্যবহার করে।</li>
+
+<li><b>UEFI BIOS</b> — আধুনিক Firmware, যা GPT Partition, Secure Boot এবং Fast Boot সমর্থন করে।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS-এর বৈশিষ্ট্য -->
+
+<div class="card">
+
+<h2>⭐ BIOS-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🛠️ Motherboard-এর ROM/Flash Memory-তে সংরক্ষিত থাকে।</li>
+
+<li>⚡ কম্পিউটার চালু হওয়ার সাথে সাথেই কাজ শুরু করে।</li>
+
+<li>💻 Hardware ও Operating System-এর মধ্যে সংযোগ স্থাপন করে।</li>
+
+<li>🔋 CMOS-এর মাধ্যমে বিভিন্ন Settings সংরক্ষণ করে।</li>
+
+<li>🔄 প্রয়োজনে BIOS Update (Flash) করা যায়।</li>
+
+<li>🔐 Password Protection সমর্থন করে।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ BIOS-এর সুবিধা</h2>
+
+<ul>
+
+<li>কম্পিউটারের Hardware সঠিকভাবে কাজ করছে কিনা পরীক্ষা করে।</li>
+
+<li>Operating System Boot করতে সাহায্য করে।</li>
+
+<li>Hardware Configuration সহজে পরিবর্তন করা যায়।</li>
+
+<li>Boot Priority নির্ধারণ করা যায়।</li>
+
+<li>System-এর স্থিতিশীলতা বজায় রাখতে সাহায্য করে।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ BIOS-এর অসুবিধা</h2>
+
+<ul>
+
+<li>Legacy BIOS-এর Boot Speed তুলনামূলক ধীর।</li>
+
+<li>Graphical Interface থাকে না (পুরোনো BIOS-এ)।</li>
+
+<li>২TB-এর বেশি Storage Drive সম্পূর্ণভাবে সমর্থন করে না।</li>
+
+<li>ভুলভাবে BIOS Update করলে Motherboard ক্ষতিগ্রস্ত হতে পারে।</li>
+
+<li>Legacy BIOS-এ Security Feature তুলনামূলক কম।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 BIOS কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🖥️ Desktop Computer</li>
+
+<li>💼 Laptop</li>
+
+<li>🖧 Server</li>
+
+<li>🎮 Gaming Computer</li>
+
+<li>🏭 Industrial Computer</li>
+
+<li>💻 Workstation</li>
+
+<li>🧩 Embedded Computer System</li>
+
+</ul>
+
+</div>
+
+  <!-- BIOS Update -->
+
+<div class="card">
+
+<h2>🔄 BIOS Update (BIOS Flash) কী?</h2>
+
+<p>
+
+BIOS Update বা BIOS Flash হলো Motherboard-এর BIOS Firmware-এর নতুন সংস্করণ ইনস্টল করার প্রক্রিয়া। এর মাধ্যমে নতুন Hardware সমর্থন, Bug Fix, Security উন্নতি এবং System Stability বৃদ্ধি পায়। তবে BIOS Update করার সময় বিদ্যুৎ চলে গেলে বা ভুল File ব্যবহার করলে Motherboard ক্ষতিগ্রস্ত হতে পারে।
+
+</p>
+
+</div>
+
+<!-- BIOS নষ্ট হওয়ার লক্ষণ -->
+
+<div class="card">
+
+<h2>⚠️ BIOS সমস্যার লক্ষণ</h2>
+
+<ul>
+
+<li>🖥️ কম্পিউটার চালু না হওয়া।</li>
+
+<li>⚫ Screen-এ কোনো Display না আসা।</li>
+
+<li>🔊 বারবার Beep Sound শোনা।</li>
+
+<li>💽 Operating System Boot না হওয়া।</li>
+
+<li>🔄 বারবার Restart হওয়া।</li>
+
+<li>⚙️ BIOS Settings বারবার Reset হয়ে যাওয়া।</li>
+
+</ul>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ টিপস -->
+
+<div class="card">
+
+<h2>💡 BIOS ব্যবহারের গুরুত্বপূর্ণ টিপস</h2>
+
+<ul>
+
+<li>✅ প্রয়োজন ছাড়া BIOS Settings পরিবর্তন করো না।</li>
+
+<li>✅ শুধুমাত্র Motherboard প্রস্তুতকারকের Official BIOS Update ব্যবহার করো।</li>
+
+<li>✅ BIOS Update করার সময় বিদ্যুৎ সংযোগ স্থির রাখো।</li>
+
+<li>✅ BIOS Password ভুলে গেলে Reset করার নিয়ম জেনে নাও।</li>
+
+<li>✅ CMOS Battery দুর্বল হলে সময় ও Settings Reset হতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>🤔 জানেন কি?</h2>
+
+<ul>
+
+<li>💡 BIOS-এর পূর্ণরূপ হলো <b>Basic Input Output System</b>।</li>
+
+<li>💡 BIOS Operating System-এর আগেই চালু হয়।</li>
+
+<li>💡 CMOS Battery খুলে অনেক সময় BIOS Settings Reset করা যায়।</li>
+
+<li>💡 আধুনিক কম্পিউটারে অধিকাংশ ক্ষেত্রে UEFI ব্যবহার করা হয়।</li>
+
+<li>💡 BIOS থেকেই Boot Order পরিবর্তন করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- BIOS Password -->
+
+<div class="card">
+
+<h2>🔐 BIOS Password কী?</h2>
+
+<p>
+
+BIOS Password হলো একটি নিরাপত্তা ব্যবস্থা, যার মাধ্যমে BIOS Settings-এ অননুমোদিত প্রবেশ রোধ করা যায়। অনেক প্রতিষ্ঠান ও অফিসে কম্পিউটারের নিরাপত্তা বাড়ানোর জন্য BIOS Password ব্যবহার করা হয়।
+
+</p>
+
+</div>
+
+  <!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ BIOS সম্পর্কে FAQ</h2>
+
+<p><b>১. BIOS-এর পূর্ণরূপ কী?</b><br>
+উত্তর: Basic Input Output System।
+</p>
+
+<p><b>২. BIOS কোথায় থাকে?</b><br>
+উত্তর: Motherboard-এর ROM বা Flash Memory Chip-এ।
+</p>
+
+<p><b>৩. BIOS-এর প্রধান কাজ কী?</b><br>
+উত্তর: কম্পিউটারের Hardware পরীক্ষা করে Operating System চালু করা।
+</p>
+
+<p><b>৪. BIOS এবং UEFI কি একই?</b><br>
+উত্তর: UEFI হলো BIOS-এর আধুনিক ও উন্নত সংস্করণ।
+</p>
+
+<p><b>৫. BIOS Update কেন করা হয়?</b><br>
+উত্তর: নতুন Hardware সমর্থন, Bug Fix এবং Security উন্নত করার জন্য।
+</p>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ BIOS = Basic Input Output System</li>
+
+<li>✅ Motherboard-এর Firmware</li>
+
+<li>✅ POST সম্পন্ন করে</li>
+
+<li>✅ Boot Device নির্বাচন করে</li>
+
+<li>✅ Operating System চালু করতে সাহায্য করে</li>
+
+<li>✅ CMOS-এ Settings সংরক্ষণ করে</li>
+
+<li>✅ আধুনিক BIOS = UEFI</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন (MCQ)</h2>
+
+<p><b>১. BIOS-এর পূর্ণরূপ কী?</b></p>
+
+<p>
+ক) Basic Internet Operating System<br>
+খ) Basic Input Output System ✅<br>
+গ) Binary Input Operating Software<br>
+ঘ) Boot Input Output Service
+</p>
+
+<hr>
+
+<p><b>২. BIOS প্রথমে কী পরীক্ষা করে?</b></p>
+
+<p>
+ক) Printer<br>
+খ) POST ✅<br>
+গ) Internet<br>
+ঘ) Antivirus
+</p>
+
+<hr>
+
+<p><b>৩. BIOS কোথায় সংরক্ষিত থাকে?</b></p>
+
+<p>
+ক) RAM<br>
+খ) Hard Disk<br>
+গ) ROM / Flash Memory ✅<br>
+ঘ) Pen Drive
+</p>
+
+</div>
+
+<!-- Fill in the Blanks -->
+
+<div class="card">
+
+<h2>✍️ Fill in the Blanks</h2>
+
+<p>১. BIOS-এর পূর্ণরূপ __________।</p>
+
+<p>২. BIOS প্রথমে __________ সম্পন্ন করে।</p>
+
+<p>৩. BIOS __________-এ সংরক্ষিত থাকে।</p>
+
+<p>৪. আধুনিক BIOS-এর নাম __________।</p>
+
+<p>৫. BIOS __________ Device নির্বাচন করে।</p>
+
+</div>
+
+<!-- True False -->
+
+<div class="card">
+
+<h2>✅ True / False</h2>
+
+<p>১. BIOS Operating System-এর পরে চালু হয়। ❌</p>
+
+<p>২. BIOS Motherboard-এর Firmware। ✅</p>
+
+<p>৩. UEFI হলো BIOS-এর আধুনিক সংস্করণ। ✅</p>
+
+<p>৪. BIOS Boot Device নির্বাচন করতে পারে না। ❌</p>
+
+<p>৫. BIOS Update করা সম্ভব। ✅</p>
+
+</div>
+  
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="motherboard.html">🟩 Motherboard কী?</a></li>
+
+<li><a href="cpu.html">🖥️ CPU কী?</a></li>
+
+<li><a href="ram.html">💾 RAM কী?</a></li>
+
+<li><a href="cache-memory.html">🚀 Cache Memory কী?</a></li>
+
+<li><a href="smps.html">⚡ SMPS কী?</a></li>
+
+<li><a href="harddisk.html">💽 Hard Disk কী?</a></li>
+
+<li><a href="ssd.html">⚡ SSD কী?</a></li>
+
+<li><a href="windows.html">🪟 Windows কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>📝 উপসংহার</h2>
+
+<p>
+
+BIOS (Basic Input Output System) হলো কম্পিউটারের একটি অত্যন্ত গুরুত্বপূর্ণ Firmware, যা কম্পিউটার চালু হওয়ার সময় Hardware পরীক্ষা করে এবং Operating System চালু করতে সাহায্য করে। BIOS সম্পর্কে ভালো ধারণা থাকলে কম্পিউটারের Boot Process, Hardware Configuration এবং সমস্যা সমাধান অনেক সহজ হয়ে যায়।
+
+</p>
+
+</div>
+
+<!-- আরও পড়ুন -->
+
+<div class="card">
+
+<h2>📚 আরও পড়ুন</h2>
+
+<p>
+
+কম্পিউটার সম্পর্কে আরও জানতে নিচের বিষয়গুলো পড়তে পারো।
+
+</p>
+
+<a href="computer.html" class="read-btn">📘 Computer Notes</a>
+
+<a href="hardware.html" class="read-btn">🖥️ Hardware</a>
+
+<a href="software.html" class="read-btn">💿 Software</a>
+
+</div>
+
+</div>
+
+<!-- Back To Top -->
+
+<button onclick="topFunction()" id="topBtn"
+style="display:none;position:fixed;bottom:20px;right:20px;padding:12px 16px;border:none;border-radius:50%;background:#007bff;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3);">
+↑
+</button>
+
+<!-- Footer -->
+
+<footer style="background:#0066cc;color:white;text-align:center;padding:25px;margin-top:40px;">
+
+<h3>Learning Skills</h3>
+
+<p>Learn Computer in Bengali</p>
+
+<p>© 2026 Learning Skills. All Rights Reserved.</p>
+
+<p>Made with ❤️ for Students</p>
+
+</footer>
+
+<script>
+
+/* Progress Bar + Back To Top */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+};
+
+/* Back To Top */
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+/* Search */
+
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().indexOf(input)>-1){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
