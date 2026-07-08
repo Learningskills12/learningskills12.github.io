@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GPU কী? | Learning Skills</title>
+
+<meta name="description" content="GPU কী, GPU-এর কাজ, প্রকারভেদ, ব্যবহার, সুবিধা, অসুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="GPU, Graphics Card, Graphics Processing Unit, Computer, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+transition:.3s;
+}
+
+/* Progress Bar */
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+/* Header */
+
+header{
+background:linear-gradient(90deg,#0066cc,#00b7ff);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:70px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:30px;
+margin-bottom:8px;
+}
+
+header p{
+font-size:15px;
+opacity:.95;
+}
+
+/* Search */
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:16px;
+outline:none;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+/* Buttons */
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#007bff;
+color:#fff;
+padding:10px 16px;
+margin:5px;
+text-decoration:none;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+/* Main Container */
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+/* Card */
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+border-left:8px solid #2196f3;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0066cc;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+line-height:1.8;
+font-size:16px;
+}
+
+.read-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#007bff;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+}
+
+.read-btn:hover{
+background:#0056b3;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#121212;
+color:#fff;
+}
+
+.dark .card{
+background:#1f1f1f;
+color:#fff;
+}
+
+.dark .card h2{
+color:#4fc3f7;
+}
+
+.dark .btn{
+background:#0d6efd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🎮 GPU (Graphics Processing Unit)</h1>
+
+<p>Learning Skills | Computer Learning in Bengali</p>
+
+</header>
+
+<input
+type="text"
+id="searchBox"
+class="search-box"
+placeholder="🔍 এখানে টপিক খুঁজুন...">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 হোম</a>
+
+<button onclick="history.back()" class="btn">⬅️ Back</button>
+
+<button onclick="toggleDarkMode()" class="btn">🌙 Dark Mode</button>
+
+<button onclick="window.print()" class="btn">🖨️ Print</button>
+
+<button onclick="sharePage()" class="btn">📤 Share</button>
+
+</div>
+
+<div class="container">
+
+<!-- GPU পরিচিতি -->
+
+<div class="card">
+
+<h2>🎮 GPU কী?</h2>
+
+<p>
+
+GPU (Graphics Processing Unit) হলো কম্পিউটারের একটি বিশেষ ধরনের প্রসেসর, যা ছবি (Graphics), ভিডিও, 3D Animation এবং Gaming-এর মতো গ্রাফিক্সভিত্তিক কাজ দ্রুত সম্পন্ন করার জন্য তৈরি করা হয়েছে।
+
+</p>
+
+<p>
+
+CPU যেখানে সব ধরনের সাধারণ কাজ পরিচালনা করে, সেখানে GPU একসাথে হাজার হাজার ছোট ছোট গণনা (Parallel Processing) করতে পারে। এজন্য Gaming, Video Editing, 3D Design এবং Artificial Intelligence (AI)-এর মতো কাজ অনেক দ্রুত সম্পন্ন হয়।
+
+</p>
+
+</div>
+
+<!-- পূর্ণরূপ -->
+
+<div class="card">
+
+<h2>📖 GPU-এর পূর্ণরূপ</h2>
+
+<p>
+
+<b>GPU = Graphics Processing Unit</b>
+
+</p>
+
+<p>
+
+বাংলায় এর অর্থ হলো <b>গ্রাফিক্স প্রক্রিয়াকরণ ইউনিট</b>। এটি মূলত কম্পিউটারের গ্রাফিক্স সংক্রান্ত সকল কাজ সম্পাদন করে।
+
+</p>
+
+</div>
+
+<!-- ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 GPU-এর ইতিহাস</h2>
+
+<p>
+
+আগের কম্পিউটারগুলোতে আলাদা GPU ছিল না। সমস্ত গ্রাফিক্সের কাজ CPU-ই করত। ফলে উন্নতমানের গেম, ভিডিও বা 3D সফটওয়্যার চালাতে সমস্যা হতো।
+
+</p>
+
+<p>
+
+১৯৯৯ সালে NVIDIA তাদের <b>GeForce 256</b> বাজারে আনে, যাকে বিশ্বের প্রথম আধুনিক GPU বলা হয়। এরপর AMD এবং Intel-ও নিজেদের GPU তৈরি করতে শুরু করে।
+
+</p>
+
+<p>
+
+বর্তমানে GPU শুধু Gaming-এর জন্য নয়, Artificial Intelligence (AI), Machine Learning, Video Rendering, Scientific Research এবং Supercomputer-এও ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- কেন GPU তৈরি করা হয় -->
+
+<div class="card">
+
+<h2>❓ GPU কেন তৈরি করা হয়েছিল?</h2>
+
+<ul>
+
+<li>🎮 উন্নতমানের Game চালানোর জন্য</li>
+
+<li>🎬 উচ্চ মানের Video Rendering দ্রুত করার জন্য</li>
+
+<li>🖥️ 3D Graphics দ্রুত প্রসেস করার জন্য</li>
+
+<li>🤖 Artificial Intelligence (AI)-এর বিশাল গণনা সম্পন্ন করার জন্য</li>
+
+<li>📊 একই সময়ে হাজার হাজার কাজ (Parallel Processing) করার জন্য</li>
+
+</ul>
+
+</div>
+
+<!-- GPU কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ GPU কীভাবে কাজ করে?</h2>
+
+<p>
+
+যখন তুমি কোনো Game খেলো, Video Edit করো অথবা 3D সফটওয়্যার ব্যবহার করো, তখন GPU লক্ষ লক্ষ Pixel, Texture এবং Graphic Effect খুব দ্রুত গণনা করে স্ক্রিনে দেখায়।
+
+</p>
+
+<p>
+
+GPU-এর হাজার হাজার Core একসাথে কাজ করে বলে এটি CPU-এর তুলনায় গ্রাফিক্সভিত্তিক কাজে অনেক বেশি দ্রুত।
+
+</p>
+
+</div>
+
+<!-- প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 GPU-এর প্রধান অংশগুলো</h2>
+
+<ul>
+
+<li>🔹 Graphics Core</li>
+
+<li>🔹 VRAM (Video Memory)</li>
+
+<li>🔹 Cooling Fan / Heat Sink</li>
+
+<li>🔹 Power Connector</li>
+
+<li>🔹 HDMI / DisplayPort Output</li>
+
+<li>🔹 PCI Express Connector</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+  
+
+
+
+
+
+  
