@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>USB কী? | Learning Skills</title>
+
+<meta name="description" content="USB কী, এর কাজ, প্রকারভেদ, বৈশিষ্ট্য, সুবিধা, অসুবিধা, FAQ, Quick Revision ও MCQ সহ সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="USB, Universal Serial Bus, USB Port, Pendrive, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+transition:.3s;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0066cc,#00b7ff);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:70px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:16px;
+}
+
+.search-box{
+width:92%;
+max-width:700px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+outline:none;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 18px;
+margin:5px;
+background:#007bff;
+color:#fff;
+text-decoration:none;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+border-left:8px solid #2196f3;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0066cc;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.9;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+th{
+background:#007bff;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#4fc3f7;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+.dark .search-box{
+background:#333;
+color:#fff;
+}
+
+footer{
+background:#0066cc;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#ff5722;
+color:#fff;
+border:none;
+padding:12px 16px;
+border-radius:50%;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+z-index:999;
+}
+
+#topBtn:hover{
+background:#e64a19;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🔌 USB (Universal Serial Bus)</h1>
+
+<p>USB সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<a href="#top" class="btn">⬆ Back to Top</a>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🔌 USB কী?</h2>
+
+<p>
+
+USB (Universal Serial Bus) হলো একটি জনপ্রিয় Interface বা Standard, যার মাধ্যমে Computer-এর সঙ্গে Keyboard, Mouse, Pendrive, Printer, Mobile Phone, Camera এবং অন্যান্য Device সহজে সংযুক্ত করা যায়। USB-এর মাধ্যমে Data Transfer এবং Power Supply—দুটিই করা যায়।
+
+</p>
+
+</div>
+
+<!-- USB-এর প্রধান কাজ -->
+
+<div class="card">
+
+<h2>🎯 USB-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>💾 দ্রুত Data Transfer করা।</li>
+
+<li>⚡ বিভিন্ন Device-এ Power Supply দেওয়া।</li>
+
+<li>🖨️ Computer-এর সাথে Peripheral Device সংযুক্ত করা।</li>
+
+<li>📱 Mobile Phone চার্জ ও Data Transfer করা।</li>
+
+<li>🔄 Plug and Play সুবিধা প্রদান করা।</li>
+
+</ul>
+
+</div>
+
+<!-- USB-এর ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 USB-এর ইতিহাস</h2>
+
+<p>
+
+১৯৯৬ সালে Intel, Microsoft, IBM, Compaq, NEC এবং আরও কয়েকটি কোম্পানি যৌথভাবে USB Standard তৈরি করে। এর উদ্দেশ্য ছিল Computer-এর বিভিন্ন Port-এর পরিবর্তে একটি সহজ ও সর্বজনীন সংযোগ ব্যবস্থা তৈরি করা। বর্তমানে USB বিশ্বের সবচেয়ে জনপ্রিয় Interface।
+
+</p>
+
+</div>
+
+<!-- USB কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ USB কীভাবে কাজ করে?</h2>
+
+<p>
+
+USB Cable-এর মাধ্যমে Host Device (যেমন Computer) এবং Peripheral Device (যেমন Pendrive, Keyboard, Mouse, Printer) একে অপরের সাথে সংযুক্ত হয়। Host Device Data পাঠায় এবং গ্রহণ করে। একই সাথে USB Port দিয়ে অনেক ক্ষেত্রে বিদ্যুৎ (Power) সরবরাহও করা হয়।
+
+</p>
+
+</div>
+
+<!-- USB-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 USB-এর প্রধান অংশগুলি</h2>
+
+<ul>
+
+<li>🔌 USB Port</li>
+
+<li>🔗 USB Connector</li>
+
+<li>⚡ Power Wire</li>
+
+<li>📂 Data Wire</li>
+
+<li>💻 Host Controller</li>
+
+</ul>
+
+</div>
+
+<!-- USB-এর Version -->
+
+<div class="card">
+
+<h2>🚀 USB-এর বিভিন্ন Version</h2>
+
+<table>
+
+<tr>
+
+<th>Version</th>
+
+<th>সর্বোচ্চ গতি</th>
+
+</tr>
+
+<tr>
+
+<td>USB 1.0</td>
+
+<td>12 Mbps</td>
+
+</tr>
+
+<tr>
+
+<td>USB 2.0</td>
+
+<td>480 Mbps</td>
+
+</tr>
+
+<tr>
+
+<td>USB 3.0</td>
+
+<td>5 Gbps</td>
+
+</tr>
+
+<tr>
+
+<td>USB 3.1</td>
+
+<td>10 Gbps</td>
+
+</tr>
+
+<tr>
+
+<td>USB 3.2</td>
+
+<td>20 Gbps</td>
+
+</tr>
+
+<tr>
+
+<td>USB4</td>
+
+<td>40 Gbps (বা তার বেশি, সংস্করণভেদে)</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- USB Connector-এর ধরন -->
+
+<div class="card">
+
+<h2>🔌 USB Connector-এর প্রকারভেদ</h2>
+
+<ul>
+
+<li>USB Type-A</li>
+
+<li>USB Type-B</li>
+
+<li>Mini USB</li>
+
+<li>Micro USB</li>
+
+<li>USB Type-C</li>
+
+</ul>
+
+</div>
+
+<!-- USB-এর বৈশিষ্ট্য -->
+
+<div class="card">
+
+<h2>⭐ USB-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>⚡ দ্রুত Data Transfer করতে সক্ষম।</li>
+
+<li>🔌 Plug and Play প্রযুক্তি সমর্থন করে।</li>
+
+<li>💻 প্রায় সব ধরনের Computer ও Laptop-এ ব্যবহৃত হয়।</li>
+
+<li>📱 Data Transfer ও Charging—দুটিই করা যায়।</li>
+
+<li>🌍 আন্তর্জাতিকভাবে স্বীকৃত Standard Interface।</li>
+
+<li>🔄 Hot Swapping সমর্থন করে, অর্থাৎ Computer বন্ধ না করেও Device সংযোগ বা বিচ্ছিন্ন করা যায়।</li>
+
+<li>🛡️ ব্যবহার করা সহজ এবং নির্ভরযোগ্য।</li>
+
+</ul>
+
+</div>
+
+<!-- USB-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ USB-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ দ্রুত Data আদান-প্রদান করা যায়।</li>
+
+<li>🔌 সহজে Device সংযুক্ত করা যায়।</li>
+
+<li>🔋 একই Cable দিয়ে Data ও Power Transfer করা যায়।</li>
+
+<li>💻 অধিকাংশ Operating System USB সমর্থন করে।</li>
+
+<li>📱 Mobile, Camera, Printer, Keyboard, Mouse ইত্যাদি সহজে সংযুক্ত করা যায়।</li>
+
+<li>🛠️ Driver ছাড়াই অনেক Device ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- USB-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ USB-এর অসুবিধা</h2>
+
+<ul>
+
+<li>📏 Cable-এর দৈর্ঘ্য সীমিত।</li>
+
+<li>⚡ নিম্নমানের Cable হলে Data Transfer ধীর হতে পারে।</li>
+
+<li>💥 বারবার ব্যবহার করলে Port ক্ষতিগ্রস্ত হতে পারে।</li>
+
+<li>🔒 USB Device-এর মাধ্যমে Virus ছড়াতে পারে।</li>
+
+<li>📂 বড় File Transfer-এ পুরোনো USB Version ধীর।</li>
+
+</ul>
+
+</div>
+
+<!-- USB কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 USB কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🖥️ Desktop Computer</li>
+
+<li>💼 Laptop</li>
+
+<li>📱 Smartphone</li>
+
+<li>🖨️ Printer</li>
+
+<li>⌨️ Keyboard</li>
+
+<li>🖱️ Mouse</li>
+
+<li>📷 Digital Camera</li>
+
+<li>💾 Pen Drive</li>
+
+<li>🎮 Gaming Controller</li>
+
+<li>🔊 Speaker ও Audio Device</li>
+
+</ul>
+
+</div>
+
+<!-- USB 2.0 ও USB 3.0 তুলনা -->
+
+<div class="card">
+
+<h2>🔄 USB 2.0 ও USB 3.0-এর পার্থক্য</h2>
+
+<table>
+
+<tr>
+
+<th>USB 2.0</th>
+
+<th>USB 3.0</th>
+
+</tr>
+
+<tr>
+
+<td>সর্বোচ্চ গতি 480 Mbps</td>
+
+<td>সর্বোচ্চ গতি 5 Gbps</td>
+
+</tr>
+
+<tr>
+
+<td>৪টি Pin</td>
+
+<td>৯টি Pin</td>
+
+</tr>
+
+<tr>
+
+<td>সাধারণত কালো Port</td>
+
+<td>সাধারণত নীল Port</td>
+
+</tr>
+
+<tr>
+
+<td>ধীর Data Transfer</td>
+
+<td>অনেক দ্রুত Data Transfer</td>
+
+</tr>
+
+<tr>
+
+<td>পুরোনো Standard</td>
+
+<td>নতুন ও উন্নত Standard</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🚀 USB-এর পূর্ণরূপ Universal Serial Bus।</li>
+
+<li>🔵 USB 3.0 Port সাধারণত নীল রঙের হয়।</li>
+
+<li>📱 USB Type-C উভয় দিক থেকেই লাগানো যায়।</li>
+
+<li>⚡ USB4 বর্তমানে সবচেয়ে দ্রুত USB Standard-গুলোর একটি।</li>
+
+<li>🌍 বিশ্বের প্রায় সব আধুনিক Computer ও Smartphone-এ USB ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- আরও বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 USB-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+USB (Universal Serial Bus) প্রথম প্রকাশিত হয় ১৯৯৬ সালে। Intel, Microsoft, IBM, Compaq, NEC এবং Nortel-এর মতো বড় প্রযুক্তি প্রতিষ্ঠান যৌথভাবে এই প্রযুক্তি তৈরি করে। এর আগে Serial Port, Parallel Port এবং PS/2 Port আলাদাভাবে ব্যবহার করতে হতো। USB আসার পর একটি Standard Interface-এর মাধ্যমে প্রায় সব ধরনের Device সংযুক্ত করা সম্ভব হয়। বর্তমানে USB Type-C এবং USB4 আধুনিক প্রযুক্তির সবচেয়ে উন্নত USB Standard হিসেবে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+
+<summary><b>১. USB-এর পূর্ণরূপ কী?</b></summary>
+
+<p>Universal Serial Bus।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>২. USB-এর প্রধান কাজ কী?</b></summary>
+
+<p>Data Transfer এবং Power Supply করা।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৩. USB কে আবিষ্কার করে?</b></summary>
+
+<p>Intel-এর নেতৃত্বে কয়েকটি প্রযুক্তি প্রতিষ্ঠান যৌথভাবে USB Standard তৈরি করে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৪. USB Type-C কেন জনপ্রিয়?</b></summary>
+
+<p>এটি উভয় দিক থেকেই লাগানো যায় এবং দ্রুত Data Transfer ও Fast Charging সমর্থন করে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৫. USB 3.0 কি USB 2.0-এর চেয়ে দ্রুত?</b></summary>
+
+<p>হ্যাঁ, USB 3.0 অনেক বেশি দ্রুত।</p>
+
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ USB-এর পূর্ণরূপ Universal Serial Bus।</li>
+
+<li>✅ Data Transfer ও Charging-এর জন্য ব্যবহৃত হয়।</li>
+
+<li>✅ USB 2.0-এর গতি 480 Mbps।</li>
+
+<li>✅ USB 3.0-এর গতি 5 Gbps।</li>
+
+<li>✅ USB Type-C বর্তমানে সবচেয়ে জনপ্রিয় Connector।</li>
+
+<li>✅ Plug and Play প্রযুক্তি সমর্থন করে।</li>
+
+<li>✅ আধুনিক Computer ও Smartphone-এ USB ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+
+<summary>১. USB-এর পূর্ণরূপ কী?</summary>
+
+<p>✅ Universal Serial Bus।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>২. USB-এর প্রধান কাজ কী?</summary>
+
+<p>✅ Data Transfer এবং Power Supply।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৩. USB 3.0-এর সর্বোচ্চ গতি কত?</summary>
+
+<p>✅ 5 Gbps।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৪. USB Type-C-এর বিশেষ সুবিধা কী?</summary>
+
+<p>✅ দুই দিক থেকেই লাগানো যায়।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৫. USB 2.0-এর সর্বোচ্চ গতি কত?</summary>
+
+<p>✅ 480 Mbps।</p>
+
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="cpu.html">🖥️ CPU কী?</a></li>
+
+<li><a href="gpu.html">🎮 GPU কী?</a></li>
+
+<li><a href="ram.html">💾 RAM কী?</a></li>
+
+<li><a href="rom.html">💿 ROM কী?</a></li>
+
+<li><a href="cache-memory.html">⚡ Cache Memory কী?</a></li>
+
+<li><a href="bios.html">🛠️ BIOS কী?</a></li>
+
+<li><a href="smps.html">🔋 SMPS কী?</a></li>
+
+<li><a href="motherboard.html">🟩 Motherboard কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+USB বর্তমানে বিশ্বের সবচেয়ে জনপ্রিয় Interface Standard। এটি দ্রুত Data Transfer, Power Supply এবং বিভিন্ন Device সহজে সংযুক্ত করার সুবিধা প্রদান করে। USB-এর উন্নত সংস্করণগুলো কম্পিউটার ও মোবাইল প্রযুক্তিকে আরও দ্রুত, নির্ভরযোগ্য এবং ব্যবহারবান্ধব করে তুলেছে।
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+
+<p>Made with ❤️ for Students</p>
+
+</footer>
+
+<style>
+
+/* Footer */
+
+footer{
+
+margin-top:40px;
+
+background:#0066cc;
+
+color:#fff;
+
+text-align:center;
+
+padding:25px 15px;
+
+font-size:15px;
+
+}
+
+/* Back To Top */
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+z-index:999;
+
+background:#ff9800;
+
+color:#fff;
+
+border:none;
+
+outline:none;
+
+padding:14px 18px;
+
+border-radius:50%;
+
+font-size:20px;
+
+cursor:pointer;
+
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#e68900;
+
+}
+
+.dark footer{
+
+background:#000;
+
+}
+
+.dark table{
+
+color:#fff;
+
+}
+
+.dark th{
+
+background:#1976d2;
+
+}
+
+.dark td{
+
+border:1px solid #555;
+
+}
+
+</style>
+
+<script>
+
+/* Search */
+
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+if(card.innerText.toLowerCase().indexOf(input)>-1){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+}
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+/* Progress Bar */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+/* Back To Top */
+
+if(winScroll>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+};
+
+/* Back To Top Function */
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
