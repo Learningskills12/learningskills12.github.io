@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bluetooth কী? | Learning Skills</title>
+
+<meta name="description" content="Bluetooth কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, সুবিধা, অসুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Bluetooth, Wireless, Bluetooth Technology, Computer, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#3f51b5;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#1a237e,#3f51b5);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#3f51b5;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#283593;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #3f51b5;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#1a237e;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#3f51b5;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#90caf9;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🔵 Bluetooth কী?</h1>
+
+<p>Bluetooth সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🔵 Bluetooth কী?</h2>
+
+<p>
+
+<b>Bluetooth</b> হলো একটি <b>Wireless Communication Technology</b>, যার মাধ্যমে অল্প দূরত্বে (Short Range) কোনো তার (Cable) ছাড়াই দুটি বা একাধিক Device-এর মধ্যে Data আদান-প্রদান করা যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Bluetooth-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>📂 File Transfer করা।</li>
+
+<li>🎧 Wireless Headphone ও Speaker সংযুক্ত করা।</li>
+
+<li>⌨️ Wireless Keyboard ও Mouse ব্যবহার করা।</li>
+
+<li>📱 Smartphone ও Computer-এর মধ্যে Data আদান-প্রদান করা।</li>
+
+<li>⌚ Smartwatch ও Fitness Band সংযুক্ত করা।</li>
+
+<li>🚗 Car Audio System-এর সাথে Mobile সংযোগ করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Bluetooth-এর ইতিহাস</h2>
+
+<p>
+
+Bluetooth প্রযুক্তি ১৯৯৪ সালে Ericsson কোম্পানি তৈরি করা শুরু করে। ১৯৯৮ সালে Bluetooth Special Interest Group (SIG) গঠিত হয়। বর্তমানে Bluetooth 5.x এবং Bluetooth LE (Low Energy) প্রযুক্তি দ্রুত, নিরাপদ এবং কম বিদ্যুৎ খরচে কাজ করে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚙️ Bluetooth কীভাবে কাজ করে?</h2>
+
+<p>
+
+Bluetooth 2.4 GHz Radio Frequency ব্যবহার করে দুটি Device-এর মধ্যে Wireless যোগাযোগ স্থাপন করে। Pairing সম্পন্ন হলে Device দুটি নিরাপদভাবে তথ্য আদান-প্রদান করতে পারে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Bluetooth-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>📡 Wireless Technology।</li>
+
+<li>🔋 কম বিদ্যুৎ খরচ করে (Bluetooth Low Energy)।</li>
+
+<li>📱 Smartphone, Laptop, Tablet-এ সহজে ব্যবহার করা যায়।</li>
+
+<li>🎧 Audio Device সংযোগের জন্য জনপ্রিয়।</li>
+
+<li>🔒 Pairing-এর মাধ্যমে নিরাপদ সংযোগ তৈরি করে।</li>
+
+<li>📦 ছোট আকারের Data আদান-প্রদানে উপযোগী।</li>
+
+<li>⚡ দ্রুত ও সহজ সংযোগ স্থাপন করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth-এর প্রধান উপাদান -->
+
+<div class="card">
+
+<h2>🧩 Bluetooth-এর প্রধান উপাদান</h2>
+
+<ul>
+
+<li>📡 Bluetooth Adapter</li>
+
+<li>📱 Bluetooth Enabled Device</li>
+
+<li>🎧 Bluetooth Headset / Speaker</li>
+
+<li>⌨️ Wireless Keyboard</li>
+
+<li>🖱️ Wireless Mouse</li>
+
+<li>⌚ Smartwatch ও Fitness Band</li>
+
+<li>🚗 Car Bluetooth System</li>
+
+<li>📶 Bluetooth Antenna</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Bluetooth কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>📱 Smartphone</li>
+
+<li>💻 Laptop</li>
+
+<li>🖥️ Desktop Computer</li>
+
+<li>🎧 Wireless Headphone</li>
+
+<li>🔊 Bluetooth Speaker</li>
+
+<li>⌚ Smartwatch</li>
+
+<li>🚗 Car Audio System</li>
+
+<li>🎮 Game Controller</li>
+
+<li>🏥 Medical Device</li>
+
+<li>🏠 Smart Home Device</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Bluetooth-এর সুবিধা</h2>
+
+<ul>
+
+<li>🔌 কোনো Cable প্রয়োজন হয় না।</li>
+
+<li>⚡ সহজে Pair করা যায়।</li>
+
+<li>🔋 কম বিদ্যুৎ ব্যবহার করে।</li>
+
+<li>📂 দ্রুত File Transfer করা যায়।</li>
+
+<li>🎧 Wireless Audio ব্যবহার সহজ হয়।</li>
+
+<li>💼 বহন করা সহজ ও সুবিধাজনক।</li>
+
+<li>📱 অধিকাংশ আধুনিক Device-এ Bluetooth থাকে।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Bluetooth-এর অসুবিধা</h2>
+
+<ul>
+
+<li>📏 কার্যক্ষম দূরত্ব সীমিত।</li>
+
+<li>📶 Wi-Fi-এর তুলনায় Data Transfer Speed কম।</li>
+
+<li>🧱 দেয়াল বা বাধার কারণে Signal দুর্বল হতে পারে।</li>
+
+<li>🔋 দীর্ঘ সময় ব্যবহারে Battery খরচ হয়।</li>
+
+<li>⚠️ পুরোনো Version-এ নিরাপত্তা ঝুঁকি থাকতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth-এর সংস্করণ -->
+
+<div class="card">
+
+<h2>📚 Bluetooth-এর বিভিন্ন সংস্করণ</h2>
+
+<table>
+
+<tr>
+<th>Version</th>
+<th>বৈশিষ্ট্য</th>
+</tr>
+
+<tr>
+<td>Bluetooth 4.0</td>
+<td>Low Energy (BLE) সমর্থন</td>
+</tr>
+
+<tr>
+<td>Bluetooth 5.0</td>
+<td>বেশি Speed ও Range</td>
+</tr>
+
+<tr>
+<td>Bluetooth 5.1</td>
+<td>উন্নত Location Tracking</td>
+</tr>
+
+<tr>
+<td>Bluetooth 5.2</td>
+<td>ভালো Audio Quality ও কম Power</td>
+</tr>
+
+<tr>
+<td>Bluetooth 5.3</td>
+<td>আরও উন্নত Performance ও Security</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Bluetooth সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>📡 Bluetooth 2.4 GHz Frequency Band-এ কাজ করে।</li>
+
+<li>🔵 Bluetooth-এর প্রতীকটি ডেনমার্কের রাজা Harald Bluetooth-এর নাম থেকে এসেছে।</li>
+
+<li>📱 Pairing ছাড়া নিরাপদ সংযোগ তৈরি হয় না।</li>
+
+<li>🎧 Bluetooth Audio বর্তমানে সবচেয়ে জনপ্রিয় ব্যবহারগুলোর একটি।</li>
+
+<li>🔋 Bluetooth Low Energy (BLE) খুব কম বিদ্যুৎ ব্যবহার করে।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth বনাম Wi-Fi -->
+
+<div class="card">
+
+<h2>📶 Bluetooth ও Wi-Fi-এর পার্থক্য</h2>
+
+<table>
+
+<tr>
+<th>Bluetooth</th>
+<th>Wi-Fi</th>
+</tr>
+
+<tr>
+<td>স্বল্প দূরত্বে যোগাযোগের জন্য ব্যবহৃত হয়।</td>
+<td>Internet ও Network সংযোগের জন্য ব্যবহৃত হয়।</td>
+</tr>
+
+<tr>
+<td>Range সাধারণত ১০–৩০ মিটার।</td>
+<td>Range সাধারণত ৩০–১০০ মিটার বা তার বেশি।</td>
+</tr>
+
+<tr>
+<td>Data Transfer Speed কম।</td>
+<td>Data Transfer Speed বেশি।</td>
+</tr>
+
+<tr>
+<td>কম বিদ্যুৎ ব্যবহার করে।</td>
+<td>তুলনামূলক বেশি বিদ্যুৎ ব্যবহার করে।</td>
+</tr>
+
+<tr>
+<td>Headphone, Mouse, Keyboard ইত্যাদিতে ব্যবহৃত হয়।</td>
+<td>Internet ও Local Network-এর জন্য ব্যবহৃত হয়।</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Bluetooth Pairing -->
+
+<div class="card">
+
+<h2>🔗 Bluetooth Pairing কী?</h2>
+
+<p>
+
+Bluetooth Pairing হলো দুটি Bluetooth Device-এর মধ্যে নিরাপদ সংযোগ (Secure Connection) স্থাপনের প্রক্রিয়া। Pairing সম্পন্ন হলে ভবিষ্যতে একই Device দুটি সহজেই একে অপরের সাথে সংযুক্ত হতে পারে।
+
+</p>
+
+</div>
+
+<!-- Bluetooth-এর নিরাপত্তা -->
+
+<div class="card">
+
+<h2>🛡️ Bluetooth ব্যবহারে নিরাপত্তা</h2>
+
+<ul>
+
+<li>🔒 অচেনা Device-এর Pairing Request গ্রহণ করবেন না।</li>
+
+<li>📴 ব্যবহার না করলে Bluetooth বন্ধ রাখুন।</li>
+
+<li>🔄 Device-এর Software ও Firmware Update করুন।</li>
+
+<li>📱 শুধুমাত্র বিশ্বস্ত Device-এর সাথে Pair করুন।</li>
+
+<li>🚫 Public স্থানে অপ্রয়োজনীয় Bluetooth Sharing বন্ধ রাখুন।</li>
+
+<li>🔑 PIN বা Passkey ব্যবহার করুন (যেখানে প্রযোজ্য)।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth-এর ব্যবহার -->
+
+<div class="card">
+
+<h2>🌟 Bluetooth-এর জনপ্রিয় ব্যবহার</h2>
+
+<ul>
+
+<li>🎧 Wireless Earbuds ও Headphones</li>
+
+<li>🔊 Bluetooth Speaker</li>
+
+<li>⌨️ Wireless Keyboard</li>
+
+<li>🖱️ Wireless Mouse</li>
+
+<li>⌚ Smartwatch ও Fitness Band</li>
+
+<li>🚗 Car Hands-Free Calling</li>
+
+<li>📂 File Sharing</li>
+
+<li>🎮 Wireless Game Controller</li>
+
+<li>🩺 Medical Device</li>
+
+<li>🏠 Smart Home Device</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🔵 Bluetooth-এর নামকরণ ডেনমার্কের রাজা <b>Harald Bluetooth</b>-এর নাম অনুসারে করা হয়েছে।</li>
+
+<li>📡 Bluetooth 2.4 GHz Radio Frequency-তে কাজ করে।</li>
+
+<li>🔋 Bluetooth Low Energy (BLE) প্রযুক্তি খুব কম Battery ব্যবহার করে।</li>
+
+<li>🎧 True Wireless Earbuds Bluetooth প্রযুক্তির মাধ্যমেই কাজ করে।</li>
+
+<li>📱 বর্তমানে প্রায় সব Smartphone ও Laptop-এ Bluetooth সুবিধা থাকে।</li>
+
+</ul>
+
+</div>
+
+<!-- Bluetooth Range -->
+
+<div class="card">
+
+<h2>📏 Bluetooth-এর Range</h2>
+
+<table>
+
+<tr>
+<th>Class</th>
+<th>সর্বোচ্চ Range</th>
+</tr>
+
+<tr>
+<td>Class 1</td>
+<td>প্রায় ১০০ মিটার</td>
+</tr>
+
+<tr>
+<td>Class 2</td>
+<td>প্রায় ১০ মিটার (সবচেয়ে বেশি ব্যবহৃত)</td>
+</tr>
+
+<tr>
+<td>Class 3</td>
+<td>প্রায় ১ মিটার</td>
+</tr>
+
+</table>
+
+</div>
+
+  <!-- Bluetooth-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Bluetooth-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+১৯৯৪ সালে সুইডেনের <b>Ericsson</b> কোম্পানি Bluetooth প্রযুক্তি তৈরি করার কাজ শুরু করে। ১৯৯৮ সালে Ericsson, IBM, Intel, Nokia এবং Toshiba মিলে <b>Bluetooth Special Interest Group (Bluetooth SIG)</b> গঠন করে। বর্তমানে Bluetooth SIG বিশ্বের হাজারো প্রতিষ্ঠানের সহযোগিতায় Bluetooth প্রযুক্তির উন্নয়ন ও নতুন সংস্করণ প্রকাশ করে। আজ Bluetooth স্মার্টফোন, ল্যাপটপ, স্মার্টওয়াচ, গাড়ি, মেডিকেল ডিভাইস এবং IoT (Internet of Things) ডিভাইসে ব্যাপকভাবে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Bluetooth কী?</b></summary>
+<p>Bluetooth হলো একটি Wireless Communication Technology, যার মাধ্যমে স্বল্প দূরত্বে Data আদান-প্রদান করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. Bluetooth কোন Frequency-তে কাজ করে?</b></summary>
+<p>Bluetooth 2.4 GHz ISM Band-এ কাজ করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Bluetooth-এর সাধারণ Range কত?</b></summary>
+<p>সাধারণত ১০ মিটার (Class 2), তবে Class 1-এ প্রায় ১০০ মিটার পর্যন্ত হতে পারে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Bluetooth কি Internet ব্যবহার করে?</b></summary>
+<p>না। Bluetooth Device-এর মধ্যে সরাসরি Wireless সংযোগ স্থাপন করে, Internet-এর প্রয়োজন হয় না।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Bluetooth Low Energy (BLE) কী?</b></summary>
+<p>BLE হলো এমন একটি Bluetooth প্রযুক্তি যা খুব কম বিদ্যুৎ ব্যবহার করে এবং Smartwatch, Fitness Band ও IoT Device-এ বেশি ব্যবহৃত হয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. Bluetooth-এর সবচেয়ে জনপ্রিয় ব্যবহার কী?</b></summary>
+<p>Wireless Headphone, Earbuds, Speaker, Keyboard, Mouse এবং File Sharing।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Bluetooth একটি Wireless Communication Technology।</li>
+
+<li>✅ এটি 2.4 GHz Frequency Band-এ কাজ করে।</li>
+
+<li>✅ Pairing-এর মাধ্যমে নিরাপদ সংযোগ তৈরি হয়।</li>
+
+<li>✅ Wireless Headphone, Speaker, Keyboard ও Mouse-এ ব্যবহৃত হয়।</li>
+
+<li>✅ Bluetooth Low Energy (BLE) কম বিদ্যুৎ ব্যবহার করে।</li>
+
+<li>✅ স্বল্প দূরত্বে Data Transfer-এর জন্য সবচেয়ে জনপ্রিয় প্রযুক্তিগুলোর একটি।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Bluetooth কী?</summary>
+<p>✅ এটি একটি Wireless Communication Technology।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. Bluetooth কোন Frequency ব্যবহার করে?</summary>
+<p>✅ 2.4 GHz ISM Band।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Bluetooth-এর মাধ্যমে কী কী করা যায়?</summary>
+<p>✅ File Sharing, Wireless Audio এবং বিভিন্ন Device সংযোগ করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. BLE-এর পূর্ণরূপ কী?</summary>
+<p>✅ Bluetooth Low Energy।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Bluetooth-এর প্রধান সুবিধা কী?</summary>
+<p>✅ কোনো Cable ছাড়াই সহজে Device সংযুক্ত করা যায়।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="wifi.html">📶 Wi-Fi কী?</a></li>
+
+<li><a href="internet.html">🌐 Internet কী?</a></li>
+
+<li><a href="router.html">📡 Router কী?</a></li>
+
+<li><a href="modem.html">📶 Modem কী?</a></li>
+
+<li><a href="network.html">🖧 Network কী?</a></li>
+
+<li><a href="usb.html">🔌 USB কী?</a></li>
+
+<li><a href="webcam.html">📷 Webcam কী?</a></li>
+
+<li><a href="speaker.html">🔊 Speaker কী?</a></li>
+
+<li><a href="motherboard.html">🖥️ Motherboard কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Bluetooth হলো স্বল্প দূরত্বে Wireless যোগাযোগের একটি নির্ভরযোগ্য প্রযুক্তি। এটি Cable-এর ঝামেলা ছাড়াই বিভিন্ন Device-এর মধ্যে দ্রুত ও নিরাপদ সংযোগ স্থাপন করে। আধুনিক Smartphone, Laptop, Smartwatch, Wireless Earbuds এবং অসংখ্য Smart Device-এ Bluetooth একটি অপরিহার্য প্রযুক্তি হিসেবে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#3f51b5;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#3f51b5;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
