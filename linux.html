@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Linux কী? | Learning Skills</title>
+
+<meta name="description" content="Linux কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Linux, Operating System, Ubuntu, Kernel, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef5fb;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#ff9800;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#ff9800,#ff5722);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#ff5722;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e64a19;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #ff9800;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#ff5722;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#ff5722;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ffb74d;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🐧 Linux কী?</h1>
+
+<p>Linux সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🐧 Linux কী?</h2>
+
+<p>
+
+<b>Linux</b> হলো একটি <b>Free এবং Open Source Operating System</b>। এটি মূলত Linux Kernel-এর উপর ভিত্তি করে তৈরি এবং Server, Desktop Computer, Laptop, Mobile Device, Supercomputer ও Embedded System-এ ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Linux-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>💻 Computer পরিচালনা করা।</li>
+
+<li>📂 File ও Folder Management করা।</li>
+
+<li>⚙️ Hardware নিয়ন্ত্রণ করা।</li>
+
+<li>🌐 Network পরিচালনা করা।</li>
+
+<li>🔒 নিরাপদ Operating Environment প্রদান করা।</li>
+
+<li>📦 বিভিন্ন Application চালানো।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Linux-এর ইতিহাস</h2>
+
+<p>
+
+১৯৯১ সালে ফিনল্যান্ডের শিক্ষার্থী <b>Linus Torvalds</b> Linux Kernel তৈরি করেন। পরে সারা বিশ্বের হাজার হাজার Developer এতে অবদান রাখেন এবং Linux বর্তমানে বিশ্বের অন্যতম জনপ্রিয় Operating System-এ পরিণত হয়েছে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚙️ Linux কীভাবে কাজ করে?</h2>
+
+<p>
+
+Linux-এর Kernel ব্যবহারকারী ও Hardware-এর মধ্যে যোগাযোগ স্থাপন করে। এটি Processor, Memory, Storage, Input/Output Device এবং অন্যান্য System Resource নিয়ন্ত্রণ করে, ফলে বিভিন্ন Program সঠিকভাবে চলতে পারে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Linux-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🐧 সম্পূর্ণ Open Source।</li>
+
+<li>💰 বিনামূল্যে ব্যবহার করা যায়।</li>
+
+<li>🔒 অত্যন্ত নিরাপদ।</li>
+
+<li>⚡ দ্রুত ও স্থিতিশীল।</li>
+
+<li>🌐 Server-এর জন্য অত্যন্ত জনপ্রিয়।</li>
+
+<li>👨‍💻 Programming ও Development-এর জন্য উপযুক্ত।</li>
+
+<li>🔄 Multi-user ও Multi-tasking সমর্থন করে।</li>
+
+</ul>
+
+</div>
+<!-- Linux-এর বিভিন্ন Distribution -->
+
+<div class="card">
+
+<h2>📦 Linux-এর জনপ্রিয় Distribution</h2>
+
+<table>
+
+<tr>
+<th>Distribution</th>
+<th>প্রধান ব্যবহার</th>
+</tr>
+
+<tr>
+<td>Ubuntu</td>
+<td>নতুন ব্যবহারকারী ও Desktop</td>
+</tr>
+
+<tr>
+<td>Debian</td>
+<td>Server ও Stable System</td>
+</tr>
+
+<tr>
+<td>Fedora</td>
+<td>Developer ও Testing</td>
+</tr>
+
+<tr>
+<td>Red Hat Enterprise Linux (RHEL)</td>
+<td>Enterprise ও Business</td>
+</tr>
+
+<tr>
+<td>CentOS Stream</td>
+<td>Server</td>
+</tr>
+
+<tr>
+<td>Kali Linux</td>
+<td>Cyber Security ও Penetration Testing</td>
+</tr>
+
+<tr>
+<td>Linux Mint</td>
+<td>Desktop ব্যবহারকারী</td>
+</tr>
+
+<tr>
+<td>Arch Linux</td>
+<td>Advanced User</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Linux-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Linux-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>🐧 Kernel</li>
+
+<li>🖥️ Shell</li>
+
+<li>📚 System Libraries</li>
+
+<li>⚙️ System Utilities</li>
+
+<li>📦 Package Manager</li>
+
+<li>📂 File System</li>
+
+<li>👤 User Space</li>
+
+<li>🛡️ Security Module</li>
+
+</ul>
+
+</div>
+
+<!-- Linux কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Linux কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Web Server</li>
+
+<li>☁️ Cloud Computing</li>
+
+<li>🖥️ Desktop Computer</li>
+
+<li>💼 Office</li>
+
+<li>📱 Android Operating System</li>
+
+<li>🏦 Banking System</li>
+
+<li>🚀 Supercomputer</li>
+
+<li>🤖 Embedded System</li>
+
+<li>📡 Networking Device</li>
+
+</ul>
+
+</div>
+
+<!-- Linux-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Linux-এর সুবিধা</h2>
+
+<ul>
+
+<li>💰 সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়।</li>
+
+<li>🔓 Open Source হওয়ায় পরিবর্তন করা যায়।</li>
+
+<li>🛡️ Virus-এর ঝুঁকি তুলনামূলক কম।</li>
+
+<li>⚡ দ্রুত ও Stable Performance দেয়।</li>
+
+<li>🔄 নিয়মিত Community Update পাওয়া যায়।</li>
+
+<li>💻 পুরোনো Computer-এও ভালো চলে।</li>
+
+<li>🌐 Server-এর জন্য অত্যন্ত নির্ভরযোগ্য।</li>
+
+</ul>
+
+</div>
+
+<!-- Linux-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Linux-এর অসুবিধা</h2>
+
+<ul>
+
+<li>📚 নতুন ব্যবহারকারীর জন্য শেখা কিছুটা কঠিন।</li>
+
+<li>🎮 সব Game Linux-এ চলে না।</li>
+
+<li>📦 কিছু Commercial Software পাওয়া যায় না।</li>
+
+<li>🖨️ কিছু Hardware Driver আলাদাভাবে Install করতে হয়।</li>
+
+<li>⚙️ অনেক কাজ Terminal ব্যবহার করে করতে হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Linux সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🐧 Linux Kernel তৈরি করেন Linus Torvalds।</li>
+
+<li>📅 Linux Kernel প্রথম প্রকাশিত হয় ১৯৯১ সালে।</li>
+
+<li>🔓 Linux একটি Open Source Operating System।</li>
+
+<li>🌍 বিশ্বের অধিকাংশ Web Server Linux ব্যবহার করে।</li>
+
+<li>📱 Android Operating System Linux Kernel-এর উপর ভিত্তি করে তৈরি।</li>
+
+<li>🚀 বিশ্বের অধিকাংশ Supercomputer Linux ব্যবহার করে।</li>
+
+</ul>
+
+</div>
+<!-- Linux বনাম Windows -->
+
+<div class="card">
+
+<h2>🔄 Linux ও Windows-এর পার্থক্য</h2>
+
+<table>
+
+<tr>
+<th>Linux</th>
+<th>Windows</th>
+</tr>
+
+<tr>
+<td>Open Source</td>
+<td>Closed Source</td>
+</tr>
+
+<tr>
+<td>বিনামূল্যে ব্যবহার করা যায়</td>
+<td>সাধারণত License প্রয়োজন</td>
+</tr>
+
+<tr>
+<td>Virus-এর ঝুঁকি কম</td>
+<td>Virus-এর ঝুঁকি তুলনামূলক বেশি</td>
+</tr>
+
+<tr>
+<td>Server-এ বেশি ব্যবহৃত</td>
+<td>Desktop-এ বেশি ব্যবহৃত</td>
+</tr>
+
+<tr>
+<td>Customization বেশি</td>
+<td>Customization তুলনামূলক কম</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Linux বনাম macOS -->
+
+<div class="card">
+
+<h2>🔄 Linux ও macOS-এর পার্থক্য</h2>
+
+<table>
+
+<tr>
+<th>Linux</th>
+<th>macOS</th>
+</tr>
+
+<tr>
+<td>Open Source</td>
+<td>Closed Source</td>
+</tr>
+
+<tr>
+<td>বিভিন্ন কোম্পানির Computer-এ চলে</td>
+<td>শুধু Apple Mac-এ চলে</td>
+</tr>
+
+<tr>
+<td>বিনামূল্যে</td>
+<td>Apple Device-এর সাথে আসে</td>
+</tr>
+
+<tr>
+<td>Customization বেশি</td>
+<td>Customization সীমিত</td>
+</tr>
+
+<tr>
+<td>Server ও Development-এ জনপ্রিয়</td>
+<td>Creative Work-এর জন্য জনপ্রিয়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🐧 Linux-এর Mascot-এর নাম <b>Tux</b>।</li>
+
+<li>🌍 বিশ্বের অধিকাংশ Supercomputer Linux ব্যবহার করে।</li>
+
+<li>☁️ Google, Amazon ও Meta-এর অনেক Server Linux-ভিত্তিক।</li>
+
+<li>📱 Android Operating System Linux Kernel-এর উপর তৈরি।</li>
+
+<li>🚀 International Space Station (ISS)-এর অনেক System Linux ব্যবহার করে।</li>
+
+<li>💻 হাজারেরও বেশি Linux Distribution রয়েছে।</li>
+
+</ul>
+
+</div>
+
+<!-- Linux ব্যবহারে সতর্কতা -->
+
+<div class="card">
+
+<h2>🛡️ Linux ব্যবহারে সতর্কতা</h2>
+
+<ul>
+
+<li>🔄 System নিয়মিত Update করুন।</li>
+
+<li>🔐 শক্তিশালী Password ব্যবহার করুন।</li>
+
+<li>📦 শুধুমাত্র Trusted Repository থেকে Software Install করুন।</li>
+
+<li>👨‍💻 Root Permission সতর্কতার সাথে ব্যবহার করুন।</li>
+
+<li>💾 গুরুত্বপূর্ণ Data Backup রাখুন।</li>
+
+<li>🛡️ Firewall সক্রিয় রাখুন।</li>
+
+</ul>
+
+</div>
+
+<!-- System Requirements -->
+
+<div class="card">
+
+<h2>⚙️ Linux-এর সাধারণ System Requirements</h2>
+
+<table>
+
+<tr>
+<th>উপাদান</th>
+<th>প্রয়োজনীয়তা</th>
+</tr>
+
+<tr>
+<td>Processor</td>
+<td>1 GHz বা তার বেশি</td>
+</tr>
+
+<tr>
+<td>RAM</td>
+<td>2 GB বা তার বেশি (Desktop ব্যবহারের জন্য 4 GB ভালো)</td>
+</tr>
+
+<tr>
+<td>Storage</td>
+<td>20 GB বা তার বেশি</td>
+</tr>
+
+<tr>
+<td>Graphics</td>
+<td>সাধারণ Graphics Support</td>
+</tr>
+
+<tr>
+<td>Internet</td>
+<td>Update ও Software Install-এর জন্য প্রয়োজন</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Linux-এর জনপ্রিয় Features -->
+
+<div class="card">
+
+<h2>🌟 Linux-এর জনপ্রিয় Features</h2>
+
+<ul>
+
+<li>🐧 Open Source Kernel</li>
+
+<li>📦 Package Manager</li>
+
+<li>💻 Terminal</li>
+
+<li>⚡ Multi-user Support</li>
+
+<li>🔄 Multi-tasking</li>
+
+<li>🛡️ Built-in Security</li>
+
+<li>🌐 Powerful Networking</li>
+
+<li>📂 Stable File System</li>
+
+<li>⚙️ Shell Scripting</li>
+
+<li>☁️ Cloud ও Server Support</li>
+
+</ul>
+
+</div>
+<!-- Linux-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Linux-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+১৯৯১ সালে ফিনল্যান্ডের কম্পিউটার বিজ্ঞান বিভাগের শিক্ষার্থী <b>Linus Torvalds</b> ব্যক্তিগত প্রকল্প হিসেবে Linux Kernel তৈরি করেন। তিনি এটি Open Source হিসেবে প্রকাশ করেন, ফলে বিশ্বের হাজার হাজার Developer এতে অবদান রাখতে শুরু করেন। পরবর্তীতে GNU Project-এর বিভিন্ন সফটওয়্যারের সাথে Linux Kernel যুক্ত হয়ে পূর্ণাঙ্গ GNU/Linux Operating System গড়ে ওঠে। বর্তমানে Linux Server, Cloud Computing, Supercomputer, Smartphone, Embedded System এবং Desktop Computer-এ ব্যাপকভাবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+
+<summary><b>১. Linux কী?</b></summary>
+
+<p>Linux হলো একটি Free এবং Open Source Operating System।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>২. Linux কে তৈরি করেছেন?</b></summary>
+
+<p>Linus Torvalds ১৯৯১ সালে Linux Kernel তৈরি করেন।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৩. Linux কি বিনামূল্যে ব্যবহার করা যায়?</b></summary>
+
+<p>হ্যাঁ। অধিকাংশ Linux Distribution সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৪. Linux কোথায় বেশি ব্যবহৃত হয়?</b></summary>
+
+<p>Server, Cloud Computing, Supercomputer, Desktop এবং Embedded System-এ।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৫. Linux কি Virus থেকে সম্পূর্ণ নিরাপদ?</b></summary>
+
+<p>না। Linux তুলনামূলকভাবে বেশি নিরাপদ হলেও সঠিক নিরাপত্তা ব্যবস্থা গ্রহণ করা জরুরি।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৬. Android কি Linux-এর উপর ভিত্তি করে তৈরি?</b></summary>
+
+<p>হ্যাঁ। Android Operating System Linux Kernel-এর উপর ভিত্তি করে তৈরি।</p>
+
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Linux একটি Open Source Operating System।</li>
+
+<li>✅ Linus Torvalds এটি তৈরি করেন।</li>
+
+<li>✅ প্রথম Linux Kernel প্রকাশিত হয় ১৯৯১ সালে।</li>
+
+<li>✅ Server ও Cloud Computing-এ ব্যাপকভাবে ব্যবহৃত হয়।</li>
+
+<li>✅ Android Linux Kernel-এর উপর ভিত্তি করে তৈরি।</li>
+
+<li>✅ Linux নিরাপদ, দ্রুত ও স্থিতিশীল।</li>
+
+<li>✅ Ubuntu, Fedora, Debian, Arch জনপ্রিয় Distribution।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+
+<summary>১. Linux কী?</summary>
+
+<p>✅ একটি Free এবং Open Source Operating System।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>২. Linux কে তৈরি করেছেন?</summary>
+
+<p>✅ Linus Torvalds।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৩. Linux Kernel প্রথম কবে প্রকাশিত হয়?</summary>
+
+<p>✅ ১৯৯১ সালে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৪. Linux-এর একটি জনপ্রিয় Distribution-এর নাম লিখুন।</summary>
+
+<p>✅ Ubuntu, Debian, Fedora, Linux Mint, Arch Linux ইত্যাদি।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৫. Android কোন Kernel-এর উপর ভিত্তি করে তৈরি?</summary>
+
+<p>✅ Linux Kernel।</p>
+
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="windows.html">🪟 Windows কী?</a></li>
+
+<li><a href="macos.html">🍎 macOS কী?</a></li>
+
+<li><a href="android.html">🤖 Android কী?</a></li>
+
+<li><a href="operating-system.html">💻 Operating System কী?</a></li>
+
+<li><a href="kernel.html">⚙️ Kernel কী?</a></li>
+
+<li><a href="software.html">📦 Software কী?</a></li>
+
+<li><a href="cpu.html">🖥️ CPU কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+<li><a href="ubuntu.html">🐧 Ubuntu কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Linux একটি শক্তিশালী, নিরাপদ এবং নির্ভরযোগ্য Operating System। এটি Open Source হওয়ায় যে কেউ এর Source Code ব্যবহার, পরিবর্তন এবং উন্নত করতে পারে। Server, Cloud Computing, Programming, Cyber Security এবং Supercomputer-এ Linux-এর গুরুত্ব অত্যন্ত বেশি। যারা Operating System সম্পর্কে গভীরভাবে জানতে চান, তাদের জন্য Linux শেখা একটি গুরুত্বপূর্ণ দক্ষতা।
+
+</p>
+
+</div>
