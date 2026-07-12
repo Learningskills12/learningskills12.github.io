@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>macOS কী? | Learning Skills</title>
+
+<meta name="description" content="macOS কী, এর ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="macOS, Apple, Operating System, MacBook, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f8fc;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#555;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#333,#666);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#555;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#333;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #555;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#333;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#555;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ddd;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🍎 macOS কী?</h1>
+
+<p>macOS সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🍎 macOS কী?</h2>
+
+<p>
+
+<b>macOS</b> হলো <b>Apple</b>-এর তৈরি একটি Operating System, যা MacBook, iMac, Mac Mini এবং অন্যান্য Mac কম্পিউটারে ব্যবহৃত হয়। এটি নিরাপত্তা, গতি, স্থায়িত্ব এবং সুন্দর User Interface-এর জন্য পরিচিত।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 macOS-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>💻 কম্পিউটারের হার্ডওয়্যার নিয়ন্ত্রণ করা।</li>
+
+<li>📂 File ও Folder পরিচালনা করা।</li>
+
+<li>🖥️ বিভিন্ন সফটওয়্যার চালানো।</li>
+
+<li>🌐 Internet ও Network পরিচালনা করা।</li>
+
+<li>🔒 নিরাপদ কম্পিউটিং নিশ্চিত করা।</li>
+
+<li>⚙️ System Resource পরিচালনা করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 macOS-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+macOS-এর প্রথম সংস্করণ ২০০১ সালে Mac OS X নামে প্রকাশিত হয়। এটি Apple-এর তৈরি UNIX-ভিত্তিক Operating System। বর্তমানে macOS নিয়মিত নতুন সংস্করণে উন্নত করা হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ macOS-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🍎 Apple-এর নিজস্ব Operating System।</li>
+
+<li>🔒 উচ্চ নিরাপত্তা।</li>
+
+<li>⚡ দ্রুত ও স্থিতিশীল।</li>
+
+<li>🎨 আকর্ষণীয় User Interface।</li>
+
+<li>☁️ iCloud-এর সাথে সহজ সংযোগ।</li>
+
+<li>📱 iPhone ও iPad-এর সাথে সমন্বয়।</li>
+
+<li>🛠️ Built-in Apps সমৃদ্ধ।</li>
+
+</ul>
+
+</div>
+
+<!-- macOS-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 macOS-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🍎 Apple Silicon (M-series) ও Intel Mac সমর্থন।</li>
+
+<li>🖥️ Finder-এর মাধ্যমে File Management।</li>
+
+<li>🌐 Safari Web Browser।</li>
+
+<li>☁️ iCloud Sync।</li>
+
+<li>📱 iPhone-এর সাথে Continuity Features।</li>
+
+<li>🔒 Gatekeeper ও XProtect নিরাপত্তা।</li>
+
+<li>📦 App Store থেকে অ্যাপ ইনস্টল।</li>
+
+<li>🎯 Spotlight Search।</li>
+
+<li>🪟 Mission Control ও Multiple Desktops।</li>
+
+<li>🤖 Siri Support।</li>
+
+</ul>
+
+</div>
+
+<!-- macOS কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 macOS কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>💼 অফিস ও ব্যবসায়</li>
+
+<li>🎨 Graphic Design</li>
+
+<li>🎬 Video Editing</li>
+
+<li>🎵 Music Production</li>
+
+<li>💻 Software Development</li>
+
+<li>📚 শিক্ষা ও গবেষণা</li>
+
+<li>📷 Photo Editing</li>
+
+<li>🌐 Web Development</li>
+
+<li>🏠 ব্যক্তিগত ব্যবহার</li>
+
+<li>🎓 Creative Professionals</li>
+
+</ul>
+
+</div>
+
+<!-- macOS-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ macOS-এর সুবিধা</h2>
+
+<ul>
+
+<li>🔒 শক্তিশালী নিরাপত্তা ব্যবস্থা।</li>
+
+<li>⚡ দ্রুত ও স্থিতিশীল পারফরম্যান্স।</li>
+
+<li>🍎 Apple Ecosystem-এর সাথে সহজ সমন্বয়।</li>
+
+<li>🎨 ব্যবহারে সহজ ও আকর্ষণীয় Interface।</li>
+
+<li>☁️ iCloud Backup ও Sync সুবিধা।</li>
+
+<li>📱 iPhone, iPad ও Apple Watch-এর সাথে সংযোগ।</li>
+
+<li>🔄 নিয়মিত Software Update।</li>
+
+<li>🛠️ Built-in Productivity Apps।</li>
+
+</ul>
+
+</div>
+
+<!-- macOS-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ macOS-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>💰 Mac কম্পিউটারের দাম তুলনামূলক বেশি।</li>
+
+<li>🎮 অনেক Windows Game সরাসরি চলে না।</li>
+
+<li>🧩 কিছু Software শুধুমাত্র Windows-এর জন্য তৈরি।</li>
+
+<li>🔧 Hardware Upgrade-এর সুযোগ সীমিত।</li>
+
+<li>💻 শুধুমাত্র Apple-এর Mac কম্পিউটারে চলে।</li>
+
+</ul>
+
+</div>
+
+<!-- জনপ্রিয় Built-in Apps -->
+
+<div class="card">
+
+<h2>📦 macOS-এর জনপ্রিয় Built-in Apps</h2>
+
+<table>
+
+<tr>
+<th>App</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Finder</td>
+<td>File Management</td>
+</tr>
+
+<tr>
+<td>Safari</td>
+<td>Web Browsing</td>
+</tr>
+
+<tr>
+<td>Mail</td>
+<td>Email ব্যবহার</td>
+</tr>
+
+<tr>
+<td>Calendar</td>
+<td>সময়সূচি পরিচালনা</td>
+</tr>
+
+<tr>
+<td>Notes</td>
+<td>নোট লেখা</td>
+</tr>
+
+<tr>
+<td>Photos</td>
+<td>ছবি পরিচালনা</td>
+</tr>
+
+<tr>
+<td>Preview</td>
+<td>PDF ও ছবি দেখা</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 macOS সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🍎 macOS শুধুমাত্র Apple Mac কম্পিউটারে ব্যবহৃত হয়।</li>
+
+<li>🔒 এটি নিরাপত্তা ও স্থায়িত্বের জন্য পরিচিত।</li>
+
+<li>☁️ iCloud-এর মাধ্যমে বিভিন্ন Apple Device Sync করা যায়।</li>
+
+<li>📱 iPhone-এর সাথে Handoff, AirDrop ও Continuity ব্যবহার করা যায়।</li>
+
+<li>⚡ Apple Silicon Chip-এর কারণে নতুন Mac আরও দ্রুত কাজ করে।</li>
+
+</ul>
+
+</div>
+
+  <!-- macOS কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ macOS কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>🖥️ কম্পিউটার চালু হলে macOS Boot হয়।</li>
+
+<li>⚙️ Kernel হার্ডওয়্যার ও সফটওয়্যার পরিচালনা করে।</li>
+
+<li>💾 Memory, CPU ও Storage নিয়ন্ত্রণ করে।</li>
+
+<li>📂 Finder-এর মাধ্যমে File ও Folder পরিচালনা করা যায়।</li>
+
+<li>📦 ব্যবহারকারী বিভিন্ন App চালাতে পারে।</li>
+
+<li>🌐 Internet, Network ও অন্যান্য Device-এর সাথে যোগাযোগ করে।</li>
+
+</ol>
+
+</div>
+
+<!-- macOS-এর গুরুত্বপূর্ণ বৈশিষ্ট্য -->
+
+<div class="card">
+
+<h2>⭐ macOS-এর গুরুত্বপূর্ণ বৈশিষ্ট্য</h2>
+
+<table>
+
+<tr>
+<th>বৈশিষ্ট্য</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Finder</td>
+<td>File ও Folder পরিচালনা</td>
+</tr>
+
+<tr>
+<td>Dock</td>
+<td>দ্রুত App চালু করা</td>
+</tr>
+
+<tr>
+<td>Spotlight</td>
+<td>দ্রুত Search করা</td>
+</tr>
+
+<tr>
+<td>Mission Control</td>
+<td>একাধিক Window পরিচালনা</td>
+</tr>
+
+<tr>
+<td>Launchpad</td>
+<td>সমস্ত App দেখা</td>
+</tr>
+
+<tr>
+<td>AirDrop</td>
+<td>Apple Device-এর মধ্যে File আদান-প্রদান</td>
+</tr>
+
+<tr>
+<td>Time Machine</td>
+<td>Backup নেওয়া</td>
+</tr>
+
+<tr>
+<td>Terminal</td>
+<td>Command Line ব্যবহার</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- macOS ব্যবহারের টিপস -->
+
+<div class="card">
+
+<h2>💡 macOS ব্যবহারের টিপস</h2>
+
+<ul>
+
+<li>🔄 System Update নিয়মিত করুন।</li>
+
+<li>☁️ iCloud Backup চালু রাখুন।</li>
+
+<li>🔒 শক্তিশালী Password ও Touch ID ব্যবহার করুন।</li>
+
+<li>📂 অপ্রয়োজনীয় File মুছে Storage খালি রাখুন।</li>
+
+<li>🛡️ শুধুমাত্র বিশ্বস্ত উৎস থেকে App Install করুন।</li>
+
+<li>⌨️ Keyboard Shortcut ব্যবহার করে দ্রুত কাজ করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- macOS বনাম Windows -->
+
+<div class="card">
+
+<h2>⚖️ macOS বনাম Windows</h2>
+
+<table>
+
+<tr>
+<th>macOS</th>
+<th>Windows</th>
+</tr>
+
+<tr>
+<td>শুধু Apple Mac-এ চলে</td>
+<td>বিভিন্ন কোম্পানির PC-তে চলে</td>
+</tr>
+
+<tr>
+<td>UNIX-ভিত্তিক</td>
+<td>Microsoft Windows Kernel</td>
+</tr>
+
+<tr>
+<td>Apple তৈরি করে</td>
+<td>Microsoft তৈরি করে</td>
+</tr>
+
+<tr>
+<td>উচ্চ নিরাপত্তা</td>
+<td>বেশি সফটওয়্যার সমর্থন</td>
+</tr>
+
+<tr>
+<td>Apple Ecosystem-এর সাথে ভালো সমন্বয়</td>
+<td>বিভিন্ন Hardware সমর্থন</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🍎 macOS একটি UNIX-ভিত্তিক Operating System।</li>
+
+<li>📱 AirDrop-এর মাধ্যমে দ্রুত File শেয়ার করা যায়।</li>
+
+<li>☁️ Time Machine দিয়ে সম্পূর্ণ Backup নেওয়া যায়।</li>
+
+<li>🔍 Spotlight Search খুব দ্রুত File ও App খুঁজে দেয়।</li>
+
+<li>🛡️ Gatekeeper অজানা App চালানো থেকে সুরক্ষা দিতে সাহায্য করে।</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#555;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#555;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
