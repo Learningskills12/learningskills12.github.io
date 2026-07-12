@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS কী? | Learning Skills</title>
+
+<meta name="description" content="CSS কী, এর ইতিহাস, বৈশিষ্ট্য, ব্যবহার এবং সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="CSS, Cascading Style Sheets, Web Design, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef7ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#1572B6;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#1572B6,#33A9FF);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#1572B6;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0d5c91;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #1572B6;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#1572B6;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#1572B6;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#66c2ff;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+code{
+background:#f4f4f4;
+padding:2px 6px;
+border-radius:4px;
+font-family:monospace;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🎨 CSS কী?</h1>
+
+<p>CSS সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="html.html" class="btn">🌐 HTML</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🎨 CSS কী?</h2>
+
+<p>
+
+<b>CSS (Cascading Style Sheets)</b> হলো একটি <b>Style Sheet Language</b>, যা HTML দিয়ে তৈরি Web Page-এর রং, ডিজাইন, Layout, Font, Animation এবং Responsive Design নিয়ন্ত্রণ করতে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 CSS-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🎨 Web Page-এর ডিজাইন করা।</li>
+
+<li>🌈 রং ও Background পরিবর্তন করা।</li>
+
+<li>🔠 Font ও Text Style নিয়ন্ত্রণ করা।</li>
+
+<li>📦 Layout তৈরি করা।</li>
+
+<li>📱 Responsive Design তৈরি করা।</li>
+
+<li>✨ Animation ও Transition যোগ করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 CSS-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+CSS ১৯৯৬ সালে <b>Håkon Wium Lie</b> প্রস্তাব করেন। বর্তমানে CSS3 সবচেয়ে জনপ্রিয় সংস্করণ এবং আধুনিক Web Design-এর একটি গুরুত্বপূর্ণ প্রযুক্তি।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ CSS-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🎨 Website-কে আকর্ষণীয় করে।</li>
+
+<li>⚡ HTML থেকে Design আলাদা রাখে।</li>
+
+<li>📱 Responsive Design সমর্থন করে।</li>
+
+<li>✨ Animation ও Hover Effect তৈরি করা যায়।</li>
+
+<li>🌐 সব আধুনিক Browser সমর্থন করে।</li>
+
+<li>💻 শেখা সহজ।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 CSS-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🎨 Web Page-এর রং ও ডিজাইন নিয়ন্ত্রণ করে।</li>
+
+<li>📐 Layout তৈরি করতে সাহায্য করে।</li>
+
+<li>📱 Responsive Design সমর্থন করে।</li>
+
+<li>✨ Animation ও Transition যোগ করা যায়।</li>
+
+<li>🖱️ Hover Effect তৈরি করা যায়।</li>
+
+<li>🔤 Font ও Text Style পরিবর্তন করা যায়।</li>
+
+<li>📦 Box Model ব্যবহার করা যায়।</li>
+
+<li>🌐 সব আধুনিক Browser সমর্থন করে।</li>
+
+<li>⚡ Website-এর চেহারা সুন্দর ও আকর্ষণীয় করে।</li>
+
+<li>💻 HTML থেকে Design আলাদা রাখে।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 CSS কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Website Design</li>
+
+<li>🛒 E-commerce Website</li>
+
+<li>📚 Educational Website</li>
+
+<li>📱 Web Application</li>
+
+<li>📰 News Portal</li>
+
+<li>💼 Business Website</li>
+
+<li>🎨 Portfolio Website</li>
+
+<li>📊 Dashboard</li>
+
+<li>📧 Email Template</li>
+
+<li>📝 Blog Website</li>
+
+</ul>
+
+</div>
+
+<!-- CSS-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ CSS-এর সুবিধা</h2>
+
+<ul>
+
+<li>🎨 Website-কে সুন্দর করে।</li>
+
+<li>⚡ একই CSS File বহু Page-এ ব্যবহার করা যায়।</li>
+
+<li>📱 Mobile Friendly Website তৈরি করা সহজ।</li>
+
+<li>🛠️ Website রক্ষণাবেক্ষণ সহজ হয়।</li>
+
+<li>🚀 User Experience উন্নত করে।</li>
+
+<li>🌐 সব আধুনিক Browser-এ সমর্থিত।</li>
+
+<li>✨ Animation ও Visual Effect যোগ করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ CSS-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>⚙️ Logic বা Programming করতে পারে না।</li>
+
+<li>🗄️ Database পরিচালনা করতে পারে না।</li>
+
+<li>💻 Dynamic Function তৈরি করতে JavaScript প্রয়োজন।</li>
+
+<li>🔄 Browser অনুযায়ী কিছু Style ভিন্ন হতে পারে।</li>
+
+<li>📄 শুধুমাত্র Presentation Layer নিয়ন্ত্রণ করে।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS-এর ধরন -->
+
+<div class="card">
+
+<h2>📄 CSS-এর ধরন</h2>
+
+<table>
+
+<tr>
+<th>ধরন</th>
+<th>বর্ণনা</th>
+</tr>
+
+<tr>
+<td>Inline CSS</td>
+<td>HTML Tag-এর ভিতরে লেখা হয়</td>
+</tr>
+
+<tr>
+<td>Internal CSS</td>
+<td>&lt;style&gt; Tag-এর ভিতরে লেখা হয়</td>
+</tr>
+
+<tr>
+<td>External CSS</td>
+<td>আলাদা <code>.css</code> File-এ লেখা হয়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 CSS সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🎨 CSS-এর পূর্ণরূপ Cascading Style Sheets।</li>
+
+<li>🌐 HTML-এর সাথে একসাথে ব্যবহার করা হয়।</li>
+
+<li>📱 Responsive Website তৈরিতে CSS অত্যন্ত গুরুত্বপূর্ণ।</li>
+
+<li>🚀 CSS3-এ Animation, Flexbox ও Grid-এর মতো আধুনিক Feature রয়েছে।</li>
+
+<li>💻 আধুনিক Web Design-এর অন্যতম ভিত্তি হলো CSS।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ CSS কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📝 Developer CSS Code লিখেন।</li>
+
+<li>🔗 CSS File HTML-এর সাথে Link করা হয় অথবা HTML-এর ভিতরে লেখা হয়।</li>
+
+<li>🌐 Browser HTML ও CSS পড়ে।</li>
+
+<li>🎨 CSS Rule অনুযায়ী Element-এর Style নির্ধারণ করা হয়।</li>
+
+<li>🖥️ Browser সুন্দরভাবে ডিজাইন করা Web Page প্রদর্শন করে।</li>
+
+</ol>
+
+</div>
+
+<!-- CSS Selector -->
+
+<div class="card">
+
+<h2>🎯 CSS Selector</h2>
+
+<table>
+
+<tr>
+<th>Selector</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>element</td>
+<td>নির্দিষ্ট HTML Tag নির্বাচন করে</td>
+</tr>
+
+<tr>
+<td>.class</td>
+<td>Class নির্বাচন করে</td>
+</tr>
+
+<tr>
+<td>#id</td>
+<td>ID নির্বাচন করে</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>সব Element নির্বাচন করে</td>
+</tr>
+
+<tr>
+<td>div p</td>
+<td>Div-এর ভিতরের Paragraph নির্বাচন করে</td>
+</tr>
+
+<tr>
+<td>:hover</td>
+<td>Mouse Hover Effect</td>
+</tr>
+
+<tr>
+<td>::before</td>
+<td>Element-এর আগে Content যোগ করে</td>
+</tr>
+
+<tr>
+<td>::after</td>
+<td>Element-এর পরে Content যোগ করে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- CSS Properties -->
+
+<div class="card">
+
+<h2>📋 জনপ্রিয় CSS Properties</h2>
+
+<table>
+
+<tr>
+<th>Property</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>color</td>
+<td>লেখার রং পরিবর্তন</td>
+</tr>
+
+<tr>
+<td>background</td>
+<td>Background নির্ধারণ</td>
+</tr>
+
+<tr>
+<td>font-size</td>
+<td>লেখার আকার পরিবর্তন</td>
+</tr>
+
+<tr>
+<td>margin</td>
+<td>বাইরের ফাঁকা স্থান</td>
+</tr>
+
+<tr>
+<td>padding</td>
+<td>ভেতরের ফাঁকা স্থান</td>
+</tr>
+
+<tr>
+<td>border</td>
+<td>বর্ডার তৈরি</td>
+</tr>
+
+<tr>
+<td>display</td>
+<td>Element প্রদর্শনের ধরন</td>
+</tr>
+
+<tr>
+<td>flex</td>
+<td>Flexible Layout তৈরি</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- CSS শেখার টিপস -->
+
+<div class="card">
+
+<h2>💡 CSS শেখার টিপস</h2>
+
+<ul>
+
+<li>🎨 প্রতিদিন ছোট ছোট ডিজাইন তৈরি করুন।</li>
+
+<li>📱 Responsive Design অনুশীলন করুন।</li>
+
+<li>📦 Flexbox ও CSS Grid শিখুন।</li>
+
+<li>✨ Transition ও Animation ব্যবহার করুন।</li>
+
+<li>🛠️ Browser Developer Tools দিয়ে পরীক্ষা করুন।</li>
+
+<li>💻 বাস্তব Website Clone করে অনুশীলন করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🎨 CSS ছাড়া Website সাধারণ ও আকর্ষণহীন দেখায়।</li>
+
+<li>📱 Media Query ব্যবহার করে Mobile Friendly Design তৈরি করা যায়।</li>
+
+<li>📦 Flexbox এবং Grid আধুনিক Layout তৈরির জনপ্রিয় পদ্ধতি।</li>
+
+<li>✨ CSS দিয়ে JavaScript ছাড়াও অনেক Animation করা যায়।</li>
+
+<li>🌍 প্রায় সব Website-এই CSS ব্যবহার করা হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- CSS-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 CSS-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+CSS (Cascading Style Sheets) ১৯৯৬ সালে <b>Håkon Wium Lie</b> প্রস্তাব করেন। পরবর্তীতে <b>W3C (World Wide Web Consortium)</b> এটি মান (Standard) হিসেবে গ্রহণ করে। HTML ও CSS আলাদা করার ফলে Website-এর ডিজাইন পরিচালনা সহজ হয়ে যায়। বর্তমানে CSS3 আধুনিক Web Design-এর প্রধান প্রযুক্তি এবং এতে Flexbox, Grid, Animation, Transition, Transform, Media Query-এর মতো শক্তিশালী Feature রয়েছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. CSS-এর পূর্ণরূপ কী?</b></summary>
+<p>Cascading Style Sheets।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. CSS কে তৈরি করেন?</b></summary>
+<p>Håkon Wium Lie।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. CSS কি Programming Language?</b></summary>
+<p>না। এটি একটি Style Sheet Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. CSS-এর বর্তমান জনপ্রিয় সংস্করণ কী?</b></summary>
+<p>CSS3।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. CSS কোথায় ব্যবহার করা হয়?</b></summary>
+<p>Website ও Web Application-এর ডিজাইন ও Layout তৈরিতে ব্যবহার করা হয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. CSS কি HTML ছাড়া ব্যবহার করা যায়?</b></summary>
+<p>সাধারণভাবে না। CSS মূলত HTML বা অন্যান্য Markup Language-এর Element-কে Style করার জন্য ব্যবহৃত হয়।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ CSS-এর পূর্ণরূপ Cascading Style Sheets।</li>
+
+<li>✅ Website-এর Design ও Layout তৈরি করে।</li>
+
+<li>✅ Håkon Wium Lie CSS প্রস্তাব করেন।</li>
+
+<li>✅ CSS3 বর্তমানে সবচেয়ে বেশি ব্যবহৃত সংস্করণ।</li>
+
+<li>✅ HTML + CSS + JavaScript মিলে আধুনিক Website তৈরি হয়।</li>
+
+<li>✅ Responsive Design-এর জন্য Media Query ব্যবহার করা হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. CSS-এর পূর্ণরূপ কী?</summary>
+<p>✅ Cascading Style Sheets</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. CSS কে প্রস্তাব করেন?</summary>
+<p>✅ Håkon Wium Lie</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. CSS কোন ধরনের Language?</summary>
+<p>✅ Style Sheet Language</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Responsive Design-এর জন্য কোন CSS Feature ব্যবহৃত হয়?</summary>
+<p>✅ Media Query</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. CSS-এর সাথে কোন দুটি প্রযুক্তি বেশি ব্যবহার করা হয়?</summary>
+<p>✅ HTML এবং JavaScript</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="html.html">🌐 HTML</a></li>
+
+<li><a href="javascript.html">⚙️ JavaScript</a></li>
+
+<li><a href="web-development.html">💻 Web Development</a></li>
+
+<li><a href="website.html">🖥️ Website</a></li>
+
+<li><a href="web-browser.html">🌍 Web Browser</a></li>
+
+<li><a href="internet.html">📡 Internet</a></li>
+
+<li><a href="computer.html">💻 Computer</a></li>
+
+<li><a href="operating-system.html">🖥️ Operating System</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+CSS হলো আধুনিক Web Design-এর অন্যতম গুরুত্বপূর্ণ প্রযুক্তি। এটি HTML দিয়ে তৈরি Web Page-কে সুন্দর, আকর্ষণীয় এবং Responsive করে তোলে। একজন Web Developer-এর জন্য HTML-এর পাশাপাশি CSS শেখা অত্যন্ত গুরুত্বপূর্ণ।
+
+</p>
+
+</div>
+  
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#1572B6;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#1572B6;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+.dark pre,
+.dark code{
+background:#1e1e1e;
+color:#eee;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop || document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
