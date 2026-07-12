@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python কী? | Learning Skills</title>
+
+<meta name="description" content="Python কী, ইতিহাস, বৈশিষ্ট্য, ব্যবহার এবং সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Python, Programming Language, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4fbff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#3776AB;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#3776AB,#FFD43B);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#3776AB;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#285c87;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #3776AB;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#3776AB;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#FFD43B;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🐍 Python কী?</h1>
+
+<p>Python সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="programming.html" class="btn">💻 Programming</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🐍 Python কী?</h2>
+
+<p>
+
+<b>Python</b> একটি উচ্চ-স্তরের (High-Level), সহজ এবং শক্তিশালী <b>Programming Language</b>। এটি Web Development, Artificial Intelligence (AI), Machine Learning, Data Science, Automation, Software Development এবং আরও অনেক ক্ষেত্রে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Python-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>💻 Software Development</li>
+
+<li>🌐 Web Development</li>
+
+<li>🤖 Artificial Intelligence (AI)</li>
+
+<li>📊 Data Science</li>
+
+<li>🧠 Machine Learning</li>
+
+<li>⚙️ Automation</li>
+
+<li>🎮 Game Development</li>
+
+<li>☁️ Cloud Computing</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Python-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+Python ১৯৯১ সালে <b>Guido van Rossum</b> তৈরি করেন। ভাষাটির নাম রাখা হয়েছিল জনপ্রিয় কমেডি অনুষ্ঠান <b>Monty Python's Flying Circus</b> থেকে অনুপ্রাণিত হয়ে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Python-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>📖 সহজ Syntax</li>
+
+<li>⚡ দ্রুত Development</li>
+
+<li>🌐 Cross-platform Support</li>
+
+<li>📚 বিশাল Library Collection</li>
+
+<li>🤖 AI ও Machine Learning-এর জন্য জনপ্রিয়</li>
+
+<li>🆓 Open Source</li>
+
+</ul>
+
+</div>
+
+<!-- Python-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Python-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🐍 সহজ ও পরিষ্কার Syntax।</li>
+
+<li>📖 শেখা সহজ এবং Beginner Friendly।</li>
+
+<li>🌐 Windows, Linux ও macOS-এ চলে।</li>
+
+<li>📚 হাজার হাজার Built-in ও Third-party Library রয়েছে।</li>
+
+<li>⚡ দ্রুত Application Development করা যায়।</li>
+
+<li>🤖 AI, Machine Learning ও Data Science-এর জন্য অত্যন্ত জনপ্রিয়।</li>
+
+<li>🌍 Open Source ও Free Programming Language।</li>
+
+<li>💻 Web, Desktop, Mobile ও Automation Project-এ ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Python কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Python কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Web Development</li>
+
+<li>🤖 Artificial Intelligence (AI)</li>
+
+<li>🧠 Machine Learning</li>
+
+<li>📊 Data Analysis ও Data Science</li>
+
+<li>📈 Data Visualization</li>
+
+<li>⚙️ Automation Script</li>
+
+<li>🛡️ Cyber Security</li>
+
+<li>☁️ Cloud Computing</li>
+
+<li>🎮 Game Development</li>
+
+<li>🖥️ Desktop Software Development</li>
+
+</ul>
+
+</div>
+
+<!-- Python-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Python-এর সুবিধা</h2>
+
+<ul>
+
+<li>📖 সহজে শেখা যায়।</li>
+
+<li>⚡ কম কোডে বেশি কাজ করা যায়।</li>
+
+<li>📚 বিশাল Community Support রয়েছে।</li>
+
+<li>🌐 Cross-platform Support করে।</li>
+
+<li>🤖 AI ও Machine Learning-এর জন্য অন্যতম সেরা Language।</li>
+
+<li>🆓 সম্পূর্ণ Free ও Open Source।</li>
+
+<li>🚀 দ্রুত Prototype তৈরি করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Python-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ Python-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>🐢 কিছু ক্ষেত্রে C/C++-এর তুলনায় ধীর।</li>
+
+<li>📱 Mobile App Development-এ কম ব্যবহৃত হয়।</li>
+
+<li>💾 Memory বেশি ব্যবহার করতে পারে।</li>
+
+<li>⚙️ High Performance System Programming-এর জন্য আদর্শ নয়।</li>
+
+<li>🎮 Heavy Graphics Game Development-এ কম ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- Hello World -->
+
+<div class="card">
+
+<h2>📝 Python-এর প্রথম Program</h2>
+
+<pre><code>print("Hello, World!")</code></pre>
+
+<p>উপরের Programটি Screen-এ <b>Hello, World!</b> প্রদর্শন করবে।</p>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Python সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🐍 Python একটি High-Level Programming Language।</li>
+
+<li>👨‍💻 Guido van Rossum এটি তৈরি করেন।</li>
+
+<li>📅 Python প্রথম প্রকাশিত হয় ১৯৯১ সালে।</li>
+
+<li>🤖 AI, Data Science ও Automation-এ সবচেয়ে জনপ্রিয় ভাষাগুলোর একটি।</li>
+
+<li>🌍 বিশ্বের লাখো Developer Python ব্যবহার করেন।</li>
+
+</ul>
+
+</div>
+
+<!-- Python কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ Python কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📝 Programmer Python Code লিখেন।</li>
+
+<li>💾 Code <code>.py</code> ফাইলে সংরক্ষণ করা হয়।</li>
+
+<li>🐍 Python Interpreter কোড পড়ে।</li>
+
+<li>⚙️ Interpreter কোড Execute করে।</li>
+
+<li>🖥️ ফলাফল Screen-এ প্রদর্শিত হয়।</li>
+
+</ol>
+
+</div>
+
+<!-- Python Data Types -->
+
+<div class="card">
+
+<h2>📦 Python Data Types</h2>
+
+<table>
+
+<tr>
+<th>Data Type</th>
+<th>উদাহরণ</th>
+</tr>
+
+<tr>
+<td>int</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>float</td>
+<td>3.14</td>
+</tr>
+
+<tr>
+<td>str</td>
+<td>"Hello"</td>
+</tr>
+
+<tr>
+<td>bool</td>
+<td>True / False</td>
+</tr>
+
+<tr>
+<td>list</td>
+<td>[1, 2, 3]</td>
+</tr>
+
+<tr>
+<td>tuple</td>
+<td>(1, 2, 3)</td>
+</tr>
+
+<tr>
+<td>dict</td>
+<td>{"name":"Rahim"}</td>
+</tr>
+
+<tr>
+<td>set</td>
+<td>{1, 2, 3}</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জনপ্রিয় Python Library -->
+
+<div class="card">
+
+<h2>📚 জনপ্রিয় Python Library</h2>
+
+<ul>
+
+<li>🐼 Pandas – Data Analysis</li>
+
+<li>🔢 NumPy – Scientific Computing</li>
+
+<li>📈 Matplotlib – Data Visualization</li>
+
+<li>🤖 TensorFlow – Machine Learning</li>
+
+<li>🧠 Scikit-learn – AI ও ML</li>
+
+<li>🌐 Flask – Web Development</li>
+
+<li>🚀 Django – Full-stack Web Framework</li>
+
+<li>🎮 Pygame – Game Development</li>
+
+</ul>
+
+</div>
+
+<!-- Python শেখার টিপস -->
+
+<div class="card">
+
+<h2>💡 Python শেখার টিপস</h2>
+
+<ul>
+
+<li>📝 প্রতিদিন ছোট Program লিখুন।</li>
+
+<li>📚 Built-in Function অনুশীলন করুন।</li>
+
+<li>🧩 ছোট ছোট Project তৈরি করুন।</li>
+
+<li>🤖 Automation Script লিখে Practice করুন।</li>
+
+<li>📊 Data Analysis-এর Basic শিখুন।</li>
+
+<li>🌐 Django বা Flask দিয়ে Web Project তৈরি করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 Python বিশ্বের অন্যতম জনপ্রিয় Programming Language।</li>
+
+<li>🤖 AI ও Machine Learning-এ Python সবচেয়ে বেশি ব্যবহৃত হয়।</li>
+
+<li>🐍 Python-এর Syntax ইংরেজি ভাষার মতো সহজ।</li>
+
+<li>🚀 NASA, Google, Netflix ও Instagram Python ব্যবহার করে।</li>
+
+<li>📚 Python-এর বিশাল Open Source Community রয়েছে।</li>
+
+</ul>
+
+</div>
+
+<!-- Python-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Python-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+Python ১৯৯১ সালে <b>Guido van Rossum</b> প্রকাশ করেন। এর মূল উদ্দেশ্য ছিল এমন একটি Programming Language তৈরি করা যা সহজে পড়া, লেখা ও বোঝা যায়। বর্তমানে Python বিশ্বের অন্যতম জনপ্রিয় Programming Language এবং Web Development, Artificial Intelligence (AI), Machine Learning, Data Science, Automation, Cyber Security ও Cloud Computing-এ ব্যাপকভাবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Python কী?</b></summary>
+<p>Python একটি High-Level, General-Purpose Programming Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. Python কে তৈরি করেন?</b></summary>
+<p>Guido van Rossum।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Python কবে প্রকাশিত হয়?</b></summary>
+<p>১৯৯১ সালে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Python কোথায় ব্যবহার করা হয়?</b></summary>
+<p>Web Development, AI, Machine Learning, Data Science, Automation, Software Development ইত্যাদিতে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Python কি Beginner-দের জন্য ভালো?</b></summary>
+<p>হ্যাঁ। সহজ Syntax-এর কারণে এটি নতুনদের জন্য অন্যতম সেরা Programming Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. Python কি Open Source?</b></summary>
+<p>হ্যাঁ। Python সম্পূর্ণ Free এবং Open Source।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Python একটি High-Level Programming Language।</li>
+
+<li>✅ Guido van Rossum এটি তৈরি করেন।</li>
+
+<li>✅ Python প্রথম প্রকাশিত হয় ১৯৯১ সালে।</li>
+
+<li>✅ AI, Machine Learning ও Data Science-এ বহুল ব্যবহৃত।</li>
+
+<li>✅ Beginner-দের জন্য শেখা সহজ।</li>
+
+<li>✅ Free ও Open Source।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Python কে তৈরি করেন?</summary>
+<p>✅ Guido van Rossum</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. Python প্রথম কবে প্রকাশিত হয়?</summary>
+<p>✅ ১৯৯১ সালে</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Python কী ধরনের Language?</summary>
+<p>✅ High-Level Programming Language</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Python-এর দুটি জনপ্রিয় ব্যবহার লিখুন।</summary>
+<p>✅ Artificial Intelligence (AI) এবং Web Development</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Python কি Open Source?</summary>
+<p>✅ হ্যাঁ</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="programming.html">💻 Programming</a></li>
+
+<li><a href="html.html">🌐 HTML</a></li>
+
+<li><a href="css.html">🎨 CSS</a></li>
+
+<li><a href="javascript.html">⚡ JavaScript</a></li>
+
+<li><a href="artificial-intelligence.html">🤖 Artificial Intelligence</a></li>
+
+<li><a href="computer.html">🖥️ Computer</a></li>
+
+<li><a href="cyber-security.html">🛡️ Cyber Security</a></li>
+
+<li><a href="cloud-computing.html">☁️ Cloud Computing</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Python একটি শক্তিশালী, সহজ এবং বহুমুখী Programming Language। সহজ Syntax, বিশাল Library Support এবং AI, Web Development ও Automation-এ ব্যাপক ব্যবহারের কারণে এটি বর্তমানে বিশ্বের অন্যতম জনপ্রিয় Programming Language।
+
+</p>
+
+</div>  
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:linear-gradient(90deg,#3776AB,#FFD43B);
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+font-weight:bold;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#111;
+color:#fff;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#3776AB;
+color:#fff;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+.dark pre,
+.dark code{
+background:#1e1e1e;
+color:#eee;
+padding:2px 6px;
+border-radius:4px;
+}
+
+</style>
+
+<script>
+
+/* Live Search */
+function searchTopic(){
+
+const input = document.getElementById("searchInput").value.toLowerCase();
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+const winScroll=document.documentElement.scrollTop || document.body.scrollTop;
+
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+const scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
