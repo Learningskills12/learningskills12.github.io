@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML কী? | Learning Skills</title>
+
+<meta name="description" content="HTML কী, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, ট্যাগ, উদাহরণ এবং সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="HTML, HyperText Markup Language, Web Development, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff8f3;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#e34f26;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#e34f26,#ff7043);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#e34f26;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#c63d1a;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #e34f26;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#e34f26;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#e34f26;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ff8a65;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+code{
+background:#f4f4f4;
+padding:2px 6px;
+border-radius:4px;
+font-family:monospace;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🌐 HTML কী?</h1>
+
+<p>HTML সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🌐 HTML কী?</h2>
+
+<p>
+
+<b>HTML (HyperText Markup Language)</b> হলো একটি <b>Markup Language</b> যা Web Page তৈরি করার জন্য ব্যবহৃত হয়। HTML ওয়েব পেজের কাঠামো (Structure) তৈরি করে এবং Browser-কে জানায় কোন তথ্য কীভাবে প্রদর্শন করতে হবে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 HTML-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>📄 Web Page-এর Structure তৈরি করা।</li>
+
+<li>📝 Text প্রদর্শন করা।</li>
+
+<li>🖼️ Image যোগ করা।</li>
+
+<li>🔗 Link তৈরি করা।</li>
+
+<li>📋 Table ও List তৈরি করা।</li>
+
+<li>📝 Form তৈরি করা।</li>
+
+<li>🎥 Audio ও Video যুক্ত করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 HTML-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+HTML ১৯৯১ সালে <b>Tim Berners-Lee</b> তৈরি করেন। বর্তমানে HTML-এর সর্বশেষ প্রধান সংস্করণ হলো <b>HTML5</b>, যা আধুনিক Web Development-এর ভিত্তি।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ HTML-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🌐 Web Page তৈরির মূল ভাষা।</li>
+
+<li>📖 শেখা সহজ।</li>
+
+<li>💻 সব Browser সমর্থন করে।</li>
+
+<li>🎨 CSS ও JavaScript-এর সাথে কাজ করে।</li>
+
+<li>📱 Responsive Website তৈরিতে সহায়ক।</li>
+
+<li>⚡ দ্রুত লোড হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- HTML-এর প্রধান ট্যাগ -->
+
+<div class="card">
+
+<h2>🏷️ HTML-এর গুরুত্বপূর্ণ Tag</h2>
+
+<table>
+
+<tr>
+<th>Tag</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>&lt;html&gt;</td>
+<td>সম্পূর্ণ HTML Document নির্দেশ করে</td>
+</tr>
+
+<tr>
+<td>&lt;head&gt;</td>
+<td>Document-এর তথ্য সংরক্ষণ করে</td>
+</tr>
+
+<tr>
+<td>&lt;title&gt;</td>
+<td>Browser Tab-এর শিরোনাম নির্ধারণ করে</td>
+</tr>
+
+<tr>
+<td>&lt;body&gt;</td>
+<td>ওয়েব পেজের দৃশ্যমান অংশ</td>
+</tr>
+
+<tr>
+<td>&lt;h1&gt; - &lt;h6&gt;</td>
+<td>Heading তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;p&gt;</td>
+<td>Paragraph তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;a&gt;</td>
+<td>Hyperlink তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;img&gt;</td>
+<td>Image প্রদর্শন করে</td>
+</tr>
+
+<tr>
+<td>&lt;table&gt;</td>
+<td>Table তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;form&gt;</td>
+<td>Form তৈরি করে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- HTML কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 HTML কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Website Development</li>
+
+<li>📱 Web Application</li>
+
+<li>📰 Blog Website</li>
+
+<li>🛒 E-commerce Website</li>
+
+<li>🎓 Educational Website</li>
+
+<li>📧 Email Template</li>
+
+<li>📊 Dashboard Interface</li>
+
+<li>📋 Online Form</li>
+
+<li>🗂️ Portfolio Website</li>
+
+<li>📰 News Portal</li>
+
+</ul>
+
+</div>
+
+<!-- HTML-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ HTML-এর সুবিধা</h2>
+
+<ul>
+
+<li>📖 শেখা সহজ।</li>
+
+<li>🌐 সব Browser-এ কাজ করে।</li>
+
+<li>⚡ দ্রুত Load হয়।</li>
+
+<li>🎨 CSS ও JavaScript-এর সাথে সহজে ব্যবহার করা যায়।</li>
+
+<li>💻 বিনামূল্যে ব্যবহার করা যায়।</li>
+
+<li>📱 Responsive Website তৈরির ভিত্তি।</li>
+
+<li>🔍 SEO-এর জন্য গুরুত্বপূর্ণ।</li>
+
+</ul>
+
+</div>
+
+<!-- HTML-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ HTML-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>🎨 একা সুন্দর Design তৈরি করতে পারে না (CSS দরকার)।</li>
+
+<li>⚙️ Logic বা Programming করতে পারে না (JavaScript প্রয়োজন)।</li>
+
+<li>🗄️ Database পরিচালনা করতে পারে না।</li>
+
+<li>🔄 Dynamic Content তৈরির জন্য অন্যান্য ভাষা দরকার।</li>
+
+<li>🛡️ Server-side কাজ করতে পারে না।</li>
+
+</ul>
+
+</div>
+
+<!-- HTML Document Structure -->
+
+<div class="card">
+
+<h2>📄 HTML Document Structure</h2>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Hello World
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 HTML সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🌐 HTML-এর পূর্ণরূপ HyperText Markup Language।</li>
+
+<li>👨‍💻 Tim Berners-Lee HTML তৈরি করেন।</li>
+
+<li>🚀 HTML5 আধুনিক Web Development-এর ভিত্তি।</li>
+
+<li>🎨 HTML + CSS + JavaScript একসাথে একটি পূর্ণাঙ্গ Website তৈরি করে।</li>
+
+<li>📱 Responsive Website তৈরিতে HTML গুরুত্বপূর্ণ ভূমিকা রাখে।</li>
+
+</ul>
+
+</div>
+
+<!-- HTML কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ HTML কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📝 Developer HTML Code লিখেন।</li>
+
+<li>💾 Code <code>.html</code> ফাইলে সংরক্ষণ করা হয়।</li>
+
+<li>🌐 Browser (Chrome, Firefox, Edge, Safari) ফাইলটি পড়ে।</li>
+
+<li>🖥️ Browser HTML Tag বিশ্লেষণ (Parse) করে।</li>
+
+<li>📄 Web Page ব্যবহারকারীর সামনে প্রদর্শিত হয়।</li>
+
+</ol>
+
+</div>
+
+<!-- HTML-এর গুরুত্বপূর্ণ Element -->
+
+<div class="card">
+
+<h2>⭐ HTML-এর গুরুত্বপূর্ণ Element</h2>
+
+<table>
+
+<tr>
+<th>Element</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>&lt;div&gt;</td>
+<td>বিভিন্ন অংশকে Group করে</td>
+</tr>
+
+<tr>
+<td>&lt;span&gt;</td>
+<td>Inline Text সাজাতে ব্যবহৃত হয়</td>
+</tr>
+
+<tr>
+<td>&lt;ul&gt;</td>
+<td>Unordered List</td>
+</tr>
+
+<tr>
+<td>&lt;ol&gt;</td>
+<td>Ordered List</td>
+</tr>
+
+<tr>
+<td>&lt;li&gt;</td>
+<td>List Item</td>
+</tr>
+
+<tr>
+<td>&lt;br&gt;</td>
+<td>নতুন লাইন তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;hr&gt;</td>
+<td>Horizontal Line তৈরি করে</td>
+</tr>
+
+<tr>
+<td>&lt;button&gt;</td>
+<td>Button তৈরি করে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- HTML শেখার টিপস -->
+
+<div class="card">
+
+<h2>💡 HTML শেখার টিপস</h2>
+
+<ul>
+
+<li>📝 প্রতিদিন ছোট ছোট HTML Page তৈরি করুন।</li>
+
+<li>🎨 এরপর CSS শিখে Design যোগ করুন।</li>
+
+<li>⚙️ JavaScript শিখে Website-কে Interactive করুন।</li>
+
+<li>📱 Responsive Design অনুশীলন করুন।</li>
+
+<li>💻 বাস্তব Project তৈরি করুন।</li>
+
+<li>🔍 Browser Developer Tools ব্যবহার করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- HTML বনাম CSS বনাম JavaScript -->
+
+<div class="card">
+
+<h2>⚖️ HTML, CSS ও JavaScript</h2>
+
+<table>
+
+<tr>
+<th>Technology</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>Website-এর Structure তৈরি করে</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>Design ও Styling করে</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Website-কে Interactive করে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 পৃথিবীর প্রায় সব Website-এই HTML ব্যবহার করা হয়।</li>
+
+<li>📄 HTML কোনো Programming Language নয়, এটি একটি Markup Language।</li>
+
+<li>🚀 HTML5-এ Audio, Video ও Canvas-এর মতো আধুনিক Feature রয়েছে।</li>
+
+<li>📱 Responsive Website তৈরিতে HTML গুরুত্বপূর্ণ ভূমিকা পালন করে।</li>
+
+<li>💻 Web Development শেখার প্রথম ধাপ হলো HTML।</li>
+
+</ul>
+
+</div>
+
+  <!-- HTML-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 HTML-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+HTML (HyperText Markup Language) ১৯৯১ সালে <b>Tim Berners-Lee</b> তৈরি করেন। এটি World Wide Web (WWW)-এর ভিত্তি হিসেবে ব্যবহৃত হয়। পরবর্তীতে HTML 2.0, HTML 3.2, HTML 4.01 এবং HTML5 প্রকাশিত হয়। বর্তমানে HTML5 সবচেয়ে বেশি ব্যবহৃত সংস্করণ এবং এটি আধুনিক Website ও Web Application তৈরির মূল ভিত্তি।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. HTML-এর পূর্ণরূপ কী?</b></summary>
+<p>HyperText Markup Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. HTML কে তৈরি করেছেন?</b></summary>
+<p>Tim Berners-Lee।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. HTML কি Programming Language?</b></summary>
+<p>না। HTML একটি Markup Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. HTML5 কী?</b></summary>
+<p>HTML-এর আধুনিক সংস্করণ, যাতে Audio, Video, Canvas এবং আরও অনেক নতুন Feature রয়েছে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. HTML কি একাই Website তৈরি করতে পারে?</b></summary>
+<p>HTML দিয়ে কাঠামো তৈরি করা যায়, তবে সুন্দর ডিজাইন ও ইন্টারঅ্যাকটিভ ফিচারের জন্য CSS এবং JavaScript ব্যবহৃত হয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. HTML ফাইলের Extension কী?</b></summary>
+<p><code>.html</code> অথবা <code>.htm</code></p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ HTML-এর পূর্ণরূপ HyperText Markup Language।</li>
+
+<li>✅ এটি Website-এর Structure তৈরি করে।</li>
+
+<li>✅ Tim Berners-Lee HTML তৈরি করেন।</li>
+
+<li>✅ HTML5 বর্তমানের সবচেয়ে জনপ্রিয় সংস্করণ।</li>
+
+<li>✅ HTML + CSS + JavaScript মিলে আধুনিক Website তৈরি হয়।</li>
+
+<li>✅ HTML শেখা Web Development-এর প্রথম ধাপ।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. HTML-এর পূর্ণরূপ কী?</summary>
+<p>✅ HyperText Markup Language</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. HTML কে তৈরি করেন?</summary>
+<p>✅ Tim Berners-Lee</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. HTML কি Programming Language?</summary>
+<p>✅ না, এটি একটি Markup Language।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. HTML-এর সর্বশেষ প্রধান সংস্করণ কী?</summary>
+<p>✅ HTML5</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. HTML-এর সাথে কোন দুটি প্রযুক্তি বেশি ব্যবহার করা হয়?</summary>
+<p>✅ CSS এবং JavaScript</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="css.html">🎨 CSS</a></li>
+
+<li><a href="javascript.html">⚙️ JavaScript</a></li>
+
+<li><a href="web-browser.html">🌐 Web Browser</a></li>
+
+<li><a href="internet.html">🌍 Internet</a></li>
+
+<li><a href="website.html">🖥️ Website</a></li>
+
+<li><a href="web-development.html">💻 Web Development</a></li>
+
+<li><a href="computer.html">🖥️ Computer</a></li>
+
+<li><a href="operating-system.html">💿 Operating System</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+HTML হলো প্রতিটি Website-এর ভিত্তি। এটি Web Page-এর কাঠামো তৈরি করে এবং CSS ও JavaScript-এর সাথে মিলিত হয়ে আধুনিক, সুন্দর ও কার্যকর Website তৈরি করতে সাহায্য করে। Web Development শেখার প্রথম ধাপ হিসেবে HTML শেখা অত্যন্ত গুরুত্বপূর্ণ।
+
+</p>
+
+</div>
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#e34f26;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#e34f26;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+.dark pre{
+background:#1e1e1e;
+color:#eee;
+padding:12px;
+border-radius:8px;
+overflow:auto;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop || document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
