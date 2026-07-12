@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Programming কী? | Learning Skills</title>
+
+<meta name="description" content="Programming কী, ইতিহাস, বৈশিষ্ট্য, ব্যবহার এবং সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Programming, Coding, Programming Language, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f8ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#6f42c1;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#6f42c1,#9b59b6);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#6f42c1;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#59359c;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #6f42c1;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#6f42c1;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#6f42c1;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#c8a2ff;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+code{
+background:#f4f4f4;
+padding:2px 6px;
+border-radius:4px;
+font-family:monospace;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>💻 Programming কী?</h1>
+
+<p>Programming সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="python.html" class="btn">🐍 Python</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>💻 Programming কী?</h2>
+
+<p>
+
+<b>Programming</b> হলো কম্পিউটারকে নির্দিষ্ট কাজ করার জন্য নির্দেশনা (Instructions) বা কোড (Code) লেখার প্রক্রিয়া। এই নির্দেশনাগুলো Programming Language-এর মাধ্যমে লেখা হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Programming-এর প্রধান উদ্দেশ্য</h2>
+
+<ul>
+
+<li>💻 Software তৈরি করা।</li>
+
+<li>🌐 Website ও Web Application তৈরি করা।</li>
+
+<li>📱 Mobile App তৈরি করা।</li>
+
+<li>🤖 Artificial Intelligence (AI) তৈরি করা।</li>
+
+<li>⚙️ Automation করা।</li>
+
+<li>🎮 Game Development করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Programming-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+Programming-এর ধারণা ১৯শ শতকে <b>Ada Lovelace</b>-এর কাজ থেকে শুরু হয়। পরে C, C++, Java, Python, JavaScriptসহ বিভিন্ন Programming Language তৈরি হয় এবং বর্তমানে Programming প্রযুক্তির অন্যতম ভিত্তি।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Programming-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🧠 সমস্যা সমাধানে সাহায্য করে।</li>
+
+<li>⚡ দ্রুত ও নির্ভুল কাজ করায়।</li>
+
+<li>🌐 বিভিন্ন Platform-এ Software তৈরি করা যায়।</li>
+
+<li>🤖 Automation সম্ভব করে।</li>
+
+<li>📚 হাজারো Programming Language রয়েছে।</li>
+
+<li>🚀 প্রযুক্তির উন্নয়নের মূল ভিত্তি।</li>
+
+</ul>
+
+</div>
+
+<!-- Programming-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Programming-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>💻 কম্পিউটারকে নির্দিষ্ট কাজ করার নির্দেশ দেয়।</li>
+
+<li>🧠 সমস্যা বিশ্লেষণ ও সমাধান করতে সাহায্য করে।</li>
+
+<li>⚡ দ্রুত ও নির্ভুলভাবে কাজ সম্পন্ন করে।</li>
+
+<li>🔄 একই কাজ বারবার স্বয়ংক্রিয়ভাবে করা যায়।</li>
+
+<li>🌐 বিভিন্ন Platform-এর জন্য Software তৈরি করা যায়।</li>
+
+<li>📱 Mobile App, Website ও Game তৈরি করা যায়।</li>
+
+<li>🤖 AI ও Machine Learning Application তৈরি করা যায়।</li>
+
+<li>📊 Data Analysis ও Automation-এ ব্যবহৃত হয়।</li>
+
+<li>📚 বিভিন্ন Programming Language ব্যবহার করা হয়।</li>
+
+<li>🚀 প্রযুক্তির উন্নয়নের অন্যতম ভিত্তি।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>💻 Programming কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Website Development</li>
+
+<li>📱 Mobile App Development</li>
+
+<li>🖥️ Desktop Software Development</li>
+
+<li>🤖 Artificial Intelligence (AI)</li>
+
+<li>🧠 Machine Learning</li>
+
+<li>📊 Data Science</li>
+
+<li>⚙️ Automation</li>
+
+<li>🎮 Game Development</li>
+
+<li>☁️ Cloud Computing</li>
+
+<li>🛡️ Cyber Security</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>✅ Programming-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ কাজ দ্রুত সম্পন্ন করা যায়।</li>
+
+<li>🎯 নির্ভুল ফলাফল পাওয়া যায়।</li>
+
+<li>🔄 পুনরাবৃত্তিমূলক কাজ স্বয়ংক্রিয় করা যায়।</li>
+
+<li>🌍 নতুন প্রযুক্তি তৈরি করা সম্ভব হয়।</li>
+
+<li>💼 কর্মসংস্থানের অনেক সুযোগ রয়েছে।</li>
+
+<li>📚 সমস্যা সমাধানের দক্ষতা বৃদ্ধি পায়।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❌ Programming-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>📖 শিখতে সময় ও অনুশীলন লাগে।</li>
+
+<li>🐞 কোডে Bug থাকলে সমস্যা হতে পারে।</li>
+
+<li>🔧 নিয়মিত Debugging করতে হয়।</li>
+
+<li>📚 নতুন প্রযুক্তির সাথে নিজেকে আপডেট রাখতে হয়।</li>
+
+<li>⚙️ জটিল Project-এ বেশি পরিকল্পনার প্রয়োজন হয়।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📄 জনপ্রিয় Programming Language</h2>
+
+<table>
+
+<tr>
+<th>Language</th>
+<th>প্রধান ব্যবহার</th>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>AI, Data Science, Automation</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Web Development</td>
+</tr>
+
+<tr>
+<td>Java</td>
+<td>Android ও Enterprise Software</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td>System Programming</td>
+</tr>
+
+<tr>
+<td>C++</td>
+<td>Game ও Software Development</td>
+</tr>
+
+<tr>
+<td>C#</td>
+<td>Windows ও Game Development</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>📌 Programming সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>💻 Programming-এর মাধ্যমে Software তৈরি করা হয়।</li>
+
+<li>🌍 প্রায় সব আধুনিক প্রযুক্তির ভিত্তি Programming।</li>
+
+<li>📱 Mobile App ও Website তৈরিতে Programming অপরিহার্য।</li>
+
+<li>🤖 AI ও Robotics-এ Programming গুরুত্বপূর্ণ ভূমিকা রাখে।</li>
+
+<li>🚀 Programming দক্ষতা বর্তমান সময়ের অন্যতম মূল্যবান দক্ষতা।</li>
+
+</ul>
+
+</div>
+
+<!-- Programming কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ Programming কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📝 প্রথমে সমস্যাটি বিশ্লেষণ করা হয়।</li>
+
+<li>📋 একটি Algorithm বা পরিকল্পনা তৈরি করা হয়।</li>
+
+<li>💻 Programming Language ব্যবহার করে Code লেখা হয়।</li>
+
+<li>▶️ Code Compile অথবা Interpret করা হয়।</li>
+
+<li>🐞 Error থাকলে Debugging করা হয়।</li>
+
+<li>✅ সফলভাবে Run হলে কাঙ্ক্ষিত ফলাফল পাওয়া যায়।</li>
+
+</ol>
+
+</div>
+
+<!-- Programming-এর ধাপ -->
+
+<div class="card">
+
+<h2>📋 Programming-এর ধাপ</h2>
+
+<table>
+
+<tr>
+<th>ধাপ</th>
+<th>বর্ণনা</th>
+</tr>
+
+<tr>
+<td>Problem Analysis</td>
+<td>সমস্যা বোঝা ও বিশ্লেষণ করা</td>
+</tr>
+
+<tr>
+<td>Algorithm</td>
+<td>সমাধানের পরিকল্পনা তৈরি করা</td>
+</tr>
+
+<tr>
+<td>Coding</td>
+<td>Programming Language-এ Code লেখা</td>
+</tr>
+
+<tr>
+<td>Testing</td>
+<td>ত্রুটি পরীক্ষা করা</td>
+</tr>
+
+<tr>
+<td>Debugging</td>
+<td>ত্রুটি সংশোধন করা</td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td>Program চালিয়ে ফলাফল দেখা</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জনপ্রিয় Programming ক্ষেত্র -->
+
+<div class="card">
+
+<h2>🚀 Programming-এর জনপ্রিয় ক্ষেত্র</h2>
+
+<ul>
+
+<li>🌐 Web Development</li>
+
+<li>📱 Mobile App Development</li>
+
+<li>🤖 Artificial Intelligence (AI)</li>
+
+<li>🧠 Machine Learning</li>
+
+<li>📊 Data Science</li>
+
+<li>🛡️ Cyber Security</li>
+
+<li>🎮 Game Development</li>
+
+<li>☁️ Cloud Computing</li>
+
+</ul>
+
+</div>
+
+<!-- Programming শেখার টিপস -->
+
+<div class="card">
+
+<h2>💡 Programming শেখার টিপস</h2>
+
+<ul>
+
+<li>📖 প্রতিদিন নিয়মিত Practice করুন।</li>
+
+<li>💻 ছোট ছোট Project তৈরি করুন।</li>
+
+<li>🧩 Algorithm ও Logic অনুশীলন করুন।</li>
+
+<li>📚 Documentation পড়ার অভ্যাস করুন।</li>
+
+<li>🐞 Error থেকে শেখার চেষ্টা করুন।</li>
+
+<li>🌍 Open Source Project দেখুন ও অংশগ্রহণ করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 পৃথিবীর কোটি কোটি Software Programming-এর মাধ্যমে তৈরি হয়েছে।</li>
+
+<li>🤖 AI, Robot ও Smart Device-ও Programming-এর উপর নির্ভরশীল।</li>
+
+<li>💼 Programming বর্তমানে বিশ্বের অন্যতম চাহিদাসম্পন্ন দক্ষতা।</li>
+
+<li>📱 আপনার ব্যবহৃত প্রায় প্রতিটি App Programming দিয়ে তৈরি।</li>
+
+<li>🚀 একজন দক্ষ Programmer বিভিন্ন ধরনের Software তৈরি করতে পারেন।</li>
+
+</ul>
+
+</div>
+
+  
+  
