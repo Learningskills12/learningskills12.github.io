@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PDF কী? | Learning Skills</title>
+
+<meta name="description" content="PDF কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="PDF, Portable Document Format, Adobe PDF, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff5f5;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#e53935;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#b71c1c,#e53935);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#e53935;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b71c1c;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #e53935;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#e53935;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#e53935;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ff8a80;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>📄 PDF কী?</h1>
+
+<p>PDF সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📄 PDF কী?</h2>
+
+<p>
+
+<b>PDF (Portable Document Format)</b> হলো একটি জনপ্রিয় <b>Document File Format</b>, যা Adobe Systems তৈরি করেছে। PDF-এর বিশেষ সুবিধা হলো—যে ডিভাইসেই খোলা হোক না কেন, ডকুমেন্টের Layout, Font, Image এবং Formatting একই থাকে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 PDF-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>📄 Document নিরাপদভাবে সংরক্ষণ করা।</li>
+
+<li>📤 সহজে File Share করা।</li>
+
+<li>🖨️ একই Layout-এ Print করা।</li>
+
+<li>🔒 Password দিয়ে File Protect করা।</li>
+
+<li>📝 Form Fill ও Digital Signature ব্যবহার করা।</li>
+
+<li>📚 E-book ও Official Document প্রকাশ করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 PDF-এর ইতিহাস</h2>
+
+<p>
+
+PDF ১৯৯৩ সালে Adobe Systems দ্বারা তৈরি করা হয়। এর মূল উদ্দেশ্য ছিল এমন একটি File Format তৈরি করা যা যেকোনো Operating System ও Device-এ একইভাবে দেখা যায়। বর্তমানে PDF বিশ্বব্যাপী সবচেয়ে জনপ্রিয় Document Format-গুলোর একটি।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ PDF-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>📄 সব ডিভাইসে একইভাবে দেখা যায়।</li>
+
+<li>🔒 Password Protection দেওয়া যায়।</li>
+
+<li>✍️ Digital Signature ব্যবহার করা যায়।</li>
+
+<li>🖼️ Text, Image, Table ও Graphics সংরক্ষণ করা যায়।</li>
+
+<li>📦 File Size তুলনামূলক ছোট রাখা যায়।</li>
+
+<li>🌐 Windows, Linux, macOS ও Mobile-এ সমর্থিত।</li>
+
+<li>🖨️ Printing-এর জন্য আদর্শ Format।</li>
+
+</ul>
+
+</div>
+
+<!-- PDF-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 PDF-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>📄 Document Page</li>
+
+<li>📝 Text Content</li>
+
+<li>🖼️ Images</li>
+
+<li>📊 Tables</li>
+
+<li>🔗 Hyperlinks</li>
+
+<li>📌 Bookmarks</li>
+
+<li>📑 Attachments</li>
+
+<li>🔒 Security Settings</li>
+
+<li>✍️ Digital Signature</li>
+
+<li>📝 Fillable Form Fields</li>
+
+<li>💬 Comments & Annotations</li>
+
+<li>🔍 Search Feature</li>
+
+</ul>
+
+</div>
+
+<!-- PDF কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 PDF কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏢 অফিস ও কোম্পানি</li>
+
+<li>🏫 স্কুল, কলেজ ও বিশ্ববিদ্যালয়</li>
+
+<li>🏛️ সরকারি অফিস</li>
+
+<li>🏦 ব্যাংক</li>
+
+<li>⚖️ আদালত</li>
+
+<li>🏥 হাসপাতাল</li>
+
+<li>📚 E-book প্রকাশনা</li>
+
+<li>📰 Magazine ও Report</li>
+
+<li>📄 Resume (CV)</li>
+
+<li>📑 Online Application</li>
+
+</ul>
+
+</div>
+
+<!-- PDF-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ PDF-এর সুবিধা</h2>
+
+<ul>
+
+<li>📄 সব ডিভাইসে একইভাবে দেখা যায়।</li>
+
+<li>📤 সহজে Share করা যায়।</li>
+
+<li>🔒 Password দিয়ে নিরাপদ রাখা যায়।</li>
+
+<li>🖨️ Print করলে Layout পরিবর্তন হয় না।</li>
+
+<li>📦 File Size কম রাখা যায়।</li>
+
+<li>✍️ Digital Signature ব্যবহার করা যায়।</li>
+
+<li>🌐 প্রায় সব Operating System-এ খোলা যায়।</li>
+
+<li>📱 Mobile, Tablet ও Computer-এ সমানভাবে কাজ করে।</li>
+
+</ul>
+
+</div>
+
+<!-- PDF-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ PDF-এর অসুবিধা</h2>
+
+<ul>
+
+<li>✏️ সম্পাদনা (Edit) করা তুলনামূলক কঠিন।</li>
+
+<li>💰 উন্নত Edit করার জন্য বিশেষ Software লাগতে পারে।</li>
+
+<li>📄 Scan করা PDF থেকে Text কপি করা সব সময় সহজ নয়।</li>
+
+<li>🖼️ বেশি Image থাকলে File Size বড় হতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- PDF Reader -->
+
+<div class="card">
+
+<h2>📂 জনপ্রিয় PDF Reader</h2>
+
+<table>
+
+<tr>
+<th>Software</th>
+<th>ব্যবহার</th>
+</tr>
+
+<tr>
+<td>Adobe Acrobat Reader</td>
+<td>PDF দেখা, Print ও Comment করা</td>
+</tr>
+
+<tr>
+<td>Google Chrome</td>
+<td>Browser-এ PDF খোলা</td>
+</tr>
+
+<tr>
+<td>Microsoft Edge</td>
+<td>PDF পড়া ও Highlight করা</td>
+</tr>
+
+<tr>
+<td>Foxit PDF Reader</td>
+<td>দ্রুত PDF দেখা ও Annotation</td>
+</tr>
+
+<tr>
+<td>Sumatra PDF</td>
+<td>হালকা ও দ্রুত PDF Reader</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 PDF সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>📄 PDF-এর পূর্ণরূপ <b>Portable Document Format</b>।</li>
+
+<li>🏢 Adobe Systems এটি তৈরি করেছে।</li>
+
+<li>📅 প্রথম প্রকাশিত হয় ১৯৯৩ সালে।</li>
+
+<li>🔒 Password Protection ও Encryption ব্যবহার করা যায়।</li>
+
+<li>✍️ Digital Signature সমর্থন করে।</li>
+
+<li>🌍 বিশ্বব্যাপী সবচেয়ে জনপ্রিয় Document Format-গুলোর একটি।</li>
+
+</ul>
+
+</div>
+
+
+<!-- PDF-এর জনপ্রিয় ব্যবহার -->
+
+<div class="card">
+
+<h2>🌟 PDF-এর জনপ্রিয় ব্যবহার</h2>
+
+<ul>
+
+<li>📄 অফিসিয়াল Document সংরক্ষণ</li>
+
+<li>📚 E-book প্রকাশ</li>
+
+<li>📝 Resume (CV) পাঠানো</li>
+
+<li>📑 Assignment ও Project জমা দেওয়া</li>
+
+<li>🏛️ সরকারি আবেদনপত্র</li>
+
+<li>🏦 ব্যাংকের Document</li>
+
+<li>📜 Certificate ও Marksheet সংরক্ষণ</li>
+
+<li>📖 User Manual ও Guide</li>
+
+<li>📰 Magazine ও Brochure</li>
+
+<li>📤 Email Attachment হিসেবে File পাঠানো</li>
+
+</ul>
+
+</div>
+
+<!-- PDF তৈরির উপায় -->
+
+<div class="card">
+
+<h2>⚙️ PDF কীভাবে তৈরি করবেন?</h2>
+
+<ol>
+
+<li>📄 MS Word বা অন্য Document খুলুন।</li>
+
+<li>📂 <b>File → Save As</b> নির্বাচন করুন।</li>
+
+<li>📑 File Type থেকে <b>PDF (*.pdf)</b> নির্বাচন করুন।</li>
+
+<li>💾 Save বাটনে ক্লিক করুন।</li>
+
+<li>✅ আপনার PDF File তৈরি হয়ে যাবে।</li>
+
+</ol>
+
+</div>
+
+<!-- PDF-এর গুরুত্বপূর্ণ বৈশিষ্ট্য -->
+
+<div class="card">
+
+<h2>⭐ PDF-এর বিশেষ বৈশিষ্ট্য</h2>
+
+<table>
+
+<tr>
+<th>বৈশিষ্ট্য</th>
+<th>বিবরণ</th>
+</tr>
+
+<tr>
+<td>Portable</td>
+<td>সব ডিভাইসে একইভাবে দেখা যায়</td>
+</tr>
+
+<tr>
+<td>Secure</td>
+<td>Password ও Encryption ব্যবহার করা যায়</td>
+</tr>
+
+<tr>
+<td>Printable</td>
+<td>Print করলে Layout পরিবর্তন হয় না</td>
+</tr>
+
+<tr>
+<td>Shareable</td>
+<td>সহজে Email ও Internet-এর মাধ্যমে পাঠানো যায়</td>
+</tr>
+
+<tr>
+<td>Cross Platform</td>
+<td>Windows, Linux, macOS ও Mobile-এ চলে</td>
+</tr>
+
+<tr>
+<td>Digital Signature</td>
+<td>Electronic Signature যোগ করা যায়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- PDF Shortcut -->
+
+<div class="card">
+
+<h2>⌨️ PDF Reader-এর গুরুত্বপূর্ণ Shortcut Keys</h2>
+
+<table>
+
+<tr>
+<th>Shortcut Key</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Ctrl + O</td>
+<td>PDF File Open</td>
+</tr>
+
+<tr>
+<td>Ctrl + P</td>
+<td>Print</td>
+</tr>
+
+<tr>
+<td>Ctrl + F</td>
+<td>Search</td>
+</tr>
+
+<tr>
+<td>Ctrl + +</td>
+<td>Zoom In</td>
+</tr>
+
+<tr>
+<td>Ctrl + -</td>
+<td>Zoom Out</td>
+</tr>
+
+<tr>
+<td>Ctrl + 0</td>
+<td>Actual Size</td>
+</tr>
+
+<tr>
+<td>Page Up</td>
+<td>আগের Page</td>
+</tr>
+
+<tr>
+<td>Page Down</td>
+<td>পরের Page</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>📄 PDF-এর পূর্ণরূপ <b>Portable Document Format</b>।</li>
+
+<li>🏢 Adobe Systems ১৯৯৩ সালে PDF তৈরি করে।</li>
+
+<li>🌍 PDF বর্তমানে বিশ্বের সবচেয়ে জনপ্রিয় Document Format-গুলোর একটি।</li>
+
+<li>📱 প্রায় সব Smartphone, Tablet ও Computer-এ PDF খোলা যায়।</li>
+
+<li>🔒 Password ও Digital Signature ব্যবহারের সুবিধা থাকায় এটি নিরাপদ File Format হিসেবে পরিচিত।</li>
+
+</ul>
+
+</div>
+
+<!-- PDF-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 PDF-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+PDF (Portable Document Format) ১৯৯৩ সালে Adobe Systems তৈরি করে। এর উদ্দেশ্য ছিল এমন একটি Document Format তৈরি করা, যা যেকোনো কম্পিউটার, মোবাইল বা অপারেটিং সিস্টেমে একইভাবে দেখা যাবে। বর্তমানে PDF একটি আন্তর্জাতিক মান (ISO 32000) হিসেবে স্বীকৃত এবং শিক্ষা, ব্যবসা, সরকারি ও ব্যক্তিগত কাজে ব্যাপকভাবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. PDF কী?</b></summary>
+<p>PDF হলো একটি Portable Document Format, যা Document-এর Layout ও Formatting অপরিবর্তিত রাখে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. PDF কে তৈরি করেছে?</b></summary>
+<p>Adobe Systems।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. PDF-এর পূর্ণরূপ কী?</b></summary>
+<p><b>Portable Document Format</b></p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. PDF কি Edit করা যায়?</b></summary>
+<p>হ্যাঁ। Adobe Acrobat Pro বা অন্যান্য PDF Editor ব্যবহার করে Edit করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. PDF-এ Password দেওয়া যায়?</b></summary>
+<p>হ্যাঁ। Password Protection ও Encryption ব্যবহার করে PDF নিরাপদ রাখা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. PDF কি সব Operating System-এ খোলা যায়?</b></summary>
+<p>হ্যাঁ। Windows, Linux, macOS, Android ও iOS-এ PDF সহজেই খোলা যায়।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ PDF-এর পূর্ণরূপ Portable Document Format।</li>
+
+<li>✅ Adobe Systems এটি তৈরি করেছে।</li>
+
+<li>✅ প্রথম প্রকাশিত হয় ১৯৯৩ সালে।</li>
+
+<li>✅ সব ডিভাইসে একই Layout বজায় থাকে।</li>
+
+<li>✅ Password Protection ও Digital Signature ব্যবহার করা যায়।</li>
+
+<li>✅ Print ও Online Share করার জন্য আদর্শ Format।</li>
+
+<li>✅ সরকারি ও অফিসিয়াল Document-এ ব্যাপকভাবে ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. PDF-এর পূর্ণরূপ কী?</summary>
+<p>✅ Portable Document Format</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. PDF কে তৈরি করেছে?</summary>
+<p>✅ Adobe Systems</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. PDF-এর প্রধান সুবিধা কী?</summary>
+<p>✅ সব ডিভাইসে একই Layout ও Formatting বজায় থাকে।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. PDF-এ Password ব্যবহার করা যায় কি?</summary>
+<p>✅ হ্যাঁ, Password Protection ব্যবহার করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. PDF কোথায় সবচেয়ে বেশি ব্যবহৃত হয়?</summary>
+<p>✅ অফিস, শিক্ষা, সরকারি প্রতিষ্ঠান, ব্যাংক, আদালত ও E-book প্রকাশনায়।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="msword.html">📄 MS Word কী?</a></li>
+
+<li><a href="msexcel.html">📊 MS Excel কী?</a></li>
+
+<li><a href="mspowerpoint.html">📽️ MS PowerPoint কী?</a></li>
+
+<li><a href="printer.html">🖨️ Printer কী?</a></li>
+
+<li><a href="scanner.html">📠 Scanner কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+<li><a href="internet.html">🌐 Internet কী?</a></li>
+
+<li><a href="email.html">📧 Email কী?</a></li>
+
+<li><a href="database.html">🗄️ Database কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+PDF একটি নিরাপদ, নির্ভরযোগ্য এবং বহুল ব্যবহৃত Document File Format। এর মাধ্যমে ডকুমেন্টের আসল Layout ও Formatting অক্ষুণ্ণ রেখে সহজে সংরক্ষণ, শেয়ার এবং প্রিন্ট করা যায়। Password Protection, Digital Signature এবং Cross-Platform Support-এর কারণে PDF বর্তমানে বিশ্বের অন্যতম জনপ্রিয় ডকুমেন্ট ফরম্যাট।
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#e53935;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#e53935;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
