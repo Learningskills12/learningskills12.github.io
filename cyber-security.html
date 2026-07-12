@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyber Security কী? | Learning Skills</title>
+
+<meta name="description" content="Cyber Security কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Cyber Security, Internet Security, Network Security, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f8ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#1565c0;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0d47a1,#1565c0);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#1565c0;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0d47a1;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #1565c0;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0d47a1;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#1565c0;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#90caf9;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🛡️ Cyber Security কী?</h1>
+
+<p>Cyber Security সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🛡️ Cyber Security কী?</h2>
+
+<p>
+
+<b>Cyber Security</b> হলো কম্পিউটার, মোবাইল, নেটওয়ার্ক, সার্ভার এবং ডিজিটাল তথ্যকে অননুমোদিত প্রবেশ, আক্রমণ, চুরি, ক্ষতি বা অপব্যবহার থেকে রক্ষা করার প্রযুক্তি, প্রক্রিয়া ও নীতিমালার সমষ্টি।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Cyber Security-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🔒 তথ্য ও ডেটা সুরক্ষিত রাখা।</li>
+
+<li>🛡️ হ্যাকার ও Cyber Attack প্রতিরোধ করা।</li>
+
+<li>🦠 Virus ও Malware থেকে সুরক্ষা প্রদান।</li>
+
+<li>🔑 User Account নিরাপদ রাখা।</li>
+
+<li>🌐 Network নিরাপত্তা নিশ্চিত করা।</li>
+
+<li>💳 Online লেনদেন নিরাপদ রাখা।</li>
+
+<li>📂 গুরুত্বপূর্ণ তথ্যের গোপনীয়তা রক্ষা করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Cyber Security-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+কম্পিউটার ও ইন্টারনেটের ব্যবহার বাড়ার সঙ্গে সঙ্গে Cyber Security-এর গুরুত্বও বৃদ্ধি পায়। বর্তমানে ব্যক্তি, ব্যবসা, ব্যাংক, শিক্ষা প্রতিষ্ঠান এবং সরকারি সংস্থাগুলো Cyber Security ব্যবহার করে তাদের তথ্য ও সিস্টেম সুরক্ষিত রাখে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Cyber Security-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🔒 Data Protection</li>
+
+<li>🛡️ Threat Detection</li>
+
+<li>🔑 Authentication</li>
+
+<li>🌐 Network Security</li>
+
+<li>💾 Backup ও Recovery</li>
+
+<li>📊 Risk Management</li>
+
+<li>⚡ Continuous Monitoring</li>
+
+</ul>
+
+</div>
+
+<!-- Cyber Security-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Cyber Security-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>🌐 Network Security</li>
+
+<li>💻 Application Security</li>
+
+<li>🛡️ Information Security</li>
+
+<li>☁️ Cloud Security</li>
+
+<li>📱 Mobile Security</li>
+
+<li>📧 Email Security</li>
+
+<li>🔐 Identity & Access Management (IAM)</li>
+
+<li>💾 Backup & Disaster Recovery</li>
+
+<li>🏢 Endpoint Security</li>
+
+<li>🔍 Security Monitoring</li>
+
+<li>🚨 Incident Response</li>
+
+<li>🧪 Penetration Testing</li>
+
+</ul>
+
+</div>
+
+<!-- Cyber Security কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Cyber Security কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏦 ব্যাংক ও আর্থিক প্রতিষ্ঠান</li>
+
+<li>🏥 হাসপাতাল ও স্বাস্থ্যসেবা</li>
+
+<li>🏫 স্কুল, কলেজ ও বিশ্ববিদ্যালয়</li>
+
+<li>🏢 সরকারি ও বেসরকারি অফিস</li>
+
+<li>🛒 E-commerce Website</li>
+
+<li>☁️ Cloud Computing</li>
+
+<li>📱 Mobile Application</li>
+
+<li>🌐 Social Media Platform</li>
+
+<li>📡 Internet Service</li>
+
+<li>🏭 শিল্প কারখানা</li>
+
+</ul>
+
+</div>
+
+<!-- Cyber Security-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Cyber Security-এর সুবিধা</h2>
+
+<ul>
+
+<li>🔒 ব্যক্তিগত ও গুরুত্বপূর্ণ তথ্য সুরক্ষিত রাখে।</li>
+
+<li>🛡️ Virus, Malware ও Hacker থেকে সুরক্ষা দেয়।</li>
+
+<li>💳 Online Banking ও Payment নিরাপদ করে।</li>
+
+<li>🌐 Website ও Network নিরাপদ রাখে।</li>
+
+<li>📂 Data Loss-এর ঝুঁকি কমায়।</li>
+
+<li>⚡ ব্যবসার কার্যক্রম সচল রাখতে সাহায্য করে।</li>
+
+<li>👨‍💻 ব্যবহারকারীর Privacy রক্ষা করে।</li>
+
+<li>📈 প্রতিষ্ঠানের প্রতি গ্রাহকের বিশ্বাস বৃদ্ধি করে।</li>
+
+</ul>
+
+</div>
+
+<!-- Cyber Security-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ Cyber Security-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>💰 উন্নত নিরাপত্তা ব্যবস্থা ব্যয়বহুল হতে পারে।</li>
+
+<li>🔄 নতুন ধরনের Cyber Attack সবসময় তৈরি হচ্ছে।</li>
+
+<li>👨‍🎓 ব্যবহারকারীর অসচেতনতা বড় ঝুঁকি হতে পারে।</li>
+
+<li>⚙️ নিয়মিত Update ও Monitoring প্রয়োজন।</li>
+
+<li>🧠 ১০০% নিরাপত্তার নিশ্চয়তা দেওয়া সম্ভব নয়।</li>
+
+</ul>
+
+</div>
+
+<!-- সাধারণ Cyber Threat -->
+
+<div class="card">
+
+<h2>⚠️ সাধারণ Cyber Threat</h2>
+
+<table>
+
+<tr>
+<th>Threat</th>
+<th>বিবরণ</th>
+</tr>
+
+<tr>
+<td>Virus</td>
+<td>ক্ষতিকর প্রোগ্রাম যা ফাইল নষ্ট করতে পারে</td>
+</tr>
+
+<tr>
+<td>Malware</td>
+<td>ক্ষতিকর সফটওয়্যারের সাধারণ নাম</td>
+</tr>
+
+<tr>
+<td>Phishing</td>
+<td>ভুয়া Email বা Website দিয়ে তথ্য চুরি</td>
+</tr>
+
+<tr>
+<td>Ransomware</td>
+<td>ফাইল লক করে মুক্তিপণ দাবি করে</td>
+</tr>
+
+<tr>
+<td>Spyware</td>
+<td>গোপনে ব্যবহারকারীর তথ্য সংগ্রহ করে</td>
+</tr>
+
+<tr>
+<td>Password Attack</td>
+<td>Password অনুমান বা চুরি করার চেষ্টা</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Cyber Security সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🛡️ শক্তিশালী Password ব্যবহার করা উচিত।</li>
+
+<li>🔐 সম্ভব হলে Two-Factor Authentication (2FA) চালু রাখা ভালো।</li>
+
+<li>📥 অজানা Email বা Link খুলতে সতর্ক থাকতে হবে।</li>
+
+<li>🔄 Software ও Antivirus নিয়মিত Update করা উচিত।</li>
+
+<li>💾 গুরুত্বপূর্ণ Data-এর Backup রাখা উচিত।</li>
+
+</ul>
+
+</div>
+
+  <!-- Cyber Security কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ Cyber Security কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>🔍 সম্ভাব্য ঝুঁকি (Threat) শনাক্ত করা হয়।</li>
+
+<li>🛡️ Firewall, Antivirus ও অন্যান্য নিরাপত্তা ব্যবস্থা প্রয়োগ করা হয়।</li>
+
+<li>🔐 Data Encryption-এর মাধ্যমে তথ্য সুরক্ষিত রাখা হয়।</li>
+
+<li>👤 User Authentication ও Access Control নিশ্চিত করা হয়।</li>
+
+<li>📊 সিস্টেম নিয়মিত Monitoring করা হয়।</li>
+
+<li>🚨 কোনো আক্রমণ শনাক্ত হলে দ্রুত প্রতিরোধ ও পুনরুদ্ধারের ব্যবস্থা নেওয়া হয়।</li>
+
+</ol>
+
+</div>
+
+<!-- Cyber Security-এর গুরুত্বপূর্ণ উপাদান -->
+
+<div class="card">
+
+<h2>⭐ Cyber Security-এর গুরুত্বপূর্ণ উপাদান</h2>
+
+<table>
+
+<tr>
+<th>উপাদান</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Firewall</td>
+<td>অননুমোদিত Network Access প্রতিরোধ করে</td>
+</tr>
+
+<tr>
+<td>Antivirus</td>
+<td>Virus ও Malware শনাক্ত ও অপসারণ করে</td>
+</tr>
+
+<tr>
+<td>Encryption</td>
+<td>তথ্যকে নিরাপদ কোডে রূপান্তর করে</td>
+</tr>
+
+<tr>
+<td>Authentication</td>
+<td>ব্যবহারকারীর পরিচয় যাচাই করে</td>
+</tr>
+
+<tr>
+<td>Backup</td>
+<td>ডেটার নিরাপদ কপি সংরক্ষণ করে</td>
+</tr>
+
+<tr>
+<td>VPN</td>
+<td>ইন্টারনেট সংযোগকে আরও নিরাপদ করে</td>
+</tr>
+
+<tr>
+<td>Security Updates</td>
+<td>নতুন নিরাপত্তা ত্রুটি ঠিক করে</td>
+</tr>
+
+<tr>
+<td>Monitoring</td>
+<td>সন্দেহজনক কার্যকলাপ পর্যবেক্ষণ করে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- নিরাপদ থাকার উপায় -->
+
+<div class="card">
+
+<h2>🛡️ Cyber Security বজায় রাখার উপায়</h2>
+
+<ul>
+
+<li>🔑 শক্তিশালী ও আলাদা Password ব্যবহার করুন।</li>
+
+<li>📱 Two-Factor Authentication (2FA) চালু রাখুন।</li>
+
+<li>📥 অজানা Link বা Attachment খুলবেন না।</li>
+
+<li>🔄 Operating System ও Software নিয়মিত Update করুন।</li>
+
+<li>💾 গুরুত্বপূর্ণ Data-এর Backup রাখুন।</li>
+
+<li>🦠 বিশ্বস্ত Antivirus ব্যবহার করুন।</li>
+
+<li>🌐 Public Wi-Fi ব্যবহার করলে সতর্ক থাকুন।</li>
+
+<li>🔒 ব্যক্তিগত তথ্য অপ্রয়োজনীয়ভাবে শেয়ার করবেন না।</li>
+
+</ul>
+
+</div>
+
+<!-- CIA Triad -->
+
+<div class="card">
+
+<h2>🔐 Cyber Security-এর CIA Triad</h2>
+
+<table>
+
+<tr>
+<th>নীতি</th>
+<th>অর্থ</th>
+</tr>
+
+<tr>
+<td>Confidentiality</td>
+<td>তথ্য শুধুমাত্র অনুমোদিত ব্যক্তি দেখতে পারবে</td>
+</tr>
+
+<tr>
+<td>Integrity</td>
+<td>তথ্য সঠিক ও অপরিবর্তিত থাকবে</td>
+</tr>
+
+<tr>
+<td>Availability</td>
+<td>প্রয়োজনের সময় তথ্য ও সেবা পাওয়া যাবে</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🛡️ শক্তিশালী Password ও 2FA ব্যবহার করলে Account আরও নিরাপদ হয়।</li>
+
+<li>📧 Phishing Email অনেক সময় আসল Email-এর মতো দেখাতে পারে।</li>
+
+<li>🔄 Software Update নিরাপত্তা দুর্বলতা কমাতে সাহায্য করে।</li>
+
+<li>💾 নিয়মিত Backup রাখলে Data হারানোর ঝুঁকি কমে।</li>
+
+<li>🌍 Cyber Security ব্যক্তি, প্রতিষ্ঠান ও সরকারের জন্য সমান গুরুত্বপূর্ণ।</li>
+
+</ul>
+
+</div>
+
+  <!-- Cyber Security-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Cyber Security-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+কম্পিউটার ও ইন্টারনেটের ব্যবহার বাড়ার সঙ্গে সঙ্গে Cyber Security-এর গুরুত্বও দ্রুত বৃদ্ধি পেয়েছে। ১৯৭০-এর দশক থেকে কম্পিউটার নিরাপত্তা নিয়ে গবেষণা শুরু হয়। পরবর্তীতে ইন্টারনেটের বিস্তারের সাথে Virus, Worm, Malware এবং Hacking-এর মতো Cyber Threat বৃদ্ধি পায়। বর্তমানে Artificial Intelligence (AI), Machine Learning (ML) এবং Cloud Security-এর মতো আধুনিক প্রযুক্তি ব্যবহার করে Cyber Security আরও উন্নত করা হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Cyber Security কী?</b></summary>
+<p>Cyber Security হলো কম্পিউটার, নেটওয়ার্ক এবং ডেটাকে সাইবার আক্রমণ থেকে সুরক্ষিত রাখার প্রযুক্তি ও প্রক্রিয়া।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. Cyber Security কেন গুরুত্বপূর্ণ?</b></summary>
+<p>এটি ব্যক্তিগত তথ্য, ব্যাংকিং তথ্য, ব্যবসায়িক ডেটা এবং অনলাইন অ্যাকাউন্টকে নিরাপদ রাখতে সাহায্য করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Phishing কী?</b></summary>
+<p>Phishing হলো ভুয়া Email, Message বা Website-এর মাধ্যমে ব্যক্তিগত তথ্য চুরি করার একটি প্রতারণামূলক পদ্ধতি।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Firewall কী?</b></summary>
+<p>Firewall একটি নিরাপত্তা ব্যবস্থা যা অননুমোদিত নেটওয়ার্ক সংযোগ প্রতিরোধ করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Antivirus-এর কাজ কী?</b></summary>
+<p>Antivirus Virus, Malware এবং অন্যান্য ক্ষতিকর সফটওয়্যার শনাক্ত ও অপসারণ করতে সাহায্য করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. 2FA (Two-Factor Authentication) কী?</b></summary>
+<p>2FA হলো লগইনের সময় Password-এর পাশাপাশি অতিরিক্ত একটি যাচাইকরণ ধাপ ব্যবহার করার নিরাপত্তা ব্যবস্থা।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Cyber Security তথ্য ও সিস্টেমকে সুরক্ষিত রাখে।</li>
+
+<li>✅ Firewall, Antivirus ও Encryption গুরুত্বপূর্ণ নিরাপত্তা প্রযুক্তি।</li>
+
+<li>✅ শক্তিশালী Password ও 2FA ব্যবহার করা উচিত।</li>
+
+<li>✅ সন্দেহজনক Link বা Email এড়িয়ে চলা উচিত।</li>
+
+<li>✅ নিয়মিত Software Update ও Data Backup রাখা প্রয়োজন।</li>
+
+<li>✅ Cyber Security ব্যক্তি ও প্রতিষ্ঠানের জন্য অত্যন্ত গুরুত্বপূর্ণ।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Cyber Security কী?</summary>
+<p>✅ কম্পিউটার, নেটওয়ার্ক ও ডেটাকে সাইবার আক্রমণ থেকে সুরক্ষিত রাখার ব্যবস্থা।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. Cyber Security-এর দুটি গুরুত্বপূর্ণ উপাদানের নাম লিখুন।</summary>
+<p>✅ Firewall এবং Antivirus।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Phishing কী?</summary>
+<p>✅ ভুয়া Email বা Website-এর মাধ্যমে তথ্য চুরি করার পদ্ধতি।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. 2FA-এর পূর্ণরূপ কী?</summary>
+<p>✅ Two-Factor Authentication।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Data Backup কেন গুরুত্বপূর্ণ?</summary>
+<p>✅ ডেটা হারিয়ে গেলে তা পুনরুদ্ধার করতে সাহায্য করে।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="internet.html">🌐 Internet</a></li>
+
+<li><a href="computer-network.html">📡 Computer Network</a></li>
+
+<li><a href="cloud-computing.html">☁️ Cloud Computing</a></li>
+
+<li><a href="cloud-storage.html">💾 Cloud Storage</a></li>
+
+<li><a href="artificial-intelligence.html">🤖 Artificial Intelligence</a></li>
+
+<li><a href="chatgpt.html">💬 ChatGPT</a></li>
+
+<li><a href="database.html">🗄️ Database</a></li>
+
+<li><a href="operating-system.html">💻 Operating System</a></li>
+
+<li><a href="computer.html">🖥️ Computer</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Cyber Security বর্তমান ডিজিটাল যুগে অত্যন্ত গুরুত্বপূর্ণ। এটি ব্যক্তি, প্রতিষ্ঠান এবং সরকারের তথ্য ও সিস্টেমকে নিরাপদ রাখতে সাহায্য করে। নিরাপদ Password, 2FA, নিয়মিত Update এবং সতর্ক অনলাইন ব্যবহার Cyber Security-এর গুরুত্বপূর্ণ অংশ।
+
+</p>
+
+</div>
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#1565c0;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#1565c0;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
