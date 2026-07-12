@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Web Browser কী? | Learning Skills</title>
+
+<meta name="description" content="Web Browser কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Web Browser, Browser, Google Chrome, Mozilla Firefox, Microsoft Edge, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef7ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#4285F4;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#1565c0,#4285F4);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#4285F4;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1565c0;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #4285F4;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#1565c0;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#4285F4;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#90caf9;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🌐 Web Browser কী?</h1>
+
+<p>Web Browser সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🌐 Web Browser কী?</h2>
+
+<p>
+
+<b>Web Browser</b> হলো এমন একটি <b>Application Software</b>, যার মাধ্যমে Internet-এ থাকা Website, Web Page এবং Online Content দেখা ও ব্যবহার করা যায়। Browser ব্যবহার করে আমরা তথ্য খুঁজি, Video দেখি, Email ব্যবহার করি, Online Shopping করি এবং বিভিন্ন Web Application চালাই।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Web Browser-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🌍 Website ও Web Page খুলে দেখানো।</li>
+
+<li>🔎 Internet-এ তথ্য খোঁজা।</li>
+
+<li>📺 Online Video ও Audio চালানো।</li>
+
+<li>📧 Email ব্যবহার করা।</li>
+
+<li>🛒 Online Shopping করা।</li>
+
+<li>📥 File Download ও Upload করা।</li>
+
+<li>☁️ Web Application ব্যবহার করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Web Browser-এর ইতিহাস</h2>
+
+<p>
+
+বিশ্বের প্রথম Web Browser ছিল <b>WorldWideWeb</b>, যা ১৯৯০ সালে Tim Berners-Lee তৈরি করেন। বর্তমানে Google Chrome, Mozilla Firefox, Microsoft Edge, Safari এবং Opera বিশ্বের সবচেয়ে জনপ্রিয় Web Browser।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Web Browser-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🌍 Internet Browsing করা যায়।</li>
+
+<li>📑 একাধিক Tab ব্যবহার করা যায়।</li>
+
+<li>🔖 Bookmark সংরক্ষণ করা যায়।</li>
+
+<li>📥 File Download করা যায়।</li>
+
+<li>🔒 Secure Browsing ও Private Mode রয়েছে।</li>
+
+<li>🧩 বিভিন্ন Extension ব্যবহার করা যায়।</li>
+
+<li>⚡ দ্রুত Website Load করতে সাহায্য করে।</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Web Browser-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>📋 Title Bar</li>
+
+<li>📑 Tab Bar</li>
+
+<li>🔙 Back Button</li>
+
+<li>🔜 Forward Button</li>
+
+<li>🔄 Refresh / Reload Button</li>
+
+<li>🏠 Home Button</li>
+
+<li>🌐 Address Bar (URL Bar)</li>
+
+<li>⭐ Bookmark Bar</li>
+
+<li>⬇️ Download Manager</li>
+
+<li>⚙️ Menu Button</li>
+
+<li>🔍 Search Box</li>
+
+<li>📄 Status Bar (কিছু Browser-এ)</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Web Browser কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏠 বাড়িতে Internet Browsing</li>
+
+<li>🏫 স্কুল, কলেজ ও বিশ্ববিদ্যালয়</li>
+
+<li>🏢 অফিস ও কোম্পানি</li>
+
+<li>🏦 Online Banking</li>
+
+<li>🛒 Online Shopping</li>
+
+<li>📧 Email ব্যবহার</li>
+
+<li>🎥 YouTube ও অন্যান্য Streaming Website</li>
+
+<li>📚 Online Learning Platform</li>
+
+<li>☁️ Cloud Application ব্যবহার</li>
+
+<li>💼 সরকারি Online Services</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Web Browser-এর সুবিধা</h2>
+
+<ul>
+
+<li>🌍 দ্রুত Internet Browsing করা যায়।</li>
+
+<li>📑 একাধিক Tab একসাথে খোলা যায়।</li>
+
+<li>⭐ Bookmark সংরক্ষণ করা যায়।</li>
+
+<li>⬇️ সহজে File Download করা যায়।</li>
+
+<li>🔒 Private Browsing ও Security Feature রয়েছে।</li>
+
+<li>🧩 Extension যোগ করে নতুন সুবিধা ব্যবহার করা যায়।</li>
+
+<li>🔄 History ও Password Sync করা যায়।</li>
+
+<li>☁️ Google Account বা Microsoft Account দিয়ে Sync করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Web Browser-এর অসুবিধা</h2>
+
+<ul>
+
+<li>🌐 Internet ছাড়া বেশিরভাগ Website ব্যবহার করা যায় না।</li>
+
+<li>⚠️ ক্ষতিকর Website থেকে Virus বা Malware আসতে পারে।</li>
+
+<li>🐢 অনেক Tab খুললে Browser ধীর হয়ে যেতে পারে।</li>
+
+<li>🔋 বেশি RAM ও Battery ব্যবহার করতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- জনপ্রিয় Web Browser -->
+
+<div class="card">
+
+<h2>🌍 জনপ্রিয় Web Browser</h2>
+
+<table>
+
+<tr>
+<th>Browser</th>
+<th>Developer</th>
+</tr>
+
+<tr>
+<td>Google Chrome</td>
+<td>Google</td>
+</tr>
+
+<tr>
+<td>Mozilla Firefox</td>
+<td>Mozilla Foundation</td>
+</tr>
+
+<tr>
+<td>Microsoft Edge</td>
+<td>Microsoft</td>
+</tr>
+
+<tr>
+<td>Safari</td>
+<td>Apple</td>
+</tr>
+
+<tr>
+<td>Opera</td>
+<td>Opera Software</td>
+</tr>
+
+<tr>
+<td>Brave</td>
+<td>Brave Software</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Web Browser সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🌐 এটি একটি Application Software।</li>
+
+<li>🔎 Website ও Web Page দেখার জন্য ব্যবহার করা হয়।</li>
+
+<li>📅 প্রথম Web Browser তৈরি হয় ১৯৯০ সালে।</li>
+
+<li>👨‍💻 Tim Berners-Lee প্রথম Web Browser তৈরি করেন।</li>
+
+<li>⭐ Google Chrome বর্তমানে বিশ্বের অন্যতম জনপ্রিয় Browser।</li>
+
+<li>🔒 আধুনিক Browser-এ HTTPS ও Private Browsing সমর্থন করে।</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর গুরুত্বপূর্ণ Features -->
+
+<div class="card">
+
+<h2>⭐ Web Browser-এর গুরুত্বপূর্ণ Features</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Tabs</td>
+<td>একসাথে একাধিক Website খোলা যায়</td>
+</tr>
+
+<tr>
+<td>Bookmarks</td>
+<td>পছন্দের Website সংরক্ষণ করা যায়</td>
+</tr>
+
+<tr>
+<td>History</td>
+<td>আগে দেখা Website-এর তালিকা দেখা যায়</td>
+</tr>
+
+<tr>
+<td>Downloads</td>
+<td>Download করা File পরিচালনা করা যায়</td>
+</tr>
+
+<tr>
+<td>Private / Incognito Mode</td>
+<td>Browsing History সংরক্ষণ না করে Browsing করা যায়</td>
+</tr>
+
+<tr>
+<td>Extensions</td>
+<td>Browser-এ নতুন Feature যোগ করা যায়</td>
+</tr>
+
+<tr>
+<td>Password Manager</td>
+<td>Password নিরাপদে সংরক্ষণ করা যায়</td>
+</tr>
+
+<tr>
+<td>Sync</td>
+<td>একাধিক Device-এ Data Sync করা যায়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Web Browser ব্যবহারের ধাপ -->
+
+<div class="card">
+
+<h2>⚙️ Web Browser ব্যবহার করার ধাপ</h2>
+
+<ol>
+
+<li>🌐 Browser চালু করুন।</li>
+
+<li>🔗 Address Bar-এ Website-এর URL লিখুন।</li>
+
+<li>⌨️ Enter চাপুন।</li>
+
+<li>📄 Website Load হওয়ার জন্য অপেক্ষা করুন।</li>
+
+<li>🔎 প্রয়োজনে Search Engine ব্যবহার করুন।</li>
+
+<li>⭐ গুরুত্বপূর্ণ Website Bookmark করুন।</li>
+
+<li>⬇️ প্রয়োজন হলে File Download করুন।</li>
+
+</ol>
+
+</div>
+
+<!-- Web Browser Shortcut Keys -->
+
+<div class="card">
+
+<h2>⌨️ Web Browser-এর গুরুত্বপূর্ণ Shortcut Keys</h2>
+
+<table>
+
+<tr>
+<th>Shortcut Key</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Ctrl + T</td>
+<td>নতুন Tab খোলা</td>
+</tr>
+
+<tr>
+<td>Ctrl + W</td>
+<td>বর্তমান Tab বন্ধ করা</td>
+</tr>
+
+<tr>
+<td>Ctrl + Shift + T</td>
+<td>বন্ধ Tab আবার খোলা</td>
+</tr>
+
+<tr>
+<td>Ctrl + L</td>
+<td>Address Bar নির্বাচন করা</td>
+</tr>
+
+<tr>
+<td>Ctrl + D</td>
+<td>Website Bookmark করা</td>
+</tr>
+
+<tr>
+<td>Ctrl + H</td>
+<td>Browsing History খোলা</td>
+</tr>
+
+<tr>
+<td>Ctrl + J</td>
+<td>Downloads খোলা</td>
+</tr>
+
+<tr>
+<td>Ctrl + F</td>
+<td>Page-এর মধ্যে Search করা</td>
+</tr>
+
+<tr>
+<td>Ctrl + R</td>
+<td>Page Refresh করা</td>
+</tr>
+
+<tr>
+<td>F5</td>
+<td>Page Reload করা</td>
+</tr>
+
+<tr>
+<td>Ctrl + +</td>
+<td>Zoom In</td>
+</tr>
+
+<tr>
+<td>Ctrl + -</td>
+<td>Zoom Out</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 বিশ্বের প্রথম Web Browser ছিল <b>WorldWideWeb</b>।</li>
+
+<li>👨‍💻 এটি ১৯৯০ সালে Tim Berners-Lee তৈরি করেন।</li>
+
+<li>⚡ Google Chrome বর্তমানে বিশ্বের অন্যতম জনপ্রিয় Web Browser।</li>
+
+<li>🔒 আধুনিক Browser-এ HTTPS, Pop-up Blocker এবং Safe Browsing সুবিধা রয়েছে।</li>
+
+<li>☁️ Browser-এর মাধ্যমে Gmail, Google Docs, Microsoft 365 এবং অন্যান্য Cloud Application ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর ব্যবহার -->
+
+<div class="card">
+
+<h2>🌐 Web Browser-এর ব্যবহার</h2>
+
+<ul>
+
+<li>🔎 তথ্য অনুসন্ধান (Google Search)</li>
+
+<li>📧 Email ব্যবহার</li>
+
+<li>🎥 YouTube ও Video Streaming</li>
+
+<li>📱 Social Media ব্যবহার</li>
+
+<li>🛒 Online Shopping</li>
+
+<li>🏦 Internet Banking</li>
+
+<li>📚 Online Education</li>
+
+<li>💼 সরকারি Online Services</li>
+
+<li>☁️ Cloud Storage ব্যবহার</li>
+
+<li>💬 Online Meeting ও Web Apps চালানো</li>
+
+</ul>
+
+</div>
+
+<!-- Web Browser-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Web Browser-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+বিশ্বের প্রথম Web Browser <b>WorldWideWeb</b> (পরে Nexus নামে পরিচিত) ১৯৯০ সালে Tim Berners-Lee তৈরি করেন। এরপর Mosaic, Netscape Navigator, Internet Explorer, Mozilla Firefox, Google Chrome, Safari এবং Microsoft Edge-এর মতো আধুনিক Browser তৈরি হয়। বর্তমানে Web Browser ইন্টারনেট ব্যবহারের অন্যতম গুরুত্বপূর্ণ সফটওয়্যার।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Web Browser কী?</b></summary>
+<p>Web Browser হলো একটি Application Software, যার মাধ্যমে Internet-এর Website ও Web Page দেখা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. বিশ্বের প্রথম Web Browser কোনটি?</b></summary>
+<p><b>WorldWideWeb (Nexus)</b></p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Web Browser কে তৈরি করেন?</b></summary>
+<p>Tim Berners-Lee।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. বর্তমানে সবচেয়ে জনপ্রিয় Browser কোনটি?</b></summary>
+<p>Google Chrome বিশ্বের অন্যতম জনপ্রিয় Web Browser।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Incognito বা Private Mode কী?</b></summary>
+<p>এটি এমন একটি Browsing Mode যেখানে Local Browsing History, Cookies ও Site Data Session শেষ হলে সংরক্ষিত থাকে না।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. Web Browser কি Internet ছাড়া কাজ করে?</b></summary>
+<p>কিছু আগে থেকে সংরক্ষিত (Cached) বা Local File খোলা যায়, তবে অধিকাংশ Website ব্যবহারের জন্য Internet প্রয়োজন।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Web Browser একটি Application Software।</li>
+
+<li>✅ Website ও Web Page দেখার জন্য ব্যবহৃত হয়।</li>
+
+<li>✅ প্রথম Web Browser তৈরি হয় ১৯৯০ সালে।</li>
+
+<li>✅ Tim Berners-Lee প্রথম Web Browser তৈরি করেন।</li>
+
+<li>✅ Google Chrome, Firefox, Edge, Safari ও Opera জনপ্রিয় Browser।</li>
+
+<li>✅ Bookmark, History, Downloads ও Private Browsing সুবিধা রয়েছে।</li>
+
+<li>✅ Web Browser ছাড়া সাধারণভাবে Website ব্যবহার করা যায় না।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Web Browser কী?</summary>
+<p>✅ Website ও Web Page দেখার জন্য ব্যবহৃত একটি Application Software।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. বিশ্বের প্রথম Web Browser কোনটি?</summary>
+<p>✅ WorldWideWeb (Nexus)</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Web Browser কে তৈরি করেন?</summary>
+<p>✅ Tim Berners-Lee</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Browser-এর Address Bar-এর কাজ কী?</summary>
+<p>✅ Website-এর URL লিখে Website খোলা।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. দুটি জনপ্রিয় Web Browser-এর নাম লিখুন।</summary>
+<p>✅ Google Chrome এবং Mozilla Firefox।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="internet.html">🌐 Internet কী?</a></li>
+
+<li><a href="website.html">🌍 Website কী?</a></li>
+
+<li><a href="searchengine.html">🔎 Search Engine কী?</a></li>
+
+<li><a href="url.html">🔗 URL কী?</a></li>
+
+<li><a href="html.html">📝 HTML কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+<li><a href="wifi.html">📶 Wi-Fi কী?</a></li>
+
+<li><a href="bluetooth.html">📡 Bluetooth কী?</a></li>
+
+<li><a href="email.html">📧 Email কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Web Browser হলো ইন্টারনেট ব্যবহারের প্রধান মাধ্যম। এর সাহায্যে আমরা Website দেখা, তথ্য অনুসন্ধান, Email ব্যবহার, Online Banking, শিক্ষা, Shopping এবং বিভিন্ন Web Application সহজে ব্যবহার করতে পারি। আধুনিক Browser-এ নিরাপত্তা, গতি এবং ব্যবহারকারীর সুবিধার জন্য অসংখ্য উন্নত Feature রয়েছে।
+
+</p>
+
+</div>
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#4285F4;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#4285F4;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
