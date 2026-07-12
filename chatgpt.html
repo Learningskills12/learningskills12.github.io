@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChatGPT কী? | Learning Skills</title>
+
+<meta name="description" content="ChatGPT কী, এর কাজ, ব্যবহার, বৈশিষ্ট্য, সুবিধা, অসুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="ChatGPT, AI Chatbot, Artificial Intelligence, OpenAI, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4fff8;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#10a37f;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0b7a5c,#10a37f);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#10a37f;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0b7a5c;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #10a37f;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0b7a5c;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#10a37f;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#7de2c3;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>💬 ChatGPT কী?</h1>
+
+<p>ChatGPT সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>💬 ChatGPT কী?</h2>
+
+<p>
+
+<b>ChatGPT</b> হলো <b>OpenAI</b> কর্তৃক তৈরি একটি AI Chatbot। এটি মানুষের ভাষা বুঝে প্রশ্নের উত্তর দিতে, লেখা তৈরি করতে, অনুবাদ করতে, কোড লিখতে, সারাংশ তৈরি করতে এবং বিভিন্ন বিষয়ে সহায়তা করতে পারে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 ChatGPT-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>❓ প্রশ্নের উত্তর দেওয়া।</li>
+
+<li>📝 প্রবন্ধ, চিঠি ও নোট লেখা।</li>
+
+<li>🌐 ভাষা অনুবাদ করা।</li>
+
+<li>💻 প্রোগ্রামিং কোড লিখতে সাহায্য করা।</li>
+
+<li>📚 পড়াশোনা ও শেখার সহায়তা করা।</li>
+
+<li>📄 লেখা সংক্ষিপ্ত (Summary) করা।</li>
+
+<li>💡 নতুন আইডিয়া ও পরামর্শ দেওয়া।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 ChatGPT-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+ChatGPT তৈরি করেছে <b>OpenAI</b>। এটি ২০২২ সালে সাধারণ মানুষের জন্য উন্মুক্ত করা হয়। এরপর শিক্ষা, ব্যবসা, গবেষণা, প্রোগ্রামিং এবং দৈনন্দিন কাজে এর ব্যবহার দ্রুত বৃদ্ধি পায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ ChatGPT-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🤖 AI-ভিত্তিক Chatbot।</li>
+
+<li>💬 মানুষের মতো কথোপকথন করতে পারে।</li>
+
+<li>🌍 একাধিক ভাষা বুঝতে ও ব্যবহার করতে পারে।</li>
+
+<li>📝 বিভিন্ন ধরনের লেখা তৈরি করতে পারে।</li>
+
+<li>💻 কোড লিখতে ও ব্যাখ্যা করতে সাহায্য করে।</li>
+
+<li>📚 শেখা ও গবেষণায় সহায়ক।</li>
+
+<li>⚡ দ্রুত উত্তর প্রদান করে।</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 ChatGPT-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>💬 Natural Language Conversation</li>
+
+<li>📝 Content Writing</li>
+
+<li>🌐 Language Translation</li>
+
+<li>💻 Programming Assistance</li>
+
+<li>📚 Learning & Education Support</li>
+
+<li>📄 Text Summarization</li>
+
+<li>🧠 Brainstorming & Idea Generation</li>
+
+<li>📊 Data Explanation</li>
+
+<li>📧 Email Drafting</li>
+
+<li>🎯 Problem Solving</li>
+
+<li>❓ Question Answering</li>
+
+<li>🤖 AI-powered Assistance</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 ChatGPT কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🎓 পড়াশোনা ও শেখার জন্য</li>
+
+<li>🏢 অফিস ও ব্যবসায়</li>
+
+<li>💻 প্রোগ্রামিং ও সফটওয়্যার ডেভেলপমেন্ট</li>
+
+<li>📝 ব্লগ, রিপোর্ট ও আর্টিকেল লেখায়</li>
+
+<li>📧 Email ও Application লেখায়</li>
+
+<li>🌐 ভাষা অনুবাদে</li>
+
+<li>📊 গবেষণা ও তথ্য ব্যাখ্যায়</li>
+
+<li>🎨 সৃজনশীল লেখা ও আইডিয়া তৈরিতে</li>
+
+<li>🛒 Customer Support</li>
+
+<li>📱 AI Assistant হিসেবে</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ ChatGPT-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ দ্রুত উত্তর দেয়।</li>
+
+<li>🌍 একাধিক ভাষায় সাহায্য করতে পারে।</li>
+
+<li>📚 শেখা ও পড়াশোনায় সহায়ক।</li>
+
+<li>💻 কোড লেখা ও Debug করতে সাহায্য করে।</li>
+
+<li>📝 বিভিন্ন ধরনের লেখা তৈরি করতে পারে।</li>
+
+<li>⏰ সময় বাঁচায় এবং কাজ সহজ করে।</li>
+
+<li>💡 নতুন ধারণা (Ideas) দিতে সাহায্য করে।</li>
+
+<li>🤝 দৈনন্দিন অনেক কাজে সহায়ক।</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT-এর সীমাবদ্ধতা -->
+
+<div class="card">
+
+<h2>❌ ChatGPT-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>⚠️ সব উত্তর সবসময় সঠিক নাও হতে পারে।</li>
+
+<li>📄 গুরুত্বপূর্ণ তথ্য অন্য নির্ভরযোগ্য উৎস থেকে যাচাই করা উচিত।</li>
+
+<li>🧠 মানুষের মতো অনুভূতি বা ব্যক্তিগত অভিজ্ঞতা নেই।</li>
+
+<li>🔒 ব্যক্তিগত বা গোপন তথ্য শেয়ার করা উচিত নয়।</li>
+
+<li>📌 জটিল বা সাম্প্রতিক বিষয়ে উত্তর অসম্পূর্ণ হতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT-এর ব্যবহার -->
+
+<div class="card">
+
+<h2>📋 ChatGPT-এর সাধারণ ব্যবহার</h2>
+
+<table>
+
+<tr>
+<th>ব্যবহার</th>
+<th>উদাহরণ</th>
+</tr>
+
+<tr>
+<td>Writing</td>
+<td>প্রবন্ধ, চিঠি, রিপোর্ট লেখা</td>
+</tr>
+
+<tr>
+<td>Education</td>
+<td>পড়াশোনা ও প্রশ্নের উত্তর</td>
+</tr>
+
+<tr>
+<td>Programming</td>
+<td>কোড লেখা ও ব্যাখ্যা</td>
+</tr>
+
+<tr>
+<td>Translation</td>
+<td>ভাষা অনুবাদ</td>
+</tr>
+
+<tr>
+<td>Summarization</td>
+<td>লেখার সারাংশ তৈরি</td>
+</tr>
+
+<tr>
+<td>Brainstorming</td>
+<td>নতুন আইডিয়া তৈরি</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 ChatGPT সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🤖 এটি OpenAI-এর তৈরি একটি AI Chatbot।</li>
+
+<li>📅 ২০২২ সালে সাধারণ মানুষের জন্য প্রকাশ করা হয়।</li>
+
+<li>💬 মানুষের ভাষা বুঝে উত্তর দিতে পারে।</li>
+
+<li>📝 লেখা, অনুবাদ, কোড এবং শেখার কাজে সহায়তা করে।</li>
+
+<li>📚 এটি একটি সহায়ক টুল; গুরুত্বপূর্ণ তথ্য যাচাই করা উচিত।</li>
+
+</ul>
+
+</div>
+
+<!-- ChatGPT-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 ChatGPT-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+ChatGPT হলো OpenAI-এর তৈরি একটি AI Chatbot। এটি বৃহৎ ভাষা মডেল (Large Language Model বা LLM) প্রযুক্তির উপর ভিত্তি করে তৈরি। ২০২২ সালের নভেম্বর মাসে ChatGPT সাধারণ মানুষের জন্য প্রকাশ করা হয়। এরপর শিক্ষা, গবেষণা, প্রোগ্রামিং, ব্যবসা, লেখালেখি এবং গ্রাহকসেবাসহ বিভিন্ন ক্ষেত্রে এর ব্যবহার দ্রুত বৃদ্ধি পায়। বর্তমানে ChatGPT-এর আরও উন্নত সংস্করণ প্রকাশিত হয়েছে এবং এটি নিয়মিত উন্নত করা হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. ChatGPT কী?</b></summary>
+<p>ChatGPT হলো OpenAI-এর তৈরি একটি AI Chatbot, যা মানুষের ভাষা বুঝে উত্তর তৈরি করতে পারে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. ChatGPT কে তৈরি করেছে?</b></summary>
+<p><b>OpenAI</b>।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. ChatGPT কবে প্রকাশ করা হয়?</b></summary>
+<p>২০২২ সালের নভেম্বর মাসে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. ChatGPT কি বাংলা ভাষায় উত্তর দিতে পারে?</b></summary>
+<p>হ্যাঁ। ChatGPT বাংলা-সহ বহু ভাষায় উত্তর দিতে পারে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. ChatGPT কি সবসময় সঠিক উত্তর দেয়?</b></summary>
+<p>না। এটি অনেক ক্ষেত্রে সহায়ক হলেও গুরুত্বপূর্ণ তথ্য নির্ভরযোগ্য উৎস থেকে যাচাই করা উচিত।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. ChatGPT কী কী কাজে ব্যবহার করা যায়?</b></summary>
+<p>পড়াশোনা, লেখালেখি, অনুবাদ, প্রোগ্রামিং, গবেষণা, সারাংশ তৈরি, আইডিয়া বের করা এবং সাধারণ তথ্য জানার জন্য।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ ChatGPT হলো OpenAI-এর তৈরি একটি AI Chatbot।</li>
+
+<li>✅ ২০২২ সালের নভেম্বর মাসে এটি প্রকাশ করা হয়।</li>
+
+<li>✅ এটি প্রশ্নের উত্তর, লেখা, অনুবাদ ও কোডে সাহায্য করতে পারে।</li>
+
+<li>✅ বাংলা-সহ একাধিক ভাষায় কাজ করতে পারে।</li>
+
+<li>✅ এটি একটি সহায়ক AI টুল; গুরুত্বপূর্ণ তথ্য যাচাই করা উচিত।</li>
+
+<li>✅ শিক্ষা, গবেষণা ও ব্যবসায় ব্যাপকভাবে ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. ChatGPT কে তৈরি করেছে?</summary>
+<p>✅ OpenAI।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. ChatGPT কবে প্রকাশ করা হয়?</summary>
+<p>✅ ২০২২ সালের নভেম্বর মাসে।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. ChatGPT-এর দুটি ব্যবহার লিখুন।</summary>
+<p>✅ প্রশ্নের উত্তর দেওয়া এবং লেখা তৈরি করা।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. ChatGPT কি বাংলা ভাষায় কাজ করতে পারে?</summary>
+<p>✅ হ্যাঁ।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. গুরুত্বপূর্ণ তথ্য কি ChatGPT-এর উত্তর দেখে সরাসরি বিশ্বাস করা উচিত?</summary>
+<p>✅ না। প্রয়োজনে নির্ভরযোগ্য উৎস থেকে যাচাই করা উচিত।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="artificial-intelligence.html">🤖 Artificial Intelligence</a></li>
+
+<li><a href="machine-learning.html">🧠 Machine Learning</a></li>
+
+<li><a href="deep-learning.html">🕸️ Deep Learning</a></li>
+
+<li><a href="search-engine.html">🔍 Search Engine</a></li>
+
+<li><a href="cloud-computing.html">☁️ Cloud Computing</a></li>
+
+<li><a href="cloud-storage.html">💾 Cloud Storage</a></li>
+
+<li><a href="internet.html">🌐 Internet</a></li>
+
+<li><a href="computer.html">💻 Computer</a></li>
+
+<li><a href="cyber-security.html">🛡️ Cyber Security</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+ChatGPT একটি শক্তিশালী AI-ভিত্তিক সহায়ক, যা পড়াশোনা, লেখালেখি, গবেষণা, প্রোগ্রামিং এবং দৈনন্দিন অনেক কাজে সাহায্য করতে পারে। তবে গুরুত্বপূর্ণ সিদ্ধান্ত বা তথ্যের ক্ষেত্রে নির্ভরযোগ্য উৎস থেকে যাচাই করা সবসময় প্রয়োজন।
+
+</p>
+
+</div>
+
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#10a37f;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#10a37f;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
