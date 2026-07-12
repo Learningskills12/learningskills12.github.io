@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Storage কী? | Learning Skills</title>
+
+<meta name="description" content="Cloud Storage কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, সুবিধা, অসুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Cloud Storage, Google Drive, OneDrive, Dropbox, iCloud, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f3f9ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#2196F3;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#1976d2,#42a5f5);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#2196F3;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1976d2;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #2196F3;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#1976d2;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#2196F3;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#90caf9;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>☁️ Cloud Storage কী?</h1>
+
+<p>Cloud Storage সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>☁️ Cloud Storage কী?</h2>
+
+<p>
+
+<b>Cloud Storage</b> হলো এমন একটি Online Storage Service, যেখানে Internet-এর মাধ্যমে দূরবর্তী Server-এ File, Photo, Video, Document এবং অন্যান্য Data সংরক্ষণ করা হয়। ব্যবহারকারী যেকোনো সময়, যেকোনো স্থান থেকে Internet-এর সাহায্যে এই Data Access করতে পারেন।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Cloud Storage-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>📁 File সংরক্ষণ করা।</li>
+
+<li>☁️ Online Backup রাখা।</li>
+
+<li>📤 File Share করা।</li>
+
+<li>🔄 বিভিন্ন Device-এর মধ্যে Data Sync করা।</li>
+
+<li>👥 Team-এর সাথে File Collaborate করা।</li>
+
+<li>🗂️ গুরুত্বপূর্ণ Data নিরাপদ রাখা।</li>
+
+<li>📱 যেকোনো Device থেকে Data Access করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Cloud Storage-এর ইতিহাস</h2>
+
+<p>
+
+Cloud Computing-এর বিকাশের সাথে Cloud Storage জনপ্রিয় হয়ে ওঠে। বর্তমানে Google Drive, Microsoft OneDrive, Dropbox, Apple iCloud এবং Box-এর মতো Cloud Storage Service বিশ্বজুড়ে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Cloud Storage-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>☁️ Internet-এর মাধ্যমে Data সংরক্ষণ।</li>
+
+<li>📱 যেকোনো Device থেকে Access করা যায়।</li>
+
+<li>🔄 Automatic Sync সুবিধা।</li>
+
+<li>📤 সহজে File Share করা যায়।</li>
+
+<li>🔒 Password ও Encryption-এর মাধ্যমে নিরাপত্তা।</li>
+
+<li>💾 Local Storage-এর উপর নির্ভরতা কমায়।</li>
+
+<li>👥 Team Collaboration সহজ করে।</li>
+
+</ul>
+
+</div>
+
+<!-- Cloud Storage-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Cloud Storage-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>☁️ Cloud Server</li>
+
+<li>💾 Storage Space</li>
+
+<li>👤 User Account</li>
+
+<li>📁 Files & Folders</li>
+
+<li>🔄 Sync Service</li>
+
+<li>📤 File Sharing</li>
+
+<li>🔒 Security & Encryption</li>
+
+<li>👥 Collaboration Tools</li>
+
+<li>🗑️ Recycle Bin / Trash</li>
+
+<li>📜 Version History</li>
+
+<li>📱 Mobile & Desktop Apps</li>
+
+<li>🌐 Web Access</li>
+
+</ul>
+
+</div>
+
+<!-- Cloud Storage কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Cloud Storage কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏢 অফিস ও কোম্পানি</li>
+
+<li>🏫 স্কুল, কলেজ ও বিশ্ববিদ্যালয়</li>
+
+<li>👨‍💻 সফটওয়্যার ডেভেলপমেন্ট</li>
+
+<li>📸 ছবি ও ভিডিও সংরক্ষণ</li>
+
+<li>📄 গুরুত্বপূর্ণ Document Backup</li>
+
+<li>👥 Team Project Collaboration</li>
+
+<li>📚 Online শিক্ষা</li>
+
+<li>💼 ব্যবসায়িক Data সংরক্ষণ</li>
+
+<li>🏛️ সরকারি প্রতিষ্ঠানে</li>
+
+<li>📱 Mobile Backup</li>
+
+</ul>
+
+</div>
+
+<!-- Cloud Storage-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Cloud Storage-এর সুবিধা</h2>
+
+<ul>
+
+<li>☁️ যেকোনো স্থান থেকে Data Access করা যায়।</li>
+
+<li>📱 একাধিক Device-এ Sync করা যায়।</li>
+
+<li>📤 সহজে File Share করা যায়।</li>
+
+<li>🔒 Data নিরাপদে সংরক্ষণ করা যায়।</li>
+
+<li>💾 Local Storage-এর ব্যবহার কমে যায়।</li>
+
+<li>👥 Team Collaboration সহজ হয়।</li>
+
+<li>🔄 Automatic Backup সুবিধা পাওয়া যায়।</li>
+
+<li>📂 Version History-এর মাধ্যমে পুরনো File পুনরুদ্ধার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Cloud Storage-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Cloud Storage-এর অসুবিধা</h2>
+
+<ul>
+
+<li>🌐 Internet ছাড়া ব্যবহার সীমিত।</li>
+
+<li>💰 বেশি Storage-এর জন্য অর্থ প্রদান করতে হতে পারে।</li>
+
+<li>⚠️ দুর্বল Password ব্যবহার করলে Security Risk থাকে।</li>
+
+<li>🐢 ধীর Internet হলে Upload/Download সময় বেশি লাগে।</li>
+
+</ul>
+
+</div>
+
+<!-- জনপ্রিয় Cloud Storage Service -->
+
+<div class="card">
+
+<h2>☁️ জনপ্রিয় Cloud Storage Service</h2>
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Developer</th>
+</tr>
+
+<tr>
+<td>Google Drive</td>
+<td>Google</td>
+</tr>
+
+<tr>
+<td>Microsoft OneDrive</td>
+<td>Microsoft</td>
+</tr>
+
+<tr>
+<td>Dropbox</td>
+<td>Dropbox Inc.</td>
+</tr>
+
+<tr>
+<td>Apple iCloud</td>
+<td>Apple</td>
+</tr>
+
+<tr>
+<td>Box</td>
+<td>Box Inc.</td>
+</tr>
+
+<tr>
+<td>MEGA</td>
+<td>MEGA Ltd.</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Cloud Storage সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>☁️ এটি একটি Online Storage Service।</li>
+
+<li>🌐 Data Internet-এর মাধ্যমে Access করা যায়।</li>
+
+<li>🔄 একাধিক Device-এর মধ্যে Sync করা যায়।</li>
+
+<li>🔒 Encryption-এর মাধ্যমে Data নিরাপদ রাখা হয়।</li>
+
+<li>📤 সহজে অন্যদের সাথে File Share করা যায়।</li>
+
+<li>💾 Backup ও Disaster Recovery-এর জন্য Cloud Storage গুরুত্বপূর্ণ।</li>
+
+</ul>
+
+</div>
+
+  <!-- Cloud Storage কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ Cloud Storage কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>👤 ব্যবহারকারী একটি Cloud Storage Account তৈরি করেন।</li>
+
+<li>📤 File বা Folder Cloud Server-এ Upload করেন।</li>
+
+<li>🔒 File Encryption-এর মাধ্যমে নিরাপদভাবে সংরক্ষণ করা হয়।</li>
+
+<li>🌐 Internet-এর মাধ্যমে যেকোনো Device থেকে File Access করা যায়।</li>
+
+<li>🔄 File পরিবর্তন হলে সব Device-এ Sync হয়ে যায়।</li>
+
+<li>👥 প্রয়োজনে অন্যদের সাথে Share বা Collaborate করা যায়।</li>
+
+</ol>
+
+</div>
+
+<!-- Cloud Storage-এর গুরুত্বপূর্ণ Features -->
+
+<div class="card">
+
+<h2>⭐ Cloud Storage-এর গুরুত্বপূর্ণ Features</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Online Storage</td>
+<td>Internet-এ Data সংরক্ষণ</td>
+</tr>
+
+<tr>
+<td>Backup</td>
+<td>Data-এর নিরাপদ কপি রাখা</td>
+</tr>
+
+<tr>
+<td>File Sharing</td>
+<td>অন্যদের সাথে File ভাগ করা</td>
+</tr>
+
+<tr>
+<td>Sync</td>
+<td>সব Device-এ একই Data রাখা</td>
+</tr>
+
+<tr>
+<td>Encryption</td>
+<td>Data নিরাপদ রাখা</td>
+</tr>
+
+<tr>
+<td>Version History</td>
+<td>পুরোনো Version পুনরুদ্ধার করা</td>
+</tr>
+
+<tr>
+<td>Collaboration</td>
+<td>একাধিক ব্যক্তি একই File-এ কাজ করা</td>
+</tr>
+
+<tr>
+<td>Automatic Backup</td>
+<td>স্বয়ংক্রিয়ভাবে Backup নেওয়া</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Cloud Storage ব্যবহারের ধাপ -->
+
+<div class="card">
+
+<h2>📋 Cloud Storage ব্যবহার করার ধাপ</h2>
+
+<ol>
+
+<li>☁️ একটি Cloud Storage Service নির্বাচন করুন।</li>
+
+<li>📝 Account তৈরি করে Sign In করুন।</li>
+
+<li>📤 Upload Button ব্যবহার করে File Upload করুন।</li>
+
+<li>📂 Folder তৈরি করে File গুছিয়ে রাখুন।</li>
+
+<li>🔗 Share Option ব্যবহার করে অন্যদের সাথে File ভাগ করুন।</li>
+
+<li>📥 প্রয়োজন হলে File Download করুন।</li>
+
+</ol>
+
+</div>
+
+<!-- জনপ্রিয় Cloud Storage-এর ফ্রি স্টোরেজ -->
+
+<div class="card">
+
+<h2>📊 জনপ্রিয় Cloud Storage-এর Free Storage</h2>
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Free Storage</th>
+</tr>
+
+<tr>
+<td>Google Drive</td>
+<td>15 GB</td>
+</tr>
+
+<tr>
+<td>Microsoft OneDrive</td>
+<td>5 GB</td>
+</tr>
+
+<tr>
+<td>Dropbox</td>
+<td>2 GB</td>
+</tr>
+
+<tr>
+<td>Apple iCloud</td>
+<td>5 GB</td>
+</tr>
+
+<tr>
+<td>MEGA</td>
+<td>Free Plan (পরিমাণ সময়ের সাথে পরিবর্তিত হতে পারে)</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>☁️ Cloud Storage ব্যবহার করলে হারিয়ে যাওয়া Device থেকেও File পুনরুদ্ধার করা সম্ভব।</li>
+
+<li>📱 Google Drive ও OneDrive মোবাইল ও কম্পিউটার—উভয় প্ল্যাটফর্মে ব্যবহার করা যায়।</li>
+
+<li>🔒 অধিকাংশ Cloud Storage Service Data Encryption ব্যবহার করে।</li>
+
+<li>👥 Team Collaboration-এর জন্য Cloud Storage ব্যাপকভাবে ব্যবহৃত হয়।</li>
+
+<li>🌍 Internet থাকলে বিশ্বের যেকোনো স্থান থেকে File Access করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Cloud Storage-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Cloud Storage-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+Cloud Storage প্রযুক্তির বিকাশ Cloud Computing-এর অগ্রগতির সঙ্গে যুক্ত। ২০০০-এর দশক থেকে অনলাইন ডেটা সংরক্ষণের ব্যবহার দ্রুত বাড়তে শুরু করে। বর্তমানে Google Drive, Microsoft OneDrive, Dropbox, Apple iCloud, Box এবং MEGA-এর মতো Cloud Storage Service ব্যক্তি, শিক্ষা প্রতিষ্ঠান, ব্যবসা ও সরকারি সংস্থায় ব্যাপকভাবে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Cloud Storage কী?</b></summary>
+<p>Cloud Storage হলো Internet-এর মাধ্যমে দূরবর্তী Server-এ Data সংরক্ষণের একটি Online Service।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. Cloud Storage-এর প্রধান সুবিধা কী?</b></summary>
+<p>যেকোনো স্থান থেকে Internet-এর মাধ্যমে File Access ও Share করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Cloud Storage কি নিরাপদ?</b></summary>
+<p>হ্যাঁ। অধিকাংশ Cloud Storage Service Encryption, Password Protection এবং Multi-factor Authentication-এর মতো নিরাপত্তা ব্যবস্থা ব্যবহার করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Cloud Storage ব্যবহার করতে কী প্রয়োজন?</b></summary>
+<p>একটি Account এবং Internet Connection প্রয়োজন।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Cloud Storage কি Backup হিসেবে ব্যবহার করা যায়?</b></summary>
+<p>হ্যাঁ। গুরুত্বপূর্ণ File ও Photo-এর Backup রাখার জন্য এটি খুবই কার্যকর।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. Cloud Storage ও Local Storage-এর মধ্যে পার্থক্য কী?</b></summary>
+<p>Local Storage-এ Data নিজের Device-এ থাকে, আর Cloud Storage-এ Data দূরবর্তী Server-এ Internet-এর মাধ্যমে সংরক্ষিত থাকে।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Cloud Storage একটি Online Storage Service।</li>
+
+<li>✅ Internet-এর মাধ্যমে যেকোনো স্থান থেকে Data Access করা যায়।</li>
+
+<li>✅ File Backup, Sync ও Sharing করা যায়।</li>
+
+<li>✅ Google Drive, OneDrive, Dropbox, iCloud জনপ্রিয় Cloud Storage Service।</li>
+
+<li>✅ Encryption ও Password Protection-এর মাধ্যমে Data নিরাপদ রাখা হয়।</li>
+
+<li>✅ Team Collaboration সহজ হয়।</li>
+
+<li>✅ Local Storage-এর উপর নির্ভরতা কমায়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Cloud Storage কী?</summary>
+<p>✅ Internet-এর মাধ্যমে দূরবর্তী Server-এ Data সংরক্ষণের একটি Service।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. দুটি জনপ্রিয় Cloud Storage Service-এর নাম লিখুন।</summary>
+<p>✅ Google Drive এবং Microsoft OneDrive।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Cloud Storage-এর একটি প্রধান সুবিধা লিখুন।</summary>
+<p>✅ যেকোনো স্থান থেকে File Access করা যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Cloud Storage কি Backup হিসেবে ব্যবহার করা যায়?</summary>
+<p>✅ হ্যাঁ।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Cloud Storage ব্যবহার করতে কী প্রয়োজন?</summary>
+<p>✅ একটি Account এবং Internet Connection।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="cloud-computing.html">☁️ Cloud Computing কী?</a></li>
+
+<li><a href="internet.html">🌐 Internet কী?</a></li>
+
+<li><a href="webbrowser.html">🌍 Web Browser কী?</a></li>
+
+<li><a href="search-engine.html">🔎 Search Engine কী?</a></li>
+
+<li><a href="database.html">🗄️ Database কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+<li><a href="msword.html">📄 MS Word কী?</a></li>
+
+<li><a href="pdf.html">📕 PDF কী?</a></li>
+
+<li><a href="email.html">📧 Email কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Cloud Storage আধুনিক তথ্য সংরক্ষণের একটি অত্যন্ত গুরুত্বপূর্ণ প্রযুক্তি। এটি File সংরক্ষণ, Backup, Sharing এবং Collaboration সহজ করে। ব্যক্তিগত ব্যবহার থেকে শুরু করে শিক্ষা, ব্যবসা ও সরকারি প্রতিষ্ঠান—সব ক্ষেত্রেই Cloud Storage-এর গুরুত্ব দিন দিন বৃদ্ধি পাচ্ছে।
+
+</p>
+
+</div>
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#2196F3;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#2196F3;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
