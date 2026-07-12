@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Artificial Intelligence (AI) কী? | Learning Skills</title>
+
+<meta name="description" content="Artificial Intelligence (AI) কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Artificial Intelligence, AI, Machine Learning, Deep Learning, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f8ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#7b1fa2;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#512da8,#7b1fa2);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#7b1fa2;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#512da8;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #7b1fa2;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#512da8;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#7b1fa2;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#d1a6ff;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🤖 Artificial Intelligence (AI) কী?</h1>
+
+<p>Artificial Intelligence সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🤖 Artificial Intelligence (AI) কী?</h2>
+
+<p>
+
+<b>Artificial Intelligence (AI)</b> বা <b>কৃত্রিম বুদ্ধিমত্তা</b> হলো Computer Science-এর এমন একটি শাখা যেখানে কম্পিউটার বা যন্ত্রকে মানুষের মতো শেখা, চিন্তা করা, সমস্যা সমাধান করা, সিদ্ধান্ত নেওয়া এবং ভাষা বুঝতে সক্ষম করে তোলা হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 AI-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🧠 মানুষের মতো সিদ্ধান্ত নেওয়া।</li>
+
+<li>📚 ডেটা থেকে শেখা (Learning)।</li>
+
+<li>🗣️ ভাষা বুঝতে ও উত্তর দিতে পারা।</li>
+
+<li>👁️ ছবি ও ভিডিও শনাক্ত করা।</li>
+
+<li>🎤 Voice Recognition করা।</li>
+
+<li>🤖 Automation ও Robot নিয়ন্ত্রণ করা।</li>
+
+<li>📊 ডেটা বিশ্লেষণ ও ভবিষ্যদ্বাণী করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 AI-এর ইতিহাস</h2>
+
+<p>
+
+১৯৫৬ সালে <b>John McCarthy</b> "Artificial Intelligence" শব্দটি ব্যবহার করেন। এরপর থেকে AI দ্রুত উন্নত হয়েছে এবং বর্তমানে শিক্ষা, স্বাস্থ্য, ব্যবসা, কৃষি, পরিবহন ও গবেষণাসহ বিভিন্ন ক্ষেত্রে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ AI-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🧠 শেখার ক্ষমতা (Learning)।</li>
+
+<li>💡 সমস্যা সমাধানের ক্ষমতা।</li>
+
+<li>📊 দ্রুত ডেটা বিশ্লেষণ।</li>
+
+<li>🤖 স্বয়ংক্রিয়ভাবে কাজ করা।</li>
+
+<li>🗣️ ভাষা বুঝতে ও তৈরি করতে পারা।</li>
+
+<li>👁️ ছবি ও শব্দ শনাক্ত করা।</li>
+
+<li>⚡ দ্রুত ও নির্ভুল ফলাফল প্রদান।</li>
+
+</ul>
+
+</div>
+
+  <!-- AI-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Artificial Intelligence-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>🧠 Machine Learning (ML)</li>
+
+<li>🕸️ Deep Learning (DL)</li>
+
+<li>🗣️ Natural Language Processing (NLP)</li>
+
+<li>👁️ Computer Vision</li>
+
+<li>🤖 Robotics</li>
+
+<li>🎤 Speech Recognition</li>
+
+<li>💬 Chatbot ও Virtual Assistant</li>
+
+<li>📊 Expert System</li>
+
+<li>🎮 AI in Games</li>
+
+<li>🚗 Autonomous Vehicles</li>
+
+<li>📈 Predictive Analytics</li>
+
+<li>🛡️ AI Security Systems</li>
+
+</ul>
+
+</div>
+
+<!-- AI কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Artificial Intelligence কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏥 স্বাস্থ্যসেবা (Medical Diagnosis)</li>
+
+<li>🏦 ব্যাংকিং ও ফিন্যান্স</li>
+
+<li>🏫 শিক্ষা (Smart Learning)</li>
+
+<li>🚗 স্বয়ংচালিত গাড়ি (Self-driving Cars)</li>
+
+<li>🛒 E-commerce ও Online Shopping</li>
+
+<li>🌾 কৃষি (Smart Farming)</li>
+
+<li>🏭 শিল্প কারখানা (Automation)</li>
+
+<li>🎮 ভিডিও গেম</li>
+
+<li>📱 মোবাইল অ্যাপ ও Virtual Assistant</li>
+
+<li>🛰️ মহাকাশ ও বৈজ্ঞানিক গবেষণা</li>
+
+</ul>
+
+</div>
+
+<!-- AI-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Artificial Intelligence-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ দ্রুত ও নির্ভুলভাবে কাজ করতে পারে।</li>
+
+<li>🤖 পুনরাবৃত্তিমূলক কাজ স্বয়ংক্রিয়ভাবে সম্পন্ন করে।</li>
+
+<li>📊 বিশাল পরিমাণ Data দ্রুত বিশ্লেষণ করতে পারে।</li>
+
+<li>⏰ ২৪ ঘণ্টা কাজ করতে পারে।</li>
+
+<li>🏥 চিকিৎসা ও গবেষণায় সহায়তা করে।</li>
+
+<li>🎯 সিদ্ধান্ত গ্রহণে সহায়তা করে।</li>
+
+<li>💼 উৎপাদনশীলতা বৃদ্ধি করে।</li>
+
+<li>😊 অনেক ক্ষেত্রে মানুষের সময় ও শ্রম বাঁচায়।</li>
+
+</ul>
+
+</div>
+
+<!-- AI-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Artificial Intelligence-এর অসুবিধা</h2>
+
+<ul>
+
+<li>💰 উন্নয়ন ও রক্ষণাবেক্ষণের খরচ বেশি।</li>
+
+<li>👨‍💼 কিছু ক্ষেত্রে চাকরির ধরন পরিবর্তন বা কমে যেতে পারে।</li>
+
+<li>🔒 Privacy ও Data Security নিয়ে উদ্বেগ থাকতে পারে।</li>
+
+<li>⚠️ ভুল Data দিলে ভুল ফলাফল দিতে পারে।</li>
+
+<li>🧠 মানুষের আবেগ ও নৈতিক বিচার সম্পূর্ণভাবে বুঝতে পারে না।</li>
+
+</ul>
+
+</div>
+
+<!-- জনপ্রিয় AI Tools -->
+
+<div class="card">
+
+<h2>🌍 জনপ্রিয় AI Tools</h2>
+
+<table>
+
+<tr>
+<th>AI Tool</th>
+<th>ব্যবহার</th>
+</tr>
+
+<tr>
+<td>ChatGPT</td>
+<td>প্রশ্নের উত্তর ও লেখা তৈরি</td>
+</tr>
+
+<tr>
+<td>Google Gemini</td>
+<td>AI Assistant</td>
+</tr>
+
+<tr>
+<td>Microsoft Copilot</td>
+<td>AI Productivity Assistant</td>
+</tr>
+
+<tr>
+<td>GitHub Copilot</td>
+<td>Programming সহায়তা</td>
+</tr>
+
+<tr>
+<td>Claude</td>
+<td>AI Chat Assistant</td>
+</tr>
+
+<tr>
+<td>Perplexity AI</td>
+<td>AI Search Assistant</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Artificial Intelligence সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🤖 AI-এর পূর্ণরূপ Artificial Intelligence।</li>
+
+<li>📅 ১৯৫৬ সালে "Artificial Intelligence" শব্দটি জনপ্রিয় হয়।</li>
+
+<li>🧠 Machine Learning হলো AI-এর একটি গুরুত্বপূর্ণ অংশ।</li>
+
+<li>🌍 বর্তমানে শিক্ষা, স্বাস্থ্য, ব্যবসা ও প্রযুক্তিতে AI ব্যাপকভাবে ব্যবহৃত হচ্ছে।</li>
+
+<li>⚡ AI মানুষের কাজকে সহজ ও দ্রুত করতে সাহায্য করে।</li>
+
+</ul>
+
+</div>
+
+  <!-- AI কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ Artificial Intelligence কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📥 বিভিন্ন উৎস থেকে Data সংগ্রহ করা হয়।</li>
+
+<li>🧹 Data পরিষ্কার (Data Cleaning) ও প্রস্তুত করা হয়।</li>
+
+<li>🧠 Machine Learning বা Deep Learning Model-কে Data দিয়ে প্রশিক্ষণ (Training) দেওয়া হয়।</li>
+
+<li>📊 AI সেই Data বিশ্লেষণ করে Pattern খুঁজে বের করে।</li>
+
+<li>🎯 শেখা তথ্যের ভিত্তিতে সিদ্ধান্ত বা পূর্বাভাস দেয়।</li>
+
+<li>🔄 নতুন Data পেলে AI আরও উন্নত হতে পারে।</li>
+
+</ol>
+
+</div>
+
+<!-- AI-এর গুরুত্বপূর্ণ শাখা -->
+
+<div class="card">
+
+<h2>⭐ Artificial Intelligence-এর গুরুত্বপূর্ণ শাখা</h2>
+
+<table>
+
+<tr>
+<th>শাখা</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Machine Learning (ML)</td>
+<td>ডেটা থেকে শেখা ও পূর্বাভাস দেওয়া</td>
+</tr>
+
+<tr>
+<td>Deep Learning (DL)</td>
+<td>Neural Network ব্যবহার করে জটিল সমস্যা সমাধান</td>
+</tr>
+
+<tr>
+<td>Natural Language Processing (NLP)</td>
+<td>মানুষের ভাষা বোঝা ও তৈরি করা</td>
+</tr>
+
+<tr>
+<td>Computer Vision</td>
+<td>ছবি ও ভিডিও বিশ্লেষণ</td>
+</tr>
+
+<tr>
+<td>Robotics</td>
+<td>বুদ্ধিমান Robot তৈরি ও নিয়ন্ত্রণ</td>
+</tr>
+
+<tr>
+<td>Expert System</td>
+<td>বিশেষজ্ঞের মতো সিদ্ধান্ত নিতে সহায়তা</td>
+</tr>
+
+<tr>
+<td>Speech Recognition</td>
+<td>কণ্ঠস্বর শনাক্ত করা</td>
+</tr>
+
+<tr>
+<td>Generative AI</td>
+<td>লেখা, ছবি, কোড বা অন্যান্য নতুন কনটেন্ট তৈরি করা</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- AI-এর বাস্তব ব্যবহার -->
+
+<div class="card">
+
+<h2>🌍 দৈনন্দিন জীবনে AI-এর ব্যবহার</h2>
+
+<ul>
+
+<li>📱 স্মার্টফোনের Voice Assistant</li>
+
+<li>📧 Email-এ Spam Filter</li>
+
+<li>🎬 Movie ও Music Recommendation</li>
+
+<li>🛒 Online Shopping-এ Product Suggestion</li>
+
+<li>🗺️ Navigation ও Traffic Prediction</li>
+
+<li>🏥 রোগ নির্ণয়ে সহায়তা</li>
+
+<li>🏦 প্রতারণা (Fraud) শনাক্তকরণ</li>
+
+<li>🌐 ভাষা অনুবাদ (Translation)</li>
+
+<li>📷 Face Unlock ও Face Recognition</li>
+
+<li>🎓 Smart Education Platform</li>
+
+</ul>
+
+</div>
+
+<!-- AI-এর ধরন -->
+
+<div class="card">
+
+<h2>📚 Artificial Intelligence-এর ধরন</h2>
+
+<table>
+
+<tr>
+<th>ধরন</th>
+<th>বিবরণ</th>
+</tr>
+
+<tr>
+<td>Narrow AI</td>
+<td>নির্দিষ্ট একটি কাজের জন্য তৈরি AI</td>
+</tr>
+
+<tr>
+<td>General AI</td>
+<td>মানুষের মতো বিভিন্ন কাজ করতে সক্ষম AI (এখনও গবেষণাধীন)</td>
+</tr>
+
+<tr>
+<td>Super AI</td>
+<td>ধারণাগতভাবে মানুষের বুদ্ধিমত্তার চেয়েও উন্নত AI</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🤖 AI মানুষের মতো চিন্তা করে না; এটি ডেটা ও অ্যালগরিদমের ভিত্তিতে কাজ করে।</li>
+
+<li>🚗 কিছু গাড়িতে Driver Assistance System-এ AI ব্যবহৃত হয়।</li>
+
+<li>📸 অনেক ক্যামেরা AI ব্যবহার করে ছবি উন্নত করে।</li>
+
+<li>🌐 অনলাইন অনুবাদ ও Voice Assistant-এ AI গুরুত্বপূর্ণ ভূমিকা পালন করে।</li>
+
+<li>📈 AI-এর ব্যবহার বিশ্বজুড়ে দ্রুত বৃদ্ধি পাচ্ছে।</li>
+
+</ul>
+
+</div>
+
+  <!-- AI-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Artificial Intelligence-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+Artificial Intelligence (AI)-এর ধারণা ১৯৫০-এর দশকে জনপ্রিয় হতে শুরু করে। ১৯৫০ সালে Alan Turing "Computing Machinery and Intelligence" প্রবন্ধ প্রকাশ করেন এবং Turing Test-এর ধারণা দেন। ১৯৫৬ সালে Dartmouth Conference-এ John McCarthy প্রথম "Artificial Intelligence" শব্দটি ব্যবহার করেন। এরপর Machine Learning, Deep Learning এবং Generative AI-এর উন্নতির ফলে বর্তমানে AI শিক্ষা, স্বাস্থ্যসেবা, ব্যবসা, কৃষি, গবেষণা, রোবোটিক্স ও মহাকাশ প্রযুক্তিসহ অসংখ্য ক্ষেত্রে ব্যবহৃত হচ্ছে।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Artificial Intelligence (AI) কী?</b></summary>
+<p>AI হলো এমন প্রযুক্তি যা কম্পিউটারকে শেখা, বিশ্লেষণ করা এবং সিদ্ধান্ত নিতে সক্ষম করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. AI শব্দটি প্রথম কে ব্যবহার করেন?</b></summary>
+<p><b>John McCarthy</b>, ১৯৫৬ সালে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Machine Learning কি AI-এর অংশ?</b></summary>
+<p>হ্যাঁ। Machine Learning হলো Artificial Intelligence-এর একটি গুরুত্বপূর্ণ শাখা।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. AI কি মানুষের মতো চিন্তা করতে পারে?</b></summary>
+<p>AI মানুষের মতো চেতনা বা অনুভূতি নিয়ে চিন্তা করে না। এটি ডেটা, অ্যালগরিদম এবং প্রশিক্ষণের ভিত্তিতে সিদ্ধান্ত বা পূর্বাভাস দেয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. AI কোথায় সবচেয়ে বেশি ব্যবহৃত হয়?</b></summary>
+<p>স্বাস্থ্যসেবা, শিক্ষা, ব্যাংকিং, ব্যবসা, শিল্প, কৃষি, গবেষণা এবং মোবাইল অ্যাপসহ বিভিন্ন ক্ষেত্রে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. AI কি ভবিষ্যতে আরও গুরুত্বপূর্ণ হবে?</b></summary>
+<p>হ্যাঁ। বিভিন্ন শিল্প ও সেবায় AI-এর ব্যবহার বাড়ছে এবং ভবিষ্যতেও এর গুরুত্ব আরও বৃদ্ধি পাওয়ার সম্ভাবনা রয়েছে।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ AI-এর পূর্ণরূপ Artificial Intelligence।</li>
+
+<li>✅ ১৯৫৬ সালে John McCarthy "Artificial Intelligence" শব্দটি ব্যবহার করেন।</li>
+
+<li>✅ Machine Learning ও Deep Learning হলো AI-এর গুরুত্বপূর্ণ শাখা।</li>
+
+<li>✅ AI ডেটা বিশ্লেষণ করে সিদ্ধান্ত বা পূর্বাভাস দিতে পারে।</li>
+
+<li>✅ শিক্ষা, স্বাস্থ্য, ব্যাংকিং, কৃষি ও ব্যবসায় AI ব্যবহৃত হয়।</li>
+
+<li>✅ AI মানুষের কাজকে দ্রুত ও সহজ করতে সাহায্য করে।</li>
+
+<li>✅ AI-এর ব্যবহার বিশ্বজুড়ে দ্রুত বৃদ্ধি পাচ্ছে।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. AI-এর পূর্ণরূপ কী?</summary>
+<p>✅ Artificial Intelligence (কৃত্রিম বুদ্ধিমত্তা)।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. AI শব্দটি প্রথম কে ব্যবহার করেন?</summary>
+<p>✅ John McCarthy।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. AI-এর দুটি গুরুত্বপূর্ণ শাখার নাম লিখুন।</summary>
+<p>✅ Machine Learning (ML) এবং Deep Learning (DL)।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. AI-এর একটি ব্যবহার লিখুন।</summary>
+<p>✅ স্বাস্থ্যসেবা, শিক্ষা, ব্যাংকিং, রোবোটিক্স বা ভাষা অনুবাদ।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. AI কি মানুষের অনুভূতি সম্পূর্ণভাবে বুঝতে পারে?</summary>
+<p>✅ না, AI মানুষের মতো অনুভূতি বা চেতনা রাখে না।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="machine-learning.html">🧠 Machine Learning</a></li>
+
+<li><a href="cloud-computing.html">☁️ Cloud Computing</a></li>
+
+<li><a href="cloud-storage.html">💾 Cloud Storage</a></li>
+
+<li><a href="database.html">🗄️ Database</a></li>
+
+<li><a href="internet.html">🌐 Internet</a></li>
+
+<li><a href="computer.html">💻 Computer</a></li>
+
+<li><a href="search-engine.html">🔍 Search Engine</a></li>
+
+<li><a href="webbrowser.html">🌍 Web Browser</a></li>
+
+<li><a href="cyber-security.html">🛡️ Cyber Security</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Artificial Intelligence (AI) আধুনিক প্রযুক্তির অন্যতম গুরুত্বপূর্ণ ক্ষেত্র। এটি মানুষের কাজকে দ্রুত, সহজ এবং আরও দক্ষ করে তুলতে সাহায্য করে। শিক্ষা, স্বাস্থ্যসেবা, ব্যবসা, কৃষি, গবেষণা এবং প্রযুক্তির বিভিন্ন ক্ষেত্রে AI-এর ব্যবহার দিন দিন বৃদ্ধি পাচ্ছে এবং ভবিষ্যতেও এর গুরুত্ব আরও বাড়বে।
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#7b1fa2;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#7b1fa2;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
