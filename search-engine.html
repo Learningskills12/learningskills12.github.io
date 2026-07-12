@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search Engine কী? | Learning Skills</title>
+
+<meta name="description" content="Search Engine কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="Search Engine, Google, Bing, Yahoo, DuckDuckGo, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5fff8;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#34a853;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0f9d58,#34a853);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#34a853;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0f9d58;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #34a853;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0f9d58;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#34a853;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#7ee787;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🔍 Search Engine কী?</h1>
+
+<p>Search Engine সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🔍 Search Engine কী?</h2>
+
+<p>
+
+<b>Search Engine</b> হলো এমন একটি Web-based Software বা Online Service, যার মাধ্যমে Internet-এ থাকা বিভিন্ন Website, Web Page, Image, Video, News এবং অন্যান্য তথ্য দ্রুত খুঁজে পাওয়া যায়। ব্যবহারকারী একটি Keyword লিখলে Search Engine সেই সম্পর্কিত ফলাফল দেখায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Search Engine-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🔎 Internet থেকে তথ্য খুঁজে বের করা।</li>
+
+<li>🌐 Website ও Web Page খুঁজে দেওয়া।</li>
+
+<li>🖼️ Image Search করা।</li>
+
+<li>🎥 Video Search করা।</li>
+
+<li>📰 News Search করা।</li>
+
+<li>📍 Map ও Location Search করা।</li>
+
+<li>🛍️ Product ও Service Search করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Search Engine-এর ইতিহাস</h2>
+
+<p>
+
+১৯৯০-এর দশকে Archie, AltaVista এবং Yahoo-এর মতো Search Engine চালু হয়। পরে ১৯৯৮ সালে Google চালু হওয়ার পর Search Engine প্রযুক্তিতে বড় পরিবর্তন আসে। বর্তমানে Google, Bing, Yahoo, DuckDuckGo এবং Baidu বিশ্বের জনপ্রিয় Search Engine।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Search Engine-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>⚡ দ্রুত তথ্য খুঁজে দেয়।</li>
+
+<li>🌍 কোটি কোটি Web Page Index করে।</li>
+
+<li>🔍 Keyword অনুযায়ী ফলাফল দেখায়।</li>
+
+<li>🖼️ Image, Video ও News Search সমর্থন করে।</li>
+
+<li>📍 Map ও Location Search করা যায়।</li>
+
+<li>🎤 Voice Search ব্যবহার করা যায়।</li>
+
+<li>📱 Mobile ও Computer উভয় ডিভাইসে ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Search Engine-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 Search Engine-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>🔍 Search Box</li>
+
+<li>⌨️ Keyword Input</li>
+
+<li>📄 Search Results Page (SERP)</li>
+
+<li>🌐 Organic Results</li>
+
+<li>📢 Sponsored Results (Ads)</li>
+
+<li>🖼️ Image Search</li>
+
+<li>🎥 Video Search</li>
+
+<li>📰 News Search</li>
+
+<li>📍 Maps Search</li>
+
+<li>🎤 Voice Search</li>
+
+<li>🔎 Search Filters</li>
+
+<li>📚 Knowledge Panel</li>
+
+</ul>
+
+</div>
+
+<!-- Search Engine কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 Search Engine কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🎓 শিক্ষা ও গবেষণায়</li>
+
+<li>🏢 অফিস ও ব্যবসায়</li>
+
+<li>🏫 স্কুল ও কলেজে</li>
+
+<li>📰 সংবাদ খোঁজার জন্য</li>
+
+<li>🛒 Online Shopping-এর জন্য</li>
+
+<li>📍 স্থান ও Map খুঁজতে</li>
+
+<li>🎥 Video ও Tutorial দেখার জন্য</li>
+
+<li>💼 চাকরির তথ্য খুঁজতে</li>
+
+<li>🏛️ সরকারি তথ্য জানার জন্য</li>
+
+<li>📚 E-book ও Study Material খুঁজতে</li>
+
+</ul>
+
+</div>
+
+<!-- Search Engine-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ Search Engine-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ খুব দ্রুত তথ্য খুঁজে পাওয়া যায়।</li>
+
+<li>🌍 বিশ্বের কোটি কোটি Website থেকে তথ্য পাওয়া যায়।</li>
+
+<li>🖼️ Image, Video, News ও Map Search করা যায়।</li>
+
+<li>🎤 Voice Search ব্যবহার করা যায়।</li>
+
+<li>📱 Mobile ও Computer উভয় ডিভাইসে ব্যবহার করা যায়।</li>
+
+<li>🌐 বিভিন্ন ভাষায় Search করা যায়।</li>
+
+<li>📚 পড়াশোনা ও গবেষণায় খুবই সহায়ক।</li>
+
+<li>🛍️ পণ্য ও সেবার তথ্য সহজে পাওয়া যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Search Engine-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ Search Engine-এর অসুবিধা</h2>
+
+<ul>
+
+<li>⚠️ সব তথ্য সবসময় সঠিক নাও হতে পারে।</li>
+
+<li>📢 বিজ্ঞাপন (Ads) অনেক সময় বিভ্রান্ত করতে পারে।</li>
+
+<li>🔒 ব্যক্তিগত তথ্য (Privacy) নিয়ে ঝুঁকি থাকতে পারে।</li>
+
+<li>🌐 Internet ছাড়া ব্যবহার করা যায় না।</li>
+
+</ul>
+
+</div>
+
+<!-- জনপ্রিয় Search Engine -->
+
+<div class="card">
+
+<h2>🌍 জনপ্রিয় Search Engine</h2>
+
+<table>
+
+<tr>
+<th>Search Engine</th>
+<th>Developer</th>
+</tr>
+
+<tr>
+<td>Google</td>
+<td>Google LLC</td>
+</tr>
+
+<tr>
+<td>Bing</td>
+<td>Microsoft</td>
+</tr>
+
+<tr>
+<td>Yahoo!</td>
+<td>Yahoo Inc.</td>
+</tr>
+
+<tr>
+<td>DuckDuckGo</td>
+<td>DuckDuckGo Inc.</td>
+</tr>
+
+<tr>
+<td>Baidu</td>
+<td>Baidu, Inc.</td>
+</tr>
+
+<tr>
+<td>Yandex</td>
+<td>Yandex</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 Search Engine সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🔍 Keyword-এর মাধ্যমে তথ্য খুঁজে দেয়।</li>
+
+<li>🌐 Web Page Index করে ফলাফল দেখায়।</li>
+
+<li>📅 Google Search Engine চালু হয় ১৯৯৮ সালে।</li>
+
+<li>⚡ Google বর্তমানে বিশ্বের সবচেয়ে জনপ্রিয় Search Engine।</li>
+
+<li>🎤 অনেক Search Engine-এ Voice Search সুবিধা রয়েছে।</li>
+
+<li>📱 Mobile ও Desktop—উভয় প্ল্যাটফর্মে ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- Search Engine-এর কাজ করার ধাপ -->
+
+<div class="card">
+
+<h2>⚙️ Search Engine কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>🕷️ <b>Crawling</b> – Web Crawler বা Bot ইন্টারনেটের বিভিন্ন Website ঘুরে তথ্য সংগ্রহ করে।</li>
+
+<li>📚 <b>Indexing</b> – সংগ্রহ করা তথ্য বিশাল Database-এ সংরক্ষণ করা হয়।</li>
+
+<li>🔍 <b>Searching</b> – ব্যবহারকারী Keyword লিখে Search করে।</li>
+
+<li>📊 <b>Ranking</b> – সবচেয়ে প্রাসঙ্গিক ফলাফল আগে দেখানো হয়।</li>
+
+<li>📄 <b>Results Display</b> – Search Results Page (SERP)-এ ফলাফল প্রদর্শন করা হয়।</li>
+
+</ol>
+
+</div>
+
+<!-- Search Engine-এর গুরুত্বপূর্ণ Features -->
+
+<div class="card">
+
+<h2>⭐ Search Engine-এর গুরুত্বপূর্ণ Features</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Web Search</td>
+<td>Website ও Web Page খুঁজে দেয়</td>
+</tr>
+
+<tr>
+<td>Image Search</td>
+<td>ছবি খুঁজে দেয়</td>
+</tr>
+
+<tr>
+<td>Video Search</td>
+<td>ভিডিও খুঁজে দেয়</td>
+</tr>
+
+<tr>
+<td>News Search</td>
+<td>সংবাদ খুঁজে দেয়</td>
+</tr>
+
+<tr>
+<td>Voice Search</td>
+<td>কথা বলে Search করা যায়</td>
+</tr>
+
+<tr>
+<td>Safe Search</td>
+<td>অনুপযুক্ত কনটেন্ট ফিল্টার করতে সাহায্য করে</td>
+</tr>
+
+<tr>
+<td>Auto Complete</td>
+<td>টাইপ করার সময় Search Suggestion দেখায়</td>
+</tr>
+
+<tr>
+<td>Spell Check</td>
+<td>বানান ভুল হলে সঠিক পরামর্শ দেয়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Search Tips -->
+
+<div class="card">
+
+<h2>💡 ভালোভাবে Search করার টিপস</h2>
+
+<ul>
+
+<li>🔍 নির্দিষ্ট Keyword ব্যবহার করুন।</li>
+
+<li>"" (Quotation Marks) ব্যবহার করলে নির্দিষ্ট বাক্যাংশ খুঁজে পাওয়া যায়।</li>
+
+<li>➖ (-) ব্যবহার করে অপ্রয়োজনীয় শব্দ বাদ দিতে পারেন।</li>
+
+<li>🌐 site:example.com ব্যবহার করে নির্দিষ্ট Website-এ Search করুন।</li>
+
+<li>📄 filetype:pdf ব্যবহার করে PDF File খুঁজুন।</li>
+
+<li>📅 Tools ব্যবহার করে নির্দিষ্ট সময়ের ফলাফল দেখুন।</li>
+
+</ul>
+
+</div>
+
+<!-- Shortcut -->
+
+<div class="card">
+
+<h2>⌨️ Browser/Search-এর কিছু গুরুত্বপূর্ণ Shortcut</h2>
+
+<table>
+
+<tr>
+<th>Shortcut</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>Ctrl + L</td>
+<td>Address Bar নির্বাচন</td>
+</tr>
+
+<tr>
+<td>Ctrl + K</td>
+<td>Search Box-এ যাওয়া (অনেক Browser-এ)</td>
+</tr>
+
+<tr>
+<td>Ctrl + F</td>
+<td>বর্তমান Page-এ Search</td>
+</tr>
+
+<tr>
+<td>Ctrl + T</td>
+<td>নতুন Tab খোলা</td>
+</tr>
+
+<tr>
+<td>Ctrl + W</td>
+<td>বর্তমান Tab বন্ধ করা</td>
+</tr>
+
+<tr>
+<td>F5</td>
+<td>Page Reload</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 Google প্রতিদিন বিলিয়ন সংখ্যক Search Request প্রক্রিয়া করে।</li>
+
+<li>🔎 Search Engine Web Crawler ব্যবহার করে Website-এর তথ্য সংগ্রহ করে।</li>
+
+<li>📱 Voice Search-এর জনপ্রিয়তা দ্রুত বাড়ছে।</li>
+
+<li>🤖 আধুনিক Search Engine-এ AI ব্যবহার করে আরও প্রাসঙ্গিক ফলাফল দেখানো হয়।</li>
+
+<li>📰 একই Search Engine দিয়ে Web, Image, Video, News ও Maps Search করা যায়।</li>
+
+</ul>
+
+</div>
+
+  <!-- Search Engine-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 Search Engine-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+১৯৯০ সালে <b>Archie</b> ছিল প্রথম দিকের একটি Search Tool, যা FTP Server-এর File খুঁজে বের করত। এরপর <b>AltaVista</b>, <b>Yahoo!</b> এবং অন্যান্য Search Engine জনপ্রিয় হয়। ১৯৯৮ সালে Larry Page ও Sergey Brin <b>Google</b> প্রতিষ্ঠা করেন। Google-এর উন্নত Ranking Algorithm-এর কারণে এটি দ্রুত বিশ্বের সবচেয়ে জনপ্রিয় Search Engine হয়ে ওঠে। বর্তমানে Bing, DuckDuckGo, Baidu এবং Yandex-ও ব্যাপকভাবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. Search Engine কী?</b></summary>
+<p>Search Engine হলো এমন একটি Online Service, যা Internet থেকে তথ্য খুঁজে বের করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. বিশ্বের সবচেয়ে জনপ্রিয় Search Engine কোনটি?</b></summary>
+<p><b>Google</b></p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. Google কবে প্রতিষ্ঠিত হয়?</b></summary>
+<p>১৯৯৮ সালে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Search Engine কীভাবে কাজ করে?</b></summary>
+<p>Crawling, Indexing এবং Ranking-এর মাধ্যমে কাজ করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Search Engine ও Web Browser কি একই?</b></summary>
+<p>না। Web Browser হলো Website দেখার সফটওয়্যার, আর Search Engine হলো Internet-এ তথ্য খোঁজার সেবা।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. Voice Search কী?</b></summary>
+<p>কথা বলে Search করার সুবিধাকে Voice Search বলা হয়।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Search Engine Internet থেকে তথ্য খুঁজে দেয়।</li>
+
+<li>✅ Keyword ব্যবহার করে Search করা হয়।</li>
+
+<li>✅ Crawling, Indexing ও Ranking-এর মাধ্যমে কাজ করে।</li>
+
+<li>✅ Google, Bing, Yahoo!, DuckDuckGo, Baidu জনপ্রিয় Search Engine।</li>
+
+<li>✅ Image, Video, News ও Maps Search করা যায়।</li>
+
+<li>✅ Voice Search ও Auto Complete সুবিধা রয়েছে।</li>
+
+<li>✅ Internet সংযোগ ছাড়া Search Engine ব্যবহার করা যায় না।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. Search Engine কী?</summary>
+<p>✅ Internet থেকে তথ্য খুঁজে দেওয়ার Online Service।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. Google কবে প্রতিষ্ঠিত হয়?</summary>
+<p>✅ ১৯৯৮ সালে।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. Search Engine-এর তিনটি প্রধান ধাপ কী?</summary>
+<p>✅ Crawling, Indexing ও Ranking।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. দুটি জনপ্রিয় Search Engine-এর নাম লিখুন।</summary>
+<p>✅ Google এবং Bing।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Search Engine ও Browser-এর মধ্যে পার্থক্য কী?</summary>
+<p>✅ Browser Website দেখায়, Search Engine তথ্য খুঁজে দেয়।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="webbrowser.html">🌐 Web Browser কী?</a></li>
+
+<li><a href="internet.html">🌍 Internet কী?</a></li>
+
+<li><a href="website.html">🖥️ Website কী?</a></li>
+
+<li><a href="url.html">🔗 URL কী?</a></li>
+
+<li><a href="html.html">📄 HTML কী?</a></li>
+
+<li><a href="email.html">📧 Email কী?</a></li>
+
+<li><a href="wifi.html">📶 Wi-Fi কী?</a></li>
+
+<li><a href="bluetooth.html">📡 Bluetooth কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Search Engine আমাদের Internet-এ দ্রুত ও সহজে তথ্য খুঁজে পেতে সাহায্য করে। শিক্ষা, গবেষণা, ব্যবসা, সংবাদ, বিনোদন এবং দৈনন্দিন জীবনের বিভিন্ন ক্ষেত্রে এটি অত্যন্ত গুরুত্বপূর্ণ। সঠিক Keyword ব্যবহার করলে আরও নির্ভুল ও প্রাসঙ্গিক তথ্য পাওয়া যায়।
+
+</p>
+
+</div>
+
+  </div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#34a853;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#34a853;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search Function */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
+  
