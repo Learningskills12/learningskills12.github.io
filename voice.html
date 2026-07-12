@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voice Change A to Z | Learning Skills</title>
+
+<meta name="description"
+content="Learn Voice Change (Active & Passive Voice) from Basic to Advanced with Examples, Rules and Practice.">
+
+<meta name="keywords"
+content="Voice Change, Active Voice, Passive Voice, English Grammar, Learning Skills">
+
+<meta name="author"
+content="Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+--primary:#2563eb;
+--secondary:#1d4ed8;
+
+--bg:#f5f7fb;
+
+--card:#ffffff;
+
+--text:#1f2937;
+
+--text2:#6b7280;
+
+--border:#e5e7eb;
+
+--shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+body.dark{
+
+--primary:#60a5fa;
+
+--secondary:#3b82f6;
+
+--bg:#0f172a;
+
+--card:#1e293b;
+
+--text:#f8fafc;
+
+--text2:#cbd5e1;
+
+--border:#334155;
+
+--shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+
+body{
+
+background:var(--bg);
+
+color:var(--text);
+
+transition:.35s;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+img{
+
+max-width:100%;
+
+}
+
+.container{
+
+width:92%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+.card{
+
+background:var(--card);
+
+border-radius:18px;
+
+padding:25px;
+
+box-shadow:var(--shadow);
+
+margin-bottom:25px;
+
+border:1px solid var(--border);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+
+}
+
+h1{
+
+font-size:42px;
+
+font-weight:700;
+
+}
+
+h2{
+
+font-size:30px;
+
+margin-bottom:15px;
+
+color:var(--primary);
+
+}
+
+h3{
+
+margin:20px 0 10px;
+
+}
+
+p{
+
+line-height:1.8;
+
+color:var(--text2);
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+overflow:hidden;
+
+border-radius:12px;
+
+}
+
+table th{
+
+background:var(--primary);
+
+color:#fff;
+
+padding:15px;
+
+}
+
+table td{
+
+padding:14px;
+
+border:1px solid var(--border);
+
+}
+
+table tr:nth-child(even){
+
+background:rgba(37,99,235,.05);
+
+}
+
+body.dark table tr:nth-child(even){
+
+background:#273449;
+
+}
+
+.note{
+
+background:#dbeafe;
+
+padding:18px;
+
+border-left:5px solid var(--primary);
+
+border-radius:10px;
+
+margin:20px 0;
+
+}
+
+body.dark .note{
+
+background:#1e3a5f;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:30px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+section{
+
+padding:50px 0;
+
+}
+
+.card{
+
+padding:18px;
+
+}
+
+table{
+
+font-size:14px;
+
+}
+
+}
+/* ================= HEADER ================= */
+
+.header{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:var(--card);
+
+box-shadow:var(--shadow);
+
+border-bottom:1px solid var(--border);
+
+}
+
+.nav-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+height:75px;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.logo img{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+}
+
+.logo h2{
+
+margin:0;
+
+font-size:22px;
+
+color:var(--primary);
+
+}
+
+.logo p{
+
+font-size:12px;
+
+margin:0;
+
+}
+
+nav{
+
+display:flex;
+
+gap:20px;
+
+}
+
+nav a{
+
+padding:8px 12px;
+
+border-radius:8px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover,
+
+nav a.active{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.nav-right button{
+
+width:42px;
+
+height:42px;
+
+border:none;
+
+cursor:pointer;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+
+}
+
+#menuBtn{
+
+display:none;
+
+}
+
+@media(max-width:900px){
+
+nav{
+
+display:none;
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:var(--card);
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+nav.show{
+
+display:flex;
+
+}
+
+#menuBtn{
+
+display:block;
+
+}
+
+.logo p{
+
+display:none;
+
+}
+
+}
+
+/*========== HERO ==========*/
+
+.hero{
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+padding:90px 20px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+margin:20px 0;
+
+color:white;
+
+}
+
+.hero p{
+
+color:#eef2ff;
+
+max-width:750px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+.badge{
+
+display:inline-block;
+
+background:white;
+
+color:var(--primary);
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-weight:600;
+
+}
+
+.hero-btns{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+background:white;
+
+color:var(--primary);
+
+padding:14px 24px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+}
+
+/*========== Breadcrumb ==========*/
+
+.breadcrumb{
+
+margin:30px 0;
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+align-items:center;
+
+font-size:15px;
+
+}
+
+.breadcrumb a{
+
+color:var(--primary);
+
+font-weight:600;
+
+}
+
+.current{
+
+font-weight:bold;
+
+}
+
+/*========== Search ==========*/
+
+.search-box{
+
+display:flex;
+
+align-items:center;
+
+background:var(--card);
+
+padding:14px 18px;
+
+border-radius:12px;
+
+box-shadow:var(--shadow);
+
+margin-bottom:25px;
+
+}
+
+.search-box i{
+
+margin-right:12px;
+
+color:var(--primary);
+
+}
+
+.search-box input{
+
+width:100%;
+
+border:none;
+
+outline:none;
+
+background:none;
+
+color:var(--text);
+
+font-size:16px;
+
+}
+
+/*========== Progress Bar ==========*/
+
+.progress-container{
+
+position:fixed;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:transparent;
+
+z-index:999;
+
+}
+
+#progressBar{
+
+height:100%;
+
+width:0%;
+
+background:var(--primary);
+
+}
+
+/*================ FOOTER ================*/
+
+.footer{
+
+background:#111827;
+
+color:#ffffff;
+
+margin-top:60px;
+
+padding:50px 0 20px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.footer h3{
+
+margin-bottom:15px;
+
+color:#60a5fa;
+
+}
+
+.footer p,
+
+.footer li,
+
+.footer a{
+
+color:#d1d5db;
+
+line-height:1.8;
+
+}
+
+.footer ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer a:hover{
+
+color:white;
+
+}
+
+.footer hr{
+
+margin:30px 0;
+
+border:1px solid #374151;
+
+}
+
+.copyright{
+
+text-align:center;
+
+font-size:15px;
+
+}
+
+/*============== Back To Top ==============*/
+
+#backToTop{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#backToTop:hover{
+
+transform:translateY(-5px);
+
+}
+/*================== Utility Buttons ==================*/
+
+.tools{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin:25px 0;
+justify-content:center;
+}
+
+.tool-btn{
+background:var(--primary);
+color:#fff;
+border:none;
+padding:12px 18px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+}
+
+.tool-btn:hover{
+background:var(--secondary);
+transform:translateY(-3px);
+}
+
+/*================== Reading Time ==================*/
+
+.reading-time{
+background:var(--card);
+padding:15px;
+border-left:5px solid var(--primary);
+border-radius:10px;
+margin:20px 0;
+font-weight:600;
+}
+
+/*================== Search Highlight ==================*/
+
+mark{
+background:#ffeb3b;
+padding:2px 5px;
+border-radius:4px;
+}
+
+/*================== Fade Animation ==================*/
+
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all .6s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+  
+</style>
+
+</head>
+
+<body>
+  
+<!-- ================= HEADER START ================= -->
+
+<header class="header">
+
+<div class="container nav-container">
+
+<a href="index.html" class="logo">
+
+<img src="logo.png" alt="Learning Skills Logo">
+
+<div>
+
+<h2>Learning Skills</h2>
+
+<p>Learn Today, Lead Tomorrow</p>
+
+</div>
+
+</a>
+
+<nav id="navMenu">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i> Home
+</a>
+
+<a href="english.html">
+<i class="fa-solid fa-book-open"></i> English
+</a>
+
+<a href="voice-change.html" class="active">
+<i class="fa-solid fa-microphone-lines"></i> Voice Change
+</a>
+
+<a href="quiz.html">
+<i class="fa-solid fa-circle-question"></i> Quiz
+</a>
+
+<a href="blog.html">
+<i class="fa-solid fa-newspaper"></i> Blog
+</a>
+
+<a href="contact.html">
+<i class="fa-solid fa-envelope"></i> Contact
+</a>
+
+</nav>
+
+<div class="nav-right">
+
+<button id="themeBtn" title="Dark Mode">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= HEADER END ================= -->
+
+<!-- ================= HERO SECTION START ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span class="badge">
+<i class="fa-solid fa-graduation-cap"></i>
+English Grammar Master Course
+</span>
+
+<h1>Voice Change (Active & Passive Voice)</h1>
+
+<p>
+শুরু থেকে Advanced পর্যন্ত Voice Change শিখুন সহজ নিয়ম, উদাহরণ, শর্টকাট ট্রিকস এবং প্র্যাকটিসসহ।
+</p>
+
+<div class="hero-btns">
+
+<a href="#voice-introduction" class="btn">
+<i class="fa-solid fa-book-open"></i>
+Start Learning
+</a>
+
+<a href="quiz.html" class="btn btn-outline">
+<i class="fa-solid fa-circle-question"></i>
+Practice Quiz
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HERO SECTION END ================= -->
+
+<!-- ================= BREADCRUMB ================= -->
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<span>›</span>
+
+<a href="english.html">
+English Grammar
+</a>
+
+<span>›</span>
+
+<span class="current">
+Voice Change
+</span>
+
+</div>
+
+</div>
+
+<!-- ================= SEARCH ================= -->
+
+<div class="container">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search this page...">
+
+</div>
+
+</div>
+
+<div class="reading-time">
+⏱ Estimated Reading Time:
+<strong>8 Minutes</strong>
+</div>
+
+<div class="tools">
+
+<button class="tool-btn" onclick="window.print()">
+<i class="fa-solid fa-print"></i>
+Print
+</button>
+
+<button class="tool-btn" onclick="sharePage()">
+<i class="fa-solid fa-share-nodes"></i>
+Share
+</button>
+
+<button class="tool-btn" onclick="copyLink()">
+<i class="fa-solid fa-copy"></i>
+Copy Link
+</button>
+
+</div>
+<!-- ================= PROGRESS BAR ================= -->
+
+<div class="progress-container">
+
+<div id="progressBar"></div>
+
+</div>
+
+<!-- ===================== Voice Introduction ===================== -->
+
+<section id="voice-introduction">
+
+<div class="container">
+
+<div class="card">
+
+<h2><i class="fa-solid fa-microphone-lines"></i> What is Voice Change?</h2>
+
+<p>
+<b>Voice Change</b> হলো এমন একটি Grammar Topic যেখানে বাক্যের অর্থ অপরিবর্তিত রেখে
+<b>Active Voice</b> থেকে <b>Passive Voice</b> অথবা <b>Passive Voice</b> থেকে
+<b>Active Voice</b> এ পরিবর্তন করা হয়।
+</p>
+
+<div class="note">
+
+<strong>📌 Definition</strong><br><br>
+
+Voice Change is the process of changing the form of a sentence from Active Voice to Passive Voice or Passive Voice to Active Voice without changing its meaning.
+
+</div>
+
+</div>
+
+<!-- ================= Active Voice ================= -->
+
+<div class="card">
+
+<h2><i class="fa-solid fa-person-running"></i> Active Voice</h2>
+
+<p>
+
+যে বাক্যে Subject নিজেই কাজটি সম্পন্ন করে তাকে Active Voice বলে।
+
+</p>
+
+<h3>Structure</h3>
+
+<table>
+
+<tr>
+
+<th>Formula</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+Subject + Verb + Object
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>Examples</h3>
+
+<table>
+
+<tr>
+
+<th>English</th>
+
+<th>বাংলা</th>
+
+</tr>
+
+<tr>
+
+<td>Rahim writes a letter.</td>
+
+<td>রহিম একটি চিঠি লেখে।</td>
+
+</tr>
+
+<tr>
+
+<td>She teaches English.</td>
+
+<td>সে ইংরেজি পড়ায়।</td>
+
+</tr>
+
+<tr>
+
+<td>They play football.</td>
+
+<td>তারা ফুটবল খেলে।</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ================= Passive Voice ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-people-arrows"></i>
+
+Passive Voice
+
+</h2>
+
+<p>
+
+যে বাক্যে কাজটি Subject না করে Object-এর উপর সংঘটিত হয় তাকে Passive Voice বলে।
+
+</p>
+
+<h3>Structure</h3>
+
+<table>
+
+<tr>
+
+<th>Formula</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+Object + Helping Verb + V³ + by + Subject
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>Examples</h3>
+
+<table>
+
+<tr>
+
+<th>Active</th>
+
+<th>Passive</th>
+
+</tr>
+
+<tr>
+
+<td>Rahim writes a letter.</td>
+
+<td>A letter is written by Rahim.</td>
+
+</tr>
+
+<tr>
+
+<td>She teaches English.</td>
+
+<td>English is taught by her.</td>
+
+</tr>
+
+<tr>
+
+<td>They play football.</td>
+
+<td>Football is played by them.</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ================= Comparison ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-table"></i>
+
+Active vs Passive
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Active Voice</th>
+
+<th>Passive Voice</th>
+
+</tr>
+
+<tr>
+
+<td>Subject গুরুত্বপূর্ণ</td>
+
+<td>Object গুরুত্বপূর্ণ</td>
+
+</tr>
+
+<tr>
+
+<td>Subject কাজ করে</td>
+
+<td>Subject-এর উপর কাজ হয়</td>
+
+</tr>
+
+<tr>
+
+<td>Subject + Verb + Object</td>
+
+<td>Object + be + V³ + by + Subject</td>
+
+</tr>
+
+<tr>
+
+<td>Simple Structure</td>
+
+<td>Helping Verb লাগে</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ================= Important Rules ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-lightbulb"></i>
+
+Important Rules
+
+</h2>
+
+<ul>
+
+<li>✅ বাক্যের অর্থ পরিবর্তন হবে না।</li>
+
+<li>✅ Object না থাকলে সাধারণত Passive হয় না।</li>
+
+<li>✅ Main Verb সর্বদা Past Participle (V³) হবে।</li>
+
+<li>✅ Tense অনুযায়ী Helping Verb পরিবর্তন হবে।</li>
+
+<li>✅ By + Subject অনেক ক্ষেত্রে বাদ দেওয়া যায়।</li>
+
+<li>✅ Imperative Sentence-এর আলাদা নিয়ম আছে।</li>
+
+<li>✅ Interrogative Sentence-এরও আলাদা নিয়ম আছে।</li>
+
+</ul>
+
+</div>
+
+<!-- ================= Quick Tip ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-star"></i>
+
+Quick Tip
+
+</h2>
+
+<div class="note">
+
+💡 Voice Change করার আগে প্রথমে Subject, Verb এবং Object শনাক্ত করুন।
+এরপর Tense নির্ণয় করুন। তারপর সেই Tense-এর Passive Structure ব্যবহার করুন।
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Subject → Object Change ================= -->
+
+<section id="voice-rules">
+
+<div class="container">
+
+<div class="card">
+
+<h2><i class="fa-solid fa-right-left"></i> Subject → Object Pronoun Change</h2>
+
+<p>Voice Change করার সময় Subject Pronoun Object Pronoun-এ পরিবর্তিত হয়।</p>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Object</th>
+</tr>
+
+<tr><td>I</td><td>Me</td></tr>
+<tr><td>We</td><td>Us</td></tr>
+<tr><td>You</td><td>You</td></tr>
+<tr><td>He</td><td>Him</td></tr>
+<tr><td>She</td><td>Her</td></tr>
+<tr><td>It</td><td>It</td></tr>
+<tr><td>They</td><td>Them</td></tr>
+<tr><td>Who</td><td>Whom</td></tr>
+
+</table>
+
+</div>
+
+<!-- ================= Helping Verb ================= -->
+
+<div class="card">
+
+<h2><i class="fa-solid fa-table"></i> Helping Verb Chart</h2>
+
+<table>
+
+<tr>
+<th>Tense</th>
+<th>Passive Helping Verb</th>
+</tr>
+
+<tr><td>Present Indefinite</td><td>am / is / are</td></tr>
+<tr><td>Present Continuous</td><td>am / is / are + being</td></tr>
+<tr><td>Present Perfect</td><td>has / have + been</td></tr>
+
+<tr><td>Past Indefinite</td><td>was / were</td></tr>
+<tr><td>Past Continuous</td><td>was / were + being</td></tr>
+<tr><td>Past Perfect</td><td>had been</td></tr>
+
+<tr><td>Future Indefinite</td><td>will be</td></tr>
+<tr><td>Future Perfect</td><td>will have been</td></tr>
+
+</table>
+
+<div class="note">
+
+❌ Present Perfect Continuous, Past Perfect Continuous এবং Future Perfect Continuous-এর Passive Voice সাধারণত ব্যবহৃত হয় না।
+
+</div>
+
+</div>
+
+<!-- ================= Verb Forms ================= -->
+
+<div class="card">
+
+<h2><i class="fa-solid fa-book"></i> Verb Forms</h2>
+
+<table>
+
+<tr>
+
+<th>V1</th>
+
+<th>V2</th>
+
+<th>V3</th>
+
+</tr>
+
+<tr><td>Write</td><td>Wrote</td><td>Written</td></tr>
+
+<tr><td>Eat</td><td>Ate</td><td>Eaten</td></tr>
+
+<tr><td>Go</td><td>Went</td><td>Gone</td></tr>
+
+<tr><td>See</td><td>Saw</td><td>Seen</td></tr>
+
+<tr><td>Read</td><td>Read</td><td>Read</td></tr>
+
+<tr><td>Teach</td><td>Taught</td><td>Taught</td></tr>
+
+<tr><td>Make</td><td>Made</td><td>Made</td></tr>
+
+<tr><td>Take</td><td>Took</td><td>Taken</td></tr>
+
+<tr><td>Do</td><td>Did</td><td>Done</td></tr>
+
+<tr><td>Speak</td><td>Spoke</td><td>Spoken</td></tr>
+
+</table>
+
+</div>
+
+<!-- ================= Step by Step ================= -->
+
+<div class="card">
+
+<h2><i class="fa-solid fa-list-check"></i> Step by Step Voice Change</h2>
+
+<ol>
+
+<li>Subject, Verb এবং Object শনাক্ত করুন।</li>
+
+<li>Tense নির্ণয় করুন।</li>
+
+<li>Object-কে Subject-এর স্থানে আনুন।</li>
+
+<li>সঠিক Helping Verb ব্যবহার করুন।</li>
+
+<li>Main Verb-কে V³ (Past Participle) করুন।</li>
+
+<li>প্রয়োজনে শেষে <b>by + Subject</b> যোগ করুন।</li>
+
+</ol>
+
+</div>
+
+<!-- ================= Practice Examples ================= -->
+
+<div class="card">
+
+<h2><i class="fa-solid fa-pen"></i> Basic Voice Change Examples</h2>
+
+<table>
+
+<tr>
+
+<th>Active Voice</th>
+
+<th>Passive Voice</th>
+
+</tr>
+
+<tr>
+
+<td>I write a letter.</td>
+
+<td>A letter is written by me.</td>
+
+</tr>
+
+<tr>
+
+<td>She teaches English.</td>
+
+<td>English is taught by her.</td>
+
+</tr>
+
+<tr>
+
+<td>They clean the room.</td>
+
+<td>The room is cleaned by them.</td>
+
+</tr>
+
+<tr>
+
+<td>He opens the door.</td>
+
+<td>The door is opened by him.</td>
+
+</tr>
+
+<tr>
+
+<td>We help the poor.</td>
+
+<td>The poor are helped by us.</td>
+
+</tr>
+
+<tr>
+
+<td>The boy kicks the ball.</td>
+
+<td>The ball is kicked by the boy.</td>
+
+</tr>
+
+<tr>
+
+<td>Mother cooks food.</td>
+
+<td>Food is cooked by mother.</td>
+
+</tr>
+
+<tr>
+
+<td>The teacher praises the students.</td>
+
+<td>The students are praised by the teacher.</td>
+
+</tr>
+
+<tr>
+
+<td>Police catch the thief.</td>
+
+<td>The thief is caught by the police.</td>
+
+</tr>
+
+<tr>
+
+<td>The cat drinks milk.</td>
+
+<td>Milk is drunk by the cat.</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  <script>
+
+const menuBtn=document.getElementById("menuBtn");
+
+const navMenu=document.getElementById("navMenu");
+
+menuBtn.onclick=()=>{
+
+navMenu.classList.toggle("show");
+
+}
+
+const themeBtn=document.getElementById("themeBtn");
+
+themeBtn.onclick=()=>{
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+themeBtn.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}else{
+
+themeBtn.innerHTML='<i class="fa-solid fa-moon"></i>';
+
+}
+
+}
+/*========== Reading Progress ==========*/
+
+window.addEventListener("scroll",()=>{
+
+let winScroll=document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+});
+
+  /*============ Back To Top ============*/
+
+const topBtn=document.getElementById("backToTop");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+/*============ Dark Mode Memory ============*/
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+themeBtn.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}
+
+themeBtn.addEventListener("click",()=>{
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+});
+/*=========== Share ===========*/
+
+function sharePage(){
+
+if(navigator.share){
+
+navigator.share({
+
+title:document.title,
+
+url:window.location.href
+
+});
+
+}else{
+
+alert("Sharing is not supported on this device.");
+
+}
+
+}
+
+/*=========== Copy Link ===========*/
+
+function copyLink(){
+
+navigator.clipboard.writeText(window.location.href);
+
+alert("Page link copied successfully.");
+
+}
+
+/*=========== Scroll Animation ===========*/
+
+const fades=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+fades.forEach(card=>{
+
+card.classList.add("fade");
+
+observer.observe(card);
+
+});
+
+/*=========== Live Search ===========*/
+
+const searchInput=document.querySelector(".search-box input");
+
+searchInput.addEventListener("keyup",function(){
+
+let filter=this.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(card=>{
+
+if(card.innerText.toLowerCase().includes(filter)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+  </script>
+
+  <!-- ================= BACK TO TOP ================= -->
+
+<button id="backToTop" title="Back to Top">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>📘 Learning Skills</h3>
+
+<p>
+Learn English Grammar, Mathematics,
+Computer, Science and GK completely FREE.
+</p>
+
+</div>
+
+<div>
+
+<h3>📚 Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">🏠 Home</a></li>
+
+<li><a href="english.html">📖 English</a></li>
+
+<li><a href="voice-change.html">🎤 Voice Change</a></li>
+
+<li><a href="quiz.html">📝 Quiz</a></li>
+
+<li><a href="blog.html">📰 Blog</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>🌐 Follow Us</h3>
+
+<p>
+
+<a href="https://youtube.com/@learningskills12">
+<i class="fab fa-youtube"></i> YouTube
+</a>
+
+</p>
+
+<p>
+
+<a href="https://www.facebook.com/share/1CvSM5rWza/">
+<i class="fab fa-facebook"></i> Facebook
+</a>
+
+</p>
+
+<p>
+
+<a href="https://learningskills12.github.io/">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+
+</p>
+
+<p>
+
+<a href="mailto:Learningskills2624@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+Email
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Learning Skills |
+Designed with ❤️ by Learning Skills
+
+</p>
+
+</div>
+
+</footer>
+</body>
+</html>
