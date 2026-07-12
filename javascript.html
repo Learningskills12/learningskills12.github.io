@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JavaScript কী? | Learning Skills</title>
+
+<meta name="description" content="JavaScript কী, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, উদাহরণ এবং সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="JavaScript, JS, Web Development, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fffde7;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#f7df1e;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#f7df1e,#f9c80e);
+color:#222;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#f7df1e;
+color:#222;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e6c700;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #f7df1e;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#b8860b;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#f7df1e;
+color:#222;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ffd54f;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+code{
+background:#f4f4f4;
+padding:2px 6px;
+border-radius:4px;
+font-family:monospace;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>⚡ JavaScript কী?</h1>
+
+<p>JavaScript সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="html.html" class="btn">🌐 HTML</a>
+<a href="css.html" class="btn">🎨 CSS</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>⚡ JavaScript কী?</h2>
+
+<p>
+
+<b>JavaScript (JS)</b> হলো একটি জনপ্রিয় <b>Programming Language</b>, যা Website-কে Interactive ও Dynamic করে। HTML Website-এর Structure তৈরি করে, CSS Design করে এবং JavaScript Website-এ বিভিন্ন কার্যক্রম (Functionality) যোগ করে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 JavaScript-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>🖱️ Button Click-এর প্রতিক্রিয়া দেওয়া।</li>
+
+<li>📝 Form Validation করা।</li>
+
+<li>🔄 Dynamic Content পরিবর্তন করা।</li>
+
+<li>🎞️ Animation ও Effect যোগ করা।</li>
+
+<li>📡 Server থেকে Data আনা (API)।</li>
+
+<li>🎮 Interactive Web Application তৈরি করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 JavaScript-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+JavaScript ১৯৯৫ সালে <b>Brendan Eich</b> তৈরি করেন। এটি প্রথমে Netscape Navigator Browser-এর জন্য তৈরি হলেও বর্তমানে সব আধুনিক Browser এবং Server-side Development (Node.js)-এ ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ JavaScript-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>⚡ দ্রুত ও শক্তিশালী Programming Language।</li>
+
+<li>🌐 সব আধুনিক Browser সমর্থন করে।</li>
+
+<li>📱 Interactive Website তৈরি করা যায়।</li>
+
+<li>🔄 Real-time Data Update করা যায়।</li>
+
+<li>🎨 HTML ও CSS-এর সাথে সহজে কাজ করে।</li>
+
+<li>💻 Front-end ও Back-end উভয় ক্ষেত্রেই ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- JavaScript-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 JavaScript-এর প্রধান বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>⚡ Dynamic ও Interactive Website তৈরি করে।</li>
+
+<li>🖱️ User-এর Action অনুযায়ী কাজ করতে পারে।</li>
+
+<li>📝 Form Validation করা যায়।</li>
+
+<li>📡 API থেকে Data আদান-প্রদান করা যায়।</li>
+
+<li>🎞️ Animation ও Visual Effect তৈরি করা যায়।</li>
+
+<li>⏱️ Timer ও Clock তৈরি করা যায়।</li>
+
+<li>💾 Local Storage ব্যবহার করে Data সংরক্ষণ করা যায়।</li>
+
+<li>🌐 সব আধুনিক Browser-এ সমর্থিত।</li>
+
+<li>💻 Front-end ও Back-end উভয় ক্ষেত্রেই ব্যবহার করা যায়।</li>
+
+<li>🚀 Single Page Application (SPA) তৈরিতে ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>💻 JavaScript কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🌐 Website Development</li>
+
+<li>📱 Web Application</li>
+
+<li>🛒 E-commerce Website</li>
+
+<li>🎮 Browser Game</li>
+
+<li>📊 Dashboard</li>
+
+<li>💬 Chat Application</li>
+
+<li>📡 API Integration</li>
+
+<li>📱 Progressive Web App (PWA)</li>
+
+<li>🖥️ Server-side Development (Node.js)</li>
+
+<li>🤖 AI ও Automation Project</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>✅ JavaScript-এর সুবিধা</h2>
+
+<ul>
+
+<li>⚡ দ্রুত ও কার্যকর।</li>
+
+<li>🌐 Browser-এ সরাসরি চলে।</li>
+
+<li>🎨 Website-কে Interactive করে।</li>
+
+<li>📱 Responsive Web Application তৈরি সহজ হয়।</li>
+
+<li>📚 বিশাল Community ও Library Support রয়েছে।</li>
+
+<li>🔧 React, Vue, Angular-এর মতো Framework ব্যবহার করা যায়।</li>
+
+<li>💻 Full-stack Development সম্ভব।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❌ JavaScript-এর সীমাবদ্ধতা</h2>
+
+<ul>
+
+<li>🔒 Browser Security-এর সীমাবদ্ধতা রয়েছে।</li>
+
+<li>⚠️ JavaScript Disable থাকলে অনেক Feature কাজ করবে না।</li>
+
+<li>🐞 Code Debugging কখনও জটিল হতে পারে।</li>
+
+<li>🌐 Browser অনুযায়ী কিছু আচরণ ভিন্ন হতে পারে।</li>
+
+<li>📦 বড় Project-এ Code Management কঠিন হতে পারে।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📄 JavaScript-এর মৌলিক Syntax</h2>
+
+<pre><code>
+// Variable
+let name = "Learning Skills";
+
+// Output
+console.log(name);
+
+// Function
+function hello() {
+  alert("Hello World!");
+}
+</code></pre>
+
+</div>
+
+<div class="card">
+
+<h2>📌 JavaScript সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>⚡ JavaScript একটি Programming Language।</li>
+
+<li>👨‍💻 Brendan Eich এটি তৈরি করেন।</li>
+
+<li>🌐 HTML, CSS ও JavaScript একসাথে আধুনিক Website তৈরি করে।</li>
+
+<li>📡 JavaScript API-এর মাধ্যমে Server-এর সাথে যোগাযোগ করতে পারে।</li>
+
+<li>🚀 Node.js-এর মাধ্যমে Server-side-এও JavaScript ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- JavaScript কীভাবে কাজ করে -->
+
+<div class="card">
+
+<h2>⚙️ JavaScript কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📝 Developer JavaScript Code লেখেন।</li>
+
+<li>📄 Code HTML File-এর ভিতরে বা আলাদা <code>.js</code> File-এ রাখা হয়।</li>
+
+<li>🌐 Browser JavaScript Engine (যেমন V8) দিয়ে Code Execute করে।</li>
+
+<li>🎯 User-এর Action অনুযায়ী Code কাজ করে।</li>
+
+<li>🖥️ Website-এর Content ও Design Dynamicভাবে পরিবর্তন হয়।</li>
+
+</ol>
+
+</div>
+
+<!-- JavaScript Data Types -->
+
+<div class="card">
+
+<h2>📦 JavaScript Data Types</h2>
+
+<table>
+
+<tr>
+<th>Data Type</th>
+<th>উদাহরণ</th>
+</tr>
+
+<tr>
+<td>String</td>
+<td>"Hello"</td>
+</tr>
+
+<tr>
+<td>Number</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>Boolean</td>
+<td>true / false</td>
+</tr>
+
+<tr>
+<td>Array</td>
+<td>[1,2,3]</td>
+</tr>
+
+<tr>
+<td>Object</td>
+<td>{name:"Rahim"}</td>
+</tr>
+
+<tr>
+<td>Null</td>
+<td>null</td>
+</tr>
+
+<tr>
+<td>Undefined</td>
+<td>undefined</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- JavaScript-এর জনপ্রিয় ব্যবহার -->
+
+<div class="card">
+
+<h2>🚀 JavaScript-এর জনপ্রিয় ব্যবহার</h2>
+
+<ul>
+
+<li>🖱️ Button Click Event</li>
+
+<li>📝 Form Validation</li>
+
+<li>📡 API থেকে তথ্য আনা</li>
+
+<li>💬 Live Chat System</li>
+
+<li>🛒 Shopping Cart</li>
+
+<li>🎞️ Slider ও Animation</li>
+
+<li>📊 Dashboard</li>
+
+<li>🎮 Browser Game</li>
+
+</ul>
+
+</div>
+
+<!-- JavaScript শেখার টিপস -->
+
+<div class="card">
+
+<h2>💡 JavaScript শেখার টিপস</h2>
+
+<ul>
+
+<li>📝 প্রতিদিন ছোট ছোট Program লিখুন।</li>
+
+<li>🌐 DOM Manipulation অনুশীলন করুন।</li>
+
+<li>📡 API ব্যবহার শিখুন।</li>
+
+<li>🛠️ Browser Developer Console ব্যবহার করুন।</li>
+
+<li>⚙️ ES6 Features শিখুন।</li>
+
+<li>💻 ছোট Project তৈরি করে Practice করুন।</li>
+
+</ul>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>🌍 পৃথিবীর অধিকাংশ Website-এ JavaScript ব্যবহার করা হয়।</li>
+
+<li>⚡ JavaScript Browser এবং Server—উভয় জায়গায় ব্যবহার করা যায়।</li>
+
+<li>🚀 Node.js JavaScript-কে Server-side-এ চালাতে সাহায্য করে।</li>
+
+<li>📱 React Native দিয়ে JavaScript ব্যবহার করে Mobile App তৈরি করা যায়।</li>
+
+<li>🤖 AI ও Machine Learning Project-এও JavaScript ব্যবহার করা হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- JavaScript-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 JavaScript-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+JavaScript ১৯৯৫ সালে <b>Brendan Eich</b> মাত্র ১০ দিনের মধ্যে তৈরি করেন। এটি প্রথমে <b>Mocha</b> নামে পরিচিত ছিল, পরে <b>LiveScript</b> এবং শেষ পর্যন্ত <b>JavaScript</b> নাম দেওয়া হয়। বর্তমানে এটি বিশ্বের অন্যতম জনপ্রিয় Programming Language এবং Front-end, Back-end, Mobile App, Desktop App ও Server Development-এ ব্যাপকভাবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. JavaScript কী?</b></summary>
+<p>JavaScript একটি Programming Language যা Website-কে Interactive ও Dynamic করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. JavaScript কে তৈরি করেন?</b></summary>
+<p>Brendan Eich।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. JavaScript কবে তৈরি হয়?</b></summary>
+<p>১৯৯৫ সালে।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. JavaScript কি Browser ছাড়াও চলে?</b></summary>
+<p>হ্যাঁ। Node.js-এর মাধ্যমে Server-side-এও JavaScript চালানো যায়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. JavaScript-এর জনপ্রিয় Framework কী কী?</b></summary>
+<p>React, Angular, Vue.js ইত্যাদি।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. JavaScript কি HTML-এর বিকল্প?</b></summary>
+<p>না। HTML, CSS এবং JavaScript একসাথে ব্যবহার করে পূর্ণাঙ্গ Website তৈরি করা হয়।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ JavaScript একটি Programming Language।</li>
+
+<li>✅ Brendan Eich এটি তৈরি করেন।</li>
+
+<li>✅ Website-কে Interactive ও Dynamic করে।</li>
+
+<li>✅ Browser ও Server—উভয় জায়গায় ব্যবহার করা যায়।</li>
+
+<li>✅ HTML + CSS + JavaScript আধুনিক Web Development-এর ভিত্তি।</li>
+
+<li>✅ React, Angular ও Vue.js জনপ্রিয় JavaScript Framework।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. JavaScript কে তৈরি করেন?</summary>
+<p>✅ Brendan Eich</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. JavaScript কবে তৈরি হয়?</summary>
+<p>✅ ১৯৯৫ সালে</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. JavaScript কী ধরনের Language?</summary>
+<p>✅ Programming Language</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Node.js কী কাজে ব্যবহৃত হয়?</summary>
+<p>✅ Server-side-এ JavaScript চালানোর জন্য।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. JavaScript-এর জনপ্রিয় Framework-এর নাম বলুন।</summary>
+<p>✅ React, Angular, Vue.js</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="html.html">🌐 HTML</a></li>
+
+<li><a href="css.html">🎨 CSS</a></li>
+
+<li><a href="web-development.html">💻 Web Development</a></li>
+
+<li><a href="website.html">🖥️ Website</a></li>
+
+<li><a href="internet.html">🌍 Internet</a></li>
+
+<li><a href="web-browser.html">🌐 Web Browser</a></li>
+
+<li><a href="computer.html">💻 Computer</a></li>
+
+<li><a href="artificial-intelligence.html">🤖 Artificial Intelligence</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+JavaScript হলো আধুনিক Web Development-এর অন্যতম গুরুত্বপূর্ণ Programming Language। এটি Website-কে জীবন্ত, দ্রুত এবং ব্যবহারকারীর জন্য ইন্টারঅ্যাকটিভ করে তোলে। HTML ও CSS-এর সাথে JavaScript শেখা একজন দক্ষ Web Developer হওয়ার অন্যতম প্রধান ধাপ।
+
+</p>
+
+</div>
+  
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#f7df1e;
+color:#222;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+font-weight:bold;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+color:#fff;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#d4b000;
+color:#111;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+.dark pre,
+.dark code{
+background:#1e1e1e;
+color:#eee;
+}
+
+</style>
+
+<script>
+
+/* Live Search */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop || document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
