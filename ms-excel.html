@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MS Excel কী? | Learning Skills</title>
+
+<meta name="description" content="MS Excel কী, এর কাজ, ইতিহাস, বৈশিষ্ট্য, ব্যবহার, সুবিধা ও সম্পূর্ণ বাংলা নোট।">
+
+<meta name="keywords" content="MS Excel, Microsoft Excel, Spreadsheet, Learning Skills">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef8f1;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#107c41;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0b5e20,#107c41);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#107c41;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0b5e20;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #107c41;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#107c41;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#107c41;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#81c784;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>📊 MS Excel কী?</h1>
+
+<p>MS Excel সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer.html" class="btn">🏠 Computer Home</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📊 MS Excel কী?</h2>
+
+<p>
+
+<b>MS Excel (Microsoft Excel)</b> হলো Microsoft Corporation-এর তৈরি একটি জনপ্রিয় <b>Spreadsheet Software</b>। এটি ব্যবহার করে সংখ্যা, তথ্য (Data), হিসাব-নিকাশ, টেবিল, চার্ট, রিপোর্ট এবং বিশ্লেষণ (Analysis) করা যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 MS Excel-এর প্রধান কাজ</h2>
+
+<ul>
+
+<li>➕ হিসাব-নিকাশ (Calculation) করা।</li>
+
+<li>📋 Data সংরক্ষণ ও পরিচালনা করা।</li>
+
+<li>📊 Chart ও Graph তৈরি করা।</li>
+
+<li>📈 Data Analysis করা।</li>
+
+<li>🧾 Salary Sheet, Marksheet ও Budget তৈরি করা।</li>
+
+<li>📄 রিপোর্ট তৈরি করা।</li>
+
+<li>🖨️ Spreadsheet Print করা।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 MS Excel-এর ইতিহাস</h2>
+
+<p>
+
+Microsoft প্রথম ১৯৮৫ সালে MS Excel প্রকাশ করে। বর্তমানে এটি Microsoft 365-এর অংশ এবং বিশ্বের অন্যতম জনপ্রিয় Spreadsheet Software হিসেবে ব্যবহৃত হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ MS Excel-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>📊 Row ও Column-এর মাধ্যমে Data সংরক্ষণ করা যায়।</li>
+
+<li>🧮 Formula ও Function ব্যবহার করা যায়।</li>
+
+<li>📈 বিভিন্ন ধরনের Chart তৈরি করা যায়।</li>
+
+<li>🔍 Data Sort ও Filter করা যায়।</li>
+
+<li>📋 Pivot Table ব্যবহার করা যায়।</li>
+
+<li>☁️ OneDrive-এর মাধ্যমে Online-এ সংরক্ষণ করা যায়।</li>
+
+<li>💾 XLSX, PDF ও CSV Format-এ Save করা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর প্রধান অংশ -->
+
+<div class="card">
+
+<h2>🧩 MS Excel-এর প্রধান অংশ</h2>
+
+<ul>
+
+<li>📋 Title Bar</li>
+
+<li>📑 Quick Access Toolbar</li>
+
+<li>📂 File Tab</li>
+
+<li>🏠 Home Tab</li>
+
+<li>➕ Insert Tab</li>
+
+<li>📐 Page Layout Tab</li>
+
+<li>🧮 Formulas Tab</li>
+
+<li>📊 Data Tab</li>
+
+<li>🔍 Review Tab</li>
+
+<li>👁️ View Tab</li>
+
+<li>📄 Worksheet</li>
+
+<li>📌 Cell</li>
+
+<li>📏 Row</li>
+
+<li>📐 Column</li>
+
+<li>📦 Name Box</li>
+
+<li>📝 Formula Bar</li>
+
+<li>📜 Sheet Tabs</li>
+
+<li>🔎 Zoom Slider</li>
+
+<li>📊 Status Bar</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel কোথায় ব্যবহার হয় -->
+
+<div class="card">
+
+<h2>💻 MS Excel কোথায় ব্যবহার হয়?</h2>
+
+<ul>
+
+<li>🏢 অফিস ও কোম্পানি</li>
+
+<li>🏦 ব্যাংক</li>
+
+<li>🏫 স্কুল, কলেজ ও বিশ্ববিদ্যালয়</li>
+
+<li>🏛️ সরকারি অফিস</li>
+
+<li>🏥 হাসপাতাল</li>
+
+<li>🛒 ব্যবসা প্রতিষ্ঠান</li>
+
+<li>📈 হিসাবরক্ষণ (Accounting)</li>
+
+<li>📊 Data Analysis</li>
+
+<li>💰 Budget Planning</li>
+
+<li>📋 Inventory Management</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর সুবিধা -->
+
+<div class="card">
+
+<h2>✅ MS Excel-এর সুবিধা</h2>
+
+<ul>
+
+<li>🧮 দ্রুত হিসাব-নিকাশ করা যায়।</li>
+
+<li>📊 সুন্দর Chart ও Graph তৈরি করা যায়।</li>
+
+<li>📋 বড় Data সহজে সংরক্ষণ করা যায়।</li>
+
+<li>🔍 Data Sort ও Filter করা যায়।</li>
+
+<li>⚡ Formula ও Function ব্যবহার করে স্বয়ংক্রিয় হিসাব করা যায়।</li>
+
+<li>📈 Data Analysis সহজ হয়।</li>
+
+<li>🖨️ সহজে Print করা যায়।</li>
+
+<li>☁️ Online-এ Share ও Backup রাখা যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর অসুবিধা -->
+
+<div class="card">
+
+<h2>❌ MS Excel-এর অসুবিধা</h2>
+
+<ul>
+
+<li>📊 খুব বড় Data হলে কাজ ধীর হতে পারে।</li>
+
+<li>⚙️ জটিল Formula শেখা কঠিন হতে পারে।</li>
+
+<li>❌ ভুল Formula দিলে ভুল ফলাফল পাওয়া যায়।</li>
+
+<li>💰 কিছু Feature ব্যবহারের জন্য Microsoft 365 Subscription লাগতে পারে।</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর File Format -->
+
+<div class="card">
+
+<h2>📂 MS Excel-এর File Format</h2>
+
+<table>
+
+<tr>
+<th>Format</th>
+<th>ব্যবহার</th>
+</tr>
+
+<tr>
+<td>.xls</td>
+<td>পুরোনো Excel Workbook</td>
+</tr>
+
+<tr>
+<td>.xlsx</td>
+<td>বর্তমান Excel Workbook Format</td>
+</tr>
+
+<tr>
+<td>.csv</td>
+<td>Comma Separated Values</td>
+</tr>
+
+<tr>
+<td>.pdf</td>
+<td>Print ও Share করার জন্য</td>
+</tr>
+
+<tr>
+<td>.xlsm</td>
+<td>Macro Enabled Workbook</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- গুরুত্বপূর্ণ তথ্য -->
+
+<div class="card">
+
+<h2>📌 MS Excel সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>📊 এটি একটি Spreadsheet Software।</li>
+
+<li>🏢 Microsoft Corporation এটি তৈরি করেছে।</li>
+
+<li>📅 প্রথম প্রকাশিত হয় ১৯৮৫ সালে।</li>
+
+<li>💾 Default File Format হলো <b>.xlsx</b>।</li>
+
+<li>🧮 ৫০০-এরও বেশি Built-in Function রয়েছে।</li>
+
+<li>🌍 বিশ্বজুড়ে হিসাব-নিকাশ ও Data Analysis-এর জন্য ব্যাপকভাবে ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর গুরুত্বপূর্ণ Tabs -->
+
+<div class="card">
+
+<h2>📑 MS Excel-এর গুরুত্বপূর্ণ Tabs</h2>
+
+<table>
+
+<tr>
+<th>Tab</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>File</td>
+<td>New, Open, Save, Print ও Share</td>
+</tr>
+
+<tr>
+<td>Home</td>
+<td>Font, Alignment, Number Format, Clipboard</td>
+</tr>
+
+<tr>
+<td>Insert</td>
+<td>Table, Chart, Picture, Shapes, Pivot Table</td>
+</tr>
+
+<tr>
+<td>Page Layout</td>
+<td>Margin, Orientation, Size, Themes</td>
+</tr>
+
+<tr>
+<td>Formulas</td>
+<td>Formula ও Function ব্যবহার</td>
+</tr>
+
+<tr>
+<td>Data</td>
+<td>Sort, Filter, Data Validation, Remove Duplicates</td>
+</tr>
+
+<tr>
+<td>Review</td>
+<td>Spelling Check, Comments, Protect Sheet</td>
+</tr>
+
+<tr>
+<td>View</td>
+<td>Zoom, Freeze Panes, Gridlines</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- MS Excel-এর জনপ্রিয় ব্যবহার -->
+
+<div class="card">
+
+<h2>🌟 MS Excel-এর জনপ্রিয় ব্যবহার</h2>
+
+<ul>
+
+<li>💰 Salary Sheet তৈরি</li>
+
+<li>📊 Marksheet তৈরি</li>
+
+<li>📈 Data Analysis</li>
+
+<li>🧾 Budget Planning</li>
+
+<li>🏪 Stock ও Inventory Management</li>
+
+<li>💼 Business Report</li>
+
+<li>📉 Profit ও Loss হিসাব</li>
+
+<li>🏦 Banking ও Accounting</li>
+
+<li>📋 Attendance Sheet</li>
+
+<li>📑 Invoice তৈরি</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর গুরুত্বপূর্ণ Formula -->
+
+<div class="card">
+
+<h2>🧮 MS Excel-এর গুরুত্বপূর্ণ Formula</h2>
+
+<table>
+
+<tr>
+<th>Formula</th>
+<th>কাজ</th>
+</tr>
+
+<tr>
+<td>=SUM(A1:A10)</td>
+<td>সংখ্যার যোগফল বের করে</td>
+</tr>
+
+<tr>
+<td>=AVERAGE(A1:A10)</td>
+<td>গড় বের করে</td>
+</tr>
+
+<tr>
+<td>=MAX(A1:A10)</td>
+<td>সবচেয়ে বড় সংখ্যা বের করে</td>
+</tr>
+
+<tr>
+<td>=MIN(A1:A10)</td>
+<td>সবচেয়ে ছোট সংখ্যা বের করে</td>
+</tr>
+
+<tr>
+<td>=COUNT(A1:A10)</td>
+<td>সংখ্যাযুক্ত Cell গণনা করে</td>
+</tr>
+
+<tr>
+<td>=IF(A1>=33,"Pass","Fail")</td>
+<td>শর্ত অনুযায়ী ফলাফল দেখায়</td>
+</tr>
+
+<tr>
+<td>=TODAY()</td>
+<td>বর্তমান তারিখ দেখায়</td>
+</tr>
+
+<tr>
+<td>=NOW()</td>
+<td>বর্তমান তারিখ ও সময় দেখায়</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- MS Excel ব্যবহারের ধাপ -->
+
+<div class="card">
+
+<h2>⚙️ MS Excel ব্যবহার করার ধাপ</h2>
+
+<ol>
+
+<li>📂 MS Excel চালু করুন।</li>
+
+<li>📄 Blank Workbook নির্বাচন করুন।</li>
+
+<li>⌨️ Cell-এ Data লিখুন।</li>
+
+<li>🧮 Formula বা Function ব্যবহার করুন।</li>
+
+<li>📊 প্রয়োজন হলে Chart তৈরি করুন।</li>
+
+<li>💾 Workbook Save করুন।</li>
+
+<li>🖨️ প্রয়োজন হলে Print করুন।</li>
+
+</ol>
+
+</div>
+
+<!-- জানেন কি -->
+
+<div class="card">
+
+<h2>💡 জানেন কি?</h2>
+
+<ul>
+
+<li>📊 একটি Worksheet-এ লক্ষাধিক Row এবং হাজারের বেশি Column থাকে।</li>
+
+<li>⚡ Excel-এর AutoFill Feature খুব দ্রুত Data পূরণ করতে সাহায্য করে।</li>
+
+<li>📈 Pivot Table দিয়ে বড় Data সহজে বিশ্লেষণ করা যায়।</li>
+
+<li>☁️ Microsoft 365-এর মাধ্যমে Online-এ Excel ব্যবহার করা যায়।</li>
+
+<li>🌍 Excel বিশ্বের সবচেয়ে জনপ্রিয় Spreadsheet Software।</li>
+
+</ul>
+
+</div>
+
+<!-- MS Excel-এর বিস্তারিত ইতিহাস -->
+
+<div class="card">
+
+<h2>📜 MS Excel-এর বিস্তারিত ইতিহাস</h2>
+
+<p>
+
+Microsoft Corporation ১৯৮৫ সালে প্রথম MS Excel প্রকাশ করে। প্রথমে এটি Apple Macintosh-এর জন্য তৈরি করা হয় এবং পরে Windows-এর জন্য প্রকাশিত হয়। সময়ের সাথে Excel-এ Formula, Function, Chart, Pivot Table, Power Query, Macro (VBA), Data Analysis এবং Cloud Collaboration-এর মতো উন্নত সুবিধা যুক্ত হয়েছে। বর্তমানে Microsoft 365-এর অংশ হিসেবে Excel Online-ও ব্যবহার করা যায়।
+
+</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+<summary><b>১. MS Excel কী?</b></summary>
+<p>MS Excel হলো Microsoft-এর তৈরি একটি Spreadsheet Software, যা Data সংরক্ষণ, হিসাব-নিকাশ ও বিশ্লেষণের জন্য ব্যবহৃত হয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>২. MS Excel কে তৈরি করেছে?</b></summary>
+<p>Microsoft Corporation।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৩. MS Excel-এর Default File Extension কী?</b></summary>
+<p><b>.xlsx</b></p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৪. Excel-এ Formula কেন ব্যবহার করা হয়?</b></summary>
+<p>দ্রুত ও নির্ভুলভাবে হিসাব-নিকাশ করার জন্য Formula ব্যবহার করা হয়।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৫. Excel-এর সবচেয়ে জনপ্রিয় Function কোনগুলো?</b></summary>
+<p>SUM(), AVERAGE(), MAX(), MIN(), COUNT(), IF(), VLOOKUP(), XLOOKUP() (নতুন সংস্করণে)।</p>
+</details>
+
+<br>
+
+<details>
+<summary><b>৬. MS Excel কি Online ব্যবহার করা যায়?</b></summary>
+<p>হ্যাঁ। Microsoft 365-এর মাধ্যমে Web Browser-এ Online ব্যবহার করা যায়।</p>
+</details>
+
+</div>
+
+<!-- Quick Revision -->
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ MS Excel একটি Spreadsheet Software।</li>
+
+<li>✅ Microsoft Corporation এটি তৈরি করেছে।</li>
+
+<li>✅ প্রথম প্রকাশিত হয় ১৯৮৫ সালে।</li>
+
+<li>✅ Default File Format হলো <b>.xlsx</b>।</li>
+
+<li>✅ Formula ও Function ব্যবহার করে হিসাব করা যায়।</li>
+
+<li>✅ Chart, Graph ও Pivot Table তৈরি করা যায়।</li>
+
+<li>✅ Data Sort, Filter ও Analysis করা যায়।</li>
+
+<li>✅ Budget, Marksheet, Salary Sheet ও Report তৈরিতে ব্যবহৃত হয়।</li>
+
+</ul>
+
+</div>
+
+<!-- নিজেকে যাচাই করুন -->
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+<summary>১. MS Excel কী?</summary>
+<p>✅ এটি একটি Spreadsheet Software।</p>
+</details>
+
+<br>
+
+<details>
+<summary>২. MS Excel কে তৈরি করেছে?</summary>
+<p>✅ Microsoft Corporation।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৩. MS Excel-এর Default File Extension কী?</summary>
+<p>✅ .xlsx</p>
+</details>
+
+<br>
+
+<details>
+<summary>৪. Excel-এ SUM() Function-এর কাজ কী?</summary>
+<p>✅ নির্বাচিত সংখ্যাগুলোর যোগফল বের করে।</p>
+</details>
+
+<br>
+
+<details>
+<summary>৫. Excel-এর প্রধান ব্যবহার কী?</summary>
+<p>✅ Data সংরক্ষণ, হিসাব-নিকাশ, বিশ্লেষণ, Chart ও Report তৈরি করা।</p>
+</details>
+
+</div>
+
+<!-- Related Topics -->
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="msword.html">📄 MS Word কী?</a></li>
+
+<li><a href="mspowerpoint.html">📽️ MS PowerPoint কী?</a></li>
+
+<li><a href="msaccess.html">🗄️ MS Access কী?</a></li>
+
+<li><a href="windows.html">🪟 Windows কী?</a></li>
+
+<li><a href="computer.html">💻 Computer কী?</a></li>
+
+<li><a href="database.html">🗃️ Database কী?</a></li>
+
+<li><a href="internet.html">🌐 Internet কী?</a></li>
+
+<li><a href="keyboard.html">⌨️ Keyboard কী?</a></li>
+
+<li><a href="printer.html">🖨️ Printer কী?</a></li>
+
+</ul>
+
+</div>
+
+<!-- উপসংহার -->
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+MS Excel বিশ্বের অন্যতম জনপ্রিয় Spreadsheet Software। এটি শিক্ষা, ব্যবসা, ব্যাংকিং, হিসাবরক্ষণ, গবেষণা এবং Data Analysis-এর ক্ষেত্রে ব্যাপকভাবে ব্যবহৃত হয়। Formula, Function, Chart এবং Pivot Table-এর মতো শক্তিশালী সুবিধার কারণে MS Excel আধুনিক অফিস ও ব্যক্তিগত কাজের একটি অপরিহার্য সফটওয়্যার।
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Back to Top">
+⬆
+</button>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Learning Skills | All Rights Reserved</p>
+<p>Made with ❤️ for Students</p>
+</footer>
+
+<style>
+
+/* Footer */
+footer{
+margin-top:40px;
+background:#107c41;
+color:#fff;
+text-align:center;
+padding:25px 15px;
+font-size:15px;
+}
+
+/* Back To Top Button */
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+background:#ff9800;
+color:#fff;
+border:none;
+outline:none;
+padding:14px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#e68900;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark table{
+color:#fff;
+}
+
+.dark th{
+background:#107c41;
+}
+
+.dark td{
+border:1px solid #555;
+}
+
+</style>
+
+<script>
+
+/* Search */
+function searchTopic(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+/* Dark Mode */
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
+
+}
+
+/* Load Saved Theme */
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+/* Progress Bar + Back To Top */
+window.onscroll=function(){
+
+let winScroll=document.documentElement.scrollTop||document.body.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+if(winScroll>300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+
+};
+
+/* Back To Top */
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
