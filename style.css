@@ -1,271 +1,7 @@
-/* =====================================
-   Learning Skills - Main Stylesheet
-   File: css/style.css
-===================================== */
-
-/* RESET */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:#eef8ff;
-color:#222;
-line-height:1.6;
-}
-
-/* LINKS */
-
-a{
-text-decoration:none;
-color:inherit;
-transition:.3s;
-}
-
-/* IMAGES */
-
-img{
-max-width:100%;
-display:block;
-}
-
-/* CONTAINER */
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-/* =====================================
-   HEADER
-===================================== */
-
-header{
-
-background:linear-gradient(90deg,#003366,#00AAFF);
-
-color:#fff;
-
-padding:40px 20px;
-
-text-align:center;
-
-}
-
-.title-box{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-}
-
-.side-logo{
-
-width:70px;
-
-height:70px;
-
-border-radius:50%;
-
-}
-
-header h1{
-
-font-size:2.7rem;
-
-font-weight:700;
-
-text-shadow:3px 3px 8px rgba(0,0,0,.3);
-
-}
-
-header p{
-
-margin-top:12px;
-
-font-size:18px;
-
-}
-
-/* =====================================
-   NOTICE BAR
-===================================== */
-
-marquee{
-
-background:#FFD54F;
-
-padding:10px;
-
-font-weight:bold;
-
-color:#222;
-
-}
-
-/* =====================================
-   NAVBAR
-===================================== */
-
-nav{
-
-position:sticky;
-
-top:0;
-
-z-index:999;
-
-background:#02284f;
-
-padding:14px;
-
-text-align:center;
-
-box-shadow:0 3px 10px rgba(0,0,0,.2);
-
-}
-
-nav a{
-
-display:inline-block;
-
-color:#fff;
-
-padding:10px 15px;
-
-font-weight:bold;
-
-border-radius:8px;
-
-transition:.3s;
-
-}
-
-nav a:hover{
-
-background:#00AAFF;
-
-}
-
-/* SEARCH */
-
-#searchBox{
-
-padding:12px;
-
-margin-top:15px;
-
-width:260px;
-
-border:2px solid #ddd;
-
-border-radius:8px;
-
-outline:none;
-
-}
-
-#searchBox:focus{
-
-border-color:#00AAFF;
-
-}
-
-/* =====================================
-   HERO
-===================================== */
-
-.hero{
-
-background:#fff;
-
-margin:25px;
-
-padding:50px 25px;
-
-border-radius:20px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.12);
-
-text-align:center;
-
-}
-
-.hero h2{
-
-font-size:34px;
-
-color:#0066CC;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-max-width:800px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#555;
-
-}
-
-/* BUTTON */
-
-.btn{
-
-display:inline-block;
-
-padding:14px 24px;
-
-margin:8px;
-
-background:#0088CC;
-
-color:#fff;
-
-font-weight:bold;
-
-border-radius:10px;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#006FA3;
-
-transform:translateY(-3px);
-
-}
-
-/* ===================================================
-   Learning Skills - Main Stylesheet
-   File : css/style.css
-   Part : 4.1
-=================================================== */
+/*==================================================
+  Learning Skills - style.css v2.0
+  Part 1 : Reset • Body • Container • Header • Logo
+==================================================*/
 
 /* ---------- RESET ---------- */
 
@@ -280,18 +16,17 @@ html{
 }
 
 body{
-    font-family:Arial,sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#eef8ff;
     color:#222;
     line-height:1.7;
 }
 
-/* ---------- CONTAINER ---------- */
+/* ---------- IMAGE ---------- */
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+img{
+    max-width:100%;
+    display:block;
 }
 
 /* ---------- LINKS ---------- */
@@ -302,66 +37,61 @@ a{
     transition:.3s;
 }
 
-/* ---------- IMAGE ---------- */
+/* ---------- LIST ---------- */
 
-img{
-    max-width:100%;
-    display:block;
+ul,
+ol{
+    padding-left:25px;
 }
 
-/* ---------- BUTTON ---------- */
+/* ---------- CONTAINER ---------- */
 
-button{
-    cursor:pointer;
-    font-family:inherit;
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* ---------- COMMON BUTTON ---------- */
+/* ---------- PROGRESS BAR ---------- */
 
-.btn{
-    display:inline-block;
-    padding:14px 26px;
-    border-radius:10px;
-    background:#0088cc;
-    color:#fff;
-    font-weight:bold;
-    transition:.3s;
+#progressBar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:4px;
+    background:#00aaff;
+    z-index:99999;
 }
 
-.btn:hover{
-    background:#0066aa;
-    transform:translateY(-3px);
-}
-
-/* ---------- SECTION ---------- */
-
-section{
-    padding:40px 0;
-}
-
-/* ---------- SECTION TITLE ---------- */
-
-.section-title{
-    font-size:32px;
-    text-align:center;
-    color:#0066cc;
-    margin-bottom:15px;
-}
-
-.section-subtitle{
-    text-align:center;
-    color:#666;
-    max-width:700px;
-    margin:0 auto 40px;
-}
-
-/* ---------- HEADER ---------- */
+/*==================================================
+                HEADER
+==================================================*/
 
 header{
-    background:linear-gradient(90deg,#003366,#00aaff);
+    background:linear-gradient(135deg,#003366,#00AAFF);
     color:#fff;
     text-align:center;
-    padding:45px 20px;
+    padding:40px 20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+}
+
+/* সব Topic Page-এর Logo */
+
+header img{
+    width:80px;
+    height:80px;
+    margin:0 auto 15px;
+    object-fit:contain;
+}
+
+/* Home Page-এ যদি দুই পাশে Logo ব্যবহার করেন */
+
+.side-logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 .title-box{
@@ -372,159 +102,256 @@ header{
     flex-wrap:wrap;
 }
 
-.side-logo{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-}
+/* ---------- TITLE ---------- */
 
 header h1{
-    font-size:2.8rem;
+    font-size:2.5rem;
     font-weight:700;
-    letter-spacing:1px;
-    text-shadow:3px 3px 10px rgba(0,0,0,.30);
+    margin-bottom:10px;
+    text-shadow:2px 2px 8px rgba(0,0,0,.3);
 }
 
 header p{
-    margin-top:15px;
-    font-size:18px;
+    font-size:17px;
+    opacity:.95;
 }
 
-/* ---------- MARQUEE ---------- */
+/*==================================================
+                BUTTON
+==================================================*/
 
-marquee{
-    background:#ffd54f;
-    color:#222;
-    padding:10px;
-    font-weight:bold;
-}
-
-/* ---------- NAVBAR ---------- */
-
-nav{
-    position:sticky;
-    top:0;
-    z-index:999;
-    background:#02284f;
-    padding:14px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-nav a{
-    color:#fff;
+.btn{
     display:inline-block;
-    padding:10px 16px;
-    border-radius:8px;
+    padding:12px 24px;
+    margin:6px;
+    background:#0088cc;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
     font-weight:bold;
+    transition:.3s;
 }
 
-nav a:hover{
-    background:#00aaff;
+.btn:hover{
+    background:#006fa3;
+    transform:translateY(-3px);
 }
 
-/* ---------- SEARCH ---------- */
+/* ---------- BUTTON GROUP ---------- */
 
-#searchBox{
-    width:280px;
-    max-width:100%;
-    padding:12px;
-    border:2px solid #ddd;
-    border-radius:8px;
-    outline:none;
-    margin-top:15px;
-}
-
-#searchBox:focus{
-    border-color:#00aaff;
-}
-
-/* ---------- HERO ---------- */
-
-.hero{
-    background:#fff;
-    margin:25px;
-    border-radius:20px;
-    padding:55px 25px;
+.top-buttons{
     text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    margin:20px 0;
 }
 
-.hero h2{
-    font-size:36px;
-    color:#0066cc;
-    margin-bottom:20px;
+/*==================================================
+  Learning Skills - style.css v2.0
+  Part 2 : Search • Cards • Tables • Details • Code
+==================================================*/
+
+/* ---------- SEARCH BOX ---------- */
+
+.search-box{
+    width:92%;
+    max-width:650px;
+    display:block;
+    margin:25px auto;
+    padding:14px 18px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+    background:#fff;
 }
 
-.hero p{
-    max-width:800px;
-    margin:auto;
-    font-size:18px;
-    color:#555;
-    line-height:1.8;
-}
-/* ===================================================
-   PART 4.2
-   Cards • Subject Cards • Grid • Statistics
-=================================================== */
-
-/* ---------- MAIN WRAPPER ---------- */
-
-.wrap{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
+.search-box:focus{
+    border-color:#00AAFF;
+    box-shadow:0 0 12px rgba(0,170,255,.25);
 }
 
-/* ---------- COMMON CARD ---------- */
+/* ---------- CARD ---------- */
 
 .card{
     background:#fff;
+    margin:22px 0;
     padding:25px;
-    margin-bottom:25px;
     border-radius:18px;
     box-shadow:0 6px 18px rgba(0,0,0,.10);
-    transition:.35s;
+    border-left:6px solid #00AAFF;
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
 .card h2{
     color:#0066cc;
     margin-bottom:15px;
+    font-size:28px;
+}
+
+.card h3{
+    color:#004f99;
+    margin:15px 0 10px;
 }
 
 .card p{
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.card ul,
+.card ol{
+    margin-top:10px;
+}
+
+.card li{
+    margin:8px 0;
+}
+
+/* ---------- TABLE ---------- */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    overflow:hidden;
+}
+
+table th{
+    background:#0066cc;
+    color:#fff;
+    padding:12px;
+    text-align:left;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+table tr:nth-child(even){
+    background:#f7fbff;
+}
+
+table tr:hover{
+    background:#eef8ff;
+}
+
+/* ---------- DETAILS ---------- */
+
+details{
+    background:#f8fbff;
+    border:1px solid #d9ecff;
+    border-radius:12px;
+    margin:12px 0;
+    overflow:hidden;
+}
+
+summary{
+    padding:15px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#0055aa;
+}
+
+details p{
+    padding:0 15px 15px;
+}
+
+/* ---------- CODE ---------- */
+
+code{
+    background:#eef3ff;
+    padding:2px 6px;
+    border-radius:5px;
+    color:#c7254e;
+    font-family:Consolas,monospace;
+}
+
+pre{
+    background:#222;
+    color:#fff;
+    padding:18px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:15px;
+}
+
+/* ---------- BLOCKQUOTE ---------- */
+
+blockquote{
+    border-left:5px solid #00AAFF;
+    background:#f7fbff;
+    padding:15px 20px;
+    margin:15px 0;
+    font-style:italic;
+}
+
+/* ---------- HORIZONTAL LINE ---------- */
+
+hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:25px 0;
+}
+
+/*==================================================
+  Learning Skills - style.css v2.0
+  Part 3 : Hero • Topic Cards • Footer • Utilities
+==================================================*/
+
+/* ---------- HERO SECTION ---------- */
+
+.hero{
+    background:#fff;
+    padding:60px 25px;
+    margin:30px 0;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.hero h2{
+    font-size:2.2rem;
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:0 auto;
     color:#555;
     line-height:1.8;
 }
 
-/* ---------- GRID ---------- */
+/* ---------- TOPIC GRID ---------- */
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin:30px 0;
 }
 
 /* ---------- SUBJECT CARD ---------- */
 
 .subject-card{
 
-    display:block;
-
     background:#fff;
-
-    padding:22px;
 
     border-radius:18px;
 
+    padding:25px;
+
     text-align:center;
 
-    box-shadow:0 6px 16px rgba(0,0,0,.12);
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
 
     transition:.35s;
 
@@ -538,15 +365,13 @@ nav a:hover{
 
     border-color:#00AAFF;
 
-    box-shadow:0 15px 30px rgba(0,170,255,.20);
+    box-shadow:0 15px 35px rgba(0,170,255,.20);
 
 }
 
 .subject-icon{
 
-    font-size:48px;
-
-    display:block;
+    font-size:55px;
 
     margin-bottom:15px;
 
@@ -554,11 +379,9 @@ nav a:hover{
 
 .subject-card h3{
 
-    margin:10px 0;
-
     color:#003366;
 
-    font-size:22px;
+    margin-bottom:10px;
 
 }
 
@@ -586,11 +409,11 @@ nav a:hover{
 
     border-radius:18px;
 
-    margin-bottom:20px;
+    margin:20px 0;
 
     box-shadow:0 6px 18px rgba(0,0,0,.10);
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -598,25 +421,23 @@ nav a:hover{
 
     transform:translateY(-6px);
 
-    box-shadow:0 14px 30px rgba(0,0,0,.15);
-
 }
 
 .topic-icon{
 
-    width:65px;
+    width:70px;
 
-    height:65px;
-
-    border-radius:50%;
-
-    background:#e8f4ff;
+    height:70px;
 
     display:flex;
 
     align-items:center;
 
     justify-content:center;
+
+    border-radius:50%;
+
+    background:#eef8ff;
 
     font-size:30px;
 
@@ -650,518 +471,405 @@ nav a:hover{
 
 }
 
-/* ---------- HERO STATS ---------- */
-
-.stats{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-    margin-top:35px;
-
-}
-
-.stat-card{
-
-    width:120px;
-
-    background:#eef8ff;
-
-    border-radius:18px;
-
-    padding:20px;
-
-    text-align:center;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.10);
-
-    transition:.3s;
-
-}
-
-.stat-card:hover{
-
-    transform:scale(1.06);
-
-}
-
-.stat-card h3{
-
-    font-size:30px;
-
-    margin-bottom:8px;
-
-}
-
-.stat-card p{
-
-    font-size:14px;
-
-    font-weight:bold;
-
-    color:#444;
-
-}
-
-/* ===================================================
-   PART 4.3
-   Footer • Contact • Newsletter • Social Icons
-=================================================== */
-
-/* ---------- CONTACT SECTION ---------- */
-
-.contact-box{
-
-background:#ffffff;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 6px 18px rgba(0,0,0,.10);
-
-margin:40px 0;
-
-}
-
-.contact-box h2{
-
-color:#0066cc;
-
-margin-bottom:20px;
-
-}
-
-.contact-box p{
-
-margin:15px 0;
-
-font-size:17px;
-
-}
-
-.contact-box a{
-
-color:#0066cc;
-
-font-weight:bold;
-
-}
-
-.contact-box a:hover{
-
-text-decoration:underline;
-
-}
-
-/* ---------- NEWSLETTER ---------- */
-
-.newsletter{
-
-background:linear-gradient(135deg,#0066cc,#00aaff);
-
-color:#fff;
-
-padding:40px 25px;
-
-border-radius:20px;
-
-text-align:center;
-
-margin:40px 0;
-
-}
-
-.newsletter h2{
-
-margin-bottom:15px;
-
-font-size:30px;
-
-}
-
-.newsletter p{
-
-margin-bottom:25px;
-
-}
-
-.newsletter input{
-
-width:320px;
-
-max-width:100%;
-
-padding:14px;
-
-border:none;
-
-border-radius:10px;
-
-outline:none;
-
-margin-bottom:15px;
-
-}
-
-.newsletter button{
-
-padding:14px 28px;
-
-border:none;
-
-border-radius:10px;
-
-background:#fff;
-
-color:#0066cc;
-
-font-weight:bold;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.newsletter button:hover{
-
-transform:translateY(-3px);
-
-}
-
 /* ---------- FOOTER ---------- */
 
 footer{
 
-background:#02284f;
+    margin-top:60px;
 
-color:#fff;
+    background:#02284f;
 
-margin-top:60px;
+    color:#fff;
 
-padding:60px 20px 25px;
+    text-align:center;
 
-}
-
-.footer-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:35px;
-
-margin-bottom:35px;
+    padding:35px 20px;
 
 }
 
-.footer-box h3{
+footer p{
 
-margin-bottom:18px;
-
-color:#6dc8ff;
+    margin:8px 0;
 
 }
 
-.footer-box p{
+.footer-links{
 
-line-height:1.8;
-
-color:#ddd;
+    margin-top:15px;
 
 }
 
-.footer-box ul{
+.footer-links a{
 
-list-style:none;
+    color:#fff;
 
-padding:0;
+    margin:0 10px;
 
-}
-
-.footer-box ul li{
-
-margin-bottom:12px;
+    font-weight:bold;
 
 }
 
-.footer-box ul li a{
+.footer-links a:hover{
 
-color:#ddd;
+    color:#00AAFF;
 
-transition:.3s;
-
-}
-
-.footer-box ul li a:hover{
-
-color:#fff;
-
-padding-left:8px;
-
-}
-
-/* ---------- SOCIAL ICON ---------- */
-
-.social-links{
-
-display:flex;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-margin-top:18px;
-
-}
-
-.social-links a{
-
-width:48px;
-
-height:48px;
-
-border-radius:50%;
-
-background:#0066cc;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-color:#fff;
-
-font-size:20px;
-
-transition:.35s;
-
-}
-
-.social-links a:hover{
-
-background:#00aaff;
-
-transform:translateY(-6px) scale(1.08);
-
-}
-
-/* ---------- FOOTER BOTTOM ---------- */
-
-.footer-bottom{
-
-border-top:1px solid rgba(255,255,255,.2);
-
-margin-top:30px;
-
-padding-top:20px;
-
-text-align:center;
-
-font-size:15px;
-
-color:#ddd;
-
-}
-
-.footer-bottom a{
-
-color:#6dc8ff;
-
-font-weight:bold;
-
-}
-
-.footer-bottom a:hover{
-
-color:#fff;
-
-}
-
-/* ===================================================
-   PART 4.4
-   Utility • FAQ • Back To Top • Loader • Print
-=================================================== */
-
-/* ---------- FAQ ---------- */
-
-.faq-item{
-background:#fff;
-margin-bottom:18px;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.10);
-}
-
-.faq-question{
-width:100%;
-padding:18px 20px;
-background:#fff;
-border:none;
-font-size:18px;
-font-weight:bold;
-text-align:left;
-cursor:pointer;
-}
-
-.faq-answer{
-display:none;
-padding:20px;
-line-height:1.8;
-color:#555;
-}
-
-.faq-item.active .faq-answer{
-display:block;
-}
-
-/* ---------- BACK TO TOP ---------- */
-
-#backToTop{
-position:fixed;
-bottom:25px;
-right:25px;
-width:55px;
-height:55px;
-border:none;
-border-radius:50%;
-background:#0066cc;
-color:#fff;
-font-size:22px;
-cursor:pointer;
-display:none;
-box-shadow:0 6px 15px rgba(0,0,0,.20);
-transition:.3s;
-z-index:9999;
-}
-
-#backToTop:hover{
-background:#0088cc;
-transform:translateY(-5px);
-}
-
-/* ---------- LOADER ---------- */
-
-#loader{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#fff;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:99999;
-}
-
-.loader-circle{
-width:70px;
-height:70px;
-border:6px solid #ddd;
-border-top:6px solid #0066cc;
-border-radius:50%;
-animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-/* ---------- PROGRESS BAR ---------- */
-
-#progressBar{
-position:fixed;
-top:0;
-left:0;
-height:4px;
-width:0%;
-background:#00aaff;
-z-index:99999;
 }
 
 /* ---------- UTILITIES ---------- */
 
 .text-center{
-text-align:center;
+
+    text-align:center;
+
 }
 
 .mt-20{
-margin-top:20px;
+
+    margin-top:20px;
+
 }
 
 .mt-40{
-margin-top:40px;
+
+    margin-top:40px;
+
 }
 
 .mb-20{
-margin-bottom:20px;
+
+    margin-bottom:20px;
+
 }
 
 .mb-40{
-margin-bottom:40px;
+
+    margin-bottom:40px;
+
 }
 
 .round{
-border-radius:20px;
+
+    border-radius:20px;
+
 }
 
 .shadow{
-box-shadow:0 8px 20px rgba(0,0,0,.12);
-}
 
-/* ---------- DARK MODE SUPPORT ---------- */
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+   }
+/*==================================================
+  Learning Skills - style.css v2.0
+  Part 4 : Dark Mode • FAQ • Loader • Back To Top
+==================================================*/
+
+/* ---------- DARK MODE ---------- */
 
 .dark{
-background:#111;
-color:#fff;
+    background:#111;
+    color:#f1f1f1;
+}
+
+.dark header{
+    background:linear-gradient(135deg,#111,#222);
 }
 
 .dark .card,
-.dark .topic-card,
-.dark .subject-card,
 .dark .hero,
-.dark .contact-box{
-background:#222;
-color:#fff;
+.dark .subject-card,
+.dark .topic-card,
+.dark details{
+    background:#1f1f1f;
+    color:#fff;
+    border-color:#333;
 }
 
-.dark nav{
-background:#000;
+.dark .card h2,
+.dark .hero h2,
+.dark .subject-card h3,
+.dark .topic-content h3{
+    color:#4db8ff;
+}
+
+.dark p,
+.dark li,
+.dark td{
+    color:#ddd;
+}
+
+.dark table th{
+    background:#0077cc;
+}
+
+.dark table td{
+    border-color:#444;
+}
+
+.dark .search-box{
+    background:#222;
+    color:#fff;
+    border-color:#444;
+}
+
+.dark .search-box::placeholder{
+    color:#bbb;
 }
 
 .dark footer{
-background:#000;
+    background:#000;
 }
 
-.dark a{
-color:#6dc8ff;
+.dark code{
+    background:#333;
+    color:#ffd54f;
 }
 
-.dark .faq-item{
-background:#222;
+.dark pre{
+    background:#000;
 }
 
-.dark .faq-question{
-background:#222;
-color:#fff;
+/* ---------- BACK TO TOP ---------- */
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#00AAFF;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:9999;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
 }
 
-.dark .faq-answer{
-color:#ddd;
+#topBtn:hover{
+    background:#0066cc;
+    transform:translateY(-5px);
+}
+
+/* ---------- FAQ ---------- */
+
+details{
+    transition:.3s;
+}
+
+details[open]{
+    box-shadow:0 6px 15px rgba(0,170,255,.15);
+}
+
+summary:hover{
+    background:#eef8ff;
+}
+
+.dark summary:hover{
+    background:#2d2d2d;
+}
+
+/* ---------- LOADER ---------- */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-circle{
+    width:65px;
+    height:65px;
+    border:6px solid #ddd;
+    border-top:6px solid #00AAFF;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e8e8e8;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00AAFF;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0077cc;
+}
+
+/* ---------- SELECTION ---------- */
+
+::selection{
+    background:#00AAFF;
+    color:#fff;
+}
+
+/* ---------- SMOOTH ANIMATION ---------- */
+
+.fade-up{
+    animation:fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+   }
+
+/*==================================================
+  Learning Skills - style.css v2.0
+  Part 5 : Responsive • Print • Final Utilities
+==================================================*/
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:992px){
+
+.container{
+    width:95%;
+}
+
+header h1{
+    font-size:2.2rem;
+}
+
+.hero h2{
+    font-size:2rem;
+}
+
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+    padding:30px 15px;
+}
+
+header img{
+    width:65px;
+    height:65px;
+}
+
+header h1{
+    font-size:1.9rem;
+}
+
+header p{
+    font-size:15px;
+}
+
+.hero{
+    padding:35px 18px;
+}
+
+.hero h2{
+    font-size:1.7rem;
+}
+
+.card{
+    padding:20px;
+}
+
+.card h2{
+    font-size:22px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.topic-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.topic-icon{
+    margin-bottom:10px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+.search-box{
+    width:100%;
+}
+
+.footer-links a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+
+@media (max-width:480px){
+
+header img{
+    width:55px;
+    height:55px;
+}
+
+header h1{
+    font-size:1.6rem;
+}
+
+header p{
+    font-size:14px;
+}
+
+.card{
+    padding:18px;
+}
+
+.card h2{
+    font-size:20px;
+}
+
+.hero h2{
+    font-size:1.5rem;
+}
+
 }
 
 /* ---------- PRINT ---------- */
@@ -1170,66 +878,55 @@ color:#ddd;
 
 nav,
 footer,
-#backToTop,
+#topBtn,
 #loader,
-button{
-display:none!important;
+.search-box,
+.top-buttons{
+    display:none !important;
 }
 
 body{
-background:#fff;
-color:#000;
+    background:#fff;
+    color:#000;
 }
 
 .card{
-box-shadow:none;
-border:1px solid #ddd;
+    box-shadow:none;
+    border:1px solid #ccc;
+    break-inside:avoid;
 }
 
 }
 
-/* ---------- MOBILE ---------- */
+/* ---------- COMMON SPACING ---------- */
 
-@media(max-width:768px){
-
-.container,
-.wrap{
-width:95%;
+.py-20{
+    padding:20px 0;
 }
 
-header h1{
-font-size:2rem;
+.py-40{
+    padding:40px 0;
 }
 
-.hero{
-margin:15px;
-padding:35px 18px;
+.px-20{
+    padding-left:20px;
+    padding-right:20px;
 }
 
-.hero h2{
-font-size:28px;
+.text-left{
+    text-align:left;
 }
 
-.cards{
-grid-template-columns:1fr;
+.text-right{
+    text-align:right;
 }
 
-.footer-grid{
-grid-template-columns:1fr;
-text-align:center;
+/* ---------- FINAL ---------- */
+
+body{
+    overflow-x:hidden;
 }
 
-.social-links{
-justify-content:center;
-}
-
-nav a{
-display:block;
-margin:8px 0;
-}
-
-#searchBox{
-width:100%;
-}
-
+html{
+    scroll-behavior:smooth;
 }
