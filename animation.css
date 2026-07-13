@@ -1,0 +1,516 @@
+/* ==========================================
+   Learning Skills
+   Animation Stylesheet
+   File : css/animation.css
+========================================== */
+
+/* ========= Smooth Transition ========= */
+
+*{
+transition:
+background .3s ease,
+color .3s ease,
+border-color .3s ease,
+box-shadow .3s ease,
+transform .3s ease;
+}
+
+/* ========= Fade Up ========= */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ========= Fade In ========= */
+
+.fade{
+
+animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* ========= Zoom ========= */
+
+.zoom{
+
+animation:zoom .5s ease;
+
+}
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+
+transform:scale(.85);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* ========= Float ========= */
+
+.float{
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* ========= Hero Animation ========= */
+
+.hero h2{
+
+animation:fadeUp .8s ease;
+
+}
+
+.hero p{
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero .btn{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+/* ==========================================
+   PART 7.2
+   Card • Button • Social • Hover Animation
+========================================== */
+
+/* ========= CARD HOVER ========= */
+
+.card,
+.subject-card,
+.topic-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card:hover,
+.subject-card:hover,
+.topic-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+/* Shine Effect */
+
+.card::before,
+.subject-card::before,
+.topic-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.35),
+
+transparent
+
+);
+
+transform:skewX(-25deg);
+
+transition:.8s;
+
+}
+
+.card:hover::before,
+.subject-card:hover::before,
+.topic-card:hover::before{
+
+left:140%;
+
+}
+
+/* ========= BUTTON ========= */
+
+.btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(0,136,204,.35);
+
+}
+
+.btn:active{
+
+transform:scale(.97);
+
+}
+
+/* ========= SOCIAL ICON ========= */
+
+.social-links a{
+
+transition:.35s;
+
+}
+
+.social-links a:hover{
+
+transform:translateY(-6px) rotate(8deg);
+
+}
+
+/* ========= TOPIC ICON ========= */
+
+.topic-icon{
+
+transition:.35s;
+
+}
+
+.topic-card:hover .topic-icon{
+
+transform:scale(1.15) rotate(10deg);
+
+}
+
+/* ========= STAT CARD ========= */
+
+.stat-card{
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+}
+
+/* ========= LOGO ========= */
+
+.side-logo{
+
+transition:.4s;
+
+}
+
+.side-logo:hover{
+
+transform:rotate(360deg);
+
+}
+
+/* ========= IMAGE ========= */
+
+img{
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* ========= LINK ========= */
+
+a{
+
+transition:.3s;
+
+}
+
+a:hover{
+
+opacity:.95;
+
+}
+
+/* ==========================================
+   PART 7.3
+   Scroll Reveal • Pulse • Bounce • Glow
+========================================== */
+
+/* ========= SCROLL REVEAL ========= */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ========= PULSE ========= */
+
+.pulse{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ========= BOUNCE ========= */
+
+.bounce{
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+
+transform:translateY(0);
+
+}
+
+40%{
+
+transform:translateY(-12px);
+
+}
+
+60%{
+
+transform:translateY(-6px);
+
+}
+
+}
+
+/* ========= GLOW ========= */
+
+.glow{
+
+animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+
+box-shadow:0 0 8px rgba(0,170,255,.30);
+
+}
+
+to{
+
+box-shadow:
+
+0 0 15px rgba(0,170,255,.60),
+
+0 0 30px rgba(0,170,255,.35);
+
+}
+
+}
+
+/* ========= HERO TITLE ========= */
+
+.hero h2{
+
+animation:fadeUp .8s ease;
+
+}
+
+.hero .btn{
+
+animation:pulse 3s infinite;
+
+}
+
+/* ========= FLOATING ICON ========= */
+
+.subject-icon{
+
+transition:.4s;
+
+}
+
+.subject-card:hover .subject-icon{
+
+transform:translateY(-8px) scale(1.15);
+
+}
+
+/* ========= TOPIC TITLE ========= */
+
+.topic-content h3{
+
+transition:.3s;
+
+}
+
+.topic-card:hover h3{
+
+color:#0099ff;
+
+}
+
+/* ========= FOOTER ICON ========= */
+
+.social-links a:hover{
+
+box-shadow:0 0 18px rgba(0,170,255,.45);
+
+}
+
+/* ========= BACK TO TOP ========= */
+
+#backToTop{
+
+transition:.35s;
+
+}
+
+#backToTop:hover{
+
+transform:translateY(-6px) scale(1.1);
+
+}
+
+/* ========= LOADER ========= */
+
+.loader-circle{
+
+animation:spin 1s linear infinite;
+
+}
+
+/* ========= PROGRESS BAR ========= */
+
+#progressBar{
+
+transition:width .2s linear;
+
+}
