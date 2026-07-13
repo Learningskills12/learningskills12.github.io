@@ -19,9 +19,8 @@ transition:.35s;
 /* HEADER */
 
 body.dark header{
-
-background:linear-gradient(90deg,#020617,#
-
+    background: linear-gradient(90deg,#020617,#1e3a8a);
+    color:#ffffff;
 }
 
  /* ==========================================
