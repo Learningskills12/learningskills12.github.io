@@ -1,0 +1,592 @@
+/* ==========================================
+   Learning Skills
+   Responsive Stylesheet
+   File : css/responsive.css
+========================================== */
+
+/* ========= Large Tablet ========= */
+
+@media (max-width:1024px){
+
+.container,
+.wrap{
+
+width:95%;
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero h2{
+
+font-size:32px;
+
+}
+
+}
+
+/* ========= Tablet ========= */
+
+@media (max-width:768px){
+
+header{
+
+padding:30px 15px;
+
+}
+
+header h1{
+
+font-size:2rem;
+
+}
+
+header p{
+
+font-size:16px;
+
+}
+
+.title-box{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.side-logo{
+
+width:60px;
+
+height:60px;
+
+}
+
+nav{
+
+padding:10px;
+
+}
+
+nav a{
+
+display:block;
+
+margin:6px 0;
+
+}
+
+#searchBox{
+
+width:100%;
+
+margin-top:12px;
+
+}
+
+.hero{
+
+margin:15px;
+
+padding:35px 18px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+display:block;
+
+margin:10px auto;
+
+width:220px;
+
+text-align:center;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.stats{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.stat-card{
+
+width:180px;
+
+}
+
+.topic-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.topic-icon{
+
+margin-bottom:10px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.social-links{
+
+justify-content:center;
+
+}
+
+}
+
+/* ==========================================
+   PART 6.2
+   Mobile • Small Screen • Landscape
+========================================== */
+
+/* ========= Small Mobile ========= */
+
+@media (max-width:480px){
+
+body{
+
+font-size:15px;
+
+}
+
+header{
+
+padding:25px 12px;
+
+}
+
+header h1{
+
+font-size:1.7rem;
+
+line-height:1.3;
+
+}
+
+header p{
+
+font-size:14px;
+
+}
+
+.side-logo{
+
+width:50px;
+
+height:50px;
+
+}
+
+.hero{
+
+margin:10px;
+
+padding:25px 15px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+.btn{
+
+width:100%;
+
+padding:14px;
+
+font-size:16px;
+
+}
+
+.card{
+
+padding:18px;
+
+}
+
+.subject-card{
+
+padding:18px;
+
+}
+
+.subject-icon{
+
+font-size:38px;
+
+}
+
+.topic-card{
+
+padding:18px;
+
+}
+
+.topic-icon{
+
+width:55px;
+
+height:55px;
+
+font-size:24px;
+
+}
+
+.topic-content h3{
+
+font-size:19px;
+
+}
+
+.topic-content p{
+
+font-size:14px;
+
+}
+
+.stat-card{
+
+width:100%;
+
+max-width:220px;
+
+}
+
+#searchBox{
+
+width:100%;
+
+font-size:15px;
+
+}
+
+.social-links{
+
+gap:10px;
+
+}
+
+.social-links a{
+
+width:42px;
+
+height:42px;
+
+font-size:18px;
+
+}
+
+footer{
+
+padding:40px 15px 20px;
+
+}
+
+}
+
+/* ========= Landscape Mode ========= */
+
+@media (max-height:500px){
+
+.hero{
+
+padding:20px;
+
+}
+
+header{
+
+padding:20px;
+
+}
+
+}
+
+/* ========= Responsive Table ========= */
+
+.table-responsive{
+
+overflow-x:auto;
+
+}
+
+table{
+
+min-width:600px;
+
+}
+
+/* ========= Responsive Image ========= */
+
+img{
+
+height:auto;
+
+}
+
+/* ========= Responsive Video ========= */
+
+iframe,
+
+video{
+
+max-width:100%;
+
+height:auto;
+
+}
+
+/* ========= Long Button ========= */
+
+.btn{
+
+word-break:break-word;
+
+}
+
+/* ==========================================
+   PART 6.3
+   Responsive Navigation • FAQ • Footer
+========================================== */
+
+/* ========= Tablet & Mobile ========= */
+
+@media (max-width:768px){
+
+/* Navigation */
+
+nav{
+
+padding:12px;
+
+}
+
+nav a{
+
+display:block;
+
+padding:12px;
+
+margin:6px 0;
+
+border-radius:10px;
+
+}
+
+/* Hero Buttons */
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+/* Cards */
+
+.card{
+
+margin-bottom:18px;
+
+}
+
+.subject-card{
+
+font-size:17px;
+
+}
+
+.topic-card{
+
+gap:15px;
+
+}
+
+/* FAQ */
+
+.faq-question{
+
+font-size:16px;
+
+padding:16px;
+
+}
+
+.faq-answer{
+
+padding:16px;
+
+font-size:15px;
+
+}
+
+/* Newsletter */
+
+.newsletter{
+
+padding:30px 20px;
+
+}
+
+.newsletter input{
+
+width:100%;
+
+margin-bottom:12px;
+
+}
+
+.newsletter button{
+
+width:100%;
+
+}
+
+/* Footer */
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-box{
+
+margin-bottom:25px;
+
+}
+
+.social-links{
+
+justify-content:center;
+
+}
+
+.footer-bottom{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+}
+
+/* ========= Small Mobile ========= */
+
+@media (max-width:360px){
+
+header h1{
+
+font-size:1.5rem;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:14px;
+
+}
+
+.subject-card{
+
+padding:15px;
+
+}
+
+.topic-icon{
+
+width:48px;
+
+height:48px;
+
+font-size:20px;
+
+}
+
+#backToTop{
+
+width:45px;
+
+height:45px;
+
+font-size:18px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+}
