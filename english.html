@@ -242,6 +242,1455 @@ margin-bottom:12px;
 
 }
 
+/* ===================================
+   LOADER
+=================================== */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:.5s;
+}
+
+.loader-box{
+text-align:center;
+}
+
+.spinner{
+width:70px;
+height:70px;
+border:6px solid #ddd;
+border-top:6px solid #2563eb;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:auto;
+margin-bottom:20px;
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ===================================
+   PROGRESS BAR
+=================================== */
+
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0;
+
+height:5px;
+
+background:#2563eb;
+
+z-index:9999;
+
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.header{
+
+position:sticky;
+
+top:0;
+
+background:#fff;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.nav-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 0;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-weight:700;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:25px;
+
+list-style:none;
+
+}
+
+nav a{
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#2563eb;
+
+}
+
+.nav-right{
+
+display:flex;
+
+gap:10px;
+
+}
+
+.nav-right button{
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+padding:90px 0;
+
+background:linear-gradient(135deg,#2563eb,#4f8cff);
+
+color:#fff;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+margin:20px 0;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+.hero-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats{
+
+margin-top:50px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.hero-stats div{
+
+background:rgba(255,255,255,.15);
+
+padding:20px;
+
+border-radius:15px;
+
+backdrop-filter:blur(10px);
+
+}
+/* ===================================
+   TOPIC CARDS
+=================================== */
+
+.topics-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:22px;
+
+margin-top:40px;
+
+}
+
+.topic-card{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+padding:22px;
+
+background:#fff;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.topic-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(37,99,235,.20);
+
+}
+
+.topic-icon{
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+background:#e8f1ff;
+
+color:#2563eb;
+
+flex-shrink:0;
+
+}
+
+.topic-content{
+
+flex:1;
+
+}
+
+.topic-content h3{
+
+margin-bottom:8px;
+
+font-size:22px;
+
+color:#1e293b;
+
+}
+
+.topic-content p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+.topic-arrow{
+
+font-size:24px;
+
+color:#2563eb;
+
+}
+
+/* ===================================
+   FAQ
+=================================== */
+
+.faq{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.faq-item{
+
+background:#fff;
+
+margin-bottom:18px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.faq-question{
+
+width:100%;
+
+background:#fff;
+
+padding:20px;
+
+border:none;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+.faq-answer{
+
+max-height:0;
+
+overflow:hidden;
+
+transition:.4s;
+
+padding:0 20px;
+
+}
+
+.faq-answer p{
+
+padding:18px 0;
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+/* ===================================
+   NEWSLETTER
+=================================== */
+
+.newsletter-card{
+
+text-align:center;
+
+padding:45px;
+
+}
+
+.newsletter-form{
+
+margin-top:25px;
+
+display:flex;
+
+gap:15px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+width:420px;
+
+max-width:100%;
+
+padding:15px;
+
+border:2px solid #ddd;
+
+border-radius:12px;
+
+font-size:16px;
+
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+.footer{
+
+background:#081b35;
+
+color:#fff;
+
+padding:70px 0 25px;
+
+margin-top:70px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:35px;
+
+}
+
+.footer-box h3{
+
+margin-bottom:20px;
+
+color:#4da3ff;
+
+}
+
+.footer-box ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-box li{
+
+margin-bottom:12px;
+
+}
+
+.footer-box a{
+
+color:#ddd;
+
+transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+color:#fff;
+
+padding-left:6px;
+
+}
+
+.footer-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+/* ===================================
+   SOCIAL ICONS
+=================================== */
+
+.social-links{
+
+display:flex;
+
+gap:12px;
+
+margin-top:20px;
+
+flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.social-links a:hover{
+
+transform:translateY(-5px);
+
+background:#4f8cff;
+
+}
+
+/* ===================================
+   BACK TO TOP
+=================================== */
+
+#backToTop{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+#backToTop.show{
+
+display:block;
+
+}
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+.dark-mode{
+
+background:#0f172a;
+
+color:#f1f5f9;
+
+}
+
+.dark-mode .card,
+
+.dark-mode .topic-card,
+
+.dark-mode .faq-item,
+
+.dark-mode .newsletter-card{
+
+background:#1e293b;
+
+color:#fff;
+
+}
+
+.dark-mode .topic-content h3,
+
+.dark-mode .section-title,
+
+.dark-mode .faq-question{
+
+color:#fff;
+
+}
+
+.dark-mode .topic-content p,
+
+.dark-mode .faq-answer p,
+
+.dark-mode .section-subtitle{
+
+color:#cbd5e1;
+
+}
+
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.nav-container{
+
+flex-wrap:wrap;
+
+}
+
+nav{
+
+display:none;
+
+width:100%;
+
+margin-top:15px;
+
+}
+
+nav.show{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.topics-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.topic-card{
+
+padding:18px;
+
+}
+
+.topic-content h3{
+
+font-size:19px;
+
+}
+
+     }
+
+/* ===================================
+   HERO BADGE
+=================================== */
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,.18);
+
+border:1px solid rgba(255,255,255,.35);
+
+border-radius:50px;
+
+font-size:15px;
+
+font-weight:600;
+
+backdrop-filter:blur(12px);
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+/* ===================================
+   FLOAT ANIMATION
+=================================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===================================
+   CARD HOVER EFFECT
+=================================== */
+
+.topic-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.topic-card::before{
+
+content:"";
+
+position:absolute;
+
+left:-100%;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.35),
+
+transparent
+
+);
+
+transition:.8s;
+
+}
+
+.topic-card:hover::before{
+
+left:100%;
+
+}
+
+/* ===================================
+   BUTTON EFFECT
+=================================== */
+
+.btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn::after{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:0;
+
+background:rgba(255,255,255,.35);
+
+border-radius:50%;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+transition:.5s;
+
+}
+
+.btn:hover::after{
+
+width:320px;
+
+height:320px;
+
+}
+
+/* ===================================
+   GLASS CARD
+=================================== */
+
+.glass{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* ===================================
+   IMAGE HOVER
+=================================== */
+
+img{
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.04);
+
+}
+
+/* ===================================
+   SECTION HEADING
+=================================== */
+
+.section-heading{
+
+text-align:center;
+
+margin:70px 0 35px;
+
+}
+
+.section-heading h2{
+
+font-size:36px;
+
+color:#2563eb;
+
+margin-bottom:10px;
+
+}
+
+.section-heading p{
+
+color:#666;
+
+font-size:17px;
+
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eef3ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#1d4ed8;
+
+}
+
+/* ===================================
+   TEXT SELECTION
+=================================== */
+
+::selection{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+/* ===================================
+   SMOOTH FADE ANIMATION
+=================================== */
+
+.fade-up{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===================================
+   ICON ANIMATION
+=================================== */
+
+.topic-icon{
+
+transition:.4s;
+
+}
+
+.topic-card:hover .topic-icon{
+
+transform:rotate(10deg) scale(1.12);
+
+}
+
+/* ===================================
+   FOOTER LINKS
+=================================== */
+
+.footer a{
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:#4da3ff;
+
+}
+
+/* ===================================
+   SHADOW EFFECT
+=================================== */
+
+.shadow-hover:hover{
+
+box-shadow:0 18px 40px rgba(37,99,235,.25);
+
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+.section-heading h2{
+
+font-size:28px;
+
+}
+
+.hero-badge{
+
+font-size:13px;
+
+padding:8px 18px;
+
+}
+
+}
+
+/* ===================================
+   SCROLL REVEAL ANIMATION
+=================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ===================================
+   PREMIUM GRADIENT ANIMATION
+=================================== */
+
+.gradient-bg{
+
+background:linear-gradient(
+-45deg,
+#2563eb,
+#3b82f6,
+#0ea5e9,
+#38bdf8
+);
+
+background-size:400% 400%;
+
+animation:gradientMove 12s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* ===================================
+   GLOW BUTTON
+=================================== */
+
+.btn:hover{
+
+box-shadow:0 0 15px rgba(37,99,235,.45);
+
+}
+
+/* ===================================
+   PREMIUM CARD EFFECT
+=================================== */
+
+.topic-card{
+
+border:1px solid transparent;
+
+}
+
+.topic-card:hover{
+
+border-color:#3b82f6;
+
+}
+
+/* ===================================
+   IMAGE ZOOM
+=================================== */
+
+.card img{
+
+border-radius:15px;
+
+transition:.5s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.06);
+
+}
+
+/* ===================================
+   HERO TEXT EFFECT
+=================================== */
+
+.hero h1{
+
+text-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+.hero p{
+
+opacity:.95;
+
+}
+
+/* ===================================
+   DARK MODE ADVANCED
+=================================== */
+
+.dark-mode .header{
+
+background:#0f172a;
+
+}
+
+.dark-mode nav a{
+
+color:#fff;
+
+}
+
+.dark-mode .footer{
+
+background:#020617;
+
+}
+
+.dark-mode .topic-icon{
+
+background:#1d4ed8;
+
+color:#fff;
+
+}
+
+.dark-mode input{
+
+background:#1e293b;
+
+color:#fff;
+
+border:1px solid #334155;
+
+}
+
+.dark-mode input::placeholder{
+
+color:#cbd5e1;
+
+}
+
+/* ===================================
+   HOVER LIFT
+=================================== */
+
+.card{
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+/* ===================================
+   SOFT SHADOW
+=================================== */
+
+.soft-shadow{
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ===================================
+   PREMIUM BADGE
+=================================== */
+
+.badge{
+
+display:inline-block;
+
+padding:6px 14px;
+
+background:#2563eb;
+
+color:#fff;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+/* ===================================
+   TABLE STYLE
+=================================== */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+table th{
+
+background:#2563eb;
+
+color:#fff;
+
+padding:14px;
+
+}
+
+table td{
+
+padding:14px;
+
+border:1px solid #ddd;
+
+}
+
+table tr:nth-child(even){
+
+background:#f8fbff;
+
+}
+
+/* ===================================
+   CODE BLOCK
+=================================== */
+
+pre{
+
+background:#0f172a;
+
+color:#fff;
+
+padding:18px;
+
+border-radius:12px;
+
+overflow:auto;
+
+}
+
+/* ===================================
+   BLOCKQUOTE
+=================================== */
+
+blockquote{
+
+border-left:5px solid #2563eb;
+
+padding:15px 20px;
+
+background:#eef6ff;
+
+font-style:italic;
+
+margin:20px 0;
+
+}
+
+/* ===================================
+   LIST STYLE
+=================================== */
+
+.content ul{
+
+padding-left:25px;
+
+}
+
+.content li{
+
+margin-bottom:10px;
+
+}
+
+/* ===================================
+   MOBILE IMPROVEMENT
+=================================== */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 15px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+line-height:1.3;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.section-title{
+
+font-size:26px;
+
+}
+
+.card{
+
+padding:18px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-grid{
+
+gap:25px;
+
+}
+
+}
 </style>
 
 </head>
@@ -2976,3 +4425,409 @@ Contact Us
 </div>
 
 </section>
+
+<!-- ===================================
+        PREMIUM FOOTER
+=================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+
+<div class="footer-box">
+
+<h3>
+
+📚 Learning Skills
+
+</h3>
+
+<p>
+
+Learning Skills is a free educational platform for students.
+Here you can learn English Grammar, Practice MCQs,
+Reading Comprehension, Writing Skills and many more.
+
+</p>
+
+</div>
+
+<!-- Quick Links -->
+
+<div class="footer-box">
+
+<h3>
+
+🔗 Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">
+
+🏠 Home
+
+</a></li>
+
+<li><a href="english.html">
+
+📘 English Grammar
+
+</a></li>
+
+<li><a href="english-mcq.html">
+
+❓ Grammar MCQ
+
+</a></li>
+
+<li><a href="blog.html">
+
+📰 Blog
+
+</a></li>
+
+<li><a href="contact.html">
+
+📞 Contact
+
+</a></li>
+
+</ul>
+
+</div>
+
+<!-- Popular Topics -->
+
+<div class="footer-box">
+
+<h3>
+
+⭐ Popular Topics
+
+</h3>
+
+<ul>
+
+<li><a href="voice.html">
+
+🔄 Voice Change
+
+</a></li>
+
+<li><a href="tense.html">
+
+⏰ Tense
+
+</a></li>
+
+<li><a href="narration.html">
+
+💬 Narration
+
+</a></li>
+
+<li><a href="partsofspeech.html">
+
+📚 Parts of Speech
+
+</a></li>
+
+<li><a href="preposition.html">
+
+📍 Preposition
+
+</a></li>
+
+</ul>
+
+</div>
+
+<!-- Follow -->
+
+<div class="footer-box">
+
+<h3>
+
+🌐 Follow Us
+
+</h3>
+
+<div class="social-links">
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-telegram"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+</div>
+
+<p style="margin-top:20px;">
+
+📧 support@learningskills.com
+
+</p>
+
+</div>
+
+</div>
+
+<hr style="margin:35px 0;border:none;border-top:1px solid rgba(255,255,255,.15);">
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 <strong>Learning Skills</strong>.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Made with ❤️ for Students
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<!-- =========================
+     BACK TO TOP BUTTON
+========================= -->
+
+<button id="backToTop" title="Back to Top">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   LOADER
+========================= */
+
+window.addEventListener("load",function(){
+
+const loader=document.getElementById("loader");
+
+if(loader){
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+
+loader.style.display="none";
+
+},500);
+
+}
+
+});
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+const backBtn=document.getElementById("backToTop");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+backBtn.classList.add("show");
+
+}else{
+
+backBtn.classList.remove("show");
+
+}
+
+});
+
+backBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+const darkBtn=document.getElementById("darkBtn");
+
+darkBtn.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark-mode");
+
+if(document.body.classList.contains("dark-mode")){
+
+localStorage.setItem("theme","dark");
+
+darkBtn.innerHTML='<i class="fas fa-sun"></i>';
+
+}else{
+
+localStorage.setItem("theme","light");
+
+darkBtn.innerHTML='<i class="fas fa-moon"></i>';
+
+}
+
+});
+
+if(localStorage.getItem("theme")==="dark"){
+
+document.body.classList.add("dark-mode");
+
+darkBtn.innerHTML='<i class="fas fa-sun"></i>';
+
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn=document.getElementById("menuBtn");
+
+const navMenu=document.getElementById("navMenu");
+
+menuBtn.addEventListener("click",()=>{
+
+navMenu.classList.toggle("show");
+
+});
+
+
+/* =========================
+   SEARCH
+========================= */
+
+const search=document.getElementById("searchInput");
+
+if(search){
+
+search.addEventListener("keyup",()=>{
+
+let filter=search.value.toLowerCase();
+
+let cards=document.querySelectorAll(".topic-card");
+
+cards.forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+card.style.display=text.includes(filter)?"flex":"none";
+
+});
+
+});
+
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+document.querySelectorAll(".faq-question").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+btn.classList.toggle("active");
+
+const answer=btn.nextElementSibling;
+
+if(answer.style.maxHeight){
+
+answer.style.maxHeight=null;
+
+}else{
+
+answer.style.maxHeight=answer.scrollHeight+"px";
+
+}
+
+});
+
+});
+
+
+/* =========================
+   SCROLL PROGRESS
+========================= */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop||
+
+document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-
+
+document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+const progress=document.getElementById("progressBar");
+
+if(progress){
+
+progress.style.width=scrolled+"%";
+
+}
+
+};
+
+</script>
+
+</body>
+
+</html>
