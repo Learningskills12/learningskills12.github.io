@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="bn">
-
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -8,657 +7,846 @@
 
 <title>Antivirus | Learning Skills</title>
 
-<meta name="description" content="Antivirus কী, কীভাবে কাজ করে, প্রকারভেদ, সুবিধা, অসুবিধা এবং সম্পূর্ণ বাংলা নোট।">
+<link rel="icon" href="../images/logo.png">
 
-<meta name="keywords" content="Antivirus, Virus, Malware, Cyber Security, Learning Skills">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dark.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/animation.css">
 
-<link rel="icon" href="logo.png">
-
-<!-- CSS Files -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="dark.css">
-<link rel="stylesheet" href="responsive.css">
-<link rel="stylesheet" href="animation.css">
+<script src="../js/main.js" defer></script>
 
 </head>
 
 <body>
 
+<div id="loader">
+<div class="loader-circle"></div>
+</div>
+
 <div id="progressBar"></div>
 
 <header>
 
-<img src="logo.png" alt="Learning Skills Logo" class="side-logo">
+<div class="title-box">
 
-<h1>🛡️ Antivirus</h1>
+<img src="../images/logo.png"
+alt="Learning Skills Logo"
+class="side-logo">
 
-<p>Antivirus সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+<div>
+
+<h1>Learning Skills</h1>
+
+<p>Learn Antivirus from Basic to Advanced</p>
+
+</div>
+
+</div>
 
 </header>
 
+<marquee>
+🛡️ Antivirus Tutorial • Windows Security • Malware Protection • Virus Removal • Cyber Safety
+</marquee>
+
+<nav id="navMenu">
+
+<a href="../index.html">Home</a>
+
+<a href="#intro">Introduction</a>
+
+<a href="#topics">Topics</a>
+
+<a href="#faq">FAQ</a>
+
+<a href="#contact">Contact</a>
+
+<button
+id="darkModeBtn"
+class="btn">
+🌙 Dark Mode
+</button>
+
+<br><br>
+
 <input
 type="text"
-id="searchInput"
-class="search-box"
-placeholder="এই পেজে খুঁজুন..."
-onkeyup="searchTopic()">
+id="searchBox"
+placeholder="Search Antivirus Topics..."
+onkeyup="searchContent()">
 
-<div class="top-buttons">
+</nav>
 
-<a href="cyber-security.html" class="btn">🛡️ Cyber Security</a>
-
-<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-
-</div>
+<section class="hero fade">
 
 <div class="container">
 
-<div class="card">
-
-<h2>🛡️ Antivirus কী?</h2>
-
-<p>
-
-<b>Antivirus</b> হলো এমন একটি সফটওয়্যার যা কম্পিউটার, ল্যাপটপ বা মোবাইল ডিভাইসকে <b>Virus, Malware, Spyware, Ransomware, Trojan</b> এবং অন্যান্য ক্ষতিকর প্রোগ্রাম থেকে সুরক্ষা দেয়। এটি ক্ষতিকর ফাইল শনাক্ত (Detect), প্রতিরোধ (Prevent) এবং অপসারণ (Remove) করতে সাহায্য করে।
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>🎯 Antivirus-এর প্রধান কাজ</h2>
-
-<ul>
-
-<li>🦠 Virus শনাক্ত করা।</li>
-
-<li>🛡️ Malware থেকে ডিভাইসকে সুরক্ষা দেওয়া।</li>
-
-<li>🚫 ক্ষতিকর ফাইল ব্লক করা।</li>
-
-<li>🧹 আক্রান্ত ফাইল পরিষ্কার বা Quarantine করা।</li>
-
-<li>⚡ Real-time Protection প্রদান করা।</li>
-
-<li>🌐 নিরাপদ Internet Browsing নিশ্চিত করতে সাহায্য করা।</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>📜 Antivirus-এর সংক্ষিপ্ত ইতিহাস</h2>
+<h2>
+Master Antivirus Complete Course
+</h2>
 
 <p>
 
-১৯৮৭ সালে বিশ্বের প্রথম Antivirus Program তৈরি হয়। এরপর থেকে প্রযুক্তির উন্নতির সঙ্গে সঙ্গে Antivirus সফটওয়্যারও আরও উন্নত হয়েছে। বর্তমানে AI-ভিত্তিক Antivirus নতুন ধরনের Malware শনাক্ত করতে সক্ষম।
+Learn everything about Antivirus, Malware,
+Viruses, Worms, Trojans, Ransomware,
+Real-time Protection, Firewall and
+Computer Security with easy examples.
 
 </p>
 
-</div>
+<div class="hero-buttons">
 
-<div class="card">
+<a href="#topics" class="btn">
+Start Learning
+</a>
 
-<h2>⭐ Antivirus-এর বৈশিষ্ট্য</h2>
-
-<ul>
-
-<li>🛡️ Real-time Protection</li>
-
-<li>⚡ দ্রুত Virus Scan</li>
-
-<li>🔄 Automatic Update</li>
-
-<li>📁 File Scan ও Folder Scan</li>
-
-<li>🌐 Web Protection</li>
-
-<li>📧 Email Protection</li>
-
-<li>☁️ Cloud-based Detection</li>
-
-<li>🤖 AI-Based Threat Detection</li>
-
-</ul>
+<a href="#faq" class="btn">
+Ask Questions
+</a>
 
 </div>
 
-<!-- Antivirus-এর প্রধান অংশ -->
+<div class="stats">
 
-<div class="card">
+<div class="stat-card">
 
-<h2>🧩 Antivirus কীভাবে কাজ করে?</h2>
+<h3>20+</h3>
 
-<ol>
-
-<li>🔍 কম্পিউটারের File, Folder এবং Memory Scan করে।</li>
-
-<li>📚 Virus Database-এর সাথে File-এর Signature মিলিয়ে দেখে।</li>
-
-<li>🤖 সন্দেহজনক আচরণ (Behavior) বিশ্লেষণ করে।</li>
-
-<li>⚠️ ক্ষতিকর File শনাক্ত হলে সতর্কবার্তা দেখায়।</li>
-
-<li>🗑️ Virus-কে Delete, Repair অথবা Quarantine করে।</li>
-
-<li>🔄 নতুন Virus শনাক্ত করার জন্য নিয়মিত Database Update করে।</li>
-
-</ol>
+<p>Lessons</p>
 
 </div>
 
-<div class="card">
+<div class="stat-card">
 
-<h2>🦠 কোন কোন Threat থেকে Antivirus সুরক্ষা দেয়?</h2>
+<h3>100+</h3>
+
+<p>Examples</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>25+</h3>
+
+<p>Quiz</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Free</h3>
+
+<p>Lifetime</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="wrap">
+
+<div class="card reveal">
+
+<h2>🛡️ Types of Antivirus</h2>
+
+<div class="cards">
+
+<div class="subject-card fade-up">
+<span class="subject-icon">🦠</span>
+<h3>Signature Based</h3>
+<p>Known viruses are detected using virus signatures stored in the antivirus database.</p>
+</div>
+
+<div class="subject-card fade-up">
+<span class="subject-icon">⚡</span>
+<h3>Heuristic Based</h3>
+<p>Detects new or unknown malware by analyzing suspicious behavior.</p>
+</div>
+
+<div class="subject-card fade-up">
+<span class="subject-icon">☁️</span>
+<h3>Cloud Antivirus</h3>
+<p>Uses cloud servers to scan files quickly and reduce system load.</p>
+</div>
+
+<div class="subject-card fade-up">
+<span class="subject-icon">🤖</span>
+<h3>AI Antivirus</h3>
+<p>Uses Artificial Intelligence and Machine Learning to identify modern cyber threats.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card reveal">
+
+<h2>⭐ Features of Antivirus</h2>
+
+<div class="topic-card">
+
+<div class="topic-icon">✔️</div>
+
+<div class="topic-content">
+
+<h3>Virus Detection</h3>
+
+<p>Scans files and removes viruses automatically.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">🔥</div>
+
+<div class="topic-content">
+
+<h3>Real-Time Protection</h3>
+
+<p>Monitors your computer continuously and blocks threats instantly.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">🌐</div>
+
+<div class="topic-content">
+
+<h3>Web Protection</h3>
+
+<p>Blocks dangerous websites and phishing attacks.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">📧</div>
+
+<div class="topic-content">
+
+<h3>Email Protection</h3>
+
+<p>Scans email attachments before opening them.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+     PART 3 : Advantages • Disadvantages
+     Popular Antivirus • Comparison
+====================================== -->
+
+<section class="wrap" id="topics">
+
+<!-- Advantages -->
+
+<div class="card reveal search-item">
+
+<h2>✅ Advantages of Antivirus</h2>
+
+<div class="topic-card">
+
+<div class="topic-icon">🛡️</div>
+
+<div class="topic-content">
+
+<h3>Protects Against Malware</h3>
+
+<p>Detects and removes viruses, worms, trojans, spyware and ransomware.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">⚡</div>
+
+<div class="topic-content">
+
+<h3>Real-Time Protection</h3>
+
+<p>Monitors files continuously and blocks threats before they can infect your device.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">🌍</div>
+
+<div class="topic-content">
+
+<h3>Safe Internet Browsing</h3>
+
+<p>Warns users about phishing websites and unsafe downloads.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">📧</div>
+
+<div class="topic-content">
+
+<h3>Email Security</h3>
+
+<p>Scans email attachments and prevents malicious files from opening.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Disadvantages -->
+
+<div class="card reveal search-item">
+
+<h2>❌ Disadvantages of Antivirus</h2>
+
+<div class="topic-card">
+
+<div class="topic-icon">🐢</div>
+
+<div class="topic-content">
+
+<h3>Can Slow Down the System</h3>
+
+<p>Background scanning may reduce performance on low-end computers.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">💰</div>
+
+<div class="topic-content">
+
+<h3>Premium Features Cost Money</h3>
+
+<p>Advanced security features are often available only in paid versions.</p>
+
+</div>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">🔄</div>
+
+<div class="topic-content">
+
+<h3>Needs Regular Updates</h3>
+
+<p>Without updates, new malware may not be detected.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Popular Antivirus -->
+
+<div class="card reveal search-item">
+
+<h2>🏆 Popular Antivirus Software</h2>
+
+<div class="cards">
+
+<div class="subject-card">
+<span class="subject-icon">🛡️</span>
+<h3>Microsoft Defender</h3>
+<p>Built into Windows and offers real-time protection.</p>
+</div>
+
+<div class="subject-card">
+<span class="subject-icon">🟢</span>
+<h3>Bitdefender</h3>
+<p>Excellent malware detection with low system impact.</p>
+</div>
+
+<div class="subject-card">
+<span class="subject-icon">🔵</span>
+<h3>Norton</h3>
+<p>Comprehensive security with firewall and identity protection.</p>
+</div>
+
+<div class="subject-card">
+<span class="subject-icon">🟠</span>
+<h3>Kaspersky</h3>
+<p>Known for strong malware detection and web protection.</p>
+</div>
+
+<div class="subject-card">
+<span class="subject-icon">🟣</span>
+<h3>Avast</h3>
+<p>Popular free antivirus with useful security tools.</p>
+</div>
+
+<div class="subject-card">
+<span class="subject-icon">🔴</span>
+<h3>McAfee</h3>
+<p>Provides antivirus, VPN and identity protection.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Comparison -->
+
+<div class="card reveal search-item">
+
+<h2>📊 Antivirus Comparison</h2>
+
+<div class="table-responsive">
 
 <table>
 
-<tr>
-<th>Threat</th>
-<th>বর্ণনা</th>
-</tr>
+<thead>
 
 <tr>
-<td>Virus</td>
-<td>ফাইল সংক্রমিত করে ক্ষতি করে।</td>
-</tr>
 
-<tr>
-<td>Malware</td>
-<td>সব ধরনের ক্ষতিকর সফটওয়্যারের সাধারণ নাম।</td>
-</tr>
-
-<tr>
-<td>Trojan</td>
-<td>ভালো সফটওয়্যারের মতো ছদ্মবেশ ধারণ করে।</td>
-</tr>
-
-<tr>
-<td>Spyware</td>
-<td>ব্যবহারকারীর তথ্য গোপনে সংগ্রহ করে।</td>
-</tr>
-
-<tr>
-<td>Ransomware</td>
-<td>ফাইল লক করে মুক্তিপণ দাবি করে।</td>
-</tr>
-
-<tr>
-<td>Worm</td>
-<td>নিজে নিজে ছড়িয়ে পড়তে পারে।</td>
-</tr>
-
-<tr>
-<td>Adware</td>
-<td>অপ্রয়োজনীয় বিজ্ঞাপন দেখায়।</td>
-</tr>
-
-</table>
-
-</div>
-
-<div class="card">
-
-<h2>📂 Antivirus-এর প্রকারভেদ</h2>
-
-<ul>
-
-<li>🛡️ Standalone Antivirus</li>
-
-<li>🌐 Internet Security Suite</li>
-
-<li>☁️ Cloud-based Antivirus</li>
-
-<li>🏢 Enterprise Antivirus</li>
-
-<li>📱 Mobile Antivirus</li>
-
-<li>🤖 AI-powered Antivirus</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>✅ Antivirus-এর সুবিধা</h2>
-
-<ul>
-
-<li>🛡️ Virus ও Malware থেকে সুরক্ষা দেয়।</li>
-
-<li>⚡ Real-time Security প্রদান করে।</li>
-
-<li>🌐 নিরাপদ Internet Browsing-এ সাহায্য করে।</li>
-
-<li>📁 গুরুত্বপূর্ণ File নিরাপদ রাখে।</li>
-
-<li>📧 Email-এর মাধ্যমে আসা হুমকি শনাক্ত করতে পারে।</li>
-
-<li>💳 অনেক Antivirus Online Banking Protection-ও দেয়।</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>❌ Antivirus-এর সীমাবদ্ধতা</h2>
-
-<ul>
-
-<li>⚠️ ১০০% সব Virus আটকাতে পারে না।</li>
-
-<li>💻 কিছু Antivirus বেশি RAM ও CPU ব্যবহার করে।</li>
-
-<li>🔄 নিয়মিত Update না করলে কার্যকারিতা কমে যায়।</li>
-
-<li>💰 অনেক উন্নত Antivirus Paid হয়।</li>
-
-<li>🤖 একেবারে নতুন (Zero-day) Threat সব সময় সঙ্গে সঙ্গে শনাক্ত নাও করতে পারে।</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>📌 Antivirus সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
-
-<ul>
-
-<li>🛡️ Antivirus একটি Security Software।</li>
-
-<li>🔄 নিয়মিত Update রাখা খুবই গুরুত্বপূর্ণ।</li>
-
-<li>🌐 Internet ব্যবহার করলে Antivirus ব্যবহার করা উচিত।</li>
-
-<li>📱 Android ও Windows-এর জন্য Antivirus পাওয়া যায়।</li>
-
-<li>💻 Antivirus Cyber Security-এর একটি গুরুত্বপূর্ণ অংশ।</li>
-
-</ul>
-
-</div>
-<!-- Antivirus Scan Types -->
-
-<div class="card">
-
-<h2>🔍 Antivirus-এর Scan-এর ধরন</h2>
-
-<table>
-
-<tr>
-<th>Scan Type</th>
-<th>বর্ণনা</th>
-</tr>
-
-<tr>
-<td>Quick Scan</td>
-<td>কম সময়ে গুরুত্বপূর্ণ File ও System Area পরীক্ষা করে।</td>
-</tr>
-
-<tr>
-<td>Full Scan</td>
-<td>সম্পূর্ণ Computer বা Storage Scan করে।</td>
-</tr>
-
-<tr>
-<td>Custom Scan</td>
-<td>নির্দিষ্ট Folder বা Drive Scan করা যায়।</td>
-</tr>
-
-<tr>
-<td>Boot Scan</td>
-<td>Operating System চালু হওয়ার আগে Scan করে।</td>
-</tr>
-
-<tr>
-<td>Real-time Scan</td>
-<td>নতুন File ও Program সবসময় পর্যবেক্ষণ করে।</td>
-</tr>
-
-</table>
-
-</div>
-
-<!-- জনপ্রিয় Antivirus -->
-
-<div class="card">
-
-<h2>🏆 জনপ্রিয় Antivirus Software</h2>
-
-<table>
-
-<tr>
-<th>নাম</th>
-<th>বৈশিষ্ট্য</th>
-</tr>
-
-<tr>
-<td>Microsoft Defender</td>
-<td>Windows-এর সাথে বিল্ট-ইন নিরাপত্তা।</td>
-</tr>
-
-<tr>
-<td>Bitdefender</td>
-<td>উন্নত Malware Protection।</td>
-</tr>
-
-<tr>
-<td>Kaspersky</td>
-<td>শক্তিশালী Virus Detection।</td>
-</tr>
-
-<tr>
-<td>Norton</td>
-<td>Internet Security ও Identity Protection।</td>
-</tr>
-
-<tr>
-<td>ESET NOD32</td>
-<td>হালকা ও দ্রুত Antivirus।</td>
-</tr>
-
-<tr>
-<td>Avast</td>
-<td>Free ও Paid—দুই সংস্করণেই পাওয়া যায়।</td>
-</tr>
-
-<tr>
-<td>AVG</td>
-<td>Free Antivirus হিসেবে জনপ্রিয়।</td>
-</tr>
-
-</table>
-
-</div>
-
-<!-- নিরাপদে Antivirus ব্যবহার -->
-
-<div class="card">
-
-<h2>🛡️ Antivirus ব্যবহারের সেরা অভ্যাস</h2>
-
-<ul>
-
-<li>🔄 Antivirus সবসময় Update রাখুন।</li>
-
-<li>🖥️ নিয়মিত Full Scan করুন।</li>
-
-<li>📥 শুধুমাত্র বিশ্বস্ত Website থেকে Software Download করুন।</li>
-
-<li>📧 সন্দেহজনক Email Attachment খুলবেন না।</li>
-
-<li>💾 গুরুত্বপূর্ণ Data-এর Backup রাখুন।</li>
-
-<li>🚫 একসাথে একাধিক Antivirus ব্যবহার করবেন না।</li>
-
-</ul>
-
-</div>
-
-<!-- Antivirus বনাম Firewall -->
-
-<div class="card">
-
-<h2>⚖️ Antivirus ও Firewall-এর পার্থক্য</h2>
-
-<table>
-
-<tr>
 <th>Antivirus</th>
+
+<th>Free</th>
+
+<th>Real-Time Protection</th>
+
 <th>Firewall</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Microsoft Defender</td>
+
+<td>✅</td>
+
+<td>✅</td>
+
+<td>✅</td>
+
 </tr>
 
 <tr>
-<td>Virus ও Malware শনাক্ত করে।</td>
-<td>Network Traffic নিয়ন্ত্রণ করে।</td>
+
+<td>Bitdefender</td>
+
+<td>Limited</td>
+
+<td>✅</td>
+
+<td>Premium</td>
+
 </tr>
 
 <tr>
-<td>ক্ষতিকর File Remove করতে পারে।</td>
-<td>অননুমোদিত সংযোগ Block করে।</td>
+
+<td>Norton</td>
+
+<td>❌</td>
+
+<td>✅</td>
+
+<td>✅</td>
+
 </tr>
 
 <tr>
-<td>File ও Program Scan করে।</td>
-<td>Internet ও Network সুরক্ষা দেয়।</td>
+
+<td>Kaspersky</td>
+
+<td>Limited</td>
+
+<td>✅</td>
+
+<td>Premium</td>
+
 </tr>
+
+<tr>
+
+<td>Avast</td>
+
+<td>✅</td>
+
+<td>✅</td>
+
+<td>Limited</td>
+
+</tr>
+
+<tr>
+
+<td>McAfee</td>
+
+<td>❌</td>
+
+<td>✅</td>
+
+<td>✅</td>
+
+</tr>
+
+</tbody>
 
 </table>
 
 </div>
 
-<!-- জানেন কি -->
+</div>
 
-<div class="card">
+</section>
 
-<h2>💡 জানেন কি?</h2>
+<!-- =======================================
+PART 4 : Types of Antivirus
+======================================= -->
 
-<ul>
+<section class="wrap">
 
-<li>🛡️ Windows 10 ও Windows 11-এ Microsoft Defender আগে থেকেই থাকে।</li>
+<h2 class="section-title reveal">Types of Antivirus</h2>
 
-<li>☁️ আধুনিক Antivirus Cloud প্রযুক্তি ব্যবহার করে দ্রুত নতুন Threat শনাক্ত করতে পারে।</li>
+<p class="section-subtitle reveal">
+Different antivirus software protects computers in different ways.
+</p>
 
-<li>🤖 অনেক Antivirus এখন AI ও Machine Learning ব্যবহার করে।</li>
+<div class="cards">
 
-<li>📱 Android-এর জন্যও Antivirus অ্যাপ পাওয়া যায়।</li>
+<div class="subject-card reveal search-item">
+<div class="subject-icon">🛡️</div>
+<h3>Standalone Antivirus</h3>
+<p>
+Only protects against viruses and malware.
+Fast and lightweight.
+</p>
+</div>
 
-<li>🔐 Antivirus একা যথেষ্ট নয়; নিরাপদ Browsing-ও জরুরি।</li>
+<div class="subject-card reveal search-item">
+<div class="subject-icon">🔒</div>
+<h3>Internet Security</h3>
+<p>
+Includes antivirus, firewall,
+email protection and web security.
+</p>
+</div>
 
-</ul>
+<div class="subject-card reveal search-item">
+<div class="subject-icon">💻</div>
+<h3>Total Security</h3>
+<p>
+Provides antivirus,
+VPN,
+password manager,
+parental control,
+backup and more.
+</p>
+</div>
+
+<div class="subject-card reveal search-item">
+<div class="subject-icon">☁️</div>
+<h3>Cloud Antivirus</h3>
+<p>
+Uses cloud servers for faster malware detection and updates.
+</p>
+</div>
 
 </div>
 
-  <!-- Antivirus-এর বিস্তারিত ইতিহাস -->
+</section>
 
-<div class="card">
+<!-- =======================================
+How Antivirus Works
+======================================= -->
 
-<h2>📜 Antivirus-এর বিস্তারিত ইতিহাস</h2>
+<section class="wrap">
+
+<div class="card reveal search-item">
+
+<h2>⚙️ How Antivirus Works</h2>
 
 <p>
 
-কম্পিউটার ভাইরাসের বিস্তার শুরু হওয়ার পর সেগুলো শনাক্ত ও অপসারণ করার জন্য Antivirus Software তৈরি করা হয়। ১৯৮০-এর দশকের শেষ দিকে প্রথম দিকের Antivirus Program তৈরি হয়। সময়ের সাথে সাথে শুধু Virus নয়, Trojan, Worm, Spyware, Adware, Ransomware এবং অন্যান্য Malware থেকেও সুরক্ষা দেওয়ার ক্ষমতা যোগ হয়েছে। বর্তমানে অনেক Antivirus Artificial Intelligence (AI), Machine Learning এবং Cloud-based Detection ব্যবহার করে নতুন Threat দ্রুত শনাক্ত করতে পারে।
+✔ Scans files
+
+<br><br>
+
+✔ Detects malware signatures
+
+<br><br>
+
+✔ Uses heuristic analysis
+
+<br><br>
+
+✔ Monitors suspicious activities
+
+<br><br>
+
+✔ Removes infected files
+
+<br><br>
+
+✔ Updates virus database regularly
 
 </p>
 
 </div>
 
-<!-- FAQ -->
+</section>
 
-<div class="card">
+<!-- =======================================
+Advantages
+======================================= -->
 
-<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+<section class="wrap">
 
-<details>
-<summary><b>১. Antivirus কী?</b></summary>
-<p>Antivirus হলো এমন একটি Security Software যা Virus ও অন্যান্য Malware শনাক্ত, প্রতিরোধ এবং অপসারণ করে।</p>
-</details>
+<div class="card reveal search-item">
 
-<br>
-
-<details>
-<summary><b>২. Antivirus কি সব Virus ধরতে পারে?</b></summary>
-<p>না। নিয়মিত Update করা থাকলে অধিকাংশ পরিচিত Threat শনাক্ত করতে পারে, তবে একেবারে নতুন Threat সবসময় সঙ্গে সঙ্গে শনাক্ত নাও হতে পারে।</p>
-</details>
-
-<br>
-
-<details>
-<summary><b>৩. একটি কম্পিউটারে একাধিক Antivirus ব্যবহার করা উচিত?</b></summary>
-<p>না। একাধিক Real-time Antivirus একসাথে ব্যবহার করলে সমস্যা ও Performance কমে যেতে পারে।</p>
-</details>
-
-<br>
-
-<details>
-<summary><b>৪. Free Antivirus কি নিরাপদ?</b></summary>
-<p>অনেক Free Antivirus সাধারণ ব্যবহারকারীর জন্য ভালো সুরক্ষা দেয়, তবে Paid সংস্করণে অতিরিক্ত Feature থাকতে পারে।</p>
-</details>
-
-<br>
-
-<details>
-<summary><b>৫. Antivirus Update কেন জরুরি?</b></summary>
-<p>নতুন Virus ও Malware শনাক্ত করার জন্য Antivirus-এর Database নিয়মিত Update হওয়া প্রয়োজন।</p>
-</details>
-
-<br>
-
-<details>
-<summary><b>৬. Antivirus কি Mobile-এ ব্যবহার করা যায়?</b></summary>
-<p>হ্যাঁ। Android-এর জন্য বিভিন্ন Antivirus App পাওয়া যায়।</p>
-</details>
-
-</div>
-
-<!-- Quick Revision -->
-
-<div class="card">
-
-<h2>⚡ Quick Revision</h2>
+<h2>✅ Advantages of Antivirus</h2>
 
 <ul>
 
-<li>✅ Antivirus একটি Security Software।</li>
+<li>Protects personal data</li>
 
-<li>✅ এটি Virus, Malware ও Ransomware থেকে সুরক্ষা দেয়।</li>
+<li>Blocks malware</li>
 
-<li>✅ নিয়মিত Update রাখা খুবই গুরুত্বপূর্ণ।</li>
+<li>Improves computer security</li>
 
-<li>✅ একসাথে একাধিক Antivirus ব্যবহার করা উচিত নয়।</li>
+<li>Safe internet browsing</li>
 
-<li>✅ Real-time Protection আধুনিক Antivirus-এর গুরুত্বপূর্ণ Feature।</li>
+<li>Email protection</li>
 
-<li>✅ নিরাপদ Browsing ও Backup-ও Cyber Security-এর গুরুত্বপূর্ণ অংশ।</li>
+<li>USB scanning</li>
+
+<li>Real-time protection</li>
 
 </ul>
 
 </div>
 
-<!-- নিজেকে যাচাই করুন -->
+</section>
 
-<div class="card">
+<!-- =======================================
+Disadvantages
+======================================= -->
 
-<h2>📝 নিজেকে যাচাই করুন</h2>
+<section class="wrap">
 
-<details>
-<summary>১. Antivirus-এর প্রধান কাজ কী?</summary>
-<p>✅ Virus ও Malware শনাক্ত, প্রতিরোধ এবং অপসারণ করা।</p>
-</details>
+<div class="card reveal search-item">
 
-<br>
-
-<details>
-<summary>২. Antivirus Update কেন প্রয়োজন?</summary>
-<p>✅ নতুন Threat শনাক্ত করার জন্য।</p>
-</details>
-
-<br>
-
-<details>
-<summary>৩. Real-time Protection কী?</summary>
-<p>✅ ডিভাইসকে সবসময় পর্যবেক্ষণ করে তাৎক্ষণিক সুরক্ষা দেওয়ার ব্যবস্থা।</p>
-</details>
-
-<br>
-
-<details>
-<summary>৪. Antivirus এবং Firewall কি একই জিনিস?</summary>
-<p>✅ না। Antivirus Malware শনাক্ত করে, Firewall Network Traffic নিয়ন্ত্রণ করে।</p>
-</details>
-
-<br>
-
-<details>
-<summary>৫. Antivirus ব্যবহার করলেই কি ১০০% নিরাপত্তা নিশ্চিত হয়?</summary>
-<p>✅ না। নিরাপদ Internet ব্যবহার, শক্তিশালী Password এবং নিয়মিত Update-ও জরুরি।</p>
-</details>
-
-</div>
-
-<!-- Related Topics -->
-
-<div class="card">
-
-<h2>🔗 Related Topics</h2>
+<h2>❌ Disadvantages</h2>
 
 <ul>
 
-<li><a href="cyber-security.html">🛡️ Cyber Security</a></li>
+<li>Some antivirus software is expensive.</li>
 
-<li><a href="password-security.html">🔑 Password Security</a></li>
+<li>Can slow older computers.</li>
 
-<li><a href="firewall.html">🔥 Firewall</a></li>
+<li>Requires regular updates.</li>
 
-<li><a href="computer-virus.html">🦠 Computer Virus</a></li>
-
-<li><a href="malware.html">⚠️ Malware</a></li>
-
-<li><a href="internet.html">🌐 Internet</a></li>
-
-<li><a href="computer.html">💻 Computer</a></li>
-
-<li><a href="operating-system.html">🖥️ Operating System</a></li>
+<li>No antivirus gives 100% protection.</li>
 
 </ul>
 
 </div>
 
-<!-- উপসংহার -->
+</section>
 
-<div class="card">
+<!-- ==========================================
+PART 5
+FAQ • Summary • Navigation • Contact
+========================================== -->
 
-<h2>🏁 উপসংহার</h2>
+<section class="wrap" id="faq">
 
-<p>
+<div class="card reveal search-item">
 
-Antivirus একটি গুরুত্বপূর্ণ Security Software, যা কম্পিউটার ও মোবাইলকে বিভিন্ন ধরনের Malware থেকে সুরক্ষা দিতে সাহায্য করে। তবে শুধুমাত্র Antivirus-এর উপর নির্ভর না করে নিরাপদ Internet ব্যবহার, নিয়মিত Software Update এবং Data Backup রাখাও সমান গুরুত্বপূর্ণ।
+<h2>❓ Frequently Asked Questions (FAQ)</h2>
 
-</p>
-
-</div>
-
-</div>
-
-<!-- Back To Top Button -->
-<button id="topBtn" onclick="topFunction()" title="Back to Top">
-⬆️
+<div class="faq-item">
+<button class="faq-question">
+1. What is Antivirus?
 </button>
 
-<!-- Footer -->
-<footer class="footer">
+<div class="faq-answer">
+Antivirus is security software that detects, blocks and removes viruses and other malware from a computer.
+</div>
+</div>
 
-<div class="footer-content">
+<div class="faq-item">
+<button class="faq-question">
+2. Is Windows Defender enough?
+</button>
 
-<p><strong>Learning Skills</strong></p>
+<div class="faq-answer">
+For many users, Microsoft Defender provides good basic protection. However, advanced users may prefer additional security features offered by dedicated antivirus software.
+</div>
+</div>
 
-<p>📚 Learn • Practice • Grow</p>
+<div class="faq-item">
+<button class="faq-question">
+3. Can Antivirus remove all viruses?
+</button>
 
-<p>&copy; 2026 Learning Skills. All Rights Reserved.</p>
+<div class="faq-answer">
+No antivirus can guarantee 100% protection. Regular updates and safe browsing habits are also important.
+</div>
+</div>
 
-<div class="footer-links">
+<div class="faq-item">
+<button class="faq-question">
+4. Should I install two antivirus programs?
+</button>
 
-<a href="index.html">🏠 Home</a>
-
-<a href="cyber-security.html">🛡️ Cyber Security</a>
-
-<a href="computer.html">💻 Computer</a>
-
-<a href="contact.html">📩 Contact</a>
+<div class="faq-answer">
+No. Running two real-time antivirus programs together can cause conflicts and reduce system performance.
+</div>
+</div>
 
 </div>
+
+</section>
+
+<!-- Summary -->
+
+<section class="wrap">
+
+<div class="card reveal search-item">
+
+<h2>📝 Chapter Summary</h2>
+
+<p>
+
+✔ Antivirus protects computers from malware.
+
+<br><br>
+
+✔ It scans files and removes malicious software.
+
+<br><br>
+
+✔ Real-time protection monitors threats continuously.
+
+<br><br>
+
+✔ Virus definitions should always be updated.
+
+<br><br>
+
+✔ Safe browsing habits improve security.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Next Learning -->
+
+<section class="wrap">
+
+<div class="newsletter reveal">
+
+<h2>🎯 Next Topic</h2>
+
+<p>
+
+Continue your Cyber Security journey by learning the next chapter.
+
+</p>
+
+<a href="computer-virus.html" class="btn">
+➡ Next Chapter
+</a>
+
+<a href="../index.html" class="btn">
+🏠 Back to Home
+</a>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="wrap" id="contact">
+
+<div class="contact-box reveal">
+
+<h2>📧 Contact</h2>
+
+<p>
+
+If you have questions or suggestions about this topic, feel free to contact Learning Skills.
+
+</p>
+
+<p>
+
+📩 Email:
+<a href="mailto:your@email.com">
+your@email.com
+</a>
+
+</p>
+
+<p>
+
+🌐 Website:
+<a href="../index.html">
+Learning Skills
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-bottom">
+
+<p>
+
+© <span id="year"></span>
+
+Learning Skills.
+
+All Rights Reserved.
+
+</p>
 
 </div>
 
 </footer>
 
-<!-- JavaScript -->
-<script src="main.js"></script>
-
-</body>
-</html>
+<button id="backToTop">
+⬆
+</button>
