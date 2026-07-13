@@ -1,0 +1,1235 @@
+/* =====================================
+   Learning Skills - Main Stylesheet
+   File: css/style.css
+===================================== */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#eef8ff;
+color:#222;
+line-height:1.6;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+color:inherit;
+transition:.3s;
+}
+
+/* IMAGES */
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+
+background:linear-gradient(90deg,#003366,#00AAFF);
+
+color:#fff;
+
+padding:40px 20px;
+
+text-align:center;
+
+}
+
+.title-box{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.side-logo{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+}
+
+header h1{
+
+font-size:2.7rem;
+
+font-weight:700;
+
+text-shadow:3px 3px 8px rgba(0,0,0,.3);
+
+}
+
+header p{
+
+margin-top:12px;
+
+font-size:18px;
+
+}
+
+/* =====================================
+   NOTICE BAR
+===================================== */
+
+marquee{
+
+background:#FFD54F;
+
+padding:10px;
+
+font-weight:bold;
+
+color:#222;
+
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#02284f;
+
+padding:14px;
+
+text-align:center;
+
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+nav a{
+
+display:inline-block;
+
+color:#fff;
+
+padding:10px 15px;
+
+font-weight:bold;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+background:#00AAFF;
+
+}
+
+/* SEARCH */
+
+#searchBox{
+
+padding:12px;
+
+margin-top:15px;
+
+width:260px;
+
+border:2px solid #ddd;
+
+border-radius:8px;
+
+outline:none;
+
+}
+
+#searchBox:focus{
+
+border-color:#00AAFF;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+background:#fff;
+
+margin:25px;
+
+padding:50px 25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+text-align:center;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+color:#0066CC;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:800px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 24px;
+
+margin:8px;
+
+background:#0088CC;
+
+color:#fff;
+
+font-weight:bold;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#006FA3;
+
+transform:translateY(-3px);
+
+}
+
+/* ===================================================
+   Learning Skills - Main Stylesheet
+   File : css/style.css
+   Part : 4.1
+=================================================== */
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#eef8ff;
+    color:#222;
+    line-height:1.7;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:.3s;
+}
+
+/* ---------- IMAGE ---------- */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ---------- BUTTON ---------- */
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+/* ---------- COMMON BUTTON ---------- */
+
+.btn{
+    display:inline-block;
+    padding:14px 26px;
+    border-radius:10px;
+    background:#0088cc;
+    color:#fff;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0066aa;
+    transform:translateY(-3px);
+}
+
+/* ---------- SECTION ---------- */
+
+section{
+    padding:40px 0;
+}
+
+/* ---------- SECTION TITLE ---------- */
+
+.section-title{
+    font-size:32px;
+    text-align:center;
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#666;
+    max-width:700px;
+    margin:0 auto 40px;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    background:linear-gradient(90deg,#003366,#00aaff);
+    color:#fff;
+    text-align:center;
+    padding:45px 20px;
+}
+
+.title-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.side-logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+header h1{
+    font-size:2.8rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow:3px 3px 10px rgba(0,0,0,.30);
+}
+
+header p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* ---------- MARQUEE ---------- */
+
+marquee{
+    background:#ffd54f;
+    color:#222;
+    padding:10px;
+    font-weight:bold;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#02284f;
+    padding:14px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav a{
+    color:#fff;
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#00aaff;
+}
+
+/* ---------- SEARCH ---------- */
+
+#searchBox{
+    width:280px;
+    max-width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    margin-top:15px;
+}
+
+#searchBox:focus{
+    border-color:#00aaff;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    background:#fff;
+    margin:25px;
+    border-radius:20px;
+    padding:55px 25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.hero h2{
+    font-size:36px;
+    color:#0066cc;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+/* ===================================================
+   PART 4.2
+   Cards • Subject Cards • Grid • Statistics
+=================================================== */
+
+/* ---------- MAIN WRAPPER ---------- */
+
+.wrap{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* ---------- COMMON CARD ---------- */
+
+.card{
+    background:#fff;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.10);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* ---------- GRID ---------- */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* ---------- SUBJECT CARD ---------- */
+
+.subject-card{
+
+    display:block;
+
+    background:#fff;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+    border:2px solid transparent;
+
+}
+
+.subject-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00AAFF;
+
+    box-shadow:0 15px 30px rgba(0,170,255,.20);
+
+}
+
+.subject-icon{
+
+    font-size:48px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+}
+
+.subject-card h3{
+
+    margin:10px 0;
+
+    color:#003366;
+
+    font-size:22px;
+
+}
+
+.subject-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* ---------- TOPIC CARD ---------- */
+
+.topic-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.topic-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.15);
+
+}
+
+.topic-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#e8f4ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+}
+
+.topic-content{
+
+    flex:1;
+
+}
+
+.topic-content h3{
+
+    color:#0055aa;
+
+    margin-bottom:8px;
+
+}
+
+.topic-content p{
+
+    color:#666;
+
+}
+
+.topic-arrow{
+
+    font-size:24px;
+
+    color:#00AAFF;
+
+}
+
+/* ---------- HERO STATS ---------- */
+
+.stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.stat-card{
+
+    width:120px;
+
+    background:#eef8ff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:scale(1.06);
+
+}
+
+.stat-card h3{
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+/* ===================================================
+   PART 4.3
+   Footer • Contact • Newsletter • Social Icons
+=================================================== */
+
+/* ---------- CONTACT SECTION ---------- */
+
+.contact-box{
+
+background:#ffffff;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 6px 18px rgba(0,0,0,.10);
+
+margin:40px 0;
+
+}
+
+.contact-box h2{
+
+color:#0066cc;
+
+margin-bottom:20px;
+
+}
+
+.contact-box p{
+
+margin:15px 0;
+
+font-size:17px;
+
+}
+
+.contact-box a{
+
+color:#0066cc;
+
+font-weight:bold;
+
+}
+
+.contact-box a:hover{
+
+text-decoration:underline;
+
+}
+
+/* ---------- NEWSLETTER ---------- */
+
+.newsletter{
+
+background:linear-gradient(135deg,#0066cc,#00aaff);
+
+color:#fff;
+
+padding:40px 25px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin:40px 0;
+
+}
+
+.newsletter h2{
+
+margin-bottom:15px;
+
+font-size:30px;
+
+}
+
+.newsletter p{
+
+margin-bottom:25px;
+
+}
+
+.newsletter input{
+
+width:320px;
+
+max-width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:10px;
+
+outline:none;
+
+margin-bottom:15px;
+
+}
+
+.newsletter button{
+
+padding:14px 28px;
+
+border:none;
+
+border-radius:10px;
+
+background:#fff;
+
+color:#0066cc;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+
+background:#02284f;
+
+color:#fff;
+
+margin-top:60px;
+
+padding:60px 20px 25px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:35px;
+
+margin-bottom:35px;
+
+}
+
+.footer-box h3{
+
+margin-bottom:18px;
+
+color:#6dc8ff;
+
+}
+
+.footer-box p{
+
+line-height:1.8;
+
+color:#ddd;
+
+}
+
+.footer-box ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-box ul li{
+
+margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+color:#ddd;
+
+transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+color:#fff;
+
+padding-left:8px;
+
+}
+
+/* ---------- SOCIAL ICON ---------- */
+
+.social-links{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:18px;
+
+}
+
+.social-links a{
+
+width:48px;
+
+height:48px;
+
+border-radius:50%;
+
+background:#0066cc;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#fff;
+
+font-size:20px;
+
+transition:.35s;
+
+}
+
+.social-links a:hover{
+
+background:#00aaff;
+
+transform:translateY(-6px) scale(1.08);
+
+}
+
+/* ---------- FOOTER BOTTOM ---------- */
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.2);
+
+margin-top:30px;
+
+padding-top:20px;
+
+text-align:center;
+
+font-size:15px;
+
+color:#ddd;
+
+}
+
+.footer-bottom a{
+
+color:#6dc8ff;
+
+font-weight:bold;
+
+}
+
+.footer-bottom a:hover{
+
+color:#fff;
+
+}
+
+/* ===================================================
+   PART 4.4
+   Utility • FAQ • Back To Top • Loader • Print
+=================================================== */
+
+/* ---------- FAQ ---------- */
+
+.faq-item{
+background:#fff;
+margin-bottom:18px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+}
+
+.faq-question{
+width:100%;
+padding:18px 20px;
+background:#fff;
+border:none;
+font-size:18px;
+font-weight:bold;
+text-align:left;
+cursor:pointer;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+line-height:1.8;
+color:#555;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* ---------- BACK TO TOP ---------- */
+
+#backToTop{
+position:fixed;
+bottom:25px;
+right:25px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#0066cc;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 6px 15px rgba(0,0,0,.20);
+transition:.3s;
+z-index:9999;
+}
+
+#backToTop:hover{
+background:#0088cc;
+transform:translateY(-5px);
+}
+
+/* ---------- LOADER ---------- */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+.loader-circle{
+width:70px;
+height:70px;
+border:6px solid #ddd;
+border-top:6px solid #0066cc;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ---------- PROGRESS BAR ---------- */
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:#00aaff;
+z-index:99999;
+}
+
+/* ---------- UTILITIES ---------- */
+
+.text-center{
+text-align:center;
+}
+
+.mt-20{
+margin-top:20px;
+}
+
+.mt-40{
+margin-top:40px;
+}
+
+.mb-20{
+margin-bottom:20px;
+}
+
+.mb-40{
+margin-bottom:40px;
+}
+
+.round{
+border-radius:20px;
+}
+
+.shadow{
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+/* ---------- DARK MODE SUPPORT ---------- */
+
+.dark{
+background:#111;
+color:#fff;
+}
+
+.dark .card,
+.dark .topic-card,
+.dark .subject-card,
+.dark .hero,
+.dark .contact-box{
+background:#222;
+color:#fff;
+}
+
+.dark nav{
+background:#000;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark a{
+color:#6dc8ff;
+}
+
+.dark .faq-item{
+background:#222;
+}
+
+.dark .faq-question{
+background:#222;
+color:#fff;
+}
+
+.dark .faq-answer{
+color:#ddd;
+}
+
+/* ---------- PRINT ---------- */
+
+@media print{
+
+nav,
+footer,
+#backToTop,
+#loader,
+button{
+display:none!important;
+}
+
+body{
+background:#fff;
+color:#000;
+}
+
+.card{
+box-shadow:none;
+border:1px solid #ddd;
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+.container,
+.wrap{
+width:95%;
+}
+
+header h1{
+font-size:2rem;
+}
+
+.hero{
+margin:15px;
+padding:35px 18px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.social-links{
+justify-content:center;
+}
+
+nav a{
+display:block;
+margin:8px 0;
+}
+
+#searchBox{
+width:100%;
+}
+
+}
