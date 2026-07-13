@@ -68,12 +68,1579 @@ padding:15px;
 margin-top:40px;
 }
 
+/*========== NAVBAR ==========*/
+
+.navbar{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:#fff;
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.nav-container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:12px 20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo img{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+}
+
+.logo-text h2{
+
+font-size:22px;
+
+margin:0;
+
+color:#2563eb;
+
+}
+
+.logo-text p{
+
+font-size:12px;
+
+color:#666;
+
+margin:0;
+
+}
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+gap:20px;
+
+align-items:center;
+
+}
+
+.nav-links a{
+
+padding:10px 15px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover,
+
+.nav-links .active{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+.menu-toggle{
+
+display:none;
+
+font-size:24px;
+
+cursor:pointer;
+
+}
+
+.dark-btn{
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+flex-direction:column;
+
+display:none;
+
+padding:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.nav-links.show{
+
+display:flex;
+
+}
+
+}
+
+/*========== NAVBAR ==========*/
+
+.navbar{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:#fff;
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.nav-container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:12px 20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo img{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+}
+
+.logo-text h2{
+
+font-size:22px;
+
+margin:0;
+
+color:#2563eb;
+
+}
+
+.logo-text p{
+
+font-size:12px;
+
+color:#666;
+
+margin:0;
+
+}
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+gap:20px;
+
+align-items:center;
+
+}
+
+.nav-links a{
+
+padding:10px 15px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover,
+
+.nav-links .active{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+.menu-toggle{
+
+display:none;
+
+font-size:24px;
+
+cursor:pointer;
+
+}
+
+.dark-btn{
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+flex-direction:column;
+
+display:none;
+
+padding:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.nav-links.show{
+
+display:flex;
+
+}
+
+}
+/*================ HERO ================*/
+
+.hero{
+
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+color:#fff;
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+background:rgba(255,255,255,.18);
+
+padding:8px 18px;
+
+border-radius:50px;
+
+font-size:15px;
+
+font-weight:600;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+color:#fff;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+color:#eaf2ff;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+.hero-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats{
+
+margin-top:45px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.15);
+
+padding:22px;
+
+border-radius:16px;
+
+backdrop-filter:blur(8px);
+
+}
+
+.stat-box h2{
+
+color:#fff;
+
+margin-bottom:5px;
+
+font-size:30px;
+
+}
+
+.stat-box p{
+
+color:#eef6ff;
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 15px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero-stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*========== PAGE TOOLS ==========*/
+
+.breadcrumb{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:25px;
+
+font-size:15px;
+
+font-weight:600;
+
+}
+
+.breadcrumb a{
+
+color:#2563eb;
+
+}
+
+.search-box{
+
+margin-bottom:25px;
+
+}
+
+.search-box input{
+
+width:100%;
+
+padding:16px;
+
+font-size:17px;
+
+border-radius:14px;
+
+border:2px solid #dbeafe;
+
+outline:none;
+
+}
+
+.search-box input:focus{
+
+border-color:#2563eb;
+
+}
+
+.reading-card{
+
+background:white;
+
+padding:20px;
+
+border-radius:16px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+margin-bottom:25px;
+
+}
+
+.action-buttons{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.action-buttons button{
+
+padding:14px 20px;
+
+border:none;
+
+border-radius:12px;
+
+background:#2563eb;
+
+color:white;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.action-buttons button:hover{
+
+background:#1d4ed8;
+
+}
+
+@media(max-width:768px){
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.action-buttons button{
+
+width:100%;
+
+}
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin-bottom:35px;
+
+color:#2563eb;
+
+}
+
+.topics-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:22px;
+
+}
+
+.topic-card{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+background:#fff;
+
+padding:22px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+color:#222;
+
+}
+
+.topic-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 40px rgba(37,99,235,.18);
+
+}
+
+.topic-icon{
+
+width:70px;
+
+height:70px;
+
+border-radius:18px;
+
+background:#2563eb;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+color:#fff;
+
+}
+
+.topic-content{
+
+flex:1;
+
+}
+
+.topic-content h3{
+
+margin:0 0 8px;
+
+font-size:22px;
+
+color:#2563eb;
+
+}
+
+.topic-content p{
+
+margin:0;
+
+font-size:15px;
+
+color:#555;
+
+}
+
+.topic-arrow{
+
+font-size:28px;
+
+color:#2563eb;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+.topics-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.topic-card{
+
+padding:18px;
+
+}
+
+.topic-icon{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+}
+/*========== FEATURES ==========*/
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.feature-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.feature-icon{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+/*========== STATS ==========*/
+
+.stats-section{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+text-align:center;
+
+}
+
+.stat-item{
+
+padding:25px;
+
+}
+
+.stat-item h2{
+
+font-size:40px;
+
+color:#fff;
+
+margin-bottom:10px;
+
+}
+
+.stat-item p{
+
+color:#eef4ff;
+
+}
+
+/*========== RELATED TOPICS ==========*/
+
+.related-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:18px;
+
+}
+
+.related-grid a{
+
+background:#fff;
+
+padding:18px;
+
+border-radius:14px;
+
+text-align:center;
+
+font-weight:600;
+
+color:#2563eb;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.related-grid a:hover{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+@media(max-width:768px){
+
+.feature-grid,
+
+.stats-grid,
+
+.related-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*========== FAQ ==========*/
+
+.faq-box{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.faq-box details{
+
+background:#fff;
+
+padding:18px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.faq-box summary{
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:#2563eb;
+
+}
+
+.faq-box p{
+
+margin-top:12px;
+
+line-height:1.8;
+
+}
+
+/*========== CONTACT ==========*/
+
+.contact-card{
+
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.contact-card h2{
+
+color:#fff;
+
+margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+color:#eef4ff;
+
+margin-bottom:25px;
+
+}
+
+/*========== NEWSLETTER ==========*/
+
+.newsletter{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.newsletter h2{
+
+margin-bottom:15px;
+
+}
+
+.newsletter p{
+
+margin-bottom:25px;
+
+}
+
+@media(max-width:768px){
+
+.contact-card,
+
+.newsletter{
+
+padding:25px;
+
+}
+
+}
+
+/*========== FOOTER ==========*/
+
+.footer{
+
+background:#0f172a;
+
+color:#fff;
+
+padding:70px 0 25px;
+
+margin-top:70px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:35px;
+
+}
+
+.footer-box h3{
+
+margin-bottom:18px;
+
+font-size:22px;
+
+color:#fff;
+
+}
+
+.footer-box p{
+
+color:#cbd5e1;
+
+line-height:1.9;
+
+}
+
+.footer-box ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.footer-box li{
+
+margin-bottom:12px;
+
+}
+
+.footer-box a{
+
+color:#cbd5e1;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+color:#60a5fa;
+
+padding-left:6px;
+
+}
+
+.footer hr{
+
+margin:35px 0 20px;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+}
+
+.footer-bottom p{
+
+margin:8px 0;
+
+color:#94a3b8;
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+padding:50px 20px 25px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*========== SCROLL BAR ==========*/
+
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0%;
+
+height:5px;
+
+background:#2563eb;
+
+z-index:9999;
+
+transition:.1s;
+
+}
+
+/*========== BACK TO TOP ==========*/
+
+#backToTop{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:52px;
+
+height:52px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#backToTop:hover{
+
+transform:translateY(-5px);
+
+background:#1d4ed8;
+
+}
+
+/*========== DARK MODE ==========*/
+
+body.dark{
+
+background:#0f172a;
+
+color:#f8fafc;
+
+}
+
+body.dark .card,
+
+body.dark .topic-card,
+
+body.dark .feature-card,
+
+body.dark .newsletter,
+
+body.dark details{
+
+background:#1e293b;
+
+color:#fff;
+
+}
+
+body.dark p{
+
+color:#cbd5e1;
+
+}
+
+body.dark .navbar{
+
+background:#1e293b;
+
+}
+
+body.dark .search-box input{
+
+background:#334155;
+
+color:#fff;
+
+border-color:#475569;
+
+}
+
+/*========== PAGE LOADER ==========*/
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#ffffff;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:.5s;
+
+}
+
+.spinner{
+
+width:65px;
+
+height:65px;
+
+border:6px solid #dbeafe;
+
+border-top:6px solid #2563eb;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+#loader h3{
+
+margin-top:20px;
+
+color:#2563eb;
+
+}
+
+/*========== SCROLL ANIMATION ==========*/
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*========== BETTER SELECTION ==========*/
+
+::selection{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+/*========== SCROLLBAR ==========*/
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eaf2ff;
+
+}
 </style>
 
+<meta name="robots" content="index,follow">
+
+<meta name="theme-color" content="#2563eb">
+
+<link rel="canonical" href="https://learningskills12.github.io/english.html">
+
+<meta property="og:title" content="English Grammar | Learning Skills">
+
+<meta property="og:description" content="Learn English Grammar with easy explanations and examples.">
+
+<meta property="og:type" content="website">
+  
 </head>
 
 <body>
+<!--========== PAGE LOADER ==========-->
 
+<div id="loader">
+
+<div class="spinner"></div>
+
+<h3>Loading Learning Skills...</h3>
+
+</div>
+
+<!-- ===== NAVBAR START ===== -->
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<a href="index.html" class="logo">
+
+<img src="logo.png" alt="Learning Skills">
+
+<div class="logo-text">
+
+<h2>Learning Skills</h2>
+
+<p>Learn Today, Lead Tomorrow</p>
+
+</div>
+
+</a>
+
+<div class="menu-toggle" id="menuToggle">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+
+<li><a href="english.html"><i class="fas fa-book"></i> English</a></li>
+
+<li><a href="voice.html" class="active"><i class="fas fa-microphone"></i> Voice Change</a></li>
+
+<li><a href="quiz.html"><i class="fas fa-circle-question"></i> Quiz</a></li>
+
+<li><a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+
+<li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+</ul>
+
+<div class="dark-btn" id="darkBtn">
+
+<i class="fas fa-moon"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ===== NAVBAR END ===== -->
+
+<!-- ========= HERO SECTION ========= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<span class="hero-badge">
+📘 English Grammar Course
+</span>
+
+<h1>
+Master English Grammar Easily
+</h1>
+
+<p>
+Learn Parts of Speech, Tense, Voice Change, Narration, Article,
+Preposition, Right Forms of Verbs and many more with easy explanations,
+examples and practice quizzes.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#grammar-topics" class="btn btn-primary">
+<i class="fas fa-book-open"></i>
+Start Learning
+</a>
+
+<a href="english-mcq.html" class="btn btn-outline">
+<i class="fas fa-circle-question"></i>
+Practice Quiz
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat-box">
+
+<h2>8+</h2>
+
+<p>Grammar Topics</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>100+</h2>
+
+<p>Examples</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>FREE</h2>
+
+<p>Learning</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!--========== PAGE TOOLS ==========-->
+
+<section class="section">
+
+<div class="container">
+
+<!-- Breadcrumb -->
+
+<div class="breadcrumb">
+
+<a href="index.html">
+🏠 Home
+</a>
+
+<span>›</span>
+
+<a href="english.html">
+English Grammar
+</a>
+
+</div>
+
+<!-- Search Box -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Grammar Topics...">
+
+</div>
+
+<!-- Reading Time -->
+
+<div class="reading-card">
+
+<div>
+
+<h3>📖 Estimated Reading Time</h3>
+
+<p>15–20 Minutes</p>
+
+</div>
+
+</div>
+
+<!-- Action Buttons -->
+
+<div class="action-buttons">
+
+<button onclick="window.print()">
+
+🖨 Print
+
+</button>
+
+<button onclick="sharePage()">
+
+📤 Share
+
+</button>
+
+<button onclick="copyLink()">
+
+🔗 Copy Link
+
+</button>
+
+</div>
+
+</div>
+
+</section>
 <header>
 
 <h1>📘 English Grammar</h1>
@@ -92,21 +1659,372 @@ margin-top:40px;
 
 </div>
 
-<a href="partsofspeech.html" class="subject-card">📚 Parts of Speech</a>
+<section id="grammar-topics" class="section">
 
-<a href="tense.html" class="subject-card">⏰ Tense</a>
+<div class="container">
 
-<a href="voice.html" class="subject-card">🔄 Voice Change</a>
+<h2 class="section-title">
+📚 English Grammar Topics
+</h2>
 
-<a href="narration.html" class="subject-card">💬 Narration</a>
+<div class="topics-grid">
 
-<a href="article.html" class="subject-card">📝 Article</a>
+<a href="partsofspeech.html" class="topic-card">
 
-<a href="preposition.html" class="subject-card">📍 Preposition</a>
+<div class="topic-icon">📚</div>
 
-<a href="rightforms.html" class="subject-card">✍️ Right Forms of Verbs</a>
+<div class="topic-content">
 
-<a href="english-mcq.html" class="subject-card">❓ English Grammar MCQ</a>
+<h3>Parts of Speech</h3>
+
+<p>Learn Noun, Pronoun, Verb, Adjective, Adverb, Preposition, Conjunction and Interjection.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="tense.html" class="topic-card">
+
+<div class="topic-icon">⏰</div>
+
+<div class="topic-content">
+
+<h3>Tense</h3>
+
+<p>Master Present, Past and Future Tense with examples.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="voice.html" class="topic-card">
+
+<div class="topic-icon">🔄</div>
+
+<div class="topic-content">
+
+<h3>Voice Change</h3>
+
+<p>Learn Active and Passive Voice step by step.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="narration.html" class="topic-card">
+
+<div class="topic-icon">💬</div>
+
+<div class="topic-content">
+
+<h3>Narration</h3>
+
+<p>Direct & Indirect Speech made easy.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="article.html" class="topic-card">
+
+<div class="topic-icon">📝</div>
+
+<div class="topic-content">
+
+<h3>Article</h3>
+
+<p>Use A, An and The correctly in sentences.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="preposition.html" class="topic-card">
+
+<div class="topic-icon">📍</div>
+
+<div class="topic-content">
+
+<h3>Preposition</h3>
+
+<p>Learn the correct use of common prepositions.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="rightforms.html" class="topic-card">
+
+<div class="topic-icon">✍️</div>
+
+<div class="topic-content">
+
+<h3>Right Forms of Verbs</h3>
+
+<p>Understand verb forms with simple rules and examples.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+<a href="english-mcq.html" class="topic-card">
+
+<div class="topic-icon">❓</div>
+
+<div class="topic-content">
+
+<h3>English Grammar MCQ</h3>
+
+<p>Practice hundreds of grammar questions with answers.</p>
+
+</div>
+
+<div class="topic-arrow">➜</div>
+
+</a>
+
+</div>
+
+</div>
+<!-- ===== FEATURES SECTION ===== -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+🌟 Why Learn English Grammar?
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">📚</div>
+
+<h3>Easy Lessons</h3>
+
+<p>Simple explanations with examples that anyone can understand.</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">📝</div>
+
+<h3>Practice MCQ</h3>
+
+<p>Improve your grammar skills with chapter-wise quizzes.</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">🎯</div>
+
+<h3>Exam Preparation</h3>
+
+<p>Helpful for Madhyamik, HS, Competitive Exams and Job Tests.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== STATISTICS ===== -->
+
+<section class="section stats-section">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-item">
+
+<h2>8+</h2>
+
+<p>Grammar Topics</p>
+
+</div>
+
+<div class="stat-item">
+
+<h2>100+</h2>
+
+<p>Examples</p>
+
+</div>
+
+<div class="stat-item">
+
+<h2>500+</h2>
+
+<p>MCQ Questions</p>
+
+</div>
+
+<div class="stat-item">
+
+<h2>FREE</h2>
+
+<p>Learning</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== RELATED TOPICS ===== -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+📖 Related Topics
+</h2>
+
+<div class="related-grid">
+
+<a href="voice.html">🔄 Voice Change</a>
+
+<a href="tense.html">⏰ Tense</a>
+
+<a href="narration.html">💬 Narration</a>
+
+<a href="article.html">📝 Article</a>
+
+<a href="preposition.html">📍 Preposition</a>
+
+<a href="english-mcq.html">❓ Grammar MCQ</a>
+
+</div>
+
+</div>
+
+</section>
+
+  <!--================ FAQ SECTION ================-->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+❓ Frequently Asked Questions
+</h2>
+
+<div class="faq-box">
+
+<details>
+
+<summary>English Grammar কেন শিখব?</summary>
+
+<p>English Grammar শিখলে Writing, Speaking, School Exam, Competitive Exam এবং চাকরির পরীক্ষায় ভালো ফল করা সহজ হয়।</p>
+
+</details>
+
+<details>
+
+<summary>এই Website কি সম্পূর্ণ Free?</summary>
+
+<p>হ্যাঁ। Learning Skills-এর সব Grammar Notes ও Practice সম্পূর্ণ বিনামূল্যে।</p>
+
+</details>
+
+<details>
+
+<summary>Grammar শেখার সঠিক ক্রম কী?</summary>
+
+<p>Parts of Speech → Tense → Voice Change → Narration → Article → Preposition → Right Forms of Verbs.</p>
+
+</details>
+
+<details>
+
+<summary>MCQ Practice কোথায় পাব?</summary>
+
+<p>English Grammar MCQ বিভাগে অধ্যায়ভিত্তিক অনুশীলন করতে পারবেন।</p>
+
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ CONTACT CARD ================-->
+
+<section class="section">
+
+<div class="container">
+
+<div class="contact-card">
+
+<h2>📞 Contact Learning Skills</h2>
+
+<p>কোনো প্রশ্ন, মতামত বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
+
+<a href="mailto:youremail@gmail.com" class="btn btn-primary">
+
+<i class="fas fa-envelope"></i>
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ NEWSLETTER ================-->
+
+<section class="section">
+
+<div class="container">
+
+<div class="newsletter">
+
+<h2>📩 Stay Updated</h2>
+
+<p>নতুন Grammar Notes ও Quiz প্রকাশ হলে সবার আগে জানতে আমাদের Website নিয়মিত ভিজিট করুন।</p>
+
+<a href="index.html" class="btn btn-primary">
+
+<i class="fas fa-globe"></i>
+
+Visit Home Page
+
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 <div style="text-align:center;">
 
@@ -118,16 +2036,333 @@ margin-top:40px;
 
 </div>
 
-<footer>
+<!--========== PREMIUM FOOTER ==========-->
 
-<h3>📚 Learning Skills</h3>
+<footer class="footer">
 
-<p>Free Educational Website for Students</p>
+<div class="container">
 
-<p>© 2026 Learning Skills. All Rights Reserved.</p>
+<div class="footer-grid">
+
+<!-- About -->
+
+<div class="footer-box">
+
+<h3>📘 Learning Skills</h3>
+
+<p>
+Learning Skills একটি সম্পূর্ণ বিনামূল্যের শিক্ষামূলক ওয়েবসাইট।
+এখানে English Grammar, GK, Computer, Mathematics, Science
+এবং বিভিন্ন পরীক্ষার প্রস্তুতির জন্য মানসম্মত স্টাডি ম্যাটেরিয়াল পাওয়া যায়।
+</p>
+
+</div>
+
+<!-- Quick Links -->
+
+<div class="footer-box">
+
+<h3>🔗 Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">🏠 Home</a></li>
+
+<li><a href="english.html">📘 English Grammar</a></li>
+
+<li><a href="blog.html">📰 Blog</a></li>
+
+<li><a href="quiz.html">📝 Quiz</a></li>
+
+<li><a href="contact.html">📞 Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- Grammar Topics -->
+
+<div class="footer-box">
+
+<h3>📚 Grammar Topics</h3>
+
+<ul>
+
+<li><a href="partsofspeech.html">Parts of Speech</a></li>
+
+<li><a href="tense.html">Tense</a></li>
+
+<li><a href="voice.html">Voice Change</a></li>
+
+<li><a href="narration.html">Narration</a></li>
+
+<li><a href="article.html">Article</a></li>
+
+<li><a href="preposition.html">Preposition</a></li>
+
+</ul>
+
+</div>
+
+<!-- Follow Us -->
+
+<div class="footer-box">
+
+<h3>🌐 Follow Us</h3>
+
+<ul>
+
+<li><a href="https://learningskills12.github.io">🌍 Official Website</a></li>
+
+<li><a href="#">▶ YouTube</a></li>
+
+<li><a href="#">📘 Facebook</a></li>
+
+<li><a href="#">📢 Telegram</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Learning Skills | All Rights Reserved
+
+</p>
+
+<p>
+
+Designed with ❤️ by Learning Skills
+
+</p>
+
+</div>
+
+</div>
 
 </footer>
 
+  <script>
+
+const menu=document.getElementById("menuToggle");
+
+const nav=document.getElementById("navLinks");
+
+menu.onclick=function(){
+
+nav.classList.toggle("show");
+
+};
+
+  </script>
+
+<script>
+
+function copyLink(){
+
+navigator.clipboard.writeText(window.location.href);
+
+alert("✅ Link Copied");
+
+}
+
+function sharePage(){
+
+if(navigator.share){
+
+navigator.share({
+
+title:document.title,
+
+url:window.location.href
+
+});
+
+}else{
+
+copyLink();
+
+}
+
+}
+
+// Search Topics
+
+document.getElementById("searchInput").addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let cards=document.querySelectorAll(".subject-card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+<script>
+
+/*========== BACK TO TOP ==========*/
+
+const topBtn=document.getElementById("backToTop");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+/*========== SCROLL PROGRESS ==========*/
+
+window.addEventListener("scroll",()=>{
+
+let scrollTop=document.documentElement.scrollTop;
+
+let scrollHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let percent=(scrollTop/scrollHeight)*100;
+
+document.getElementById("progressBar").style.width=percent+"%";
+
+});
+
+/*========== DARK MODE ==========*/
+
+const darkBtn=document.getElementById("darkBtn");
+
+darkBtn.onclick=()=>{
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload=()=>{
+
+if(localStorage.getItem("theme")==="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+</script>
+  <script>
+
+/*========== LOADER ==========*/
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.opacity="0";
+
+document.getElementById("loader").style.visibility="hidden";
+
+},600);
+
+});
+
+/*========== REVEAL ANIMATION ==========*/
+
+const reveals=document.querySelectorAll(".section");
+
+function reveal(){
+
+reveals.forEach(sec=>{
+
+let top=sec.getBoundingClientRect().top;
+
+let height=window.innerHeight;
+
+if(top<height-100){
+
+sec.classList.add("active");
+
+}
+
+});
+
+}
+
+reveals.forEach(sec=>sec.classList.add("reveal"));
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+/*========== ACTIVE MENU ==========*/
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+if(link.href===window.location.href){
+
+link.classList.add("active");
+
+}
+
+});
+
+  </script>
+
+  <!--========== SCROLL PROGRESS ==========-->
+
+<div id="progressBar"></div>
+
+<!--========== BACK TO TOP ==========-->
+
+<button id="backToTop">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
 </body>
 
 </html>
