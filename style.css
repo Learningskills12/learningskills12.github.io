@@ -1,395 +1,572 @@
-/*==================================================
-  Learning Skills - style.css v2.0
-  Part 1 : Reset • Body • Container • Header • Logo
-==================================================*/
+/* =====================================
+Learning Skills - Main Stylesheet
+File: css/style.css
+===================================== */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#eef8ff;
+color:#222;
+line-height:1.6;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+color:inherit;
+transition:.3s;
+}
+
+/* IMAGES */
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* =====================================
+HEADER
+===================================== */
+
+header{
+
+background:linear-gradient(90deg,#003366,#00AAFF);
+
+color:#fff;
+
+padding:40px 20px;
+
+text-align:center;
+
+}
+
+.title-box{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.side-logo{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+}
+
+header h1{
+
+font-size:2.7rem;
+
+font-weight:700;
+
+text-shadow:3px 3px 8px rgba(0,0,0,.3);
+
+}
+
+header p{
+
+margin-top:12px;
+
+font-size:18px;
+
+}
+
+/* =====================================
+NOTICE BAR
+===================================== */
+
+marquee{
+
+background:#FFD54F;
+
+padding:10px;
+
+font-weight:bold;
+
+color:#222;
+
+}
+
+/* =====================================
+NAVBAR
+===================================== */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#02284f;
+
+padding:14px;
+
+text-align:center;
+
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+nav a{
+
+display:inline-block;
+
+color:#fff;
+
+padding:10px 15px;
+
+font-weight:bold;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+background:#00AAFF;
+
+}
+
+/* SEARCH */
+
+#searchBox{
+
+padding:12px;
+
+margin-top:15px;
+
+width:260px;
+
+border:2px solid #ddd;
+
+border-radius:8px;
+
+outline:none;
+
+}
+
+#searchBox:focus{
+
+border-color:#00AAFF;
+
+}
+
+/* =====================================
+HERO
+===================================== */
+
+.hero{
+
+background:#fff;
+
+margin:25px;
+
+padding:50px 25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+text-align:center;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+color:#0066CC;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:800px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 24px;
+
+margin:8px;
+
+background:#0088CC;
+
+color:#fff;
+
+font-weight:bold;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#006FA3;
+
+transform:translateY(-3px);
+
+}
+
+/* ===================================================
+Learning Skills - Main Stylesheet
+File : css/style.css
+Part : 4.1
+=================================================== */
 
 /* ---------- RESET ---------- */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#eef8ff;
-    color:#222;
-    line-height:1.7;
-}
-
-/* ---------- IMAGE ---------- */
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-/* ---------- LINKS ---------- */
-
-a{
-    text-decoration:none;
-    color:inherit;
-    transition:.3s;
-}
-
-/* ---------- LIST ---------- */
-
-ul,
-ol{
-    padding-left:25px;
+font-family:Arial,sans-serif;
+background:#eef8ff;
+color:#222;
+line-height:1.7;
 }
 
 /* ---------- CONTAINER ---------- */
 
 .container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-/* ---------- PROGRESS BAR ---------- */
+/* ---------- LINKS ---------- */
 
-#progressBar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:0%;
-    height:4px;
-    background:#00aaff;
-    z-index:99999;
+a{
+text-decoration:none;
+color:inherit;
+transition:.3s;
 }
 
-/*==================================================
-                HEADER
-==================================================*/
+/* ---------- IMAGE ---------- */
 
-header{
-    background:linear-gradient(135deg,#003366,#00AAFF);
-    color:#fff;
-    text-align:center;
-    padding:40px 20px;
-    box-shadow:0 5px 18px rgba(0,0,0,.15);
+img{
+max-width:100%;
+display:block;
 }
 
-/* সব Topic Page-এর Logo */
+/* ---------- BUTTON ---------- */
 
-header img{
-    width:80px;
-    height:80px;
-    margin:0 auto 15px;
-    object-fit:contain;
+button{
+cursor:pointer;
+font-family:inherit;
 }
 
-/* Home Page-এ যদি দুই পাশে Logo ব্যবহার করেন */
-
-.side-logo{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.title-box{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-/* ---------- TITLE ---------- */
-
-header h1{
-    font-size:2.5rem;
-    font-weight:700;
-    margin-bottom:10px;
-    text-shadow:2px 2px 8px rgba(0,0,0,.3);
-}
-
-header p{
-    font-size:17px;
-    opacity:.95;
-}
-
-/*==================================================
-                BUTTON
-==================================================*/
+/* ---------- COMMON BUTTON ---------- */
 
 .btn{
-    display:inline-block;
-    padding:12px 24px;
-    margin:6px;
-    background:#0088cc;
-    color:#fff;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:.3s;
+display:inline-block;
+padding:14px 26px;
+border-radius:10px;
+background:#0088cc;
+color:#fff;
+font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#006fa3;
-    transform:translateY(-3px);
+background:#0066aa;
+transform:translateY(-3px);
 }
 
-/* ---------- BUTTON GROUP ---------- */
+/* ---------- SECTION ---------- */
 
-.top-buttons{
-    text-align:center;
-    margin:20px 0;
+section{
+padding:40px 0;
 }
 
-/*==================================================
-  Learning Skills - style.css v2.0
-  Part 2 : Search • Cards • Tables • Details • Code
-==================================================*/
+/* ---------- SECTION TITLE ---------- */
 
-/* ---------- SEARCH BOX ---------- */
-
-.search-box{
-    width:92%;
-    max-width:650px;
-    display:block;
-    margin:25px auto;
-    padding:14px 18px;
-    border:2px solid #ddd;
-    border-radius:12px;
-    outline:none;
-    font-size:16px;
-    transition:.3s;
-    background:#fff;
+.section-title{
+font-size:32px;
+text-align:center;
+color:#0066cc;
+margin-bottom:15px;
 }
 
-.search-box:focus{
-    border-color:#00AAFF;
-    box-shadow:0 0 12px rgba(0,170,255,.25);
+.section-subtitle{
+text-align:center;
+color:#666;
+max-width:700px;
+margin:0 auto 40px;
 }
 
-/* ---------- CARD ---------- */
+/* ---------- HEADER ---------- */
 
-.card{
-    background:#fff;
-    margin:22px 0;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 6px 18px rgba(0,0,0,.10);
-    border-left:6px solid #00AAFF;
-    transition:.3s;
+header{
+background:linear-gradient(90deg,#003366,#00aaff);
+color:#fff;
+text-align:center;
+padding:45px 20px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+.title-box{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
-.card h2{
-    color:#0066cc;
-    margin-bottom:15px;
-    font-size:28px;
+.side-logo{
+width:70px;
+height:70px;
+border-radius:50%;
 }
 
-.card h3{
-    color:#004f99;
-    margin:15px 0 10px;
+header h1{
+font-size:2.8rem;
+font-weight:700;
+letter-spacing:1px;
+text-shadow:3px 3px 10px rgba(0,0,0,.30);
 }
 
-.card p{
-    line-height:1.8;
-    margin-bottom:12px;
+header p{
+margin-top:15px;
+font-size:18px;
 }
 
-.card ul,
-.card ol{
-    margin-top:10px;
+/* ---------- MARQUEE ---------- */
+
+marquee{
+background:#ffd54f;
+color:#222;
+padding:10px;
+font-weight:bold;
 }
 
-.card li{
-    margin:8px 0;
+/* ---------- NAVBAR ---------- */
+
+nav{
+position:sticky;
+top:0;
+z-index:999;
+background:#02284f;
+padding:14px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
-/* ---------- TABLE ---------- */
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-    overflow:hidden;
+nav a{
+color:#fff;
+display:inline-block;
+padding:10px 16px;
+border-radius:8px;
+font-weight:bold;
 }
 
-table th{
-    background:#0066cc;
-    color:#fff;
-    padding:12px;
-    text-align:left;
+nav a:hover{
+background:#00aaff;
 }
 
-table td{
-    border:1px solid #ddd;
-    padding:12px;
+/* ---------- SEARCH ---------- */
+
+#searchBox{
+width:280px;
+max-width:100%;
+padding:12px;
+border:2px solid #ddd;
+border-radius:8px;
+outline:none;
+margin-top:15px;
 }
 
-table tr:nth-child(even){
-    background:#f7fbff;
+#searchBox:focus{
+border-color:#00aaff;
 }
 
-table tr:hover{
-    background:#eef8ff;
-}
-
-/* ---------- DETAILS ---------- */
-
-details{
-    background:#f8fbff;
-    border:1px solid #d9ecff;
-    border-radius:12px;
-    margin:12px 0;
-    overflow:hidden;
-}
-
-summary{
-    padding:15px;
-    cursor:pointer;
-    font-weight:bold;
-    color:#0055aa;
-}
-
-details p{
-    padding:0 15px 15px;
-}
-
-/* ---------- CODE ---------- */
-
-code{
-    background:#eef3ff;
-    padding:2px 6px;
-    border-radius:5px;
-    color:#c7254e;
-    font-family:Consolas,monospace;
-}
-
-pre{
-    background:#222;
-    color:#fff;
-    padding:18px;
-    border-radius:10px;
-    overflow:auto;
-    margin-top:15px;
-}
-
-/* ---------- BLOCKQUOTE ---------- */
-
-blockquote{
-    border-left:5px solid #00AAFF;
-    background:#f7fbff;
-    padding:15px 20px;
-    margin:15px 0;
-    font-style:italic;
-}
-
-/* ---------- HORIZONTAL LINE ---------- */
-
-hr{
-    border:none;
-    height:1px;
-    background:#ddd;
-    margin:25px 0;
-}
-
-/*==================================================
-  Learning Skills - style.css v2.0
-  Part 3 : Hero • Topic Cards • Footer • Utilities
-==================================================*/
-
-/* ---------- HERO SECTION ---------- */
+/* ---------- HERO ---------- */
 
 .hero{
-    background:#fff;
-    padding:60px 25px;
-    margin:30px 0;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
+background:#fff;
+margin:25px;
+border-radius:20px;
+padding:55px 25px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
 
 .hero h2{
-    font-size:2.2rem;
-    color:#0066cc;
-    margin-bottom:15px;
+font-size:36px;
+color:#0066cc;
+margin-bottom:20px;
 }
 
 .hero p{
-    max-width:800px;
-    margin:0 auto;
-    color:#555;
-    line-height:1.8;
+max-width:800px;
+margin:auto;
+font-size:18px;
+color:#555;
+line-height:1.8;
+}
+/* ===================================================
+PART 4.2
+Cards • Subject Cards • Grid • Statistics
+=================================================== */
+
+/* ---------- MAIN WRAPPER ---------- */
+
+.wrap{
+width:90%;
+max-width:1200px;
+margin:40px auto;
 }
 
-/* ---------- TOPIC GRID ---------- */
+/* ---------- COMMON CARD ---------- */
+
+.card{
+background:#fff;
+padding:25px;
+margin-bottom:25px;
+border-radius:18px;
+box-shadow:0 6px 18px rgba(0,0,0,.10);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+color:#0066cc;
+margin-bottom:15px;
+}
+
+.card p{
+color:#555;
+line-height:1.8;
+}
+
+/* ---------- GRID ---------- */
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin:30px 0;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 /* ---------- SUBJECT CARD ---------- */
 
 .subject-card{
 
-    background:#fff;
+display:block;  
 
-    border-radius:18px;
+background:#fff;  
 
-    padding:25px;
+padding:22px;  
 
-    text-align:center;
+border-radius:18px;  
 
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
+text-align:center;  
 
-    transition:.35s;
+box-shadow:0 6px 16px rgba(0,0,0,.12);  
 
-    border:2px solid transparent;
+transition:.35s;  
+
+border:2px solid transparent;
 
 }
 
 .subject-card:hover{
 
-    transform:translateY(-8px);
+transform:translateY(-8px);  
 
-    border-color:#00AAFF;
+border-color:#00AAFF;  
 
-    box-shadow:0 15px 35px rgba(0,170,255,.20);
+box-shadow:0 15px 30px rgba(0,170,255,.20);
 
 }
 
 .subject-icon{
 
-    font-size:55px;
+font-size:48px;  
 
-    margin-bottom:15px;
+display:block;  
+
+margin-bottom:15px;
 
 }
 
 .subject-card h3{
 
-    color:#003366;
+margin:10px 0;  
 
-    margin-bottom:10px;
+color:#003366;  
+
+font-size:22px;
 
 }
 
 .subject-card p{
 
-    color:#666;
+color:#666;  
 
-    font-size:15px;
+font-size:15px;
 
 }
 
@@ -397,77 +574,264 @@ hr{
 
 .topic-card{
 
-    display:flex;
+display:flex;  
 
-    align-items:center;
+align-items:center;  
 
-    gap:18px;
+gap:18px;  
 
-    background:#fff;
+background:#fff;  
 
-    padding:20px;
+padding:20px;  
 
-    border-radius:18px;
+border-radius:18px;  
 
-    margin:20px 0;
+margin-bottom:20px;  
 
-    box-shadow:0 6px 18px rgba(0,0,0,.10);
+box-shadow:0 6px 18px rgba(0,0,0,.10);  
 
-    transition:.3s;
+transition:.35s;
 
 }
 
 .topic-card:hover{
 
-    transform:translateY(-6px);
+transform:translateY(-6px);  
+
+box-shadow:0 14px 30px rgba(0,0,0,.15);
 
 }
 
 .topic-icon{
 
-    width:70px;
+width:65px;  
 
-    height:70px;
+height:65px;  
 
-    display:flex;
+border-radius:50%;  
 
-    align-items:center;
+background:#e8f4ff;  
 
-    justify-content:center;
+display:flex;  
 
-    border-radius:50%;
+align-items:center;  
 
-    background:#eef8ff;
+justify-content:center;  
 
-    font-size:30px;
+font-size:30px;
 
 }
 
 .topic-content{
 
-    flex:1;
+flex:1;
 
 }
 
 .topic-content h3{
 
-    color:#0055aa;
+color:#0055aa;  
 
-    margin-bottom:8px;
+margin-bottom:8px;
 
 }
 
 .topic-content p{
 
-    color:#666;
+color:#666;
 
 }
 
 .topic-arrow{
 
-    font-size:24px;
+font-size:24px;  
 
-    color:#00AAFF;
+color:#00AAFF;
+
+}
+
+/* ---------- HERO STATS ---------- */
+
+.stats{
+
+display:flex;  
+
+justify-content:center;  
+
+flex-wrap:wrap;  
+
+gap:20px;  
+
+margin-top:35px;
+
+}
+
+.stat-card{
+
+width:120px;  
+
+background:#eef8ff;  
+
+border-radius:18px;  
+
+padding:20px;  
+
+text-align:center;  
+
+box-shadow:0 5px 15px rgba(0,0,0,.10);  
+
+transition:.3s;
+
+}
+
+.stat-card:hover{
+
+transform:scale(1.06);
+
+}
+
+.stat-card h3{
+
+font-size:30px;  
+
+margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+font-size:14px;  
+
+font-weight:bold;  
+
+color:#444;
+
+}
+
+/* ===================================================
+PART 4.3
+Footer • Contact • Newsletter • Social Icons
+=================================================== */
+
+/* ---------- CONTACT SECTION ---------- */
+
+.contact-box{
+
+background:#ffffff;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 6px 18px rgba(0,0,0,.10);
+
+margin:40px 0;
+
+}
+
+.contact-box h2{
+
+color:#0066cc;
+
+margin-bottom:20px;
+
+}
+
+.contact-box p{
+
+margin:15px 0;
+
+font-size:17px;
+
+}
+
+.contact-box a{
+
+color:#0066cc;
+
+font-weight:bold;
+
+}
+
+.contact-box a:hover{
+
+text-decoration:underline;
+
+}
+
+/* ---------- NEWSLETTER ---------- */
+
+.newsletter{
+
+background:linear-gradient(135deg,#0066cc,#00aaff);
+
+color:#fff;
+
+padding:40px 25px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin:40px 0;
+
+}
+
+.newsletter h2{
+
+margin-bottom:15px;
+
+font-size:30px;
+
+}
+
+.newsletter p{
+
+margin-bottom:25px;
+
+}
+
+.newsletter input{
+
+width:320px;
+
+max-width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:10px;
+
+outline:none;
+
+margin-bottom:15px;
+
+}
+
+.newsletter button{
+
+padding:14px 28px;
+
+border:none;
+
+border-radius:10px;
+
+background:#fff;
+
+color:#0066cc;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+transform:translateY(-3px);
 
 }
 
@@ -475,401 +839,329 @@ hr{
 
 footer{
 
-    margin-top:60px;
+background:#02284f;
 
-    background:#02284f;
+color:#fff;
 
-    color:#fff;
+margin-top:60px;
 
-    text-align:center;
-
-    padding:35px 20px;
+padding:60px 20px 25px;
 
 }
 
-footer p{
+.footer-grid{
 
-    margin:8px 0;
+display:grid;
 
-}
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-.footer-links{
+gap:35px;
 
-    margin-top:15px;
-
-}
-
-.footer-links a{
-
-    color:#fff;
-
-    margin:0 10px;
-
-    font-weight:bold;
+margin-bottom:35px;
 
 }
 
-.footer-links a:hover{
+.footer-box h3{
 
-    color:#00AAFF;
+margin-bottom:18px;
 
-}
-
-/* ---------- UTILITIES ---------- */
-
-.text-center{
-
-    text-align:center;
+color:#6dc8ff;
 
 }
 
-.mt-20{
+.footer-box p{
 
-    margin-top:20px;
+line-height:1.8;
 
-}
-
-.mt-40{
-
-    margin-top:40px;
+color:#ddd;
 
 }
 
-.mb-20{
+.footer-box ul{
 
-    margin-bottom:20px;
+list-style:none;
 
-}
-
-.mb-40{
-
-    margin-bottom:40px;
+padding:0;
 
 }
 
-.round{
+.footer-box ul li{
 
-    border-radius:20px;
+margin-bottom:12px;
 
 }
 
-.shadow{
+.footer-box ul li a{
 
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
+color:#ddd;
 
-   }
-/*==================================================
-  Learning Skills - style.css v2.0
-  Part 4 : Dark Mode • FAQ • Loader • Back To Top
-==================================================*/
+transition:.3s;
 
-/* ---------- DARK MODE ---------- */
-
-.dark{
-    background:#111;
-    color:#f1f1f1;
 }
 
-.dark header{
-    background:linear-gradient(135deg,#111,#222);
+.footer-box ul li a:hover{
+
+color:#fff;
+
+padding-left:8px;
+
 }
 
-.dark .card,
-.dark .hero,
-.dark .subject-card,
-.dark .topic-card,
-.dark details{
-    background:#1f1f1f;
-    color:#fff;
-    border-color:#333;
+/* ---------- SOCIAL ICON ---------- */
+
+.social-links{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:18px;
+
 }
 
-.dark .card h2,
-.dark .hero h2,
-.dark .subject-card h3,
-.dark .topic-content h3{
-    color:#4db8ff;
+.social-links a{
+
+width:48px;
+
+height:48px;
+
+border-radius:50%;
+
+background:#0066cc;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#fff;
+
+font-size:20px;
+
+transition:.35s;
+
 }
 
-.dark p,
-.dark li,
-.dark td{
-    color:#ddd;
+.social-links a:hover{
+
+background:#00aaff;
+
+transform:translateY(-6px) scale(1.08);
+
 }
 
-.dark table th{
-    background:#0077cc;
+/* ---------- FOOTER BOTTOM ---------- */
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.2);
+
+margin-top:30px;
+
+padding-top:20px;
+
+text-align:center;
+
+font-size:15px;
+
+color:#ddd;
+
 }
 
-.dark table td{
-    border-color:#444;
+.footer-bottom a{
+
+color:#6dc8ff;
+
+font-weight:bold;
+
 }
 
-.dark .search-box{
-    background:#222;
-    color:#fff;
-    border-color:#444;
+.footer-bottom a:hover{
+
+color:#fff;
+
 }
 
-.dark .search-box::placeholder{
-    color:#bbb;
+/* ===================================================
+PART 4.4
+Utility • FAQ • Back To Top • Loader • Print
+=================================================== */
+
+/* ---------- FAQ ---------- */
+
+.faq-item{
+background:#fff;
+margin-bottom:18px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
 }
 
-.dark footer{
-    background:#000;
+.faq-question{
+width:100%;
+padding:18px 20px;
+background:#fff;
+border:none;
+font-size:18px;
+font-weight:bold;
+text-align:left;
+cursor:pointer;
 }
 
-.dark code{
-    background:#333;
-    color:#ffd54f;
+.faq-answer{
+display:none;
+padding:20px;
+line-height:1.8;
+color:#555;
 }
 
-.dark pre{
-    background:#000;
+.faq-item.active .faq-answer{
+display:block;
 }
 
 /* ---------- BACK TO TOP ---------- */
 
-#topBtn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:55px;
-    height:55px;
-    border:none;
-    border-radius:50%;
-    background:#00AAFF;
-    color:#fff;
-    font-size:22px;
-    cursor:pointer;
-    display:none;
-    z-index:9999;
-    transition:.3s;
-    box-shadow:0 8px 18px rgba(0,0,0,.25);
+#backToTop{
+position:fixed;
+bottom:25px;
+right:25px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#0066cc;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 6px 15px rgba(0,0,0,.20);
+transition:.3s;
+z-index:9999;
 }
 
-#topBtn:hover{
-    background:#0066cc;
-    transform:translateY(-5px);
-}
-
-/* ---------- FAQ ---------- */
-
-details{
-    transition:.3s;
-}
-
-details[open]{
-    box-shadow:0 6px 15px rgba(0,170,255,.15);
-}
-
-summary:hover{
-    background:#eef8ff;
-}
-
-.dark summary:hover{
-    background:#2d2d2d;
+#backToTop:hover{
+background:#0088cc;
+transform:translateY(-5px);
 }
 
 /* ---------- LOADER ---------- */
 
 #loader{
-    position:fixed;
-    inset:0;
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
 }
 
 .loader-circle{
-    width:65px;
-    height:65px;
-    border:6px solid #ddd;
-    border-top:6px solid #00AAFF;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
+width:70px;
+height:70px;
+border:6px solid #ddd;
+border-top:6px solid #0066cc;
+border-radius:50%;
+animation:spin 1s linear infinite;
 }
 
 @keyframes spin{
 
-    100%{
-        transform:rotate(360deg);
-    }
+100%{
 
-}
+transform:rotate(360deg);
 
-/* ---------- SCROLLBAR ---------- */
-
-::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#e8e8e8;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#00AAFF;
-    border-radius:10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:#0077cc;
-}
-
-/* ---------- SELECTION ---------- */
-
-::selection{
-    background:#00AAFF;
-    color:#fff;
-}
-
-/* ---------- SMOOTH ANIMATION ---------- */
-
-.fade-up{
-    animation:fadeUp .6s ease;
-}
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-   }
-
-/*==================================================
-  Learning Skills - style.css v2.0
-  Part 5 : Responsive • Print • Final Utilities
-==================================================*/
-
-/* ---------- RESPONSIVE ---------- */
-
-@media (max-width:992px){
-
-.container{
-    width:95%;
-}
-
-header h1{
-    font-size:2.2rem;
-}
-
-.hero h2{
-    font-size:2rem;
-}
-
-.cards{
-    grid-template-columns:repeat(2,1fr);
 }
 
 }
 
-@media (max-width:768px){
+/* ---------- PROGRESS BAR ---------- */
 
-header{
-    padding:30px 15px;
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:#00aaff;
+z-index:99999;
 }
 
-header img{
-    width:65px;
-    height:65px;
+/* ---------- UTILITIES ---------- */
+
+.text-center{
+text-align:center;
 }
 
-header h1{
-    font-size:1.9rem;
+.mt-20{
+margin-top:20px;
 }
 
-header p{
-    font-size:15px;
+.mt-40{
+margin-top:40px;
 }
 
-.hero{
-    padding:35px 18px;
+.mb-20{
+margin-bottom:20px;
 }
 
-.hero h2{
-    font-size:1.7rem;
+.mb-40{
+margin-bottom:40px;
 }
 
-.card{
-    padding:20px;
+.round{
+border-radius:20px;
 }
 
-.card h2{
-    font-size:22px;
+.shadow{
+box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
 
-.cards{
-    grid-template-columns:1fr;
+/* ---------- DARK MODE SUPPORT ---------- */
+
+.dark{
+background:#111;
+color:#fff;
 }
 
-.topic-card{
-    flex-direction:column;
-    text-align:center;
+.dark .card,
+.dark .topic-card,
+.dark .subject-card,
+.dark .hero,
+.dark .contact-box{
+background:#222;
+color:#fff;
 }
 
-.topic-icon{
-    margin-bottom:10px;
+.dark nav{
+background:#000;
 }
 
-table{
-    display:block;
-    overflow-x:auto;
-    white-space:nowrap;
+.dark footer{
+background:#000;
 }
 
-.btn{
-    width:100%;
-    text-align:center;
+.dark a{
+color:#6dc8ff;
 }
 
-.search-box{
-    width:100%;
+.dark .faq-item{
+background:#222;
 }
 
-.footer-links a{
-    display:block;
-    margin:10px 0;
+.dark .faq-question{
+background:#222;
+color:#fff;
 }
 
-}
-
-@media (max-width:480px){
-
-header img{
-    width:55px;
-    height:55px;
-}
-
-header h1{
-    font-size:1.6rem;
-}
-
-header p{
-    font-size:14px;
-}
-
-.card{
-    padding:18px;
-}
-
-.card h2{
-    font-size:20px;
-}
-
-.hero h2{
-    font-size:1.5rem;
-}
-
+.dark .faq-answer{
+color:#ddd;
 }
 
 /* ---------- PRINT ---------- */
@@ -878,55 +1170,66 @@ header p{
 
 nav,
 footer,
-#topBtn,
+#backToTop,
 #loader,
-.search-box,
-.top-buttons{
-    display:none !important;
+button{
+display:none!important;
 }
 
 body{
-    background:#fff;
-    color:#000;
+background:#fff;
+color:#000;
 }
 
 .card{
-    box-shadow:none;
-    border:1px solid #ccc;
-    break-inside:avoid;
+box-shadow:none;
+border:1px solid #ddd;
 }
 
 }
 
-/* ---------- COMMON SPACING ---------- */
+/* ---------- MOBILE ---------- */
 
-.py-20{
-    padding:20px 0;
+@media(max-width:768px){
+
+.container,
+.wrap{
+width:95%;
 }
 
-.py-40{
-    padding:40px 0;
+header h1{
+font-size:2rem;
 }
 
-.px-20{
-    padding-left:20px;
-    padding-right:20px;
+.hero{
+margin:15px;
+padding:35px 18px;
 }
 
-.text-left{
-    text-align:left;
+.hero h2{
+font-size:28px;
 }
 
-.text-right{
-    text-align:right;
+.cards{
+grid-template-columns:1fr;
 }
 
-/* ---------- FINAL ---------- */
-
-body{
-    overflow-x:hidden;
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
 }
 
-html{
-    scroll-behavior:smooth;
+.social-links{
+justify-content:center;
 }
+
+nav a{
+display:block;
+margin:8px 0;
+}
+
+#searchBox{
+width:100%;
+}
+
+  }
