@@ -4825,7 +4825,150 @@ progress.style.width=scrolled+"%";
 }
 
 };
+/* ===================================
+   SCROLL REVEAL ANIMATION
+=================================== */
 
+const revealElements = document.querySelectorAll(
+'.card,.topic-card,.section-heading,.faq-item');
+
+function revealOnScroll(){
+
+const windowHeight = window.innerHeight;
+
+revealElements.forEach(el=>{
+
+const top = el.getBoundingClientRect().top;
+
+if(top < windowHeight-100){
+
+el.classList.add("active");
+
+el.classList.add("fade-up");
+
+}
+
+});
+
+}
+
+window.addEventListener("scroll",revealOnScroll);
+
+revealOnScroll();
+
+
+/* ===================================
+   PRINT PAGE
+=================================== */
+
+const printBtn=document.getElementById("printBtn");
+
+if(printBtn){
+
+printBtn.onclick=()=>window.print();
+
+}
+
+
+/* ===================================
+   SHARE PAGE
+=================================== */
+
+const shareBtn=document.getElementById("shareBtn");
+
+if(shareBtn){
+
+shareBtn.onclick=()=>{
+
+if(navigator.share){
+
+navigator.share({
+
+title:document.title,
+
+text:"Learn English Grammar Free",
+
+url:location.href
+
+});
+
+}else{
+
+alert("Share is not supported on this device.");
+
+}
+
+};
+
+}
+
+
+/* ===================================
+   COPY LINK
+=================================== */
+
+const copyBtn=document.getElementById("copyBtn");
+
+if(copyBtn){
+
+copyBtn.onclick=()=>{
+
+navigator.clipboard.writeText(location.href);
+
+copyBtn.innerHTML='<i class="fas fa-check"></i> Copied';
+
+setTimeout(()=>{
+
+copyBtn.innerHTML='<i class="fas fa-link"></i> Copy Link';
+
+},2000);
+
+};
+
+}
+
+
+/* ===================================
+   NEWSLETTER
+=================================== */
+
+const newsletter=document.querySelector(".newsletter-form");
+
+if(newsletter){
+
+newsletter.addEventListener("submit",e=>{
+
+e.preventDefault();
+
+alert("✅ Thank you for subscribing!");
+
+newsletter.reset();
+
+});
+
+}
+
+
+/* ===================================
+   CURRENT YEAR
+=================================== */
+
+document.querySelectorAll(".year").forEach(el=>{
+
+el.textContent=new Date().getFullYear();
+
+});
+
+
+/* ===================================
+   CONSOLE MESSAGE
+=================================== */
+
+console.log(
+
+"Learning Skills | English Grammar Loaded Successfully"
+
+);
 </script>
 
 </body>
