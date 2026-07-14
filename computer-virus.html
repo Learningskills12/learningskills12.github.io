@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Computer Virus কী? | Learning Skills</title>
+
+<meta name="description" content="Computer Virus সম্পর্কে সম্পূর্ণ বাংলা নোট">
+
+<meta name="keywords" content="Computer Virus, Virus, Malware, Cyber Security">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef6ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#e53935;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#c62828,#ef5350);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:70px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#d32f2f;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b71c1c;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #e53935;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#d32f2f;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+line-height:1.8;
+font-size:16px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+th{
+background:#d32f2f;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#ff8a80;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>🦠 Computer Virus কী?</h1>
+
+<p>Computer Virus সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="antivirus.html" class="btn">
+🛡 Antivirus
+</a>
+
+<button class="btn" onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🦠 Computer Virus কী?</h2>
+
+<p>
+
+Computer Virus হলো একটি ক্ষতিকারক (Malicious) Program যা কম্পিউটারের ফাইল, সফটওয়্যার বা Operating System-এর ক্ষতি করতে পারে। এটি নিজের কপি তৈরি করে অন্য ফাইল বা কম্পিউটারে ছড়িয়ে পড়তে সক্ষম।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Computer Virus-এর উদ্দেশ্য</h2>
+
+<ul>
+
+<li>💻 কম্পিউটারের ক্ষতি করা।</li>
+
+<li>📂 গুরুত্বপূর্ণ ফাইল নষ্ট করা।</li>
+
+<li>🔑 ব্যক্তিগত তথ্য চুরি করা।</li>
+
+<li>🌐 নেটওয়ার্কে ছড়িয়ে পড়া।</li>
+
+<li>💰 অর্থ আদায়ের জন্য ফাইল লক করা।</li>
+
+<li>⚠️ সিস্টেমকে ধীর বা অচল করে দেওয়া।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Computer Virus-এর ইতিহাস</h2>
+
+<p>
+
+১৯৭১ সালে তৈরি <b>Creeper</b> প্রোগ্রামকে প্রথম কম্পিউটার ভাইরাসের পূর্বসূরি হিসেবে ধরা হয়। পরে ১৯৮৬ সালে <b>Brain Virus</b> প্রথম PC Virus হিসেবে পরিচিতি লাভ করে। বর্তমানে হাজার হাজার নতুন Virus ও Malware তৈরি হচ্ছে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Computer Virus-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🦠 নিজের কপি তৈরি করতে পারে।</li>
+
+<li>📂 অন্যান্য ফাইলে সংক্রমণ ঘটায়।</li>
+
+<li>⚠️ সিস্টেম ধীর করে দেয়।</li>
+
+<li>🔒 তথ্য নষ্ট বা চুরি করতে পারে।</li>
+
+<li>🌐 USB, Email ও Internet-এর মাধ্যমে ছড়ায়।</li>
+
+<li>🛡 Antivirus দ্বারা শনাক্ত করা সম্ভব।</li>
+
+</ul>
+
+</div>
+
+<!-- PART 2 -->
+
+<!-- =========================================
+PART 2 : Virus কীভাবে কাজ করে
+========================================= -->
+
+<div class="card">
+
+<h2>⚙️ Computer Virus কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>📥 প্রথমে Virus কম্পিউটারে প্রবেশ করে।</li>
+
+<li>📂 কোনো File বা Program-এর সাথে নিজেকে যুক্ত করে।</li>
+
+<li>🦠 নিজের কপি তৈরি করে অন্যান্য File-এ ছড়িয়ে পড়ে।</li>
+
+<li>⚠️ System-এর ক্ষতি করা শুরু করে।</li>
+
+<li>📤 USB, Email বা Internet-এর মাধ্যমে অন্য কম্পিউটারে ছড়িয়ে যায়।</li>
+
+</ol>
+
+</div>
+
+<!-- Virus Types -->
+
+<div class="card">
+
+<h2>🦠 Computer Virus-এর প্রকারভেদ</h2>
+
+<table>
+
+<tr>
+
+<th>Virus</th>
+
+<th>কাজ</th>
+
+</tr>
+
+<tr>
+
+<td>Boot Sector Virus</td>
+
+<td>Boot Sector আক্রান্ত করে</td>
+
+</tr>
+
+<tr>
+
+<td>File Infector Virus</td>
+
+<td>Program File আক্রান্ত করে</td>
+
+</tr>
+
+<tr>
+
+<td>Macro Virus</td>
+
+<td>Word ও Excel Document আক্রান্ত করে</td>
+
+</tr>
+
+<tr>
+
+<td>Resident Virus</td>
+
+<td>Memory-তে থেকে কাজ করে</td>
+
+</tr>
+
+<tr>
+
+<td>Multipartite Virus</td>
+
+<td>Boot Sector ও File উভয় আক্রান্ত করে</td>
+
+</tr>
+
+<tr>
+
+<td>Polymorphic Virus</td>
+
+<td>নিজের Code পরিবর্তন করে Antivirus এড়ায়</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>💾 Boot Sector Virus</h2>
+
+<p>
+
+এই Virus Hard Disk-এর Boot Sector আক্রান্ত করে। ফলে কম্পিউটার চালু হতে সমস্যা হয় এবং অনেক সময় Operating System Boot হয় না।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📂 File Infector Virus</h2>
+
+<p>
+
+এই Virus বিভিন্ন Program File (.exe, .com) আক্রান্ত করে এবং Program চালু হওয়ার সাথে সাথে সক্রিয় হয়ে যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📄 Macro Virus</h2>
+
+<p>
+
+Microsoft Word, Excel বা অন্যান্য Document-এর Macro ব্যবহার করে ছড়িয়ে পড়ে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🧠 Resident Virus</h2>
+
+<p>
+
+Resident Virus RAM-এ অবস্থান করে এবং Background-এ কাজ করতে থাকে। এটি নতুন File তৈরি বা খোলার সময় সংক্রমণ ঘটাতে পারে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🛡️ Multipartite Virus</h2>
+
+<p>
+
+এই Virus একই সঙ্গে Boot Sector এবং Program File উভয়কেই আক্রান্ত করতে পারে। তাই এটি তুলনামূলক বেশি বিপজ্জনক।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎭 Polymorphic Virus</h2>
+
+<p>
+
+Polymorphic Virus প্রতিবার সংক্রমণের সময় নিজের Code পরিবর্তন করে। ফলে Antivirus-এর জন্য এটি শনাক্ত করা কঠিন হয়ে যায়।
+
+</p>
+
+</div>
+
+<!-- PART 3 -->
+<!-- =========================================
+PART 3 : লক্ষণ • ক্ষতি • প্রতিরোধ
+========================================= -->
+
+<div class="card">
+
+<h2>⚠️ Computer Virus-এর লক্ষণ</h2>
+
+<ul>
+
+<li>🐢 কম্পিউটার ধীরে কাজ করে।</li>
+
+<li>💥 বারবার Hang বা Restart হয়।</li>
+
+<li>❌ File নিজে থেকেই Delete বা Corrupt হয়ে যায়।</li>
+
+<li>📂 অজানা File ও Folder তৈরি হয়।</li>
+
+<li>📢 অপ্রয়োজনীয় Pop-up Advertisement দেখা যায়।</li>
+
+<li>🌐 Internet অস্বাভাবিকভাবে Slow হয়ে যায়।</li>
+
+<li>⚙️ কিছু Program খুলতে সমস্যা হয়।</li>
+
+<li>🔋 CPU ও RAM-এর ব্যবহার অস্বাভাবিক বেড়ে যায়।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>💥 Computer Virus-এর ক্ষতি</h2>
+
+<ul>
+
+<li>📂 গুরুত্বপূর্ণ Data নষ্ট করে।</li>
+
+<li>🔒 File Encrypt করে মুক্তিপণ (Ransom) দাবি করতে পারে।</li>
+
+<li>👤 ব্যক্তিগত তথ্য ও Password চুরি করতে পারে।</li>
+
+<li>💻 Operating System ক্ষতিগ্রস্ত হতে পারে।</li>
+
+<li>🌐 Network-এর অন্যান্য Computer-এ ছড়িয়ে পড়তে পারে।</li>
+
+<li>💸 আর্থিক ক্ষতির কারণ হতে পারে।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📥 Virus কীভাবে ছড়ায়?</h2>
+
+<ul>
+
+<li>💾 Infected USB Drive</li>
+
+<li>📧 Email Attachment</li>
+
+<li>🌐 ক্ষতিকর Website</li>
+
+<li>⬇️ Pirated Software Download</li>
+
+<li>🎮 Crack Software ও Game</li>
+
+<li>📁 File Sharing</li>
+
+<li>☁️ অনিরাপদ Download</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🛡️ Virus থেকে বাঁচার উপায়</h2>
+
+<ul>
+
+<li>✅ সবসময় Updated Antivirus ব্যবহার করুন।</li>
+
+<li>✅ Windows ও Software Update রাখুন।</li>
+
+<li>✅ অজানা Email Attachment খুলবেন না।</li>
+
+<li>✅ Pirated Software ব্যবহার করবেন না।</li>
+
+<li>✅ USB ব্যবহারের আগে Scan করুন।</li>
+
+<li>✅ গুরুত্বপূর্ণ Data Backup রাখুন।</li>
+
+<li>✅ Firewall চালু রাখুন।</li>
+
+<li>✅ নিরাপদ Website থেকে Download করুন।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🧹 Virus অপসারণের উপায়</h2>
+
+<ol>
+
+<li>🛡️ Antivirus দিয়ে Full Scan করুন।</li>
+
+<li>🔄 Virus Definition Update করুন।</li>
+
+<li>🗑️ আক্রান্ত File Delete বা Quarantine করুন।</li>
+
+<li>💾 প্রয়োজনে Safe Mode-এ Scan করুন।</li>
+
+<li>♻️ গুরুতর সংক্রমণে Operating System পুনরায় Install করুন।</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>📌 গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>🦠 সব Malware Virus নয়, তবে সব Virus হলো Malware।</li>
+
+<li>🛡️ Antivirus ১০০% নিরাপত্তা দিতে পারে না।</li>
+
+<li>🔄 নিয়মিত Update করলে নিরাপত্তা অনেক বাড়ে।</li>
+
+<li>👨‍💻 নিরাপদ Browsing অভ্যাস Virus প্রতিরোধে গুরুত্বপূর্ণ।</li>
+
+</ul>
+
+</div>
+
+<!-- PART 4 -->
+<!-- =========================================
+PART 4 : Table • FAQ • Quick Revision • Quiz
+========================================= -->
+
+<div class="card">
+
+<h2>📊 Computer Virus Comparison</h2>
+
+<table>
+
+<tr>
+<th>Virus</th>
+<th>প্রধান লক্ষ্য</th>
+<th>বিপদের মাত্রা</th>
+</tr>
+
+<tr>
+<td>Boot Sector Virus</td>
+<td>Boot Sector</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>File Infector</td>
+<td>Program File</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>Macro Virus</td>
+<td>Document</td>
+<td>⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>Resident Virus</td>
+<td>Memory</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td>Polymorphic Virus</td>
+<td>নিজের Code পরিবর্তন করে</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Computer Virus একটি ক্ষতিকারক Program।</li>
+
+<li>✅ এটি নিজের কপি তৈরি করে ছড়িয়ে পড়ে।</li>
+
+<li>✅ Virus File, Memory ও Boot Sector আক্রান্ত করতে পারে।</li>
+
+<li>✅ Antivirus ও Firewall নিরাপত্তা বাড়ায়।</li>
+
+<li>✅ নিরাপদ Internet ব্যবহার Virus প্রতিরোধে সাহায্য করে।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❓ FAQ</h2>
+
+<details>
+
+<summary><b>১. Computer Virus কী?</b></summary>
+
+<p>Computer Virus হলো এমন একটি ক্ষতিকারক Program যা কম্পিউটারের ক্ষতি করে এবং অন্য ফাইলে ছড়িয়ে পড়ে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>২. Virus কীভাবে ছড়ায়?</b></summary>
+
+<p>USB Drive, Internet, Email Attachment, Pirated Software এবং ক্ষতিকর Website-এর মাধ্যমে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৩. Antivirus কি সব Virus ধরতে পারে?</b></summary>
+
+<p>বেশিরভাগ Virus ধরতে পারে, তবে Updated না থাকলে নতুন Virus শনাক্ত নাও করতে পারে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৪. Virus থেকে বাঁচার সবচেয়ে ভালো উপায় কী?</b></summary>
+
+<p>Updated Antivirus ব্যবহার করা এবং সন্দেহজনক File Download না করা।</p>
+
+</details>
+
+</div>
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+
+<summary>১. Computer Virus কী?</summary>
+
+<p>✅ একটি ক্ষতিকারক Program।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>২. Virus কোথায় ছড়াতে পারে?</summary>
+
+<p>✅ File, USB, Internet ও Network-এর মাধ্যমে।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৩. Virus থেকে সুরক্ষার জন্য কী ব্যবহার করা হয়?</summary>
+
+<p>✅ Antivirus Software।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৪. কোন Virus নিজের Code পরিবর্তন করে?</summary>
+
+<p>✅ Polymorphic Virus।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৫. Boot Sector Virus কী আক্রান্ত করে?</summary>
+
+<p>✅ Hard Disk-এর Boot Sector।</p>
+
+</details>
+
+</div>
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="antivirus.html">🛡️ Antivirus</a></li>
+
+<li><a href="malware.html">☠️ Malware</a></li>
+
+<li><a href="firewall.html">🔥 Firewall</a></li>
+
+<li><a href="computer-security.html">🔐 Computer Security</a></li>
+
+<li><a href="cyber-security.html">🌐 Cyber Security</a></li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Computer Virus একটি গুরুতর Cyber Threat। নিরাপদ Browsing, Updated Antivirus, Firewall এবং নিয়মিত Backup রাখার মাধ্যমে Virus-এর ঝুঁকি অনেকটাই কমানো যায়।
+
+</p>
+
+</div>
+
+<!-- PART 5 -->
+<!-- =========================================
+PART 5 : Navigation • Footer • JavaScript
+========================================= -->
+
+<!-- Navigation Buttons -->
+
+<div class="top-buttons">
+
+<a href="index.html" class="btn">
+🏠 Back To Home
+</a>
+
+<a href="antivirus.html" class="btn">
+🛡️ Previous Chapter
+</a>
+
+<a href="firewall.html" class="btn">
+➡ Next Chapter
+</a>
+
+</div>
+
+<!-- Back To Top -->
+
+<button onclick="topFunction()" id="topBtn" title="Back To Top">
+⬆
+</button>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© <span id="year"></span> Learning Skills
+
+</p>
+
+<p>
+
+Made with ❤️ for Students
+
+</p>
+
+</footer>
+
+<style>
+
+/* Footer */
+
+footer{
+
+margin-top:40px;
+
+background:linear-gradient(90deg,#c62828,#ef5350);
+
+color:#fff;
+
+text-align:center;
+
+padding:25px;
+
+font-weight:bold;
+
+font-size:15px;
+
+}
+
+/* Back To Top */
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#ff9800;
+
+color:#fff;
+
+border:none;
+
+border-radius:50%;
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+background:#e68900;
+
+transform:translateY(-4px);
+
+}
+
+/* Dark Mode */
+
+.dark footer{
+
+background:#111;
+
+}
+
+.dark table{
+
+color:#fff;
+
+}
+
+.dark th{
+
+background:#c62828;
+
+}
+
+.dark td{
+
+border:1px solid #555;
+
+}
+
+.dark details{
+
+color:#fff;
+
+}
+
+</style>
+
+<script>
+
+/* Live Search */
+
+function searchTopic(){
+
+const input=document.getElementById("searchInput").value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.display=
+
+card.innerText.toLowerCase().includes(input)
+
+?
+
+"block"
+
+:
+
+"none";
+
+});
+
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem(
+
+"theme",
+
+document.body.classList.contains("dark")
+
+?
+
+"dark"
+
+:
+
+"light"
+
+);
+
+}
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+/* Progress Bar + Top Button */
+
+window.onscroll=function(){
+
+let scroll=document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+document.getElementById("progressBar").style.width=(scroll/height*100)+"%";
+
+if(scroll>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+}
+
+/* Back To Top */
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* Footer Year */
+
+document.getElementById("year").innerHTML=
+
+new Date().getFullYear();
+
+</script>
+
+</body>
+
+</html>
