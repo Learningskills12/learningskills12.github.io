@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Computing কী? | Learning Skills</title>
+
+<meta name="description" content="Cloud Computing সম্পর্কে সম্পূর্ণ বাংলা নোট">
+
+<meta name="keywords" content="Cloud Computing, Cloud, AWS, Azure, Google Cloud">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f9ff;
+color:#222;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#0288d1;
+z-index:9999;
+}
+
+header{
+background:linear-gradient(90deg,#0288d1,#26c6da);
+color:#fff;
+text-align:center;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header img{
+width:65px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:92%;
+max-width:650px;
+display:block;
+margin:20px auto;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+outline:none;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#0288d1;
+color:#fff;
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0277bd;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:18px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-left:8px solid #0288d1;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0288d1;
+margin-bottom:12px;
+}
+
+.card p,
+.card li{
+font-size:16px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#0288d1;
+color:#fff;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+.dark .card{
+background:#222;
+}
+
+.dark .card h2{
+color:#4fc3f7;
+}
+
+.dark .card p,
+.dark .card li{
+color:#ddd;
+}
+
+code{
+background:#f2f2f2;
+padding:3px 6px;
+border-radius:5px;
+font-family:monospace;
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<div id="progressBar"></div>
+
+<header>
+
+<img src="logo.png" alt="Learning Skills">
+
+<h1>☁️ Cloud Computing কী?</h1>
+
+<p>Cloud Computing সম্পর্কে সম্পূর্ণ বাংলা নোট</p>
+
+</header>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="এই পেজে খুঁজুন..."
+onkeyup="searchTopic()">
+
+<div class="top-buttons">
+
+<a href="computer-virus.html" class="btn">🦠 Computer Virus</a>
+
+<button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>☁️ Cloud Computing কী?</h2>
+
+<p>
+
+<b>Cloud Computing</b> হলো ইন্টারনেটের মাধ্যমে Server, Storage, Database, Software, Networking এবং অন্যান্য কম্পিউটিং সেবা ব্যবহার করার প্রযুক্তি। এতে নিজের কম্পিউটারে সবকিছু সংরক্ষণ না করে অনলাইনের Cloud Server ব্যবহার করা হয়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Cloud Computing-এর প্রধান উদ্দেশ্য</h2>
+
+<ul>
+
+<li>☁️ অনলাইনে Data সংরক্ষণ করা।</li>
+
+<li>💻 শক্তিশালী Computing Service ব্যবহার করা।</li>
+
+<li>🌍 যেকোনো স্থান থেকে Data Access করা।</li>
+
+<li>⚡ কম খরচে IT Service ব্যবহার করা।</li>
+
+<li>🔄 সহজে Backup ও Recovery করা।</li>
+
+<li>📈 প্রয়োজন অনুযায়ী Resource বাড়ানো বা কমানো।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Cloud Computing-এর সংক্ষিপ্ত ইতিহাস</h2>
+
+<p>
+
+১৯৬০-এর দশকে <b>John McCarthy</b> Computing-কে Utility Service হিসেবে ব্যবহারের ধারণা দেন। পরবর্তীতে Amazon Web Services (AWS), Microsoft Azure এবং Google Cloud-এর মাধ্যমে Cloud Computing বিশ্বব্যাপী জনপ্রিয় হয়ে ওঠে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Cloud Computing-এর বৈশিষ্ট্য</h2>
+
+<ul>
+
+<li>🌍 Internet-এর মাধ্যমে ব্যবহার করা যায়।</li>
+
+<li>📱 যেকোনো Device থেকে Access করা যায়।</li>
+
+<li>📈 সহজে Resource বাড়ানো বা কমানো যায়।</li>
+
+<li>🔄 Automatic Backup সুবিধা রয়েছে।</li>
+
+<li>💰 ব্যবহার অনুযায়ী খরচ দিতে হয়।</li>
+
+<li>🔒 উন্নত Security সুবিধা পাওয়া যায়।</li>
+
+</ul>
+
+</div>
+
+<!-- PART 2 -->
+
+ <!-- =========================================
+PART 2 : Cloud Computing কীভাবে কাজ করে
+========================================= -->
+
+<div class="card">
+
+<h2>⚙️ Cloud Computing কীভাবে কাজ করে?</h2>
+
+<ol>
+
+<li>🌐 ব্যবহারকারী Internet-এর মাধ্যমে Cloud Service-এ সংযুক্ত হয়।</li>
+
+<li>☁️ Request Cloud Server-এ পাঠানো হয়।</li>
+
+<li>💾 Server প্রয়োজনীয় Data বা Application প্রসেস করে।</li>
+
+<li>📤 ফলাফল আবার ব্যবহারকারীর Device-এ পাঠানো হয়।</li>
+
+<li>🔄 সমস্ত Data Cloud Data Center-এ নিরাপদে সংরক্ষিত থাকে।</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>☁️ Cloud Computing-এর প্রকারভেদ</h2>
+
+<table>
+
+<tr>
+
+<th>Cloud Type</th>
+
+<th>ব্যবহার</th>
+
+</tr>
+
+<tr>
+
+<td>Public Cloud</td>
+
+<td>সবার জন্য উন্মুক্ত Cloud Service</td>
+
+</tr>
+
+<tr>
+
+<td>Private Cloud</td>
+
+<td>একটি নির্দিষ্ট প্রতিষ্ঠান ব্যবহার করে</td>
+
+</tr>
+
+<tr>
+
+<td>Hybrid Cloud</td>
+
+<td>Public ও Private Cloud-এর সমন্বয়</td>
+
+</tr>
+
+<tr>
+
+<td>Community Cloud</td>
+
+<td>একাধিক প্রতিষ্ঠানের যৌথ Cloud</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>🌍 Public Cloud</h2>
+
+<p>
+
+Public Cloud এমন একটি Cloud যেখানে Service Provider সকল ব্যবহারকারীর জন্য Cloud Service প্রদান করে। উদাহরণ: Google Drive, Dropbox, AWS।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🏢 Private Cloud</h2>
+
+<p>
+
+Private Cloud শুধুমাত্র একটি প্রতিষ্ঠান বা কোম্পানির জন্য ব্যবহৃত হয়। এতে নিরাপত্তা বেশি থাকে এবং Data সম্পূর্ণ নিয়ন্ত্রণে রাখা যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔄 Hybrid Cloud</h2>
+
+<p>
+
+Hybrid Cloud হলো Public Cloud এবং Private Cloud-এর সমন্বয়। এতে গুরুত্বপূর্ণ Data Private Cloud-এ এবং সাধারণ কাজ Public Cloud-এ রাখা যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🤝 Community Cloud</h2>
+
+<p>
+
+Community Cloud একাধিক প্রতিষ্ঠান যৌথভাবে ব্যবহার করে। সাধারণত একই ধরনের কাজ বা নিরাপত্তা নীতির প্রতিষ্ঠানগুলো এটি ব্যবহার করে।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🛠️ Cloud Service Model</h2>
+
+<table>
+
+<tr>
+
+<th>Service</th>
+
+<th>পূর্ণরূপ</th>
+
+<th>ব্যবহার</th>
+
+</tr>
+
+<tr>
+
+<td>IaaS</td>
+
+<td>Infrastructure as a Service</td>
+
+<td>Virtual Server ও Storage</td>
+
+</tr>
+
+<tr>
+
+<td>PaaS</td>
+
+<td>Platform as a Service</td>
+
+<td>Application Development Platform</td>
+
+</tr>
+
+<tr>
+
+<td>SaaS</td>
+
+<td>Software as a Service</td>
+
+<td>Internet-এর মাধ্যমে Software ব্যবহার</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>💻 IaaS (Infrastructure as a Service)</h2>
+
+<p>
+
+IaaS-এ ব্যবহারকারী Virtual Machine, Storage, Network এবং Server ভাড়া নিতে পারে। Hardware কেনার প্রয়োজন হয় না।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚙️ PaaS (Platform as a Service)</h2>
+
+<p>
+
+PaaS Developers-দের জন্য একটি প্রস্তুত Platform প্রদান করে যেখানে Application তৈরি, Test এবং Deploy করা যায়।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📦 SaaS (Software as a Service)</h2>
+
+<p>
+
+SaaS-এ Internet-এর মাধ্যমে Software ব্যবহার করা যায়। Software Install করার প্রয়োজন হয় না।
+
+উদাহরণ: Gmail, Google Docs, Microsoft 365।
+
+</p>
+
+</div>
+
+<!-- PART 3 --> 
+
+<!-- =========================================
+PART 3 : ব্যবহার • সুবিধা • অসুবিধা • Provider
+========================================= -->
+
+<div class="card">
+
+<h2>🌍 Cloud Computing-এর ব্যবহার</h2>
+
+<ul>
+
+<li>☁️ Online Data Storage</li>
+
+<li>🌐 Website Hosting</li>
+
+<li>📱 Mobile Application</li>
+
+<li>💻 Software Development</li>
+
+<li>🤖 Artificial Intelligence (AI)</li>
+
+<li>📊 Big Data Analytics</li>
+
+<li>🎮 Online Gaming</li>
+
+<li>📹 Video Streaming</li>
+
+<li>🏫 Online Education</li>
+
+<li>💼 Business Management</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>✅ Cloud Computing-এর সুবিধা</h2>
+
+<ul>
+
+<li>🌍 পৃথিবীর যেকোনো স্থান থেকে Data ব্যবহার করা যায়।</li>
+
+<li>💰 Hardware কেনার খরচ কমে যায়।</li>
+
+<li>📈 প্রয়োজন অনুযায়ী Storage ও Server বাড়ানো যায়।</li>
+
+<li>🔄 Automatic Backup সুবিধা পাওয়া যায়।</li>
+
+<li>⚡ দ্রুত Service ব্যবহার করা যায়।</li>
+
+<li>👥 একাধিক ব্যক্তি একই File-এ একসাথে কাজ করতে পারে।</li>
+
+<li>🔒 উন্নত Security ও Data Recovery সুবিধা রয়েছে।</li>
+
+<li>🛠️ Maintenance-এর ঝামেলা কম।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❌ Cloud Computing-এর অসুবিধা</h2>
+
+<ul>
+
+<li>🌐 Internet ছাড়া ব্যবহার করা কঠিন।</li>
+
+<li>🐢 Slow Internet হলে কাজ ধীর হয়ে যায়।</li>
+
+<li>💳 কিছু Service Paid হতে পারে।</li>
+
+<li>🔒 Privacy নিয়ে উদ্বেগ থাকতে পারে।</li>
+
+<li>⚠️ Server Down হলে Service সাময়িকভাবে বন্ধ হতে পারে।</li>
+
+<li>📶 Network-এর উপর সম্পূর্ণ নির্ভরশীল।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🏢 জনপ্রিয় Cloud Provider</h2>
+
+<table>
+
+<tr>
+
+<th>Provider</th>
+
+<th>প্রধান Service</th>
+
+</tr>
+
+<tr>
+
+<td>Amazon Web Services (AWS)</td>
+
+<td>বিশ্বের বৃহত্তম Cloud Platform</td>
+
+</tr>
+
+<tr>
+
+<td>Microsoft Azure</td>
+
+<td>Enterprise Cloud Service</td>
+
+</tr>
+
+<tr>
+
+<td>Google Cloud Platform (GCP)</td>
+
+<td>AI ও Data Analytics</td>
+
+</tr>
+
+<tr>
+
+<td>IBM Cloud</td>
+
+<td>Business Cloud Solution</td>
+
+</tr>
+
+<tr>
+
+<td>Oracle Cloud</td>
+
+<td>Database ও Enterprise Service</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>🔐 Cloud Security</h2>
+
+<ul>
+
+<li>🔑 Strong Password ব্যবহার করুন।</li>
+
+<li>📱 Two-Factor Authentication (2FA) চালু করুন।</li>
+
+<li>🔄 নিয়মিত Data Backup রাখুন।</li>
+
+<li>👤 Access Permission নিয়ন্ত্রণ করুন।</li>
+
+<li>🔒 Data Encryption ব্যবহার করুন।</li>
+
+<li>⬆️ Software নিয়মিত Update করুন।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>💡 Cloud Computing সম্পর্কে গুরুত্বপূর্ণ তথ্য</h2>
+
+<ul>
+
+<li>☁️ Google Drive একটি Cloud Storage Service।</li>
+
+<li>📧 Gmail Cloud Technology ব্যবহার করে।</li>
+
+<li>🎬 Netflix Cloud-এর মাধ্যমে ভিডিও সরবরাহ করে।</li>
+
+<li>🎵 Spotify Cloud ব্যবহার করে গান Streaming করে।</li>
+
+<li>💼 বর্তমানে অধিকাংশ বড় কোম্পানি Cloud Computing ব্যবহার করে।</li>
+
+<li>🚀 ভবিষ্যতের IT প্রযুক্তির অন্যতম ভিত্তি হলো Cloud Computing।</li>
+
+</ul>
+
+</div>
+
+<!-- PART 4 -->
+
+<!-- =========================================
+PART 4 : Comparison • FAQ • Quick Revision
+========================================= -->
+
+<div class="card">
+
+<h2>📊 Cloud Storage-এর তুলনা</h2>
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Company</th>
+<th>Free Storage</th>
+</tr>
+
+<tr>
+<td>Google Drive</td>
+<td>Google</td>
+<td>15 GB</td>
+</tr>
+
+<tr>
+<td>OneDrive</td>
+<td>Microsoft</td>
+<td>5 GB</td>
+</tr>
+
+<tr>
+<td>Dropbox</td>
+<td>Dropbox Inc.</td>
+<td>2 GB</td>
+</tr>
+
+<tr>
+<td>iCloud</td>
+<td>Apple</td>
+<td>5 GB</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>⚙️ Cloud Computing ব্যবহারের ধাপ</h2>
+
+<ol>
+
+<li>☁️ একটি Cloud Provider নির্বাচন করুন।</li>
+
+<li>📝 Account তৈরি করুন।</li>
+
+<li>📂 প্রয়োজনীয় Storage বা Service নির্বাচন করুন।</li>
+
+<li>📤 File Upload করুন।</li>
+
+<li>🌐 Internet-এর মাধ্যমে যেকোনো Device থেকে Access করুন।</li>
+
+<li>🔄 Data Share ও Backup করুন।</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ Quick Revision</h2>
+
+<ul>
+
+<li>✅ Cloud Computing হলো Internet-এর মাধ্যমে Computing Service ব্যবহার করা।</li>
+
+<li>✅ প্রধান Cloud Model: Public, Private, Hybrid, Community।</li>
+
+<li>✅ Service Model: IaaS, PaaS, SaaS।</li>
+
+<li>✅ জনপ্রিয় Provider: AWS, Azure, Google Cloud।</li>
+
+<li>✅ Cloud Storage Data নিরাপদে সংরক্ষণ করে।</li>
+
+<li>✅ Internet থাকলে যেকোনো স্থান থেকে ব্যবহার করা যায়।</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❓ FAQ (প্রশ্ন ও উত্তর)</h2>
+
+<details>
+
+<summary><b>১. Cloud Computing কী?</b></summary>
+
+<p>Cloud Computing হলো Internet-এর মাধ্যমে বিভিন্ন Computing Service ব্যবহার করার প্রযুক্তি।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>২. Cloud Storage কী?</b></summary>
+
+<p>Cloud Storage হলো অনলাইনে Data সংরক্ষণ করার ব্যবস্থা।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৩. SaaS-এর উদাহরণ কী?</b></summary>
+
+<p>Google Docs, Gmail এবং Microsoft 365।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৪. বিশ্বের সবচেয়ে জনপ্রিয় Cloud Provider কোনটি?</b></summary>
+
+<p>Amazon Web Services (AWS)।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>৫. Cloud Computing-এর সবচেয়ে বড় সুবিধা কী?</b></summary>
+
+<p>যেকোনো স্থান থেকে Internet-এর মাধ্যমে সহজে Data ও Service ব্যবহার করা যায়।</p>
+
+</details>
+
+</div>
+
+<div class="card">
+
+<h2>📝 নিজেকে যাচাই করুন</h2>
+
+<details>
+
+<summary>১. Cloud Computing কী?</summary>
+
+<p>✅ Internet-এর মাধ্যমে Computing Service ব্যবহার করার প্রযুক্তি।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>২. Cloud-এর কত প্রকার?</summary>
+
+<p>✅ চার প্রকার (Public, Private, Hybrid, Community)।</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৩. SaaS-এর পূর্ণরূপ কী?</summary>
+
+<p>✅ Software as a Service.</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৪. AWS-এর পূর্ণরূপ কী?</summary>
+
+<p>✅ Amazon Web Services.</p>
+
+</details>
+
+<br>
+
+<details>
+
+<summary>৫. Cloud Computing-এর একটি সুবিধা লিখুন।</summary>
+
+<p>✅ যেকোনো স্থান থেকে সহজে Data Access করা যায়।</p>
+
+</details>
+
+</div>
+
+<div class="card">
+
+<h2>🔗 Related Topics</h2>
+
+<ul>
+
+<li><a href="computer-virus.html">🦠 Computer Virus</a></li>
+
+<li><a href="antivirus.html">🛡️ Antivirus</a></li>
+
+<li><a href="firewall.html">🔥 Firewall</a></li>
+
+<li><a href="network.html">🌐 Computer Network</a></li>
+
+<li><a href="internet.html">🌍 Internet</a></li>
+
+<li><a href="cyber-security.html">🔒 Cyber Security</a></li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🏁 উপসংহার</h2>
+
+<p>
+
+Cloud Computing আধুনিক তথ্যপ্রযুক্তির একটি গুরুত্বপূর্ণ অংশ। এটি কম খরচে, দ্রুত এবং নিরাপদভাবে Data সংরক্ষণ, Software ব্যবহার এবং বিভিন্ন Online Service পরিচালনা করতে সাহায্য করে। বর্তমান ও ভবিষ্যতের IT জগতে Cloud Computing-এর গুরুত্ব প্রতিনিয়ত বৃদ্ধি পাচ্ছে।
+
+</p>
+
+</div>
+
+<!-- PART 5 -->
+
+<!-- =========================================
+PART 5 : Navigation • Footer • JavaScript
+========================================= -->
+
+<!-- Navigation -->
+
+<div class="top-buttons">
+
+<a href="index.html" class="btn">
+🏠 Back To Home
+</a>
+
+<a href="computer-virus.html" class="btn">
+⬅ Previous Chapter
+</a>
+
+<a href="virtualization.html" class="btn">
+➡ Next Chapter
+</a>
+
+</div>
+
+<!-- Back To Top -->
+
+<button onclick="topFunction()" id="topBtn" title="Back To Top">
+⬆
+</button>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© <span id="year"></span> Learning Skills
+
+</p>
+
+<p>
+
+Made with ❤️ for Students
+
+</p>
+
+</footer>
+
+<style>
+
+/* Footer */
+
+footer{
+
+margin-top:40px;
+
+background:linear-gradient(90deg,#0288d1,#26c6da);
+
+color:#fff;
+
+text-align:center;
+
+padding:25px 15px;
+
+font-size:15px;
+
+font-weight:bold;
+
+}
+
+/* Back To Top */
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff9800;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+#topBtn:hover{
+
+background:#f57c00;
+
+transform:translateY(-5px);
+
+}
+
+/* Dark Mode */
+
+.dark footer{
+
+background:#111;
+
+}
+
+.dark table{
+
+color:#fff;
+
+}
+
+.dark th{
+
+background:#0288d1;
+
+}
+
+.dark td{
+
+border:1px solid #555;
+
+}
+
+.dark code{
+
+background:#333;
+
+color:#fff;
+
+}
+
+</style>
+
+<script>
+
+/* Live Search */
+
+function searchTopic(){
+
+const input=document.getElementById("searchInput").value.toLowerCase();
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+}
+
+/* Load Saved Theme */
+
+if(localStorage.getItem("theme")==="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+/* Progress Bar + Back To Top */
+
+window.onscroll=function(){
+
+const scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+
+const scrollHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+const progress=(scrollTop/scrollHeight)*100;
+
+document.getElementById("progressBar").style.width=progress+"%";
+
+if(scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+};
+
+/* Back To Top */
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* Footer Year */
+
+document.getElementById("year").innerHTML=new Date().getFullYear();
+
+</script>
+
+</body>
+
+  </html>
